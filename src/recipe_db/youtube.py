@@ -14,7 +14,7 @@ class YouTubeError(RuntimeError):
 
 
 def _yt_dlp_args() -> list[str]:
-    args = [sys.executable, "-m", "yt_dlp"]
+    args = [sys.executable, "-m", "yt_dlp", "--impersonate", "chrome"]
     cookies = os.environ.get("YTDLP_COOKIES_FILE")
     if cookies:
         args.extend(["--cookies", cookies])
@@ -84,7 +84,24 @@ def discover_channel(channel_url: str) -> list[dict[str, Any]]:
 
 
 def fetch_video(video_url: str) -> dict[str, Any]:
-    return _run_json(["--skip-download", video_url])
+    attempts = [
+        [],
+        [
+            "--extractor-args",
+            "youtube:player_client=android_vr;player_skip=webpage,configs",
+        ],
+        [
+            "--extractor-args",
+            "youtube:player_client=web_embedded,tv_samsung;player_skip=webpage,configs",
+        ],
+    ]
+    errors: list[str] = []
+    for extra_args in attempts:
+        try:
+            return _run_json([*extra_args, "--skip-download", video_url])
+        except YouTubeError as exc:
+            errors.append(str(exc))
+    raise YouTubeError("All anonymous YouTube clients failed: " + " | ".join(errors)[-3000:])
 
 
 def _caption_candidates(metadata: dict[str, Any]) -> list[dict[str, Any]]:

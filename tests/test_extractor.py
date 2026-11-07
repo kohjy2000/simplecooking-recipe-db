@@ -42,3 +42,15 @@ def test_uses_caption_when_description_has_no_steps() -> None:
 def test_clean_title_removes_hashtags() -> None:
     assert clean_title("된장찌개 #shorts #레시피") == "된장찌개"
 
+
+def test_does_not_treat_menu_combinations_as_cooking_steps() -> None:
+    description = """1. 팔도비빔면 + 미고렝 인스턴트 누들
+2. 스파게티 + 라면볶이
+3. 틈새라면 + 나가사끼 짬뽕
+4. 사천짜파게티 + 너구리
+"""
+    recipe = extract_recipe("라면 조합", description)
+
+    assert recipe.ingredients == []
+    assert recipe.steps == []
+

@@ -19,50 +19,52 @@ def _save_recipe(
     recipe: ExtractedRecipe,
 ) -> None:
     conn.execute("DELETE FROM recipes WHERE video_id = ?", (video_id,))
-    cursor = conn.execute(
-        """
-        INSERT INTO recipes (
-            video_id, name, summary, servings, confidence, needs_review,
-            source_kind, source_hash
-        ) VALUES (?, ?, ?, ?, ?, ?, ?, ?)
-        """,
-        (
-            video_id,
-            recipe.name,
-            recipe.summary,
-            recipe.servings,
-            recipe.confidence,
-            int(recipe.needs_review),
-            recipe.source_kind,
-            recipe.source_hash,
-        ),
-    )
-    recipe_id = int(cursor.lastrowid or 0)
-    conn.executemany(
-        """
-        INSERT INTO ingredients (
-            recipe_id, position, section, name, amount, unit, note, raw_text
-        ) VALUES (?, ?, ?, ?, ?, ?, ?, ?)
-        """,
-        [
+    has_recipe_content = bool(recipe.ingredients or recipe.steps)
+    if has_recipe_content:
+        cursor = conn.execute(
+            """
+            INSERT INTO recipes (
+                video_id, name, summary, servings, confidence, needs_review,
+                source_kind, source_hash
+            ) VALUES (?, ?, ?, ?, ?, ?, ?, ?)
+            """,
             (
-                recipe_id,
-                position,
-                ingredient.section,
-                ingredient.name,
-                ingredient.amount,
-                ingredient.unit,
-                ingredient.note,
-                ingredient.raw_text,
-            )
-            for position, ingredient in enumerate(recipe.ingredients, start=1)
-        ],
-    )
-    conn.executemany(
-        "INSERT INTO steps (recipe_id, position, instruction) VALUES (?, ?, ?)",
-        [(recipe_id, position, step) for position, step in enumerate(recipe.steps, start=1)],
-    )
-    status = "completed" if recipe.ingredients or recipe.steps else "no_recipe"
+                video_id,
+                recipe.name,
+                recipe.summary,
+                recipe.servings,
+                recipe.confidence,
+                int(recipe.needs_review),
+                recipe.source_kind,
+                recipe.source_hash,
+            ),
+        )
+        recipe_id = int(cursor.lastrowid or 0)
+        conn.executemany(
+            """
+            INSERT INTO ingredients (
+                recipe_id, position, section, name, amount, unit, note, raw_text
+            ) VALUES (?, ?, ?, ?, ?, ?, ?, ?)
+            """,
+            [
+                (
+                    recipe_id,
+                    position,
+                    ingredient.section,
+                    ingredient.name,
+                    ingredient.amount,
+                    ingredient.unit,
+                    ingredient.note,
+                    ingredient.raw_text,
+                )
+                for position, ingredient in enumerate(recipe.ingredients, start=1)
+            ],
+        )
+        conn.executemany(
+            "INSERT INTO steps (recipe_id, position, instruction) VALUES (?, ?, ?)",
+            [(recipe_id, position, step) for position, step in enumerate(recipe.steps, start=1)],
+        )
+    status = "completed" if has_recipe_content else "no_recipe"
     conn.execute(
         """
         UPDATE videos SET

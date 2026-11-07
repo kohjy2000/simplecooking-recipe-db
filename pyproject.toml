@@ -5,7 +5,7 @@ description = "Incrementally build a structured recipe database from a YouTube c
 readme = "README.md"
 requires-python = ">=3.11"
 dependencies = [
-  "yt-dlp>=2025.10.22",
+  "yt-dlp[curl-cffi,default]>=2025.10.22",
 ]
 
 [project.scripts]

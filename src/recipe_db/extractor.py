@@ -21,7 +21,8 @@ AMOUNT = re.compile(
     re.IGNORECASE,
 )
 ACTION_SENTENCE = re.compile(
-    r"(넣|볶|끓|썰|굽|섞|익|데치|삶|부어|붓|재우|간하|다지|올리|담|튀기|졸이|무치|갈아|완성)"
+    r"(?:넣|볶|끓|썰|굽|섞|익|데치|삶|부|붓|재우|간하|다지|올리|담|튀기|졸이|무치|갈)"
+    r"(?:어|아|고|은|는|습|세|면|기|여|으)|완성(?:합|해|시|됐|되)"
 )
 NOISE = re.compile(r"(구독|좋아요|알림|문의|협찬|광고|instagram|인스타|copyright)", re.IGNORECASE)
 
