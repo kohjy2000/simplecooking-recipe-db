@@ -66,18 +66,6 @@ button:hover { filter: brightness(.92); }
 .chip.missing { background: #f7e2d7; color: #8d4422; }
 .card a { color: var(--green); font-weight: 800; text-decoration: none; }
 .review { font-size: .78rem; color: var(--orange); }
-.recipe-draft { border-top: 1px solid var(--line); padding-top: 12px; }
-.recipe-draft summary { color: var(--green); font-weight: 800; cursor: pointer; }
-.recipe-draft h3 { margin: 18px 0 8px; font-size: .95rem; }
-.recipe-draft ul, .recipe-draft ol { margin: 0; padding-left: 22px; color: #39453d; }
-.recipe-draft li { margin: 7px 0; line-height: 1.55; }
-.recipe-draft ol { list-style: none; padding-left: 0; }
-.recipe-draft ol li { display: grid; grid-template-columns: 26px 1fr; gap: 8px; }
-.recipe-draft ol li span {
-  display: inline-grid; place-items: center; width: 24px; height: 24px; border-radius: 50%;
-  background: var(--green-soft); color: var(--green); font-weight: 800; font-size: .78rem;
-}
-.draft-warning { color: var(--orange); font-size: .82rem; }
 
 @media (max-width: 620px) {
   .shell { padding-top: 42px; }

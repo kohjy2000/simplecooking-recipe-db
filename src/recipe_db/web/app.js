@@ -138,25 +138,6 @@ const requestRecommendations = async (message, assumePantry) => {
 const chip = (name, missing = false) =>
   `<span class="chip${missing ? " missing" : ""}">${escapeHtml(name)}</span>`;
 
-const recipeDraft = (item) => {
-  const ingredients = (item.ingredients || []).map((ingredient) =>
-    `<li>${escapeHtml(ingredient.raw_text || ingredient.name)}</li>`).join("");
-  const steps = (item.steps || []).map((step, index) => {
-    const cleaned = String(step).replaceAll("[음악]", "").replace(/\s+/g, " ").trim();
-    return `<li><span>${index + 1}</span>${escapeHtml(cleaned)}</li>`;
-  }).join("");
-  return `
-    <details class="recipe-draft">
-      <summary>레시피 글 보기</summary>
-      <p class="draft-warning">자동 자막에서 만든 초안입니다. 분량과 표현은 원본 영상으로 확인해 주세요.</p>
-      ${item.summary ? `<p>${escapeHtml(item.summary)}</p>` : ""}
-      <h3>추정 재료</h3>
-      <ul>${ingredients || "<li>추출된 재료가 없습니다.</li>"}</ul>
-      <h3>추정 조리 순서</h3>
-      <ol>${steps || "<li>추출된 조리 단계가 없습니다.</li>"}</ol>
-    </details>`;
-};
-
 form.addEventListener("submit", async (event) => {
   event.preventDefault();
   const button = form.querySelector("button");
@@ -183,10 +164,9 @@ form.addEventListener("submit", async (event) => {
           ${item.missing_ingredients.slice(0, 5).map((name) => chip(`+ ${name}`, true)).join("")}
           ${item.missing_ingredients.length > 5 ? chip(`외 ${item.missing_ingredients.length - 5}개`, true) : ""}
         </div>
-        ${recipeDraft(item)}
         <div>
           <a href="${escapeHtml(item.source_url)}" target="_blank" rel="noreferrer">원본 영상 보기 ↗</a>
-          ${item.needs_review ? '<span class="review"> · 자동 추출 결과, 검수 필요</span>' : ""}
+          ${item.needs_review ? '<span class="review"> · 재료 자동 추출 결과, 검수 필요</span>' : ""}
         </div>
       </article>
     `).join("");
