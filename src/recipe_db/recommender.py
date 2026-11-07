@@ -118,6 +118,8 @@ class Recommendation:
     confidence: float
     needs_review: bool
     reason: str
+    summary: str | None
+    ingredients: list[dict[str, object]]
     steps: list[str]
 
     def to_dict(self) -> dict[str, object]:
@@ -205,16 +207,16 @@ def recommend(
         user_matches = ingredient_set & available
         pantry_matches = (ingredient_set & assumed_pantry) - user_matches
         missing = ingredient_set - effective_available
+        title_matches = _title_matches(row["name"], available)
         if not user_matches:
             continue
-        if max_missing is not None and len(missing) > max_missing:
+        if max_missing is not None and len(missing) > max_missing and not title_matches:
             continue
 
         non_pantry = ingredient_set - PANTRY_STAPLES
         relevant_matches = len(non_pantry & available)
         coverage = min((relevant_matches + len(pantry_matches)) / len(ingredient_set), 1.0)
         input_utilization = len(user_matches) / max(len(available), 1)
-        title_matches = _title_matches(row["name"], available)
         title_relevance = len(title_matches) / max(len(available), 1)
         confidence = float(row["confidence"])
         can_make_now = not missing
@@ -231,6 +233,11 @@ def recommend(
         missing_names = [item for item in recipe_ingredients if item in missing]
         if can_make_now:
             reason = "보유 재료와 기본 양념만으로 만들 수 있어요."
+        elif title_matches:
+            matched_title = ", ".join(title_matches)
+            reason = f"{matched_title}가 요리 제목의 주재료와 직접 일치해요."
+            if re.search(r"\d+\s*(?:가지|개)", row["name"]):
+                reason += " 여러 레시피를 묶은 영상이라 재료 목록은 전체 요리의 합계예요."
         else:
             missing_summary = ", ".join(missing_names[:4]) + (
                 f" 외 {len(missing_names) - 4}개" if len(missing_names) > 4 else ""
@@ -257,14 +264,16 @@ def recommend(
                 confidence=confidence,
                 needs_review=bool(row["needs_review"]),
                 reason=reason,
+                summary=details["summary"],
+                ingredients=details["ingredients"],
                 steps=details["steps"],
             )
         )
 
     results.sort(
         key=lambda item: (
-            not item.can_make_now,
             -len(item.title_matched_ingredients),
+            not item.can_make_now,
             -item.score,
             len(item.missing_ingredients),
             -len(item.matched_ingredients),

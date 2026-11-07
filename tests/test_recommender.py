@@ -70,3 +70,30 @@ def test_title_match_beats_incidental_caption_ingredient(tmp_path) -> None:
     assert results[0].name == "계란말이"
     assert results[0].title_matched_ingredients == ["계란"]
 
+
+def test_title_match_is_not_filtered_by_many_aggregate_ingredients(tmp_path) -> None:
+    with connect(tmp_path / "recipes.sqlite") as conn:
+        initialize(conn)
+        _seed(conn)
+        conn.execute(
+            "INSERT INTO videos (video_id, title, url, status) VALUES ('tuna', '참치 요리 5가지', 'https://youtu.be/tuna', 'completed')"
+        )
+        recipe_id = conn.execute(
+            """
+            INSERT INTO recipes (video_id, name, confidence, needs_review, source_kind)
+            VALUES ('tuna', '참치 요리 5가지', 0.9, 1, 'caption')
+            """
+        ).lastrowid
+        for position, name in enumerate(
+            ["참치", "감자", "당근", "양파", "치즈", "마늘", "김치"], start=1
+        ):
+            conn.execute(
+                "INSERT INTO ingredients (recipe_id, position, name, raw_text) VALUES (?, ?, ?, ?)",
+                (recipe_id, position, name, name),
+            )
+        conn.commit()
+        _, results = recommend(conn, "참치", max_missing=2)
+
+    assert results[0].name == "참치 요리 5가지"
+    assert "제목의 주재료와 직접 일치" in results[0].reason
+
