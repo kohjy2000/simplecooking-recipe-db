@@ -3,6 +3,7 @@ const response = document.querySelector("#response");
 const results = document.querySelector("#results");
 const answer = document.querySelector("#answer");
 const parsed = document.querySelector("#parsed");
+const buildVersion = document.querySelector('meta[name="app-build"]')?.content || "local";
 
 const aliases = {
   달걀: "계란", 에그: "계란", 파: "대파", 쪽파: "대파", 다진마늘: "마늘",
@@ -66,7 +67,7 @@ const titleMatches = (title, available) => {
 let staticRecipes;
 const recommendInBrowser = async (message, assumePantry) => {
   if (!staticRecipes) {
-    const request = await fetch("./recipes.json");
+    const request = await fetch(`./recipes.json?v=${encodeURIComponent(buildVersion)}`);
     if (!request.ok) throw new Error("레시피 데이터를 불러오지 못했습니다.");
     staticRecipes = await request.json();
   }

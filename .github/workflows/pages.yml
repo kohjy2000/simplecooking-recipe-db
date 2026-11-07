@@ -36,6 +36,7 @@ jobs:
           cp src/recipe_db/web/styles.css _site/static/styles.css
           cp src/recipe_db/web/app.js _site/static/app.js
           cp exports/recipes.json _site/recipes.json
+          sed -i "s/__BUILD_VERSION__/${GITHUB_SHA}/g" _site/index.html
           touch _site/.nojekyll
       - uses: actions/upload-pages-artifact@v3
         with:
