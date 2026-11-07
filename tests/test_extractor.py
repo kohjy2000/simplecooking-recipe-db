@@ -54,3 +54,13 @@ def test_does_not_treat_menu_combinations_as_cooking_steps() -> None:
     assert recipe.ingredients == []
     assert recipe.steps == []
 
+
+def test_infers_common_ingredients_from_caption_and_title() -> None:
+    caption = "파프리카를 썰어 주세요. 밀가루를 넣고 새우를 익혀 후추를 뿌립니다."
+    recipe = extract_recipe("버터치즈새우 구이", "", caption)
+
+    names = {ingredient.name for ingredient in recipe.ingredients}
+    assert {"파프리카", "밀가루", "새우", "후추", "버터", "치즈"} <= names
+    assert all(ingredient.section == "자막 추정" for ingredient in recipe.ingredients)
+    assert recipe.needs_review is True
+

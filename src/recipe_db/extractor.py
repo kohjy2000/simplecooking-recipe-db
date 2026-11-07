@@ -25,6 +25,89 @@ ACTION_SENTENCE = re.compile(
     r"(?:어|아|고|은|는|습|세|면|기|여|으)|완성(?:합|해|시|됐|되)"
 )
 NOISE = re.compile(r"(구독|좋아요|알림|문의|협찬|광고|instagram|인스타|copyright)", re.IGNORECASE)
+INGREDIENT_KEYWORDS = (
+    "고춧가루",
+    "다진마늘",
+    "다진 마늘",
+    "올리브유",
+    "닭가슴살",
+    "모짜렐라",
+    "파프리카",
+    "로즈마리",
+    "스파게티면",
+    "돼지고기",
+    "소고기",
+    "닭고기",
+    "삼겹살",
+    "베이컨",
+    "소시지",
+    "스팸",
+    "참치",
+    "고등어",
+    "연어",
+    "새우",
+    "오징어",
+    "계란",
+    "달걀",
+    "두부",
+    "김치",
+    "양배추",
+    "배추",
+    "양파",
+    "대파",
+    "쪽파",
+    "마늘",
+    "생강",
+    "감자",
+    "고구마",
+    "당근",
+    "애호박",
+    "호박",
+    "버섯",
+    "청양고추",
+    "고추",
+    "깻잎",
+    "시금치",
+    "브로콜리",
+    "토마토",
+    "옥수수",
+    "콘",
+    "사과",
+    "배",
+    "밀가루",
+    "부침가루",
+    "튀김가루",
+    "전분",
+    "빵가루",
+    "떡",
+    "라면",
+    "우동",
+    "파스타",
+    "국수",
+    "밥",
+    "간장",
+    "고추장",
+    "된장",
+    "쌈장",
+    "굴소스",
+    "식초",
+    "참기름",
+    "식용유",
+    "설탕",
+    "소금",
+    "후추",
+    "마요네즈",
+    "케첩",
+    "머스타드",
+    "버터",
+    "치즈",
+    "우유",
+    "생크림",
+    "요거트",
+    "꿀",
+    "물",
+    "육수",
+)
 
 
 @dataclass(frozen=True)
@@ -144,6 +227,39 @@ def _caption_steps(caption: str) -> list[str]:
     return _dedupe(steps)[:30]
 
 
+def _caption_ingredients(title: str, caption: str) -> list[Ingredient]:
+    text = f"{title} {caption}"
+    ingredients: list[Ingredient] = []
+    for name in INGREDIENT_KEYWORDS:
+        pattern = (
+            re.compile(re.escape(name) + r"(?=(?:을|를|이|가|은|는|와|과|로|으로|에서|\s|$))")
+            if len(name) == 1
+            else re.compile(re.escape(name))
+        )
+        matches = list(pattern.finditer(text))
+        if not matches:
+            continue
+        amount_match = None
+        for match in matches:
+            amount_match = AMOUNT.search(text[match.end() : match.end() + 24])
+            if amount_match:
+                break
+        amount = amount_match.group("amount") if amount_match else None
+        unit = amount_match.group("unit") if amount_match else None
+        raw_text = " ".join(part for part in (name, amount, unit) if part)
+        ingredients.append(
+            Ingredient(
+                name=name,
+                amount=amount,
+                unit=unit,
+                note="자막에서 자동 추정",
+                raw_text=raw_text,
+                section="자막 추정",
+            )
+        )
+    return _dedupe_ingredients(ingredients)
+
+
 def _dedupe(values: list[str]) -> list[str]:
     seen: set[str] = set()
     result: list[str] = []
@@ -172,19 +288,30 @@ def _servings(text: str) -> str | None:
 
 
 def extract_recipe(title: str, description: str, caption: str = "") -> ExtractedRecipe:
-    ingredients, description_steps = _description_parts(description)
+    description_ingredients, description_steps = _description_parts(description)
+    caption_ingredients = (
+        _caption_ingredients(title, caption) if caption and len(description_ingredients) < 2 else []
+    )
+    ingredients = _dedupe_ingredients([*description_ingredients, *caption_ingredients])
     caption_steps = _caption_steps(caption) if len(description_steps) < 2 else []
     steps = description_steps or caption_steps
-    if caption_steps and (description_steps or ingredients):
+    description_used = bool(description_ingredients or description_steps)
+    caption_used = bool(caption_ingredients or caption_steps)
+    if description_used and caption_used:
         source_kind = "mixed"
-    elif description_steps or ingredients:
+    elif description_used:
         source_kind = "description"
     else:
         source_kind = "caption"
     ingredient_score = min(len(ingredients) / 6, 1.0)
     step_score = min(len(steps) / 5, 1.0)
     confidence = round(0.15 + 0.45 * ingredient_score + 0.4 * step_score, 2)
-    needs_review = len(ingredients) < 2 or len(steps) < 2 or confidence < 0.65
+    needs_review = (
+        len(ingredients) < 2
+        or len(steps) < 2
+        or confidence < 0.65
+        or any(ingredient.amount is None for ingredient in caption_ingredients)
+    )
     combined = f"{description}\n{caption}"
     summary_line = next(
         (
