@@ -1,13 +1,6 @@
 name: Deploy recommendation site
 
-on:
-  push:
-    branches: [main]
-    paths:
-      - "src/recipe_db/web/**"
-      - "exports/recipes.json"
-      - ".github/workflows/pages.yml"
-  workflow_dispatch:
+on: workflow_dispatch
 
 permissions:
   contents: read
