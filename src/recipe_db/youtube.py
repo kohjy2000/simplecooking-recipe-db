@@ -2,15 +2,21 @@ from __future__ import annotations
 
 import json
 import os
+import re
 import subprocess
 import sys
 import urllib.request
 from datetime import UTC, datetime
+from html import unescape
 from typing import Any
+from urllib.parse import parse_qs, quote, urljoin, urlparse
 
 
 class YouTubeError(RuntimeError):
     pass
+
+
+DEFAULT_INVIDIOUS_BASE_URLS = ("https://yt.chocolatemoo53.com",)
 
 
 def _yt_dlp_args() -> list[str]:
@@ -101,7 +107,54 @@ def fetch_video(video_url: str) -> dict[str, Any]:
             return _run_json([*extra_args, "--skip-download", video_url])
         except YouTubeError as exc:
             errors.append(str(exc))
-    raise YouTubeError("All anonymous YouTube clients failed: " + " | ".join(errors)[-3000:])
+    try:
+        return _fetch_invidious_video(video_url)
+    except YouTubeError as exc:
+        errors.append(str(exc))
+    raise YouTubeError("All anonymous video sources failed: " + " | ".join(errors)[-3000:])
+
+
+def _invidious_base_urls() -> tuple[str, ...]:
+    configured = os.environ.get("INVIDIOUS_BASE_URLS", "")
+    if configured.strip():
+        return tuple(item.strip().rstrip("/") for item in configured.split(",") if item.strip())
+    return DEFAULT_INVIDIOUS_BASE_URLS
+
+
+def _fetch_text(url: str, timeout: int = 30) -> str:
+    request = urllib.request.Request(url, headers={"User-Agent": "Mozilla/5.0"})
+    try:
+        with urllib.request.urlopen(request, timeout=timeout) as response:
+            return response.read().decode("utf-8", errors="replace")
+    except OSError as exc:
+        raise YouTubeError(f"HTTP fetch failed for {urlparse(url).netloc}: {exc}") from exc
+
+
+def _fetch_invidious_video(video_url: str) -> dict[str, Any]:
+    video_id = parse_qs(urlparse(video_url).query).get("v", [""])[0]
+    if not video_id:
+        raise YouTubeError(f"Could not parse video id from {video_url}")
+    errors: list[str] = []
+    for base_url in _invidious_base_urls():
+        try:
+            payload = json.loads(_fetch_text(f"{base_url}/api/v1/videos/{quote(video_id)}"))
+            if payload.get("error"):
+                raise YouTubeError(str(payload["error"]))
+            thumbnails = payload.get("videoThumbnails") or []
+            payload.update(
+                {
+                    "id": video_id,
+                    "channel": payload.get("author"),
+                    "channel_id": payload.get("authorId"),
+                    "duration": payload.get("lengthSeconds"),
+                    "thumbnail": thumbnails[0].get("url") if thumbnails else None,
+                    "_invidious_base_url": base_url,
+                }
+            )
+            return payload
+        except (json.JSONDecodeError, YouTubeError) as exc:
+            errors.append(f"{base_url}: {exc}")
+    raise YouTubeError("Invidious fallback failed: " + " | ".join(errors))
 
 
 def _caption_candidates(metadata: dict[str, Any]) -> list[dict[str, Any]]:
@@ -119,6 +172,21 @@ def _caption_candidates(metadata: dict[str, Any]) -> list[dict[str, Any]]:
 
 
 def fetch_korean_caption(metadata: dict[str, Any]) -> str:
+    if base_url := metadata.get("_invidious_base_url"):
+        tracks = metadata.get("captions") or []
+        track = next(
+            (
+                item
+                for item in tracks
+                if str(item.get("language_code") or item.get("languageCode") or "").startswith("ko")
+            ),
+            None,
+        )
+        if not track or not track.get("url"):
+            return ""
+        raw = _fetch_text(urljoin(f"{base_url}/", track["url"]))
+        return _vtt_to_text(raw)
+
     candidates = _caption_candidates(metadata)
     if not candidates:
         return ""
@@ -126,12 +194,7 @@ def fetch_korean_caption(metadata: dict[str, Any]) -> str:
     url = preferred.get("url")
     if not url:
         return ""
-    request = urllib.request.Request(url, headers={"User-Agent": "Mozilla/5.0"})
-    try:
-        with urllib.request.urlopen(request, timeout=30) as response:
-            raw = response.read().decode("utf-8", errors="replace")
-    except OSError as exc:
-        raise YouTubeError(f"Caption download failed: {exc}") from exc
+    raw = _fetch_text(url)
     if preferred.get("ext") == "json3":
         payload = json.loads(raw)
         chunks: list[str] = []
@@ -141,14 +204,42 @@ def fetch_korean_caption(metadata: dict[str, Any]) -> str:
             if text:
                 chunks.append(text)
         return " ".join(chunks)
-    lines = []
+    return _vtt_to_text(raw)
+
+
+def _vtt_to_text(raw: str) -> str:
+    cues: list[str] = []
+    current: list[str] = []
     for line in raw.splitlines():
         stripped = line.strip()
-        if not stripped or stripped.startswith(("WEBVTT", "NOTE", "Kind:", "Language:")):
+        if not stripped:
+            if current:
+                cues.append(" ".join(current))
+                current = []
+            continue
+        if stripped.startswith(("WEBVTT", "NOTE", "Kind:", "Language:")):
             continue
         if "-->" in stripped or stripped.isdigit():
             continue
-        if stripped != (lines[-1] if lines else None):
-            lines.append(stripped)
-    return " ".join(lines)
+        cleaned = unescape(re.sub(r"<[^>]+>", "", stripped))
+        cleaned = re.sub(r"\s+", " ", cleaned).strip()
+        if cleaned:
+            current.append(cleaned)
+    if current:
+        cues.append(" ".join(current))
+
+    transcript: list[str] = []
+    for cue in cues:
+        words = cue.split()
+        overlap = 0
+        for size in range(min(len(transcript), len(words)), 0, -1):
+            if transcript[-size:] == words[:size]:
+                overlap = size
+                break
+        if overlap == 0 and words and len(words) <= len(transcript):
+            joined = " ".join(words)
+            if joined in " ".join(transcript[-max(len(words) * 3, 30) :]):
+                continue
+        transcript.extend(words[overlap:])
+    return " ".join(transcript)
 
