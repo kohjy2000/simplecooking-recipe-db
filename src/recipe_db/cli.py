@@ -2,10 +2,12 @@ from __future__ import annotations
 
 import argparse
 import json
+import os
 
 from .db import connect, initialize
 from .exporter import export_all
 from .pipeline import discover, process_pending
+from .recommender import answer_recommendation, recommend
 
 DEFAULT_CHANNEL = "https://www.youtube.com/@자취요리신simplecooking"
 DEFAULT_DB = "data/recipes.sqlite"
@@ -36,6 +38,24 @@ def _parser() -> argparse.ArgumentParser:
 
     status_parser = subparsers.add_parser("status", help="Show ingestion status")
     status_parser.set_defaults(handler=_status)
+
+    recommend_parser = subparsers.add_parser(
+        "recommend", help="Recommend recipes from available ingredients"
+    )
+    recommend_parser.add_argument(
+        "ingredients", help='Natural language or comma-separated ingredients, e.g. "계란, 김치, 밥"'
+    )
+    recommend_parser.add_argument("--limit", type=int, default=5)
+    recommend_parser.add_argument("--max-missing", type=int, default=5)
+    recommend_parser.add_argument("--no-pantry", action="store_true")
+    recommend_parser.add_argument("--json", action="store_true")
+    recommend_parser.set_defaults(handler=_recommend)
+
+    serve_parser = subparsers.add_parser("serve", help="Run the recommendation API and web UI")
+    serve_parser.add_argument("--host", default="127.0.0.1")
+    serve_parser.add_argument("--port", type=int, default=8000)
+    serve_parser.add_argument("--reload", action="store_true")
+    serve_parser.set_defaults(handler=_serve)
     return parser
 
 
@@ -117,6 +137,41 @@ def _status(args: argparse.Namespace) -> None:
             indent=2,
         )
     )
+
+
+def _recommend(args: argparse.Namespace) -> None:
+    if args.limit < 1:
+        raise SystemExit("--limit must be at least 1")
+    with connect(args.db) as conn:
+        initialize(conn)
+        ingredients, results = recommend(
+            conn,
+            args.ingredients,
+            limit=args.limit,
+            assume_pantry=not args.no_pantry,
+            max_missing=args.max_missing,
+        )
+    payload = {
+        "parsed_ingredients": ingredients,
+        "answer": answer_recommendation(ingredients, results),
+        "results": [item.to_dict() for item in results],
+    }
+    if args.json:
+        print(json.dumps(payload, ensure_ascii=False, indent=2))
+        return
+    print(payload["answer"])
+    for index, item in enumerate(results, start=1):
+        missing = ", ".join(item.missing_ingredients) or "없음"
+        print(f"{index}. {item.name} (일치 {item.coverage:.0%}, 부족: {missing})")
+        print(f"   {item.source_url}")
+
+
+def _serve(args: argparse.Namespace) -> None:
+    import uvicorn
+
+    if args.db != DEFAULT_DB:
+        os.environ["RECIPE_DB_PATH"] = args.db
+    uvicorn.run("recipe_db.api:app", host=args.host, port=args.port, reload=args.reload)
 
 
 def main() -> None:

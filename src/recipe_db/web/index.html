@@ -1,0 +1,44 @@
+<!doctype html>
+<html lang="ko">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>냉장고 레시피 추천기</title>
+    <link rel="stylesheet" href="/static/styles.css" />
+  </head>
+  <body>
+    <main class="shell">
+      <header>
+        <span class="eyebrow">자취요리신 레시피 DB</span>
+        <h1>냉장고에 뭐가 있나요?</h1>
+        <p>지금 가진 재료를 적으면 만들 수 있는 순서대로 레시피를 찾아드려요.</p>
+      </header>
+
+      <form id="recommend-form" class="search-panel">
+        <label for="ingredients">보유 재료</label>
+        <div class="search-row">
+          <input
+            id="ingredients"
+            name="ingredients"
+            placeholder="예: 계란, 양파, 김치, 밥"
+            autocomplete="off"
+            required
+          />
+          <button type="submit">추천받기</button>
+        </div>
+        <label class="check-row">
+          <input id="pantry" type="checkbox" checked />
+          소금·후추·식용유 같은 기본 양념은 있다고 보기
+        </label>
+      </form>
+
+      <section id="response" class="response" hidden>
+        <p id="answer" class="answer"></p>
+        <p id="parsed" class="parsed"></p>
+        <div id="results" class="results"></div>
+      </section>
+    </main>
+    <script src="/static/app.js" defer></script>
+  </body>
+</html>
+

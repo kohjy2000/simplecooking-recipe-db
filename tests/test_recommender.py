@@ -1,0 +1,60 @@
+from recipe_db.db import connect, initialize
+from recipe_db.recommender import canonicalize_ingredient, parse_ingredient_query, recommend
+
+
+def _seed(conn) -> None:
+    conn.execute(
+        "INSERT INTO videos (video_id, title, url, status) VALUES ('exact', '김치볶음밥', 'https://youtu.be/exact', 'completed')"
+    )
+    conn.execute(
+        "INSERT INTO videos (video_id, title, url, status) VALUES ('near', '계란말이', 'https://youtu.be/near', 'completed')"
+    )
+    exact_id = conn.execute(
+        """
+        INSERT INTO recipes (video_id, name, confidence, needs_review, source_kind)
+        VALUES ('exact', '김치볶음밥', 0.9, 0, 'description')
+        """
+    ).lastrowid
+    near_id = conn.execute(
+        """
+        INSERT INTO recipes (video_id, name, confidence, needs_review, source_kind)
+        VALUES ('near', '계란말이', 0.8, 0, 'description')
+        """
+    ).lastrowid
+    for position, name in enumerate(["밥", "김치", "계란", "식용유"], start=1):
+        conn.execute(
+            "INSERT INTO ingredients (recipe_id, position, name, raw_text) VALUES (?, ?, ?, ?)",
+            (exact_id, position, name, name),
+        )
+    for position, name in enumerate(["계란", "대파", "당근"], start=1):
+        conn.execute(
+            "INSERT INTO ingredients (recipe_id, position, name, raw_text) VALUES (?, ?, ?, ?)",
+            (near_id, position, name, name),
+        )
+    conn.commit()
+
+
+def test_parses_natural_korean_ingredient_query() -> None:
+    assert parse_ingredient_query("냉장고에 달걀이랑 김치, 찬밥 있어요") == [
+        "계란",
+        "김치",
+        "밥",
+    ]
+
+
+def test_aliases_are_canonicalized() -> None:
+    assert canonicalize_ingredient("달걀") == "계란"
+    assert canonicalize_ingredient("콘") == "옥수수"
+
+
+def test_exact_recipe_ranks_before_recipe_with_missing_items(tmp_path) -> None:
+    with connect(tmp_path / "recipes.sqlite") as conn:
+        initialize(conn)
+        _seed(conn)
+        parsed, results = recommend(conn, "달걀, 김치, 찬밥", max_missing=5)
+
+    assert parsed == ["계란", "김치", "밥"]
+    assert results[0].name == "김치볶음밥"
+    assert results[0].can_make_now is True
+    assert results[1].missing_ingredients == ["대파", "당근"]
+
