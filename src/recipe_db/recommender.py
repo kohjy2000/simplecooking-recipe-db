@@ -108,6 +108,7 @@ class Recommendation:
     name: str
     source_url: str
     thumbnail_url: str | None
+    title_matched_ingredients: list[str]
     matched_ingredients: list[str]
     pantry_ingredients: list[str]
     missing_ingredients: list[str]
@@ -159,6 +160,21 @@ def _recipe_ingredients(conn: sqlite3.Connection, recipe_id: int) -> list[str]:
     return result
 
 
+def _title_matches(title: str, available: set[str]) -> list[str]:
+    compact_title = re.sub(r"\s+", "", title.lower())
+    matches: list[str] = []
+    for ingredient in available:
+        terms = {ingredient.replace(" ", "")}
+        terms.update(
+            alias.replace(" ", "")
+            for alias, canonical in ALIASES.items()
+            if canonical == ingredient and len(alias.replace(" ", "")) > 1
+        )
+        if any(term and term in compact_title for term in terms):
+            matches.append(ingredient)
+    return sorted(matches)
+
+
 def recommend(
     conn: sqlite3.Connection,
     message: str,
@@ -198,12 +214,15 @@ def recommend(
         relevant_matches = len(non_pantry & available)
         coverage = min((relevant_matches + len(pantry_matches)) / len(ingredient_set), 1.0)
         input_utilization = len(user_matches) / max(len(available), 1)
+        title_matches = _title_matches(row["name"], available)
+        title_relevance = len(title_matches) / max(len(available), 1)
         confidence = float(row["confidence"])
         can_make_now = not missing
         score = (
-            coverage * 0.55
+            coverage * 0.35
+            + title_relevance * 0.25
             + min(len(user_matches) / 3, 1.0) * 0.15
-            + input_utilization * 0.15
+            + input_utilization * 0.1
             + confidence * 0.15
             + (0.2 if can_make_now else 0)
         )
@@ -228,6 +247,7 @@ def recommend(
                 name=row["name"],
                 source_url=row["source_url"],
                 thumbnail_url=row["thumbnail_url"],
+                title_matched_ingredients=title_matches,
                 matched_ingredients=matched_names,
                 pantry_ingredients=pantry_names,
                 missing_ingredients=missing_names,
@@ -244,8 +264,9 @@ def recommend(
     results.sort(
         key=lambda item: (
             not item.can_make_now,
-            len(item.missing_ingredients),
+            -len(item.title_matched_ingredients),
             -item.score,
+            len(item.missing_ingredients),
             -len(item.matched_ingredients),
             item.name,
         )

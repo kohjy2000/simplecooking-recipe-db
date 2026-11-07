@@ -6,7 +6,7 @@ on:
       max_new:
         description: "Maximum videos to process in this run"
         required: true
-        default: "10"
+        default: "50"
         type: string
   schedule:
     - cron: "17 3 * * *"
@@ -36,7 +36,7 @@ jobs:
 
       - name: Ingest the next batch
         env:
-          MAX_NEW: ${{ inputs.max_new || '10' }}
+          MAX_NEW: ${{ inputs.max_new || '50' }}
         run: uv run recipe-db ingest --max-new "$MAX_NEW"
 
       - name: Validate database

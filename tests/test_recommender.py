@@ -56,5 +56,17 @@ def test_exact_recipe_ranks_before_recipe_with_missing_items(tmp_path) -> None:
     assert parsed == ["계란", "김치", "밥"]
     assert results[0].name == "김치볶음밥"
     assert results[0].can_make_now is True
+    assert results[0].title_matched_ingredients == ["김치", "밥"]
     assert results[1].missing_ingredients == ["대파", "당근"]
+
+
+def test_title_match_beats_incidental_caption_ingredient(tmp_path) -> None:
+    with connect(tmp_path / "recipes.sqlite") as conn:
+        initialize(conn)
+        _seed(conn)
+        parsed, results = recommend(conn, "계란", max_missing=5)
+
+    assert parsed == ["계란"]
+    assert results[0].name == "계란말이"
+    assert results[0].title_matched_ingredients == ["계란"]
 

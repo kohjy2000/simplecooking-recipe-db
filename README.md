@@ -64,7 +64,7 @@ curl -X POST http://127.0.0.1:8000/api/recommend \
 
 ## GitHub Actions
 
-`Ingest recipes` 워크플로는 매일 03:17 UTC에 최대 10개의 영상을 오래된 순으로 처리합니다.
+`Ingest recipes` 워크플로는 매일 03:17 UTC에 최대 50개의 영상을 오래된 순으로 처리합니다.
 GitHub의 **Actions → Ingest recipes → Run workflow**에서 한 번에 처리할 영상 수를 바꿔 수동 실행할
 수도 있습니다. 실행 후 DB와 내보내기 파일을 커밋하고, 동일 파일을 30일 보관 아티팩트로 올립니다.
 
