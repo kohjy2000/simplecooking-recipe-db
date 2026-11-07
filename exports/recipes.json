@@ -1,1 +1,23 @@
-[]
+[
+  {
+    "video_id": "Adm1OPXyWp0",
+    "name": "라면을 맛있게 먹는 조합 3편 (+ 극강의 라면볶음밥)",
+    "summary": "팔도비빔면 + 미고렝 인스턴트 누들",
+    "servings": "1인분",
+    "prep_minutes": null,
+    "cook_minutes": null,
+    "confidence": 0.47,
+    "needs_review": true,
+    "source_kind": "description",
+    "source_url": "https://www.youtube.com/watch?v=Adm1OPXyWp0",
+    "published_at": null,
+    "video_title": "라면을 맛있게 먹는 조합 3편 (+ 극강의 라면볶음밥)",
+    "ingredients": [],
+    "steps": [
+      "스파게티 + 라면볶이",
+      "틈새라면 + 나가사끼 짬뽕",
+      "사천짜파게티 + 너구리 (사천 짜파구리)",
+      "틈새라면 + 불닭볶음면"
+    ]
+  }
+]
