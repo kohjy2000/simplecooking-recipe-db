@@ -5,7 +5,7 @@ on:
     branches: [main]
     paths:
       - "src/recipe_db/web/**"
-      - "exports/recipes.json"
+      - "exports/curated_recipes.json"
       - ".github/workflows/pages.yml"
   workflow_dispatch:
 
@@ -35,7 +35,7 @@ jobs:
           cp src/recipe_db/web/index.html _site/index.html
           cp src/recipe_db/web/styles.css _site/static/styles.css
           cp src/recipe_db/web/app.js _site/static/app.js
-          cp exports/recipes.json _site/recipes.json
+          cp exports/curated_recipes.json _site/curated_recipes.json
           sed -i "s/__BUILD_VERSION__/${GITHUB_SHA}/g" _site/index.html
           touch _site/.nojekyll
       - uses: actions/upload-pages-artifact@v3

@@ -67,9 +67,13 @@ const titleMatches = (title, available) => {
 let staticRecipes;
 const recommendInBrowser = async (message, assumePantry) => {
   if (!staticRecipes) {
-    const request = await fetch(`./recipes.json?v=${encodeURIComponent(buildVersion)}`);
-    if (!request.ok) throw new Error("레시피 데이터를 불러오지 못했습니다.");
-    staticRecipes = await request.json();
+    const curatedRequest = await fetch(
+      `./curated_recipes.json?v=${encodeURIComponent(buildVersion)}`,
+    );
+    if (!curatedRequest.ok) {
+      throw new Error("레시피 데이터를 불러오지 못했습니다.");
+    }
+    staticRecipes = await curatedRequest.json();
   }
   const ingredients = parseIngredients(message);
   const available = new Set(ingredients);
@@ -138,6 +142,35 @@ const requestRecommendations = async (message, assumePantry) => {
 const chip = (name, missing = false) =>
   `<span class="chip${missing ? " missing" : ""}">${escapeHtml(name)}</span>`;
 
+const ingredientText = (ingredient) => {
+  const quantity = [ingredient.amount, ingredient.unit].filter(Boolean).join("");
+  const note = ingredient.note ? ` · ${ingredient.note}` : "";
+  return `${ingredient.name}${quantity ? ` ${quantity}` : ""}${note}`;
+};
+
+const recipeText = (item, index) => {
+  if (item.source_kind !== "manually_curated" || !item.steps?.length) return "";
+  const ingredients = item.ingredients.map((ingredient) =>
+    `<li>${escapeHtml(ingredientText(ingredient))}</li>`).join("");
+  const steps = item.steps.map((step) => `<li>${escapeHtml(step)}</li>`).join("");
+  const tips = (item.tips || []).map((tip) => `<li>${escapeHtml(tip)}</li>`).join("");
+  return `
+    <details class="recipe-copy"${index === 0 ? " open" : ""}>
+      <summary>재료와 만드는 법 ${index === 0 ? "" : "펼쳐보기"}</summary>
+      <div class="recipe-grid">
+        <section>
+          <h3>재료${item.servings ? ` · ${escapeHtml(item.servings)}인분` : ""}</h3>
+          <ul class="ingredient-list">${ingredients}</ul>
+        </section>
+        <section>
+          <h3>만드는 법</h3>
+          <ol class="step-list">${steps}</ol>
+        </section>
+      </div>
+      ${tips ? `<aside class="tip"><strong>조리 팁</strong><ul>${tips}</ul></aside>` : ""}
+    </details>`;
+};
+
 form.addEventListener("submit", async (event) => {
   event.preventDefault();
   const button = form.querySelector("button");
@@ -152,20 +185,23 @@ form.addEventListener("submit", async (event) => {
     response.hidden = false;
     answer.textContent = data.answer;
     parsed.textContent = `인식한 재료: ${data.parsed_ingredients.join(", ") || "없음"}`;
-    results.innerHTML = data.results.map((item) => `
+    results.innerHTML = data.results.map((item, index) => `
       <article class="card">
         <div class="card-top">
           <h2>${escapeHtml(item.name)}</h2>
           <span class="score">일치 ${Math.round(item.coverage * 100)}%</span>
         </div>
+        ${item.summary ? `<p class="summary">${escapeHtml(item.summary)}</p>` : ""}
         <p class="reason">${escapeHtml(item.reason)}</p>
         <div class="chips">
           ${item.matched_ingredients.map((name) => chip(`✓ ${name}`)).join("")}
           ${item.missing_ingredients.slice(0, 5).map((name) => chip(`+ ${name}`, true)).join("")}
           ${item.missing_ingredients.length > 5 ? chip(`외 ${item.missing_ingredients.length - 5}개`, true) : ""}
         </div>
+        ${recipeText(item, index)}
         <div>
           <a href="${escapeHtml(item.source_url)}" target="_blank" rel="noreferrer">원본 영상 보기 ↗</a>
+          ${item.source_kind === "manually_curated" ? '<span class="curated"> · 영상 내용 정리 완료</span>' : ""}
           ${item.needs_review ? '<span class="review"> · 재료 자동 추출 결과, 검수 필요</span>' : ""}
         </div>
       </article>

@@ -61,16 +61,31 @@ button:hover { filter: brightness(.92); }
 .card h2 { margin: 0; font-size: 1.2rem; }
 .score { color: var(--green); font-weight: 900; white-space: nowrap; }
 .reason { margin: 0; color: var(--muted); }
+.summary { margin: 0; font-weight: 650; }
 .chips { display: flex; flex-wrap: wrap; gap: 7px; }
 .chip { padding: 6px 9px; border-radius: 999px; background: var(--green-soft); color: #244f39; font-size: .82rem; }
 .chip.missing { background: #f7e2d7; color: #8d4422; }
 .card a { color: var(--green); font-weight: 800; text-decoration: none; }
+.curated { font-size: .78rem; color: var(--green); font-weight: 750; }
 .review { font-size: .78rem; color: var(--orange); }
+
+.recipe-copy {
+  border-top: 1px solid var(--line); border-bottom: 1px solid var(--line);
+  padding: 12px 0;
+}
+.recipe-copy summary { color: var(--green); font-weight: 850; cursor: pointer; }
+.recipe-grid { display: grid; grid-template-columns: minmax(180px, .75fr) 1.5fr; gap: 28px; margin-top: 16px; }
+.recipe-grid h3 { margin: 0 0 10px; font-size: 1rem; }
+.ingredient-list, .step-list { margin: 0; padding-left: 1.2rem; }
+.ingredient-list li, .step-list li { margin: 0 0 8px; line-height: 1.55; }
+.tip { margin-top: 14px; padding: 12px 14px; border-radius: 12px; background: #edf4e9; color: #31533d; }
+.tip ul { margin: 5px 0 0; padding-left: 1.2rem; }
 
 @media (max-width: 620px) {
   .shell { padding-top: 42px; }
   .search-row { flex-direction: column; }
   button { min-height: 50px; }
   .card-top { flex-direction: column; }
+  .recipe-grid { grid-template-columns: 1fr; gap: 16px; }
 }
 
