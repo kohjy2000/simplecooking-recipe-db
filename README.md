@@ -6,6 +6,8 @@ YouTube 채널 **자취요리신 simple cooking**의 공개 영상에서 제목,
 
 기본 채널: <https://www.youtube.com/@자취요리신simplecooking>
 
+웹 앱: <https://kohjy2000.github.io/simplecooking-recipe-db/>
+
 ## 목표
 
 사용자가 `계란이랑 양파, 김치가 있어`처럼 입력하면 다음 순서로 답합니다.
@@ -94,8 +96,7 @@ curl -X POST http://127.0.0.1:8765/api/recommend \
 `Ingest recipes` 워크플로는 매일 03:17 UTC에 최대 50개의 영상을 오래된 순으로 처리합니다.
 GitHub의 **Actions → Ingest recipes → Run workflow**에서 한 번에 처리할 영상 수를 바꿔 수동 실행할
 수도 있습니다. 실행 후 DB와 내보내기 파일을 커밋하고, 동일 파일을 30일 보관 아티팩트로 올립니다.
-GitHub Pages를 한 번 활성화하면 `Deploy recommendation site` 워크플로로 정적 추천 앱을 배포할 수
-있습니다. Pages가 활성화되기 전에는 이 워크플로를 수동 실행하지 마세요.
+DB가 갱신되면 `Deploy recommendation site` 워크플로가 정적 추천 앱도 자동 재배포합니다.
 
 YouTube가 인증을 요구하면 저장소 Secret에 쿠키 파일 자체를 넣지 마세요. 로컬에서는
 `YTDLP_COOKIES_FILE`에 Netscape 형식 쿠키 파일 경로를 지정할 수 있습니다. GitHub Actions의 인증
