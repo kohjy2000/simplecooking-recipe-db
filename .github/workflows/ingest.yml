@@ -1,0 +1,68 @@
+name: Ingest recipes
+
+on:
+  workflow_dispatch:
+    inputs:
+      max_new:
+        description: "Maximum videos to process in this run"
+        required: true
+        default: "10"
+        type: string
+  schedule:
+    - cron: "17 3 * * *"
+
+permissions:
+  contents: write
+
+concurrency:
+  group: recipe-ingestion
+  cancel-in-progress: false
+
+jobs:
+  ingest:
+    runs-on: ubuntu-latest
+    timeout-minutes: 90
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          fetch-depth: 0
+
+      - uses: astral-sh/setup-uv@v6
+        with:
+          enable-cache: true
+
+      - name: Install Python and dependencies
+        run: uv sync --frozen
+
+      - name: Ingest the next batch
+        env:
+          MAX_NEW: ${{ inputs.max_new || '10' }}
+        run: uv run recipe-db ingest --max-new "$MAX_NEW"
+
+      - name: Validate database
+        run: |
+          uv run recipe-db status
+          uv run pytest
+
+      - name: Commit database and exports
+        run: |
+          if git diff --quiet -- data/recipes.sqlite exports/; then
+            echo "No recipe changes to commit."
+            exit 0
+          fi
+          git config user.name "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git add data/recipes.sqlite exports/
+          git commit -m "data: ingest next recipe batch"
+          git push
+
+      - name: Upload database artifact
+        uses: actions/upload-artifact@v4
+        with:
+          name: recipe-database
+          path: |
+            data/recipes.sqlite
+            exports/recipes.json
+            exports/recipes.csv
+          retention-days: 30
+
