@@ -35,21 +35,48 @@ Invidious API에서 영상 메타데이터와 자막을 가져옵니다. 대체 
 
 ## 빠른 시작
 
+### Codex 클라우드 터미널에서 실행
+
 ```bash
+cd /workspace/simplecooking-recipe-db
 uv sync --frozen
+uv run recipe-db serve
+```
+
+반드시 `pyproject.toml`이 있는 `/workspace/simplecooking-recipe-db` 안에서 실행해야 합니다.
+클라우드 환경의 8000번 포트는 시스템 프로세스가 사용하므로 앱은 기본적으로 8765번 포트를 사용합니다.
+
+### Mac에서 처음 실행
+
+```bash
+cd ~
+gh repo clone kohjy2000/simplecooking-recipe-db
+cd simplecooking-recipe-db
+uv sync --frozen
+uv run recipe-db serve
+```
+
+GitHub CLI가 없다면 `gh repo clone` 대신 다음 명령을 사용합니다.
+
+```bash
+git clone https://github.com/kohjy2000/simplecooking-recipe-db.git
+```
+
+실행 후 `http://127.0.0.1:8765`을 열면 웹 추천 화면을 사용할 수 있습니다.
+
+다른 명령도 저장소 폴더 안에서 실행합니다.
+
+```bash
 uv run recipe-db init
 uv run recipe-db ingest --max-new 10
 uv run recipe-db status
 uv run recipe-db recommend "계란, 김치, 밥"
-uv run recipe-db serve
 ```
-
-`http://127.0.0.1:8000`을 열면 웹 추천 화면을 사용할 수 있습니다.
 
 ### 추천 API
 
 ```bash
-curl -X POST http://127.0.0.1:8000/api/recommend \
+curl -X POST http://127.0.0.1:8765/api/recommend \
   -H 'Content-Type: application/json' \
   -d '{"message":"계란이랑 김치, 밥이 있어요","assume_pantry":true}'
 ```

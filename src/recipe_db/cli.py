@@ -53,7 +53,7 @@ def _parser() -> argparse.ArgumentParser:
 
     serve_parser = subparsers.add_parser("serve", help="Run the recommendation API and web UI")
     serve_parser.add_argument("--host", default="127.0.0.1")
-    serve_parser.add_argument("--port", type=int, default=8000)
+    serve_parser.add_argument("--port", type=int, default=8765)
     serve_parser.add_argument("--reload", action="store_true")
     serve_parser.set_defaults(handler=_serve)
     return parser
