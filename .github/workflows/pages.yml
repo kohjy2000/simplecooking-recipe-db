@@ -1,0 +1,46 @@
+name: Deploy recommendation site
+
+on:
+  push:
+    branches: [main]
+    paths:
+      - "src/recipe_db/web/**"
+      - "exports/recipes.json"
+      - ".github/workflows/pages.yml"
+  workflow_dispatch:
+
+permissions:
+  contents: read
+  pages: write
+  id-token: write
+
+concurrency:
+  group: pages
+  cancel-in-progress: true
+
+jobs:
+  deploy:
+    environment:
+      name: github-pages
+      url: ${{ steps.deployment.outputs.page_url }}
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/configure-pages@v5
+        with:
+          enablement: true
+      - name: Build static site
+        run: |
+          mkdir -p _site/static
+          cp src/recipe_db/web/index.html _site/index.html
+          cp src/recipe_db/web/styles.css _site/static/styles.css
+          cp src/recipe_db/web/app.js _site/static/app.js
+          cp exports/recipes.json _site/recipes.json
+          touch _site/.nojekyll
+      - uses: actions/upload-pages-artifact@v3
+        with:
+          path: _site
+      - name: Deploy GitHub Pages
+        id: deployment
+        uses: actions/deploy-pages@v4
+
