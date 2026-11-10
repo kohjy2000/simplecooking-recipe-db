@@ -4,6 +4,7 @@ import argparse
 import json
 import os
 
+from .curator import curate_batch
 from .db import connect, initialize
 from .exporter import export_all
 from .pipeline import discover, process_pending
@@ -38,6 +39,17 @@ def _parser() -> argparse.ArgumentParser:
 
     status_parser = subparsers.add_parser("status", help="Show ingestion status")
     status_parser.set_defaults(handler=_status)
+
+    curate_parser = subparsers.add_parser(
+        "curate", help="Turn raw recipe exports into quality-gated public recipes"
+    )
+    curate_parser.add_argument("--max-new", type=int, default=10)
+    curate_parser.add_argument("--raw", default="exports/recipes.json")
+    curate_parser.add_argument("--curated", default="exports/curated_recipes.json")
+    curate_parser.add_argument("--state", default="exports/curation_state.json")
+    curate_parser.add_argument("--model", default="qwen2.5:7b")
+    curate_parser.add_argument("--ollama-url", default="http://127.0.0.1:11434")
+    curate_parser.set_defaults(handler=_curate)
 
     recommend_parser = subparsers.add_parser(
         "recommend", help="Recommend recipes from available ingredients"
@@ -137,6 +149,20 @@ def _status(args: argparse.Namespace) -> None:
             indent=2,
         )
     )
+
+
+def _curate(args: argparse.Namespace) -> None:
+    if args.max_new < 1:
+        raise SystemExit("--max-new must be at least 1")
+    stats = curate_batch(
+        raw_path=args.raw,
+        curated_path=args.curated,
+        state_path=args.state,
+        max_new=args.max_new,
+        model=args.model,
+        endpoint=args.ollama_url,
+    )
+    print(json.dumps(stats, ensure_ascii=False, indent=2))
 
 
 def _recommend(args: argparse.Namespace) -> None:

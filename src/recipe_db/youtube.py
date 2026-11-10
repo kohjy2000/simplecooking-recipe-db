@@ -207,6 +207,133 @@ def fetch_korean_caption(metadata: dict[str, Any]) -> str:
     return _vtt_to_text(raw)
 
 
+def fetch_caption_tracks(
+    metadata: dict[str, Any], languages: tuple[str, ...] = ("en", "ko")
+) -> dict[str, str]:
+    """Return timestamped caption tracks for AI-assisted recipe curation."""
+    result: dict[str, str] = {}
+    if base_url := metadata.get("_invidious_base_url"):
+        for track in metadata.get("captions") or []:
+            code = str(track.get("language_code") or track.get("languageCode") or "")
+            label = str(track.get("label") or code or "caption")
+            if not any(code.startswith(language) for language in languages):
+                continue
+            url = track.get("url")
+            if not url:
+                continue
+            raw = _fetch_text(urljoin(f"{base_url}/", url))
+            transcript = _vtt_to_timed_text(raw)
+            if transcript:
+                result[f"{code or label}:{label}"] = transcript
+        return result
+
+    for language in languages:
+        candidates: list[dict[str, Any]] = []
+        for source in (metadata.get("subtitles") or {}, metadata.get("automatic_captions") or {}):
+            for code, tracks in source.items():
+                if code.startswith(language):
+                    candidates.extend(tracks or [])
+            if candidates:
+                break
+        if not candidates:
+            continue
+        preferred = next((item for item in candidates if item.get("ext") == "json3"), candidates[0])
+        url = preferred.get("url")
+        if not url:
+            continue
+        raw = _fetch_text(url)
+        transcript = (
+            _json3_to_timed_text(raw)
+            if preferred.get("ext") == "json3"
+            else _vtt_to_timed_text(raw)
+        )
+        if transcript:
+            result[language] = transcript
+    return result
+
+
+def _timestamp(seconds: float) -> str:
+    total = max(0, int(seconds))
+    return f"{total // 60:02d}:{total % 60:02d}"
+
+
+def _vtt_seconds(value: str) -> float:
+    parts = value.replace(",", ".").split(":")
+    try:
+        if len(parts) == 3:
+            return int(parts[0]) * 3600 + int(parts[1]) * 60 + float(parts[2])
+        if len(parts) == 2:
+            return int(parts[0]) * 60 + float(parts[1])
+    except ValueError:
+        return 0
+    return 0
+
+
+def _append_new_words(transcript: list[str], words: list[str]) -> list[str]:
+    overlap = 0
+    for size in range(min(len(transcript), len(words)), 0, -1):
+        if transcript[-size:] == words[:size]:
+            overlap = size
+            break
+    additions = words[overlap:]
+    transcript.extend(additions)
+    return additions
+
+
+def _vtt_to_timed_text(raw: str) -> str:
+    entries: list[tuple[float, str]] = []
+    start_seconds: float | None = None
+    current: list[str] = []
+    for line in raw.splitlines():
+        stripped = line.strip()
+        if "-->" in stripped:
+            if current and start_seconds is not None:
+                entries.append((start_seconds, " ".join(current)))
+            current = []
+            start_seconds = _vtt_seconds(stripped.split("-->", 1)[0].strip())
+            continue
+        if not stripped:
+            if current and start_seconds is not None:
+                entries.append((start_seconds, " ".join(current)))
+            current = []
+            start_seconds = None
+            continue
+        if stripped.startswith(("WEBVTT", "NOTE", "Kind:", "Language:")) or stripped.isdigit():
+            continue
+        cleaned = unescape(re.sub(r"<[^>]+>", "", stripped))
+        cleaned = re.sub(r"\s+", " ", cleaned).strip()
+        if cleaned:
+            current.append(cleaned)
+    if current and start_seconds is not None:
+        entries.append((start_seconds, " ".join(current)))
+
+    transcript: list[str] = []
+    timed_lines: list[str] = []
+    for seconds, cue in entries:
+        additions = _append_new_words(transcript, cue.split())
+        if additions:
+            timed_lines.append(f"[{_timestamp(seconds)}] {' '.join(additions)}")
+    return "\n".join(timed_lines)
+
+
+def _json3_to_timed_text(raw: str) -> str:
+    try:
+        payload = json.loads(raw)
+    except json.JSONDecodeError as exc:
+        raise YouTubeError("Caption JSON was invalid") from exc
+    transcript: list[str] = []
+    timed_lines: list[str] = []
+    for event in payload.get("events") or []:
+        text = "".join(segment.get("utf8", "") for segment in event.get("segs") or [])
+        words = text.replace("\n", " ").split()
+        additions = _append_new_words(transcript, words)
+        if additions:
+            timed_lines.append(
+                f"[{_timestamp(float(event.get('tStartMs') or 0) / 1000)}] {' '.join(additions)}"
+            )
+    return "\n".join(timed_lines)
+
+
 def _vtt_to_text(raw: str) -> str:
     cues: list[str] = []
     current: list[str] = []

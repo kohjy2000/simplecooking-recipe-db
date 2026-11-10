@@ -1,4 +1,4 @@
-from recipe_db.youtube import _vtt_to_text
+from recipe_db.youtube import _vtt_to_text, _vtt_to_timed_text
 
 
 def test_vtt_to_text_removes_tags_and_overlapping_auto_captions() -> None:
@@ -15,3 +15,6 @@ Language: ko
 """
 
     assert _vtt_to_text(raw) == "먼저 양파를 썰어 주세요 그리고 볶습니다"
+    assert _vtt_to_timed_text(raw) == (
+        "[00:00] 먼저 양파를 썰어\n[00:02] 주세요 그리고 볶습니다"
+    )

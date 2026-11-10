@@ -1,0 +1,100 @@
+name: Curate public recipes
+
+on:
+  workflow_dispatch:
+    inputs:
+      max_new:
+        description: "Maximum videos to curate in this run"
+        required: true
+        default: "10"
+        type: string
+  schedule:
+    - cron: "47 5,17 * * *"
+
+permissions:
+  contents: write
+
+concurrency:
+  group: recipe-curation
+  cancel-in-progress: false
+
+jobs:
+  curate:
+    runs-on: ubuntu-latest
+    timeout-minutes: 180
+    env:
+      OLLAMA_HOST: 127.0.0.1:11434
+      OLLAMA_MODELS: /home/runner/.ollama/models
+      OLLAMA_CONTEXT_LENGTH: "32768"
+      CURATION_MODEL: qwen2.5:7b
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          fetch-depth: 0
+
+      - uses: astral-sh/setup-uv@v6
+        with:
+          enable-cache: true
+
+      - name: Install Python dependencies
+        run: uv sync --frozen
+
+      - name: Cache local curation model
+        uses: actions/cache@v4
+        with:
+          path: ~/.ollama/models
+          key: ${{ runner.os }}-ollama-qwen2.5-7b-v1
+
+      - name: Install local model runner
+        run: curl -fsSL https://ollama.com/install.sh | sh
+
+      - name: Curate the next video batch
+        env:
+          MAX_NEW: ${{ inputs.max_new || '10' }}
+        run: |
+          nohup ollama serve >/tmp/ollama.log 2>&1 &
+          for attempt in {1..30}; do
+            if curl -fsS http://127.0.0.1:11434/api/tags >/dev/null; then
+              break
+            fi
+            sleep 2
+          done
+          curl -fsS http://127.0.0.1:11434/api/tags >/dev/null
+          ollama pull "$CURATION_MODEL"
+          uv run recipe-db curate --max-new "$MAX_NEW" --model "$CURATION_MODEL"
+
+      - name: Validate curated database
+        run: |
+          jq empty exports/curated_recipes.json
+          jq empty exports/curation_state.json
+          uv run pytest
+          uv run ruff check .
+
+      - name: Commit curated recipes
+        run: |
+          if ! git status --porcelain -- exports/curated_recipes.json exports/curation_state.json | grep -q .; then
+            echo "No curation changes to commit."
+            exit 0
+          fi
+          git config user.name "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git add exports/curated_recipes.json exports/curation_state.json
+          git commit -m "data: curate next recipe batch"
+          git pull --rebase origin main
+          git push origin main
+
+      - name: Collect local model log
+        if: always()
+        run: cp /tmp/ollama.log curation-ollama.log 2>/dev/null || true
+
+      - name: Upload curation report
+        if: always()
+        uses: actions/upload-artifact@v4
+        with:
+          name: recipe-curation-${{ github.run_id }}
+          path: |
+            exports/curated_recipes.json
+            exports/curation_state.json
+            curation-ollama.log
+          if-no-files-found: ignore
+          retention-days: 14

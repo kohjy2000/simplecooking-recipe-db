@@ -149,7 +149,7 @@ const ingredientText = (ingredient) => {
 };
 
 const recipeText = (item, index) => {
-  if (item.source_kind !== "manually_curated" || !item.steps?.length) return "";
+  if (!item.source_kind?.endsWith("_curated") || !item.steps?.length) return "";
   const ingredients = item.ingredients.map((ingredient) =>
     `<li>${escapeHtml(ingredientText(ingredient))}</li>`).join("");
   const steps = item.steps.map((step) => `<li>${escapeHtml(step)}</li>`).join("");
@@ -201,7 +201,8 @@ form.addEventListener("submit", async (event) => {
         ${recipeText(item, index)}
         <div>
           <a href="${escapeHtml(item.source_url)}" target="_blank" rel="noreferrer">원본 영상 보기 ↗</a>
-          ${item.source_kind === "manually_curated" ? '<span class="curated"> · 영상 내용 정리 완료</span>' : ""}
+          ${item.source_kind === "manually_curated" ? '<span class="curated"> · 영상 내용 직접 정리 완료</span>' : ""}
+          ${item.source_kind === "automated_curated" ? '<span class="curated"> · 자동 정리·품질검사 완료</span>' : ""}
           ${item.needs_review ? '<span class="review"> · 재료 자동 추출 결과, 검수 필요</span>' : ""}
         </div>
       </article>
