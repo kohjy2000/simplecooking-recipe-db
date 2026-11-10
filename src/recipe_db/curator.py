@@ -26,6 +26,10 @@ PANTRY_EVIDENCE_EXEMPT = {
     "깨",
 }
 STEP_NOISE = ("구독", "좋아요", "알림 설정", "안녕하세요", "시청해", "영상에서")
+QUANTITY_IN_STEP = re.compile(
+    r"(?P<amount>\d+(?:[./]\d+)?|한|두|세|네|반)\s*"
+    r"(?P<unit>kg|g|mg|ml|l|큰술|작은술|스푼|숟가락|컵|공기|개|쪽|장|대|줌|캔|분|초|도)"
+)
 
 
 class CurationError(RuntimeError):
@@ -59,6 +63,7 @@ def _write_json(path: Path, payload: Any) -> None:
 def _source_bundle(raw_recipe: dict[str, Any], captions: dict[str, str]) -> str:
     hints = {
         "video_title": raw_recipe.get("video_title") or raw_recipe.get("name"),
+        "servings": raw_recipe.get("servings"),
         "automatically_detected_ingredients": [
             item.get("raw_text") or item.get("name")
             for item in raw_recipe.get("ingredients") or []
@@ -116,6 +121,26 @@ JSON 형식:
 
 자료:
 {source_bundle}
+"""
+
+
+def build_review_prompt(source_bundle: str, draft: str) -> str:
+    return f"""당신은 요리 레시피 근거 검수자입니다. 원문 자료와 자동 작성 초안을 대조해 최종 JSON을 만드세요.
+
+검수 규칙:
+- 초안의 재료, 수량, 단위, 조리 단계가 원문에 없으면 삭제하거나 null로 바꾸세요.
+- 원문에서 실제 조리에 사용한 재료가 초안에 빠졌다면 추가하세요.
+- 씻기, 물기 제거, 예열, 조리 시간·온도처럼 원문에 없는 일반적인 단계를 만들지 마세요.
+- 깨진 자막 문구, 인사, 시식평, 구독 요청은 제거하세요.
+- 원문이 말한 요리 개수와 JSON의 레시피 개수를 일치시키세요.
+- 자연스러운 한국어로 쓰되 새로운 사실을 추측하지 마세요.
+- 설명이나 마크다운 없이 초안과 동일한 JSON 형식의 객체 하나만 출력하세요.
+
+[원문 자료]
+{source_bundle}
+
+[자동 작성 초안]
+{draft}
 """
 
 
@@ -202,6 +227,82 @@ def _evidence_ratio(ingredients: list[dict[str, Any]], source_text: str) -> floa
     return matches / len(candidates)
 
 
+def _amount_variants(amount: str) -> set[str]:
+    variants = {_compact(amount)}
+    mapped = {
+        "1": {"한", "하나"},
+        "2": {"두", "둘"},
+        "3": {"세", "셋"},
+        "4": {"네", "넷"},
+        "1/2": {"반", "절반", "0.5"},
+        "0.5": {"반", "절반", "1/2"},
+    }
+    variants.update(_compact(value) for value in mapped.get(str(amount), set()))
+    return {variant for variant in variants if variant}
+
+
+def _unit_variants(unit: str | None) -> set[str]:
+    if not unit:
+        return set()
+    mapped = {
+        "큰술": {"큰술", "스푼", "숟가락"},
+        "스푼": {"큰술", "스푼", "숟가락"},
+        "작은술": {"작은술", "티스푼"},
+        "개": {"개", "하나", "둘", "덩이"},
+        "g": {"g", "그램"},
+        "kg": {"kg", "킬로그램"},
+        "ml": {"ml", "밀리리터"},
+        "l": {"l", "리터"},
+    }
+    return {_compact(value) for value in mapped.get(unit, {unit})}
+
+
+def _quantity_supported(
+    *, name: str | None, amount: str | None, unit: str | None, source_text: str
+) -> bool:
+    if not amount:
+        return True
+    source = _compact(source_text)
+    name_key = _compact(name) if name else ""
+    windows: list[str] = []
+    if name_key:
+        start = 0
+        while (position := source.find(name_key, start)) >= 0:
+            windows.append(source[max(0, position - 20) : position + len(name_key) + 50])
+            start = position + len(name_key)
+    if not windows:
+        windows = [source]
+    amounts = _amount_variants(amount)
+    units = _unit_variants(unit)
+    return any(
+        any(amount_value in window for amount_value in amounts)
+        and (not units or any(unit_value in window for unit_value in units))
+        for window in windows
+    )
+
+
+def _reliable_hint_coverage(
+    ingredients: list[dict[str, Any]], raw_recipe: dict[str, Any]
+) -> float:
+    evidence = _compact(
+        " ".join(
+            [
+                str(raw_recipe.get("video_title") or raw_recipe.get("name") or ""),
+                *[str(step) for step in raw_recipe.get("steps") or []],
+            ]
+        )
+    )
+    reliable = {
+        str(item.get("name"))
+        for item in raw_recipe.get("ingredients") or []
+        if len(_compact(item.get("name"))) >= 2 and _compact(item.get("name")) in evidence
+    }
+    if not reliable:
+        return 1.0
+    output = {_compact(item["name"]) for item in ingredients}
+    return sum(_compact(name) in output for name in reliable) / len(reliable)
+
+
 def normalize_model_output(
     generated: str,
     *,
@@ -260,6 +361,14 @@ def normalize_model_output(
             unit = _clean_string(ingredient.get("unit"), maximum=20)
             note = _clean_string(ingredient.get("note"), maximum=80)
             section = _clean_string(ingredient.get("section"), maximum=30) or "재료"
+            if not _quantity_supported(
+                name=ingredient_name,
+                amount=amount,
+                unit=unit,
+                source_text=source_text,
+            ):
+                amount = None
+                unit = None
             raw_text = " ".join(part for part in (ingredient_name, amount, unit) if part)
             ingredients.append(
                 {
@@ -274,6 +383,8 @@ def normalize_model_output(
             )
         if len(ingredients) < 2 or _evidence_ratio(ingredients, source_text) < 0.5:
             raise CurationError(f"Recipe {index} ingredients are not sufficiently supported by source")
+        if _reliable_hint_coverage(ingredients, raw_recipe) < 0.75:
+            raise CurationError(f"Recipe {index} omitted too many source-supported ingredients")
 
         steps: list[str] = []
         for step in raw_steps:
@@ -284,6 +395,14 @@ def normalize_model_output(
                 raise CurationError(f"Recipe {index} contains non-cooking narration")
             if len(re.findall(r"[가-힣]", cleaned_step)) < 4:
                 raise CurationError(f"Recipe {index} contains a non-Korean or garbled step")
+            for quantity in QUANTITY_IN_STEP.finditer(cleaned_step):
+                if not _quantity_supported(
+                    name=None,
+                    amount=quantity.group("amount"),
+                    unit=quantity.group("unit"),
+                    source_text=source_text,
+                ):
+                    raise CurationError(f"Recipe {index} contains an unsupported step quantity")
             steps.append(cleaned_step)
 
         tips = []
@@ -298,6 +417,13 @@ def normalize_model_output(
         except (TypeError, ValueError):
             servings = None
         if servings is not None and not 1 <= servings <= 20:
+            servings = None
+        if servings is not None and not _quantity_supported(
+            name=None,
+            amount=str(servings),
+            unit="인분",
+            source_text=source_text,
+        ):
             servings = None
 
         try:
@@ -384,6 +510,12 @@ def curate_batch(
                 generate(prompt)
                 if generate is not None
                 else call_ollama(prompt, model=model, endpoint=endpoint)
+            )
+            review_prompt = build_review_prompt(source, generated)
+            generated = (
+                generate(review_prompt)
+                if generate is not None
+                else call_ollama(review_prompt, model=model, endpoint=endpoint)
             )
             recipes = normalize_model_output(
                 generated,

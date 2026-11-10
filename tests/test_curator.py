@@ -67,7 +67,7 @@ def test_normalizes_and_splits_multi_recipe_video() -> None:
     recipes = normalize_model_output(
         _model_output(),
         raw_recipe=_raw_recipe(),
-        source_text="참치 밥 김치 기름을 빼고 볶습니다",
+        source_text="참치 1캔 밥 1공기 김치 기름을 빼고 볶습니다",
         model="test-model",
         duration_seconds=200,
     )
@@ -76,6 +76,19 @@ def test_normalizes_and_splits_multi_recipe_video() -> None:
     assert all(recipe["source_kind"] == "automated_curated" for recipe in recipes)
     assert recipes[1]["source_url"].endswith("&t=90s")
     assert recipes[0]["ingredients"][0]["raw_text"] == "참치 1 캔"
+
+
+def test_removes_quantities_that_have_no_source_evidence() -> None:
+    recipes = normalize_model_output(
+        _model_output(),
+        raw_recipe=_raw_recipe(),
+        source_text="참치와 밥, 김치를 볶습니다",
+        model="test-model",
+    )
+
+    assert recipes[0]["ingredients"][0]["amount"] is None
+    assert recipes[0]["ingredients"][0]["unit"] is None
+    assert recipes[0]["servings"] is None
 
 
 def test_rejects_when_title_recipe_count_is_not_met() -> None:
