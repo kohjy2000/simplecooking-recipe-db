@@ -14,13 +14,69 @@
     "published_at": null,
     "video_title": "간단하게 만드는 참치 밥요리 5가지",
     "ingredients": [
-      {"position": 1, "section": "재료", "name": "밥", "amount": "1", "unit": "공기", "note": null, "raw_text": "밥 1공기"},
-      {"position": 2, "section": "재료", "name": "참치", "amount": "1", "unit": "캔", "note": null, "raw_text": "참치캔 1개"},
-      {"position": 3, "section": "재료", "name": "마늘", "amount": "4", "unit": "쪽", "note": "얇게 썰기", "raw_text": "마늘 4쪽"},
-      {"position": 4, "section": "재료", "name": "올리브유", "amount": "적당량", "unit": null, "note": null, "raw_text": "올리브유 적당량"},
-      {"position": 5, "section": "양념", "name": "굴소스", "amount": "1", "unit": "큰술", "note": "없으면 소금 한 꼬집", "raw_text": "굴소스 1큰술"},
-      {"position": 6, "section": "선택", "name": "페페론치노", "amount": "약간", "unit": null, "note": "매콤하게 먹고 싶을 때", "raw_text": "페페론치노 약간"},
-      {"position": 7, "section": "마무리", "name": "깨", "amount": "약간", "unit": null, "note": null, "raw_text": "깨 약간"}
+      {
+        "position": 1,
+        "section": "재료",
+        "name": "밥",
+        "amount": "1",
+        "unit": "공기",
+        "note": null,
+        "raw_text": "밥 1공기"
+      },
+      {
+        "position": 2,
+        "section": "재료",
+        "name": "참치",
+        "amount": "1",
+        "unit": "캔",
+        "note": null,
+        "raw_text": "참치캔 1개"
+      },
+      {
+        "position": 3,
+        "section": "재료",
+        "name": "마늘",
+        "amount": "4",
+        "unit": "쪽",
+        "note": "얇게 썰기",
+        "raw_text": "마늘 4쪽"
+      },
+      {
+        "position": 4,
+        "section": "재료",
+        "name": "올리브유",
+        "amount": "적당량",
+        "unit": null,
+        "note": null,
+        "raw_text": "올리브유 적당량"
+      },
+      {
+        "position": 5,
+        "section": "양념",
+        "name": "굴소스",
+        "amount": "1",
+        "unit": "큰술",
+        "note": "없으면 소금 한 꼬집",
+        "raw_text": "굴소스 1큰술"
+      },
+      {
+        "position": 6,
+        "section": "선택",
+        "name": "페페론치노",
+        "amount": "약간",
+        "unit": null,
+        "note": "매콤하게 먹고 싶을 때",
+        "raw_text": "페페론치노 약간"
+      },
+      {
+        "position": 7,
+        "section": "마무리",
+        "name": "깨",
+        "amount": "약간",
+        "unit": null,
+        "note": null,
+        "raw_text": "깨 약간"
+      }
     ],
     "steps": [
       "마늘 4쪽을 얇게 썹니다.",
@@ -29,7 +85,9 @@
       "밥 1공기와 굴소스 1큰술을 넣고 고루 섞어 노릇하게 볶습니다. 굴소스가 없다면 소금 한 꼬집으로 간합니다.",
       "그릇에 담고 깨를 뿌려 마무리합니다."
     ],
-    "tips": ["참치캔 속 기름은 카놀라유라 영상에서는 먹어도 괜찮다고 설명합니다."]
+    "tips": [
+      "참치캔 속 기름은 카놀라유라 영상에서는 먹어도 괜찮다고 설명합니다."
+    ]
   },
   {
     "video_id": "6O3XC5LzBO0-02",
@@ -46,15 +104,87 @@
     "published_at": null,
     "video_title": "간단하게 만드는 참치 밥요리 5가지",
     "ingredients": [
-      {"position": 1, "section": "재료", "name": "밥", "amount": "1", "unit": "공기", "note": null, "raw_text": "밥 1공기"},
-      {"position": 2, "section": "재료", "name": "참치", "amount": "1", "unit": "캔", "note": "기름 빼기", "raw_text": "기름 뺀 참치캔 1개"},
-      {"position": 3, "section": "재료", "name": "양파", "amount": "1/2", "unit": "개", "note": "채 썰기", "raw_text": "양파 1/2개"},
-      {"position": 4, "section": "재료", "name": "계란", "amount": "1", "unit": "개", "note": null, "raw_text": "계란 1개"},
-      {"position": 5, "section": "양념", "name": "간장", "amount": "2", "unit": "큰술", "note": null, "raw_text": "간장 2큰술"},
-      {"position": 6, "section": "양념", "name": "마요네즈", "amount": "2", "unit": "큰술", "note": null, "raw_text": "마요네즈 2큰술"},
-      {"position": 7, "section": "양념", "name": "설탕", "amount": "1", "unit": "큰술", "note": null, "raw_text": "설탕 1큰술"},
-      {"position": 8, "section": "마무리", "name": "김가루", "amount": "약간", "unit": null, "note": null, "raw_text": "김가루 약간"},
-      {"position": 9, "section": "마무리", "name": "깨", "amount": "약간", "unit": null, "note": null, "raw_text": "깨 약간"}
+      {
+        "position": 1,
+        "section": "재료",
+        "name": "밥",
+        "amount": "1",
+        "unit": "공기",
+        "note": null,
+        "raw_text": "밥 1공기"
+      },
+      {
+        "position": 2,
+        "section": "재료",
+        "name": "참치",
+        "amount": "1",
+        "unit": "캔",
+        "note": "기름 빼기",
+        "raw_text": "기름 뺀 참치캔 1개"
+      },
+      {
+        "position": 3,
+        "section": "재료",
+        "name": "양파",
+        "amount": "1/2",
+        "unit": "개",
+        "note": "채 썰기",
+        "raw_text": "양파 1/2개"
+      },
+      {
+        "position": 4,
+        "section": "재료",
+        "name": "계란",
+        "amount": "1",
+        "unit": "개",
+        "note": null,
+        "raw_text": "계란 1개"
+      },
+      {
+        "position": 5,
+        "section": "양념",
+        "name": "간장",
+        "amount": "2",
+        "unit": "큰술",
+        "note": null,
+        "raw_text": "간장 2큰술"
+      },
+      {
+        "position": 6,
+        "section": "양념",
+        "name": "마요네즈",
+        "amount": "2",
+        "unit": "큰술",
+        "note": null,
+        "raw_text": "마요네즈 2큰술"
+      },
+      {
+        "position": 7,
+        "section": "양념",
+        "name": "설탕",
+        "amount": "1",
+        "unit": "큰술",
+        "note": null,
+        "raw_text": "설탕 1큰술"
+      },
+      {
+        "position": 8,
+        "section": "마무리",
+        "name": "김가루",
+        "amount": "약간",
+        "unit": null,
+        "note": null,
+        "raw_text": "김가루 약간"
+      },
+      {
+        "position": 9,
+        "section": "마무리",
+        "name": "깨",
+        "amount": "약간",
+        "unit": null,
+        "note": null,
+        "raw_text": "깨 약간"
+      }
     ],
     "steps": [
       "참치캔의 기름을 빼고 양파 1/2개는 길게 채 썹니다.",
@@ -63,7 +193,9 @@
       "그릇에 기름 뺀 참치, 마요네즈 2큰술, 설탕 1큰술을 넣고 고루 섞습니다.",
       "밥 1공기와 볶아 둔 양파·계란을 넣어 섞은 뒤 김가루와 깨를 뿌립니다."
     ],
-    "tips": ["영상에서는 매운 떡볶이나 불닭볶음면과 곁들이는 조합도 추천합니다."]
+    "tips": [
+      "영상에서는 매운 떡볶이나 불닭볶음면과 곁들이는 조합도 추천합니다."
+    ]
   },
   {
     "video_id": "6O3XC5LzBO0-03",
@@ -80,14 +212,78 @@
     "published_at": null,
     "video_title": "간단하게 만드는 참치 밥요리 5가지",
     "ingredients": [
-      {"position": 1, "section": "재료", "name": "밥", "amount": "1", "unit": "공기", "note": null, "raw_text": "밥 1공기"},
-      {"position": 2, "section": "재료", "name": "참치", "amount": "1", "unit": "캔", "note": "캔의 기름도 사용", "raw_text": "참치캔 1개"},
-      {"position": 3, "section": "재료", "name": "김치", "amount": "3", "unit": "큰술", "note": "잘게 썰기", "raw_text": "잘게 썬 김치 3큰술"},
-      {"position": 4, "section": "재료", "name": "대파", "amount": "적당량", "unit": null, "note": "잘게 썰기", "raw_text": "대파 적당량"},
-      {"position": 5, "section": "양념", "name": "설탕", "amount": "1/2", "unit": "큰술", "note": null, "raw_text": "설탕 1/2큰술"},
-      {"position": 6, "section": "양념", "name": "물", "amount": "1/2", "unit": "컵", "note": null, "raw_text": "물 1/2컵"},
-      {"position": 7, "section": "마무리", "name": "참기름", "amount": "약간", "unit": null, "note": null, "raw_text": "참기름 약간"},
-      {"position": 8, "section": "마무리", "name": "깨", "amount": "약간", "unit": null, "note": null, "raw_text": "깨 약간"}
+      {
+        "position": 1,
+        "section": "재료",
+        "name": "밥",
+        "amount": "1",
+        "unit": "공기",
+        "note": null,
+        "raw_text": "밥 1공기"
+      },
+      {
+        "position": 2,
+        "section": "재료",
+        "name": "참치",
+        "amount": "1",
+        "unit": "캔",
+        "note": "캔의 기름도 사용",
+        "raw_text": "참치캔 1개"
+      },
+      {
+        "position": 3,
+        "section": "재료",
+        "name": "김치",
+        "amount": "3",
+        "unit": "큰술",
+        "note": "잘게 썰기",
+        "raw_text": "잘게 썬 김치 3큰술"
+      },
+      {
+        "position": 4,
+        "section": "재료",
+        "name": "대파",
+        "amount": "적당량",
+        "unit": null,
+        "note": "잘게 썰기",
+        "raw_text": "대파 적당량"
+      },
+      {
+        "position": 5,
+        "section": "양념",
+        "name": "설탕",
+        "amount": "1/2",
+        "unit": "큰술",
+        "note": null,
+        "raw_text": "설탕 1/2큰술"
+      },
+      {
+        "position": 6,
+        "section": "양념",
+        "name": "물",
+        "amount": "1/2",
+        "unit": "컵",
+        "note": null,
+        "raw_text": "물 1/2컵"
+      },
+      {
+        "position": 7,
+        "section": "마무리",
+        "name": "참기름",
+        "amount": "약간",
+        "unit": null,
+        "note": null,
+        "raw_text": "참기름 약간"
+      },
+      {
+        "position": 8,
+        "section": "마무리",
+        "name": "깨",
+        "amount": "약간",
+        "unit": null,
+        "note": null,
+        "raw_text": "깨 약간"
+      }
     ],
     "steps": [
       "팬에 참치캔의 기름을 두르고 잘게 썬 대파를 볶아 파기름을 냅니다.",
@@ -96,7 +292,9 @@
       "불을 약하게 줄인 뒤 참치를 넣고 빠르게 섞은 다음 바로 불에서 내립니다.",
       "밥 위에 올리고 참기름과 깨를 뿌려 마무리합니다."
     ],
-    "tips": ["참치를 센 불에 오래 두면 생선조림 같은 맛이 날 수 있으니 마지막에 넣어 빠르게 섞습니다."]
+    "tips": [
+      "참치를 센 불에 오래 두면 생선조림 같은 맛이 날 수 있으니 마지막에 넣어 빠르게 섞습니다."
+    ]
   },
   {
     "video_id": "6O3XC5LzBO0-04",
@@ -113,14 +311,78 @@
     "published_at": null,
     "video_title": "간단하게 만드는 참치 밥요리 5가지",
     "ingredients": [
-      {"position": 1, "section": "재료", "name": "밥", "amount": "1", "unit": "공기", "note": null, "raw_text": "밥 1공기"},
-      {"position": 2, "section": "재료", "name": "참치", "amount": "1", "unit": "캔", "note": "기름 빼기", "raw_text": "기름 뺀 참치캔 1개"},
-      {"position": 3, "section": "재료", "name": "마요네즈", "amount": "적당량", "unit": null, "note": "다이어트 중이면 생략 가능", "raw_text": "마요네즈 적당량"},
-      {"position": 4, "section": "재료", "name": "채소", "amount": "한 줌", "unit": null, "note": "상추·깻잎 또는 모둠채소", "raw_text": "상추와 깻잎 등 채소 한 줌"},
-      {"position": 5, "section": "초고추장", "name": "고추장", "amount": "1", "unit": "큰술", "note": null, "raw_text": "고추장 1큰술"},
-      {"position": 6, "section": "초고추장", "name": "설탕", "amount": "1", "unit": "큰술", "note": null, "raw_text": "설탕 1큰술"},
-      {"position": 7, "section": "초고추장", "name": "식초", "amount": "1", "unit": "큰술", "note": null, "raw_text": "식초 1큰술"},
-      {"position": 8, "section": "마무리", "name": "깨", "amount": "약간", "unit": null, "note": null, "raw_text": "깨 약간"}
+      {
+        "position": 1,
+        "section": "재료",
+        "name": "밥",
+        "amount": "1",
+        "unit": "공기",
+        "note": null,
+        "raw_text": "밥 1공기"
+      },
+      {
+        "position": 2,
+        "section": "재료",
+        "name": "참치",
+        "amount": "1",
+        "unit": "캔",
+        "note": "기름 빼기",
+        "raw_text": "기름 뺀 참치캔 1개"
+      },
+      {
+        "position": 3,
+        "section": "재료",
+        "name": "마요네즈",
+        "amount": "적당량",
+        "unit": null,
+        "note": "다이어트 중이면 생략 가능",
+        "raw_text": "마요네즈 적당량"
+      },
+      {
+        "position": 4,
+        "section": "재료",
+        "name": "채소",
+        "amount": "한 줌",
+        "unit": null,
+        "note": "상추·깻잎 또는 모둠채소",
+        "raw_text": "상추와 깻잎 등 채소 한 줌"
+      },
+      {
+        "position": 5,
+        "section": "초고추장",
+        "name": "고추장",
+        "amount": "1",
+        "unit": "큰술",
+        "note": null,
+        "raw_text": "고추장 1큰술"
+      },
+      {
+        "position": 6,
+        "section": "초고추장",
+        "name": "설탕",
+        "amount": "1",
+        "unit": "큰술",
+        "note": null,
+        "raw_text": "설탕 1큰술"
+      },
+      {
+        "position": 7,
+        "section": "초고추장",
+        "name": "식초",
+        "amount": "1",
+        "unit": "큰술",
+        "note": null,
+        "raw_text": "식초 1큰술"
+      },
+      {
+        "position": 8,
+        "section": "마무리",
+        "name": "깨",
+        "amount": "약간",
+        "unit": null,
+        "note": null,
+        "raw_text": "깨 약간"
+      }
     ],
     "steps": [
       "기름을 뺀 참치에 마요네즈를 넣고 고루 섞습니다. 담백하게 먹고 싶다면 마요네즈는 생략해도 됩니다.",
@@ -129,7 +391,9 @@
       "참치마요를 올리고 초고추장을 뿌립니다.",
       "깨를 뿌려 마무리한 뒤 고루 비벼 먹습니다."
     ],
-    "tips": ["시판 초고추장이 있다면 직접 만든 양념 대신 사용해도 됩니다."]
+    "tips": [
+      "시판 초고추장이 있다면 직접 만든 양념 대신 사용해도 됩니다."
+    ]
   },
   {
     "video_id": "6O3XC5LzBO0-05",
@@ -146,16 +410,96 @@
     "published_at": null,
     "video_title": "간단하게 만드는 참치 밥요리 5가지",
     "ingredients": [
-      {"position": 1, "section": "재료", "name": "참치", "amount": "1", "unit": "캔", "note": "캔의 기름도 사용", "raw_text": "참치캔 1개"},
-      {"position": 2, "section": "재료", "name": "대파", "amount": "적당량", "unit": null, "note": "잘게 썰기", "raw_text": "대파 적당량"},
-      {"position": 3, "section": "재료", "name": "양파", "amount": "적당량", "unit": null, "note": "잘게 썰기", "raw_text": "양파 적당량"},
-      {"position": 4, "section": "양념", "name": "된장", "amount": "1", "unit": "큰술", "note": "듬뿍", "raw_text": "된장 듬뿍 1큰술"},
-      {"position": 5, "section": "양념", "name": "고추장", "amount": "1", "unit": "큰술", "note": null, "raw_text": "고추장 1큰술"},
-      {"position": 6, "section": "양념", "name": "다진마늘", "amount": "1", "unit": "큰술", "note": null, "raw_text": "다진 마늘 1큰술"},
-      {"position": 7, "section": "양념", "name": "설탕", "amount": "1/2", "unit": "큰술", "note": null, "raw_text": "설탕 1/2큰술"},
-      {"position": 8, "section": "양념", "name": "고춧가루", "amount": "1/2", "unit": "큰술", "note": null, "raw_text": "고춧가루 1/2큰술"},
-      {"position": 9, "section": "마무리", "name": "참기름", "amount": "약간", "unit": null, "note": null, "raw_text": "참기름 약간"},
-      {"position": 10, "section": "마무리", "name": "깨", "amount": "약간", "unit": null, "note": null, "raw_text": "깨 약간"}
+      {
+        "position": 1,
+        "section": "재료",
+        "name": "참치",
+        "amount": "1",
+        "unit": "캔",
+        "note": "캔의 기름도 사용",
+        "raw_text": "참치캔 1개"
+      },
+      {
+        "position": 2,
+        "section": "재료",
+        "name": "대파",
+        "amount": "적당량",
+        "unit": null,
+        "note": "잘게 썰기",
+        "raw_text": "대파 적당량"
+      },
+      {
+        "position": 3,
+        "section": "재료",
+        "name": "양파",
+        "amount": "적당량",
+        "unit": null,
+        "note": "잘게 썰기",
+        "raw_text": "양파 적당량"
+      },
+      {
+        "position": 4,
+        "section": "양념",
+        "name": "된장",
+        "amount": "1",
+        "unit": "큰술",
+        "note": "듬뿍",
+        "raw_text": "된장 듬뿍 1큰술"
+      },
+      {
+        "position": 5,
+        "section": "양념",
+        "name": "고추장",
+        "amount": "1",
+        "unit": "큰술",
+        "note": null,
+        "raw_text": "고추장 1큰술"
+      },
+      {
+        "position": 6,
+        "section": "양념",
+        "name": "다진마늘",
+        "amount": "1",
+        "unit": "큰술",
+        "note": null,
+        "raw_text": "다진 마늘 1큰술"
+      },
+      {
+        "position": 7,
+        "section": "양념",
+        "name": "설탕",
+        "amount": "1/2",
+        "unit": "큰술",
+        "note": null,
+        "raw_text": "설탕 1/2큰술"
+      },
+      {
+        "position": 8,
+        "section": "양념",
+        "name": "고춧가루",
+        "amount": "1/2",
+        "unit": "큰술",
+        "note": null,
+        "raw_text": "고춧가루 1/2큰술"
+      },
+      {
+        "position": 9,
+        "section": "마무리",
+        "name": "참기름",
+        "amount": "약간",
+        "unit": null,
+        "note": null,
+        "raw_text": "참기름 약간"
+      },
+      {
+        "position": 10,
+        "section": "마무리",
+        "name": "깨",
+        "amount": "약간",
+        "unit": null,
+        "note": null,
+        "raw_text": "깨 약간"
+      }
     ],
     "steps": [
       "팬에 참치캔의 기름을 두르고 잘게 썬 대파와 양파를 넣습니다.",
@@ -164,6 +508,74 @@
       "참기름을 약간 넣고 참치를 더해 고루 섞습니다.",
       "깨를 뿌려 마무리합니다. 밥에 비비거나 상추·깻잎 쌈에 곁들입니다."
     ],
-    "tips": ["채소가 넉넉히 들어가 일반 쌈장보다 덜 짜게 먹을 수 있습니다."]
+    "tips": [
+      "채소가 넉넉히 들어가 일반 쌈장보다 덜 짜게 먹을 수 있습니다."
+    ]
+  },
+  {
+    "video_id": "2_XGt-wEuZ8-01",
+    "source_video_id": "2_XGt-wEuZ8",
+    "name": "버터치즈새우구이",
+    "summary": "새우와 치즈를 버터에 구워 맛있는 요리를 만들어보세요.",
+    "servings": 1,
+    "prep_minutes": null,
+    "cook_minutes": null,
+    "confidence": 0.9,
+    "needs_review": false,
+    "source_kind": "automated_curated",
+    "source_url": "https://www.youtube.com/watch?v=2_XGt-wEuZ8&t=0s",
+    "published_at": null,
+    "video_title": "저렴한 가격 최고의 맛 버터치즈새우 구이",
+    "ingredients": [
+      {
+        "position": 1,
+        "section": "재료",
+        "name": "새우",
+        "amount": "2",
+        "unit": "개",
+        "note": null,
+        "raw_text": "새우 2 개"
+      },
+      {
+        "position": 2,
+        "section": "재료",
+        "name": "버터",
+        "amount": "30",
+        "unit": "g",
+        "note": null,
+        "raw_text": "버터 30 g"
+      },
+      {
+        "position": 3,
+        "section": "재료",
+        "name": "치즈",
+        "amount": "30",
+        "unit": "g",
+        "note": null,
+        "raw_text": "치즈 30 g"
+      },
+      {
+        "position": 4,
+        "section": "재료",
+        "name": "후추",
+        "amount": null,
+        "unit": null,
+        "note": null,
+        "raw_text": "후추"
+      }
+    ],
+    "steps": [
+      "새우를 깨끗이 씻어 물기를 제거한 후, 후추를 뿌려줍니다.",
+      "버터를 냄비에 녹여줍니다.",
+      "버터가 녹아나면 새우를 넣어 구워줍니다.",
+      "새우가 반 정도 익으면 치즈를 넣어줍니다.",
+      "치즈가 녹아나면 새우와 함께 구워줍니다.",
+      "새우가 완전히 익으면 냄비에서 꺼내어 접시에 담아줍니다."
+    ],
+    "tips": [
+      "새우는 구울 때 후추를 뿌려주어 맛을 더해줍니다."
+    ],
+    "curated_at": "2026-11-10T15:52:36+00:00",
+    "curation_model": "qwen2.5:7b"
   }
 ]

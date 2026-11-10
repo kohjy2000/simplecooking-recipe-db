@@ -1,0 +1,12 @@
+{
+  "videos": {
+    "2_XGt-wEuZ8": {
+      "attempts": 1,
+      "updated_at": "2026-11-10T15:52:36+00:00",
+      "model": "qwen2.5:7b",
+      "status": "completed",
+      "recipe_count": 1,
+      "error": null
+    }
+  }
+}
