@@ -26,3 +26,17 @@ def test_curated_steps_do_not_contain_known_garbled_caption_fragments() -> None:
 
     for fragment in ("김도사 고사가", "흡연 약불", "경찰 몰라", "마찰 뜨 값"):
         assert fragment not in recipe_text
+
+
+def test_spam_stew_is_manually_reviewed_and_searchable() -> None:
+    recipes = json.loads(CURATED_PATH.read_text(encoding="utf-8"))
+    spam_recipes = [
+        recipe
+        for recipe in recipes
+        if any(ingredient["name"] == "스팸" for ingredient in recipe["ingredients"])
+    ]
+
+    assert len(spam_recipes) >= 1
+    assert spam_recipes[0]["source_kind"] == "manually_curated"
+    assert spam_recipes[0]["needs_review"] is False
+    assert len(spam_recipes[0]["steps"]) >= 5
