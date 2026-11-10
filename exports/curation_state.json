@@ -1,11 +1,11 @@
 {
   "videos": {
     "2_XGt-wEuZ8": {
-      "attempts": 2,
-      "updated_at": "2026-11-10T16:17:18+00:00",
+      "attempts": 3,
+      "updated_at": "2026-11-10T16:28:30+00:00",
       "model": "qwen2.5:7b",
       "status": "failed",
-      "error": "Automated quality review rejected unsupported ingredients and generic steps"
+      "error": "Recipe 1 contains weakly supported ingredients: 양파, 소금"
     }
   }
 }
