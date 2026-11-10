@@ -172,7 +172,7 @@ def _caption_candidates(metadata: dict[str, Any]) -> list[dict[str, Any]]:
 
 
 def fetch_korean_caption(metadata: dict[str, Any]) -> str:
-    if base_url := metadata.get("_invidious_base_url"):
+    if metadata.get("_invidious_base_url"):
         tracks = metadata.get("captions") or []
         track = next(
             (
@@ -184,7 +184,7 @@ def fetch_korean_caption(metadata: dict[str, Any]) -> str:
         )
         if not track or not track.get("url"):
             return ""
-        raw = _fetch_text(urljoin(f"{base_url}/", track["url"]))
+        raw = _fetch_invidious_caption(metadata, track)
         return _vtt_to_text(raw)
 
     candidates = _caption_candidates(metadata)
@@ -207,12 +207,31 @@ def fetch_korean_caption(metadata: dict[str, Any]) -> str:
     return _vtt_to_text(raw)
 
 
+def _fetch_invidious_caption(metadata: dict[str, Any], track: dict[str, Any]) -> str:
+    base_url = str(metadata["_invidious_base_url"]).rstrip("/")
+    video_id = str(metadata.get("id") or metadata.get("videoId") or "")
+    label = str(track.get("label") or "")
+    errors: list[str] = []
+    if video_id and label:
+        proxy_url = f"{base_url}/api/v1/captions/{quote(video_id)}?label={quote(label)}"
+        try:
+            return _fetch_text(proxy_url)
+        except YouTubeError as exc:
+            errors.append(str(exc))
+    if url := track.get("url"):
+        try:
+            return _fetch_text(urljoin(f"{base_url}/", url))
+        except YouTubeError as exc:
+            errors.append(str(exc))
+    raise YouTubeError("Invidious caption fetch failed: " + " | ".join(errors))
+
+
 def fetch_caption_tracks(
     metadata: dict[str, Any], languages: tuple[str, ...] = ("en", "ko")
 ) -> dict[str, str]:
     """Return timestamped caption tracks for AI-assisted recipe curation."""
     result: dict[str, str] = {}
-    if base_url := metadata.get("_invidious_base_url"):
+    if metadata.get("_invidious_base_url"):
         for track in metadata.get("captions") or []:
             code = str(track.get("language_code") or track.get("languageCode") or "")
             label = str(track.get("label") or code or "caption")
@@ -221,7 +240,7 @@ def fetch_caption_tracks(
             url = track.get("url")
             if not url:
                 continue
-            raw = _fetch_text(urljoin(f"{base_url}/", url))
+            raw = _fetch_invidious_caption(metadata, track)
             transcript = _vtt_to_timed_text(raw)
             if transcript:
                 result[f"{code or label}:{label}"] = transcript

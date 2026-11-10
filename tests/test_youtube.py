@@ -1,4 +1,5 @@
-from recipe_db.youtube import _vtt_to_text, _vtt_to_timed_text
+from recipe_db import youtube
+from recipe_db.youtube import _vtt_to_text, _vtt_to_timed_text, fetch_caption_tracks
 
 
 def test_vtt_to_text_removes_tags_and_overlapping_auto_captions() -> None:
@@ -18,3 +19,35 @@ Language: ko
     assert _vtt_to_timed_text(raw) == (
         "[00:00] 먼저 양파를 썰어\n[00:02] 주세요 그리고 볶습니다"
     )
+
+
+def test_invidious_captions_use_instance_proxy(monkeypatch) -> None:
+    requested: list[str] = []
+
+    def fake_fetch(url: str, timeout: int = 30) -> str:
+        requested.append(url)
+        return """WEBVTT
+
+00:00:01.000 --> 00:00:03.000
+양파를 썰어 볶습니다
+"""
+
+    monkeypatch.setattr(youtube, "_fetch_text", fake_fetch)
+    tracks = fetch_caption_tracks(
+        {
+            "id": "video123",
+            "_invidious_base_url": "https://example.invalid",
+            "captions": [
+                {
+                    "language_code": "ko",
+                    "label": "Korean (auto-generated)",
+                    "url": "https://www.youtube.com/api/timedtext?blocked=1",
+                }
+            ],
+        }
+    )
+
+    assert requested == [
+        "https://example.invalid/api/v1/captions/video123?label=Korean%20%28auto-generated%29"
+    ]
+    assert tracks["ko:Korean (auto-generated)"] == "[00:01] 양파를 썰어 볶습니다"
