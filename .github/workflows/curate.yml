@@ -13,6 +13,11 @@ on:
         required: false
         default: ""
         type: string
+      model:
+        description: "Local Ollama model (use 3b for long multi-recipe videos)"
+        required: false
+        default: "qwen2.5:7b"
+        type: string
   schedule:
     - cron: "47 5,17 * * *"
 
@@ -32,7 +37,7 @@ jobs:
       OLLAMA_HOST: 127.0.0.1:11434
       OLLAMA_MODELS: /home/runner/.ollama/models
       OLLAMA_CONTEXT_LENGTH: "32768"
-      CURATION_MODEL: qwen2.5:7b
+      CURATION_MODEL: ${{ inputs.model || 'qwen2.5:7b' }}
     steps:
       - uses: actions/checkout@v4
         with:
@@ -49,7 +54,7 @@ jobs:
         uses: actions/cache@v4
         with:
           path: ~/.ollama/models
-          key: ${{ runner.os }}-ollama-qwen2.5-7b-v1
+          key: ${{ runner.os }}-ollama-${{ inputs.model || 'qwen2.5-7b' }}-v1
 
       - name: Install local model runner
         run: curl -fsSL https://ollama.com/install.sh | sh
