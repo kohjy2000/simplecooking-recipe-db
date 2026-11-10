@@ -114,7 +114,12 @@ def test_curate_batch_persists_public_recipes_and_state(tmp_path, monkeypatch) -
     monkeypatch.setattr(
         curator,
         "fetch_caption_tracks",
-        lambda _: {"ko": "[00:10] 참치와 밥을 볶습니다\n[01:30] 참치와 김치를 볶습니다"},
+        lambda _: {
+            "ko": (
+                "[00:10] 참치와 밥을 볶고 밥을 섞습니다\n"
+                "[01:30] 참치와 김치를 볶고 김치를 더합니다"
+            )
+        },
     )
 
     stats = curator.curate_batch(
@@ -131,3 +136,35 @@ def test_curate_batch_persists_public_recipes_and_state(tmp_path, monkeypatch) -
     assert len(json.loads(curated_path.read_text(encoding="utf-8"))) == 2
     state = json.loads(state_path.read_text(encoding="utf-8"))
     assert state["videos"]["video123"]["status"] == "completed"
+
+
+def test_rejects_single_caption_mentions_from_noisy_transcript() -> None:
+    payload = json.loads(_model_output())
+    payload["recipes"] = payload["recipes"][:1]
+    payload["recipes"][0]["ingredients"].append(
+        {"section": "재료", "name": "배", "amount": None, "unit": None}
+    )
+    raw = _raw_recipe()
+    raw["video_title"] = "참치 볶음밥"
+
+    with pytest.raises(CurationError, match="weakly supported ingredients: 배"):
+        normalize_model_output(
+            json.dumps(payload, ensure_ascii=False),
+            raw_recipe=raw,
+            source_text="참치 볶음밥 배",
+            caption_text="참치와 밥을 볶다가 배라는 음성이 한 번 잘못 인식됐습니다",
+            model="test-model",
+        )
+
+
+def test_rejects_generic_procedure_not_present_in_source() -> None:
+    payload = json.loads(_model_output())
+    payload["recipes"][0]["steps"][0] = "참치를 깨끗이 씻어 물기를 제거합니다."
+
+    with pytest.raises(CurationError, match="unsupported procedural detail"):
+        normalize_model_output(
+            json.dumps(payload, ensure_ascii=False),
+            raw_recipe=_raw_recipe(),
+            source_text="참치 1캔 밥 1공기 김치 기름을 빼고 볶습니다",
+            model="test-model",
+        )

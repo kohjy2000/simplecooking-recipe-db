@@ -6,7 +6,7 @@ on:
       max_new:
         description: "Maximum videos to curate in this run"
         required: true
-        default: "10"
+        default: "3"
         type: string
   schedule:
     - cron: "47 5,17 * * *"
@@ -51,7 +51,7 @@ jobs:
 
       - name: Curate the next video batch
         env:
-          MAX_NEW: ${{ inputs.max_new || '10' }}
+          MAX_NEW: ${{ inputs.max_new || '3' }}
         run: |
           nohup ollama serve >/tmp/ollama.log 2>&1 &
           for attempt in {1..30}; do
@@ -79,13 +79,19 @@ jobs:
             echo "No curation changes to commit."
             exit 0
           fi
+          curated_changed=false
+          if ! git diff --quiet -- exports/curated_recipes.json; then
+            curated_changed=true
+          fi
           git config user.name "github-actions[bot]"
           git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
           git add exports/curated_recipes.json exports/curation_state.json
           git commit -m "data: curate next recipe batch"
           git pull --rebase origin main
           git push origin main
-          gh workflow run pages.yml --ref main
+          if [[ "$curated_changed" == "true" ]]; then
+            gh workflow run pages.yml --ref main
+          fi
 
       - name: Collect local model log
         if: always()

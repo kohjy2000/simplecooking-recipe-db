@@ -73,7 +73,7 @@ git clone https://github.com/kohjy2000/simplecooking-recipe-db.git
 ```bash
 uv run recipe-db init
 uv run recipe-db ingest --max-new 10
-uv run recipe-db curate --max-new 10
+uv run recipe-db curate --max-new 3
 uv run recipe-db status
 uv run recipe-db recommend "계란, 김치, 밥"
 ```
@@ -104,8 +104,9 @@ GitHub의 **Actions → Ingest recipes → Run workflow**에서 한 번에 처�
 
 `Curate public recipes` 워크플로는 매일 05:47·17:47 UTC에 실행됩니다. 별도 API 키나 OpenAI API
 과금 없이 GitHub Actions 안에서 `qwen2.5:7b` 공개 모델을 Ollama로 실행합니다. 기본적으로 한 번에
-영상 10개를 정리하며, 결과가 바뀌면 `curated_recipes.json`과 처리 상태를 커밋합니다. 그 커밋이
-`Deploy recommendation site`를 호출해 공개 사이트까지 자동 재배포합니다.
+영상 3개를 정리하며, 제목·영상 설명·반복 자막으로 근거를 교차 확인합니다. 근거가 약한 재료나
+일반 상식으로 보충한 조리 단계가 하나라도 있으면 공개하지 않고 최대 3회까지 재시도합니다. 품질검사를
+통과한 공개 레시피가 바뀔 때만 `Deploy recommendation site`를 호출해 사이트까지 자동 재배포합니다.
 
 YouTube가 인증을 요구하면 저장소 Secret에 쿠키 파일 자체를 넣지 마세요. 로컬에서는
 `YTDLP_COOKIES_FILE`에 Netscape 형식 쿠키 파일 경로를 지정할 수 있습니다. GitHub Actions의 인증

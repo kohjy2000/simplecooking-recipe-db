@@ -4,10 +4,8 @@
       "attempts": 2,
       "updated_at": "2026-11-10T16:17:18+00:00",
       "model": "qwen2.5:7b",
-      "source_warning": "HTTP fetch failed for www.youtube.com: HTTP Error 429: Too Many Requests",
-      "status": "completed",
-      "error": null,
-      "recipe_count": 1
+      "status": "failed",
+      "error": "Automated quality review rejected unsupported ingredients and generic steps"
     }
   }
 }

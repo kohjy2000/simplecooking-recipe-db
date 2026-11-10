@@ -43,7 +43,7 @@ def _parser() -> argparse.ArgumentParser:
     curate_parser = subparsers.add_parser(
         "curate", help="Turn raw recipe exports into quality-gated public recipes"
     )
-    curate_parser.add_argument("--max-new", type=int, default=10)
+    curate_parser.add_argument("--max-new", type=int, default=3)
     curate_parser.add_argument("--raw", default="exports/recipes.json")
     curate_parser.add_argument("--curated", default="exports/curated_recipes.json")
     curate_parser.add_argument("--state", default="exports/curation_state.json")

@@ -26,6 +26,18 @@ PANTRY_EVIDENCE_EXEMPT = {
     "깨",
 }
 STEP_NOISE = ("구독", "좋아요", "알림 설정", "안녕하세요", "시청해", "영상에서")
+STEP_GROUNDING_TERMS = (
+    "깨끗이",
+    "씻",
+    "물기",
+    "썰",
+    "다지",
+    "빻",
+    "예열",
+    "바삭",
+    "지속적",
+    "접시",
+)
 QUANTITY_IN_STEP = re.compile(
     r"(?P<amount>\d+(?:[./]\d+)?|한|두|세|네|반)\s*"
     r"(?P<unit>kg|g|mg|ml|l|큰술|작은술|스푼|숟가락|컵|공기|개|쪽|장|대|줌|캔|분|초|도)"
@@ -60,18 +72,14 @@ def _write_json(path: Path, payload: Any) -> None:
     temporary.replace(path)
 
 
-def _source_bundle(raw_recipe: dict[str, Any], captions: dict[str, str]) -> str:
-    hints = {
-        "video_title": raw_recipe.get("video_title") or raw_recipe.get("name"),
-        "servings": raw_recipe.get("servings"),
-        "automatically_detected_ingredients": [
-            item.get("raw_text") or item.get("name")
-            for item in raw_recipe.get("ingredients") or []
-        ],
-        "automatically_detected_steps": raw_recipe.get("steps") or [],
-    }
-    parts = ["[기존 자동 추출 힌트]\n" + json.dumps(hints, ensure_ascii=False)]
-    remaining = MAX_SOURCE_CHARS - len(parts[0])
+def _source_bundle(
+    raw_recipe: dict[str, Any], captions: dict[str, str], description: str = ""
+) -> str:
+    title = raw_recipe.get("video_title") or raw_recipe.get("name") or ""
+    parts = [f"[영상 제목]\n{title}"]
+    if description.strip():
+        parts.append("[영상 설명]\n" + description.strip())
+    remaining = MAX_SOURCE_CHARS - sum(len(part) for part in parts)
     ordered_tracks = sorted(
         captions.items(),
         key=lambda item: (0 if item[0].lower().startswith("en") else 1, item[0]),
@@ -281,26 +289,24 @@ def _quantity_supported(
     )
 
 
-def _reliable_hint_coverage(
-    ingredients: list[dict[str, Any]], raw_recipe: dict[str, Any]
-) -> float:
-    evidence = _compact(
-        " ".join(
-            [
-                str(raw_recipe.get("video_title") or raw_recipe.get("name") or ""),
-                *[str(step) for step in raw_recipe.get("steps") or []],
-            ]
-        )
-    )
-    reliable = {
-        str(item.get("name"))
-        for item in raw_recipe.get("ingredients") or []
-        if len(_compact(item.get("name"))) >= 2 and _compact(item.get("name")) in evidence
-    }
-    if not reliable:
-        return 1.0
-    output = {_compact(item["name"]) for item in ingredients}
-    return sum(_compact(name) in output for name in reliable) / len(reliable)
+def _ingredient_is_supported(
+    name: str,
+    *,
+    title: str,
+    description_text: str,
+    caption_text: str | None,
+    source_text: str,
+) -> bool:
+    key = _compact(name)
+    if not key:
+        return False
+    # Direct normalize_model_output callers can provide a single trusted source.
+    if caption_text is None:
+        return key in _compact(source_text)
+    if key in _compact(title) or key in _compact(description_text):
+        return True
+    mentions = _compact(caption_text).count(key)
+    return mentions >= (1 if name in PANTRY_EVIDENCE_EXEMPT else 2)
 
 
 def normalize_model_output(
@@ -310,6 +316,8 @@ def normalize_model_output(
     source_text: str,
     model: str,
     duration_seconds: int | None = None,
+    description_text: str = "",
+    caption_text: str | None = None,
 ) -> list[dict[str, Any]]:
     payload = _parse_model_json(generated)
     recipes = payload.get("recipes")
@@ -383,8 +391,20 @@ def normalize_model_output(
             )
         if len(ingredients) < 2 or _evidence_ratio(ingredients, source_text) < 0.5:
             raise CurationError(f"Recipe {index} ingredients are not sufficiently supported by source")
-        if _reliable_hint_coverage(ingredients, raw_recipe) < 0.75:
-            raise CurationError(f"Recipe {index} omitted too many source-supported ingredients")
+        unsupported = [
+            item["name"]
+            for item in ingredients
+            if not _ingredient_is_supported(
+                item["name"],
+                title=title,
+                description_text=description_text,
+                caption_text=caption_text,
+                source_text=source_text,
+            )
+        ]
+        if unsupported:
+            names = ", ".join(unsupported[:5])
+            raise CurationError(f"Recipe {index} contains weakly supported ingredients: {names}")
 
         steps: list[str] = []
         for step in raw_steps:
@@ -395,6 +415,12 @@ def normalize_model_output(
                 raise CurationError(f"Recipe {index} contains non-cooking narration")
             if len(re.findall(r"[가-힣]", cleaned_step)) < 4:
                 raise CurationError(f"Recipe {index} contains a non-Korean or garbled step")
+            compact_source = _compact(source_text)
+            for term in STEP_GROUNDING_TERMS:
+                if term in cleaned_step and _compact(term) not in compact_source:
+                    raise CurationError(
+                        f"Recipe {index} contains an unsupported procedural detail: {term}"
+                    )
             for quantity in QUANTITY_IN_STEP.finditer(cleaned_step):
                 if not _quantity_supported(
                     name=None,
@@ -405,11 +431,8 @@ def normalize_model_output(
                     raise CurationError(f"Recipe {index} contains an unsupported step quantity")
             steps.append(cleaned_step)
 
-        tips = []
-        for tip in value.get("tips") or []:
-            cleaned_tip = _clean_string(tip, maximum=180)
-            if cleaned_tip:
-                tips.append(cleaned_tip)
+        # Free-form tips are the most common place for plausible but unsupported advice.
+        tips: list[str] = []
 
         servings_value = value.get("servings")
         try:
@@ -494,6 +517,7 @@ def curate_batch(
         entry["attempts"] = int(entry.get("attempts", 0)) + 1
         entry["updated_at"] = _now()
         entry["model"] = model
+        entry.pop("source_warning", None)
         try:
             captions: dict[str, str] = {}
             metadata: dict[str, Any] = {}
@@ -502,9 +526,10 @@ def curate_batch(
                 captions = fetch_caption_tracks(metadata)
             except Exception as exc:  # noqa: BLE001
                 entry["source_warning"] = str(exc)[-500:]
-            source = _source_bundle(raw_recipe, captions)
-            if not captions and len(" ".join(raw_recipe.get("steps") or [])) < 100:
-                raise CurationError("No usable caption or detailed source steps were available")
+            description = str(metadata.get("description") or raw_recipe.get("description") or "")
+            source = _source_bundle(raw_recipe, captions, description)
+            if not captions and len(description.strip()) < 100:
+                raise CurationError("No usable caption or detailed video description was available")
             prompt = build_prompt(raw_recipe, source)
             generated = (
                 generate(prompt)
@@ -523,6 +548,8 @@ def curate_batch(
                 source_text=source,
                 model=model,
                 duration_seconds=metadata.get("duration") or metadata.get("lengthSeconds"),
+                description_text=description,
+                caption_text="\n".join(captions.values()),
             )
             curated_recipes.extend(recipes)
             entry.update(
