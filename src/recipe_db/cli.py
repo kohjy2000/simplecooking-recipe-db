@@ -49,6 +49,12 @@ def _parser() -> argparse.ArgumentParser:
     curate_parser.add_argument("--state", default="exports/curation_state.json")
     curate_parser.add_argument("--model", default="qwen2.5:7b")
     curate_parser.add_argument("--ollama-url", default="http://127.0.0.1:11434")
+    curate_parser.add_argument(
+        "--video-id",
+        action="append",
+        default=[],
+        help="Curate only this video ID; repeat to select multiple videos",
+    )
     curate_parser.set_defaults(handler=_curate)
 
     recommend_parser = subparsers.add_parser(
@@ -161,6 +167,7 @@ def _curate(args: argparse.Namespace) -> None:
         max_new=args.max_new,
         model=args.model,
         endpoint=args.ollama_url,
+        video_ids=args.video_id or None,
     )
     print(json.dumps(stats, ensure_ascii=False, indent=2))
 

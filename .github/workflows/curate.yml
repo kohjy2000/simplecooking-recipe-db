@@ -8,6 +8,11 @@ on:
         required: true
         default: "3"
         type: string
+      video_id:
+        description: "Optional comma-separated video IDs to prioritize"
+        required: false
+        default: ""
+        type: string
   schedule:
     - cron: "47 5,17 * * *"
 
@@ -52,6 +57,7 @@ jobs:
       - name: Curate the next video batch
         env:
           MAX_NEW: ${{ inputs.max_new || '3' }}
+          TARGET_VIDEO_IDS: ${{ inputs.video_id || '' }}
         run: |
           nohup ollama serve >/tmp/ollama.log 2>&1 &
           for attempt in {1..30}; do
@@ -62,7 +68,14 @@ jobs:
           done
           curl -fsS http://127.0.0.1:11434/api/tags >/dev/null
           ollama pull "$CURATION_MODEL"
-          uv run recipe-db curate --max-new "$MAX_NEW" --model "$CURATION_MODEL"
+          curate_args=(--max-new "$MAX_NEW" --model "$CURATION_MODEL")
+          if [[ -n "$TARGET_VIDEO_IDS" ]]; then
+            IFS=',' read -ra target_ids <<< "$TARGET_VIDEO_IDS"
+            for video_id in "${target_ids[@]}"; do
+              curate_args+=(--video-id "$video_id")
+            done
+          fi
+          uv run recipe-db curate "${curate_args[@]}"
 
       - name: Validate curated database
         run: |

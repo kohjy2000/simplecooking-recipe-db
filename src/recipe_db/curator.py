@@ -490,6 +490,7 @@ def curate_batch(
     model: str,
     endpoint: str,
     generate: Callable[[str], str] | None = None,
+    video_ids: list[str] | None = None,
 ) -> dict[str, int]:
     raw_file, curated_file, state_file = map(Path, (raw_path, curated_path, state_path))
     raw_recipes = _load_json(raw_file, [])
@@ -502,12 +503,21 @@ def curate_batch(
         str(recipe.get("source_video_id") or recipe.get("video_id", "").rsplit("-", 1)[0])
         for recipe in curated_recipes
     }
+    requested_ids = set(video_ids or [])
     candidates = [
         recipe
         for recipe in raw_recipes
         if str(recipe.get("video_id")) not in completed_ids
         and int(video_state.get(str(recipe.get("video_id")), {}).get("attempts", 0)) < MAX_ATTEMPTS
-    ][:max_new]
+        and (not requested_ids or str(recipe.get("video_id")) in requested_ids)
+    ]
+    # Broaden public coverage before spending another run retrying earlier failures.
+    candidates.sort(
+        key=lambda recipe: int(
+            video_state.get(str(recipe.get("video_id")), {}).get("attempts", 0)
+        )
+    )
+    candidates = candidates[:max_new]
     stats = {"attempted": 0, "completed": 0, "failed": 0, "recipes_added": 0}
 
     for raw_recipe in candidates:
