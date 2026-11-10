@@ -11,7 +11,9 @@ from typing import Any
 
 from .youtube import fetch_caption_tracks, fetch_video
 
-MAX_SOURCE_CHARS = 50_000
+# Keep the prompt small enough for CPU-only GitHub runners while retaining a
+# complete short-form cooking transcript and the beginning of longer videos.
+MAX_SOURCE_CHARS = 18_000
 MAX_ATTEMPTS = 3
 PANTRY_EVIDENCE_EXEMPT = {
     "물",
@@ -168,7 +170,7 @@ def call_ollama(
             "format": "json",
             "options": {
                 "temperature": 0,
-                "num_ctx": 32_768,
+                "num_ctx": 24_576,
                 "num_predict": 4_096,
             },
         }
