@@ -1,12 +1,13 @@
 {
   "videos": {
     "2_XGt-wEuZ8": {
-      "attempts": 1,
-      "updated_at": "2026-11-10T16:02:00+00:00",
+      "attempts": 2,
+      "updated_at": "2026-11-10T16:17:18+00:00",
       "model": "qwen2.5:7b",
       "source_warning": "HTTP fetch failed for www.youtube.com: HTTP Error 429: Too Many Requests",
-      "status": "failed",
-      "error": "Recipe 1 contains an unsupported step quantity"
+      "status": "completed",
+      "error": null,
+      "recipe_count": 1
     }
   }
 }
