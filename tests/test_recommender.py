@@ -152,3 +152,31 @@ def test_specific_zucchini_query_does_not_match_sweet_pumpkin(tmp_path) -> None:
     assert parsed == ["애호박"]
     assert all(result.name != "단호박찜" for result in results)
 
+
+def test_exact_ingredient_match_is_not_hidden_by_many_missing_items(tmp_path) -> None:
+    with connect(tmp_path / "recipes.sqlite") as conn:
+        initialize(conn)
+        _seed(conn)
+        conn.execute(
+            "INSERT INTO videos (video_id, title, url, status) VALUES ('zucchini', '매콤한 찌개', 'https://youtu.be/zucchini', 'completed')"
+        )
+        recipe_id = conn.execute(
+            """
+            INSERT INTO recipes (video_id, name, confidence, needs_review, source_kind)
+            VALUES ('zucchini', '매콤한 찌개', 0.9, 0, 'description')
+            """
+        ).lastrowid
+        for position, name in enumerate(
+            ["애호박", "두부", "버섯", "양파", "대파", "고추장", "멸치액젓"], start=1
+        ):
+            conn.execute(
+                "INSERT INTO ingredients (recipe_id, position, name, raw_text) VALUES (?, ?, ?, ?)",
+                (recipe_id, position, name, name),
+            )
+        conn.commit()
+        parsed, results = recommend(conn, "애호박", max_missing=2)
+
+    assert parsed == ["애호박"]
+    assert results[0].name == "매콤한 찌개"
+    assert results[0].matched_ingredients == ["애호박"]
+

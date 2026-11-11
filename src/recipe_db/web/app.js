@@ -89,6 +89,7 @@ const recommendInBrowser = async (message, assumePantry) => {
 
   const recommendations = staticRecipes.map((recipe) => {
     const names = [...new Set(recipe.ingredients.map((item) => canonicalize(item.name)).filter(Boolean))];
+    const exactMatches = names.filter((name) => available.has(name));
     const matched = names.filter((name) => ingredientIsAvailable(name, available));
     const pantry = names.filter((name) => !matched.includes(name)
       && ingredientIsAvailable(name, assumed));
@@ -120,10 +121,12 @@ const recommendInBrowser = async (message, assumePantry) => {
       reason: missing.length === 0
         ? "보유 재료와 기본 양념만으로 만들 수 있어요."
         : directReason || familyReason || `보유 재료 ${matched.length}개가 맞아요. 추가로 필요한 재료: ${missingSummary}.`,
+      exact_matches: exactMatches,
       family_matches: familyMatches,
     };
   }).filter((item) => item.matched_ingredients.length > 0
     && (item.title_matched_ingredients.length > 0
+      || item.exact_matches.length > 0
       || item.family_matches.length > 0
       || item.missing_ingredients.length <= 5));
 

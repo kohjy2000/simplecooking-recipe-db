@@ -229,6 +229,7 @@ def recommend(
         if not recipe_ingredients:
             continue
         ingredient_set = set(recipe_ingredients)
+        exact_user_matches = ingredient_set & available
         user_matches = {
             ingredient
             for ingredient in ingredient_set
@@ -253,6 +254,7 @@ def recommend(
             max_missing is not None
             and len(missing) > max_missing
             and not title_matches
+            and not exact_user_matches
             and not family_matches
         ):
             continue
