@@ -18,6 +18,7 @@ from .youtube import fetch_caption_tracks, fetch_video
 MAX_SOURCE_CHARS = 18_000
 # Give previously exhausted videos one fresh pass after parser and validation fixes.
 MAX_ATTEMPTS = 4
+CURATION_PRIORITY_TERMS = ("스팸", "햄", "감자", "당근", "애호박", "호박")
 PANTRY_EVIDENCE_EXEMPT = {
     "물",
     "소금",
@@ -283,6 +284,53 @@ def _clean_string(value: object, *, maximum: int) -> str | None:
     return cleaned[:maximum] or None
 
 
+def _normalize_step_list(value: object) -> list[object]:
+    if not isinstance(value, list):
+        return []
+    steps = [step for step in value if step is not None and str(step).strip()]
+    if not steps or not all(isinstance(step, str) for step in steps):
+        return steps
+
+    normalized = [re.sub(r"\s+", " ", step).strip() for step in steps]
+    if len(normalized) == 1:
+        pieces = [
+            piece.strip()
+            for piece in re.split(
+                r"(?<=[.!?。])\s+|(?=\d{1,2}\s*[.)]\s+)", normalized[0]
+            )
+            if piece.strip()
+        ]
+        if len(pieces) > 1:
+            normalized = pieces
+
+    # Preserve every generated instruction while folding overly granular lists
+    # into the public schema's ten-step limit. No new cooking facts are added.
+    while len(normalized) > 10:
+        pair_index = min(
+            range(len(normalized) - 1),
+            key=lambda index: len(normalized[index]) + len(normalized[index + 1]),
+        )
+        normalized[pair_index : pair_index + 2] = [
+            f"{normalized[pair_index]} {normalized[pair_index + 1]}"
+        ]
+    return normalized
+
+
+def _curation_priority(raw_recipe: dict[str, Any]) -> int:
+    searchable = " ".join(
+        [
+            str(raw_recipe.get("video_title") or ""),
+            str(raw_recipe.get("name") or ""),
+            *[
+                str(ingredient.get("name") or "")
+                for ingredient in raw_recipe.get("ingredients") or []
+                if isinstance(ingredient, dict)
+            ],
+        ]
+    )
+    return 0 if any(term in searchable for term in CURATION_PRIORITY_TERMS) else 1
+
+
 def _expected_recipe_count(title: str) -> int | None:
     match = re.search(r"(?<!\d)(\d{1,2})\s*(?:가지|개)(?!\d)", title)
     if not match:
@@ -409,7 +457,7 @@ def normalize_model_output(
         seen_names.add(_compact(name))
 
         raw_ingredients = value.get("ingredients")
-        raw_steps = value.get("steps")
+        raw_steps = _normalize_step_list(value.get("steps"))
         if not isinstance(raw_ingredients, list) or len(raw_ingredients) < 2:
             raise CurationError(f"Recipe {index} has fewer than two ingredients")
         if not isinstance(raw_steps, list) or not 2 <= len(raw_steps) <= 10:
@@ -474,7 +522,7 @@ def normalize_model_output(
 
         steps: list[str] = []
         for step in raw_steps:
-            cleaned_step = _clean_string(step, maximum=240)
+            cleaned_step = _clean_string(step, maximum=480)
             if not cleaned_step or len(cleaned_step) < 8:
                 raise CurationError(f"Recipe {index} contains a step that is too short")
             if any(noise in cleaned_step for noise in STEP_NOISE):
@@ -582,8 +630,9 @@ def curate_batch(
     ]
     # Broaden public coverage before spending another run retrying earlier failures.
     candidates.sort(
-        key=lambda recipe: int(
-            video_state.get(str(recipe.get("video_id")), {}).get("attempts", 0)
+        key=lambda recipe: (
+            int(video_state.get(str(recipe.get("video_id")), {}).get("attempts", 0)),
+            _curation_priority(recipe),
         )
     )
     if shard_count is not None:

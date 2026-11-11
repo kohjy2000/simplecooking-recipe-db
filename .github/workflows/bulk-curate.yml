@@ -8,6 +8,11 @@ on:
         required: true
         default: "20"
         type: string
+      per_shard:
+        description: "Videos per worker before an incremental publish"
+        required: true
+        default: "10"
+        type: string
   schedule:
     - cron: "17 6 * * *"
   workflow_run:
@@ -91,6 +96,7 @@ jobs:
         env:
           SHARD_INDEX: ${{ matrix.shard }}
           SHARD_COUNT: ${{ needs.plan.outputs.shard_count }}
+          PER_SHARD: ${{ inputs.per_shard || '10' }}
         run: |
           nohup ollama serve >/tmp/ollama.log 2>&1 &
           for attempt in {1..30}; do
@@ -104,7 +110,7 @@ jobs:
             --raw exports/recipes.json \
             --curated shard-output/curated.json \
             --state shard-output/state.json \
-            --max-new 1000 \
+            --max-new "$PER_SHARD" \
             --model "$CURATION_MODEL" \
             --single-pass \
             --shard-index "$SHARD_INDEX" \
@@ -162,4 +168,12 @@ jobs:
           git push origin main
           if [[ "$curated_changed" == "true" ]]; then
             gh workflow run pages.yml --ref main
+          fi
+      - name: Queue the next incremental batch
+        env:
+          GH_TOKEN: ${{ github.token }}
+        run: |
+          remaining="$(uv run recipe-db curation-plan --max-shards 20 | jq -r '.eligible')"
+          if [[ "$remaining" -gt 0 ]]; then
+            gh workflow run bulk-curate.yml --ref main -f max_shards=20 -f per_shard=10
           fi

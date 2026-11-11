@@ -141,17 +141,38 @@ def test_accepts_two_step_simple_recipe() -> None:
     assert len(recipes[0]["steps"]) == 2
 
 
-def test_rejects_more_than_ten_steps() -> None:
+def test_folds_more_than_ten_steps_without_dropping_content() -> None:
     payload = json.loads(_model_output())
-    payload["recipes"][0]["steps"] = ["참치와 밥을 고루 볶아 줍니다."] * 11
+    payload["recipes"][0]["steps"] = [
+        f"참치와 밥을 고루 볶는 과정 {index}입니다." for index in range(1, 12)
+    ]
 
-    with pytest.raises(CurationError, match="between 2 and 10 steps"):
-        normalize_model_output(
-            json.dumps(payload, ensure_ascii=False),
-            raw_recipe=_raw_recipe(),
-            source_text="참치 1캔 밥 1공기 김치 기름을 빼고 볶습니다",
-            model="test-model",
-        )
+    recipes = normalize_model_output(
+        json.dumps(payload, ensure_ascii=False),
+        raw_recipe=_raw_recipe(),
+        source_text="참치 1캔 밥 1공기 김치 기름을 빼고 볶습니다",
+        model="test-model",
+    )
+
+    assert len(recipes[0]["steps"]) == 10
+    assert "과정 1" in " ".join(recipes[0]["steps"])
+    assert "과정 11" in " ".join(recipes[0]["steps"])
+
+
+def test_splits_one_paragraph_into_multiple_steps() -> None:
+    payload = json.loads(_model_output())
+    payload["recipes"][0]["steps"] = [
+        "참치캔의 기름을 뺍니다. 팬에 참치와 밥을 넣습니다. 재료를 고루 볶습니다."
+    ]
+
+    recipes = normalize_model_output(
+        json.dumps(payload, ensure_ascii=False),
+        raw_recipe=_raw_recipe(),
+        source_text="참치 1캔 밥 1공기 김치 기름을 빼고 볶습니다",
+        model="test-model",
+    )
+
+    assert len(recipes[0]["steps"]) == 3
 
 
 def test_curate_batch_persists_public_recipes_and_state(tmp_path, monkeypatch) -> None:
@@ -237,7 +258,7 @@ def test_curate_batch_prioritizes_untried_videos(tmp_path, monkeypatch) -> None:
     monkeypatch.setattr(
         curator,
         "fetch_caption_tracks",
-        lambda _: {"ko": "참치 밥 밥 김치 김치 기름을 빼고 볶습니다"},
+        lambda _: {"ko": "참치 참치 밥 밥 김치 김치 기름을 빼고 볶습니다"},
     )
 
     curator.curate_batch(
@@ -253,6 +274,39 @@ def test_curate_batch_prioritizes_untried_videos(tmp_path, monkeypatch) -> None:
     state = json.loads(state_path.read_text(encoding="utf-8"))
     assert state["videos"]["video123"]["attempts"] == 1
     assert state["videos"]["video456"]["status"] == "completed"
+
+
+def test_curate_batch_prioritizes_requested_ingredient_coverage(tmp_path, monkeypatch) -> None:
+    ordinary = _raw_recipe()
+    priority = json.loads(json.dumps(ordinary))
+    priority["video_id"] = "spam456"
+    priority["video_title"] = "스팸 볶음밥"
+    priority["source_url"] = "https://www.youtube.com/watch?v=spam456"
+    raw_path = tmp_path / "recipes.json"
+    curated_path = tmp_path / "curated.json"
+    state_path = tmp_path / "state.json"
+    raw_path.write_text(json.dumps([ordinary, priority], ensure_ascii=False), encoding="utf-8")
+    curated_path.write_text("[]", encoding="utf-8")
+    monkeypatch.setattr(curator, "fetch_video", lambda _: {"duration": 200})
+    monkeypatch.setattr(
+        curator,
+        "fetch_caption_tracks",
+        lambda _: {"ko": "참치 참치 밥 밥 김치 김치 기름을 빼고 볶습니다"},
+    )
+
+    curator.curate_batch(
+        raw_path=raw_path,
+        curated_path=curated_path,
+        state_path=state_path,
+        max_new=1,
+        model="test-model",
+        endpoint="http://unused",
+        generate=lambda _: _model_output(),
+    )
+
+    state = json.loads(state_path.read_text(encoding="utf-8"))
+    assert "video123" not in state["videos"]
+    assert state["videos"]["spam456"]["status"] == "completed"
 
 
 def test_curate_batch_can_target_a_video(tmp_path, monkeypatch) -> None:
