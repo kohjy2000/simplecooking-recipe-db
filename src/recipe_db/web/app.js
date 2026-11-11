@@ -11,10 +11,11 @@ const aliases = {
   즉석밥: "밥", 찬밥: "밥", 흰밥: "밥", 참치캔: "참치", 캔참치: "참치",
   스팸: "햄", 리챔: "햄", 비엔나: "소시지", 고추가루: "고춧가루",
   진간장: "간장", 양조간장: "간장", 국간장: "간장", 올리브오일: "올리브유",
-  오일: "식용유", 쥬키니: "주키니",
+  오일: "식용유", 쥬키니: "주키니", 치킨: "닭",
 };
 const ingredientFamilies = {
   호박: new Set(["호박", "애호박", "단호박", "주키니"]),
+  닭: new Set(["닭", "닭고기", "닭가슴살", "닭다리살", "닭다리", "닭봉", "닭날개", "통닭"]),
 };
 const pantryStaples = new Set([
   "물", "소금", "후추", "설탕", "식용유", "참기름", "간장", "식초", "고춧가루",
@@ -37,8 +38,10 @@ const escapeHtml = (value) => String(value)
   .replaceAll("'", "&#039;");
 
 const canonicalize = (value) => {
-  let cleaned = String(value).toLowerCase().replace(/[^0-9a-zA-Z가-힣 ]/g, "").trim();
+  let cleaned = String(value).toLowerCase().replace(/[([{].*?[)\]}]/g, " ")
+    .replace(/[^0-9a-zA-Z가-힣 ]/g, "").trim();
   cleaned = cleaned.replace(/\s+/g, " ");
+  cleaned = cleaned.replace(/\s*\d+(?:\.\d+)?\s*(?:kg|g|mg|ml|l|개|캔|봉|팩|큰술|작은술|스푼|컵)\s*$/i, "").trim();
   for (const suffix of suffixes) {
     if (cleaned.endsWith(suffix) && cleaned.length > suffix.length + 1) {
       cleaned = cleaned.slice(0, -suffix.length).trim();
@@ -68,8 +71,14 @@ const titleMatches = (title, available) => {
 };
 
 const ingredientIsAvailable = (ingredient, available) => available.has(ingredient)
-  || Object.entries(ingredientFamilies)
-    .some(([family, members]) => available.has(family) && members.has(ingredient));
+  || Object.entries(ingredientFamilies).some(([family, members]) => available.has(family)
+    && [...members].some((member) => ingredient === member
+      || (member.length > 1 && ingredient.includes(member))));
+
+const subjectParticle = (value) => {
+  const last = value.slice(-1);
+  return last >= "가" && last <= "힣" && (last.charCodeAt(0) - "가".charCodeAt(0)) % 28 ? "이" : "가";
+};
 
 let staticRecipes;
 const recommendInBrowser = async (message, assumePantry) => {
@@ -96,7 +105,8 @@ const recommendInBrowser = async (message, assumePantry) => {
     const missing = names.filter((name) => !ingredientIsAvailable(name, effective));
     const headingMatches = titleMatches(recipe.name, ingredients);
     const familyMatches = ingredients.filter((ingredient) => ingredientFamilies[ingredient]
-      && names.some((name) => ingredientFamilies[ingredient].has(name)));
+      && names.some((name) => [...ingredientFamilies[ingredient]].some((member) => name === member
+        || (member.length > 1 && name.includes(member)))));
     const coverage = Math.min((matched.length + pantry.length) / Math.max(names.length, 1), 1);
     const inputUse = Math.min(matched.length / Math.max(ingredients.length, 1), 1);
     const score = coverage * .35 + (headingMatches.length / Math.max(ingredients.length, 1)) * .25
@@ -104,7 +114,7 @@ const recommendInBrowser = async (message, assumePantry) => {
       + (missing.length === 0 ? .2 : 0);
     const missingSummary = `${missing.slice(0, 4).join(", ")}${missing.length > 4 ? ` 외 ${missing.length - 4}개` : ""}`;
     const directReason = headingMatches.length
-      ? `${headingMatches.join(", ")}가 요리 제목의 주재료와 직접 일치해요.${/\d+\s*(?:가지|개)/.test(recipe.name) ? " 여러 레시피를 묶은 영상이라 재료 목록은 전체 요리의 합계예요." : ""}`
+      ? `${headingMatches.join(", ")}${subjectParticle(headingMatches.join(", "))} 요리 제목의 주재료와 직접 일치해요.${/\d+\s*(?:가지|개)/.test(recipe.name) ? " 여러 레시피를 묶은 영상이라 재료 목록은 전체 요리의 합계예요." : ""}`
       : null;
     const familyReason = familyMatches.length
       ? `${familyMatches.join(", ")} 재료군인 ${matched.join(", ")}이 들어 있어요.`
@@ -134,7 +144,7 @@ const recommendInBrowser = async (message, assumePantry) => {
     || Number(b.can_make_now) - Number(a.can_make_now)
     || b.score - a.score
     || a.missing_ingredients.length - b.missing_ingredients.length);
-  const selected = recommendations.slice(0, 10);
+  const selected = recommendations.slice(0, 30);
   let responseText;
   if (!ingredients.length) responseText = "보유한 재료를 쉼표로 구분해 입력해 주세요.";
   else if (!selected.length) responseText = `${ingredients.join(", ")}로 찾았지만 맞는 레시피가 아직 없습니다.`;

@@ -15,7 +15,7 @@ from .recommender import answer_recommendation, recommend
 
 class RecommendationRequest(BaseModel):
     message: str = Field(min_length=1, max_length=500)
-    limit: int = Field(default=10, ge=1, le=50)
+    limit: int = Field(default=30, ge=1, le=50)
     assume_pantry: bool = True
     max_missing: int | None = Field(default=5, ge=0, le=30)
 

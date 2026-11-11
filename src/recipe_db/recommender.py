@@ -35,12 +35,14 @@ ALIASES = {
     "올리브오일": "올리브유",
     "오일": "식용유",
     "쥬키니": "주키니",
+    "치킨": "닭",
 }
 
 # A family query is intentionally directional: searching for "호박" should find
 # 애호박/단호박/주키니, while searching for "애호박" should stay specific.
 INGREDIENT_FAMILIES = {
     "호박": {"호박", "애호박", "단호박", "주키니"},
+    "닭": {"닭", "닭고기", "닭가슴살", "닭다리살", "닭다리", "닭봉", "닭날개", "통닭"},
 }
 
 PANTRY_STAPLES = {
@@ -134,8 +136,15 @@ class Recommendation:
 
 
 def canonicalize_ingredient(value: str) -> str:
-    cleaned = re.sub(r"[^0-9a-zA-Z가-힣 ]", "", value.lower()).strip()
+    without_notes = re.sub(r"[([{].*?[)\]}]", " ", value.lower())
+    cleaned = re.sub(r"[^0-9a-zA-Z가-힣 ]", "", without_notes).strip()
     cleaned = re.sub(r"\s+", " ", cleaned)
+    cleaned = re.sub(
+        r"\s*\d+(?:\.\d+)?\s*(?:kg|g|mg|ml|l|개|캔|봉|팩|큰술|작은술|스푼|컵)\s*$",
+        "",
+        cleaned,
+        flags=re.IGNORECASE,
+    ).strip()
     for suffix in PARTICLE_SUFFIXES:
         if cleaned.endswith(suffix) and len(cleaned) > len(suffix) + 1:
             cleaned = cleaned[: -len(suffix)].strip()
@@ -173,7 +182,11 @@ def _ingredient_is_available(ingredient: str, available: set[str]) -> bool:
     if ingredient in available:
         return True
     return any(
-        family in available and ingredient in members
+        family in available
+        and any(
+            ingredient == member or (len(member) > 1 and member in ingredient)
+            for member in members
+        )
         for family, members in INGREDIENT_FAMILIES.items()
     )
 
@@ -182,8 +195,20 @@ def _family_query_matches(recipe_ingredients: set[str], available: set[str]) -> 
     return sorted(
         family
         for family, members in INGREDIENT_FAMILIES.items()
-        if family in available and bool(recipe_ingredients & members)
+        if family in available
+        and any(
+            ingredient == member or (len(member) > 1 and member in ingredient)
+            for ingredient in recipe_ingredients
+            for member in members
+        )
     )
+
+
+def _subject_particle(value: str) -> str:
+    last = value[-1:] if value else ""
+    if "가" <= last <= "힣":
+        return "이" if (ord(last) - ord("가")) % 28 else "가"
+    return "가"
 
 
 def _title_matches(title: str, available: set[str]) -> list[str]:
@@ -206,7 +231,7 @@ def recommend(
     conn: sqlite3.Connection,
     message: str,
     *,
-    limit: int = 10,
+    limit: int = 30,
     assume_pantry: bool = True,
     max_missing: int | None = 5,
 ) -> tuple[list[str], list[Recommendation]]:
@@ -281,7 +306,10 @@ def recommend(
             reason = "보유 재료와 기본 양념만으로 만들 수 있어요."
         elif title_matches:
             matched_title = ", ".join(title_matches)
-            reason = f"{matched_title}가 요리 제목의 주재료와 직접 일치해요."
+            reason = (
+                f"{matched_title}{_subject_particle(matched_title)} "
+                "요리 제목의 주재료와 직접 일치해요."
+            )
             if re.search(r"\d+\s*(?:가지|개)", row["name"]):
                 reason += " 여러 레시피를 묶은 영상이라 재료 목록은 전체 요리의 합계예요."
         elif family_matches:

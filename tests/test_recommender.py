@@ -47,6 +47,8 @@ def test_aliases_are_canonicalized() -> None:
     assert canonicalize_ingredient("콘") == "옥수수"
     assert canonicalize_ingredient("쥬키니") == "주키니"
     assert canonicalize_ingredient("애호박") == "애호박"
+    assert canonicalize_ingredient("치킨") == "닭"
+    assert canonicalize_ingredient("닭가슴살 (100g)") == "닭가슴살"
 
 
 def test_exact_recipe_ranks_before_recipe_with_missing_items(tmp_path) -> None:
@@ -179,4 +181,58 @@ def test_exact_ingredient_match_is_not_hidden_by_many_missing_items(tmp_path) ->
     assert parsed == ["애호박"]
     assert results[0].name == "매콤한 찌개"
     assert results[0].matched_ingredients == ["애호박"]
+
+
+def test_broad_chicken_query_finds_portioned_chicken_breast(tmp_path) -> None:
+    with connect(tmp_path / "recipes.sqlite") as conn:
+        initialize(conn)
+        _seed(conn)
+        conn.execute(
+            "INSERT INTO videos (video_id, title, url, status) VALUES ('chicken', '닭칼국수', 'https://youtu.be/chicken', 'completed')"
+        )
+        recipe_id = conn.execute(
+            """
+            INSERT INTO recipes (video_id, name, confidence, needs_review, source_kind)
+            VALUES ('chicken', '닭칼국수', 0.9, 0, 'description')
+            """
+        ).lastrowid
+        for position, name in enumerate(
+            ["닭가슴살 (100g)", "칼국수면", "양파", "대파", "청양고추"], start=1
+        ):
+            conn.execute(
+                "INSERT INTO ingredients (recipe_id, position, name, raw_text) VALUES (?, ?, ?, ?)",
+                (recipe_id, position, name, name),
+            )
+        conn.commit()
+        parsed, results = recommend(conn, "닭", max_missing=2)
+
+    assert parsed == ["닭"]
+    assert results[0].name == "닭칼국수"
+    assert results[0].matched_ingredients == ["닭가슴살"]
+    assert results[0].reason == "닭이 요리 제목의 주재료와 직접 일치해요."
+
+
+def test_broad_chicken_query_matches_qualified_cut_name(tmp_path) -> None:
+    with connect(tmp_path / "recipes.sqlite") as conn:
+        initialize(conn)
+        _seed(conn)
+        conn.execute(
+            "INSERT INTO videos (video_id, title, url, status) VALUES ('qualified', '치킨난반', 'https://youtu.be/qualified', 'completed')"
+        )
+        recipe_id = conn.execute(
+            """
+            INSERT INTO recipes (video_id, name, confidence, needs_review, source_kind)
+            VALUES ('qualified', '치킨난반', 0.9, 0, 'description')
+            """
+        ).lastrowid
+        conn.execute(
+            "INSERT INTO ingredients (recipe_id, position, name, raw_text) VALUES (?, 1, '닭다리살 정육', '닭다리살 정육')",
+            (recipe_id,),
+        )
+        conn.commit()
+        parsed, results = recommend(conn, "닭", max_missing=2)
+
+    assert parsed == ["닭"]
+    assert results[0].name == "치킨난반"
+    assert results[0].matched_ingredients == ["닭다리살 정육"]
 
