@@ -1847,8 +1847,8 @@
       "error": "Title promises 3 recipes but model returned 2"
     },
     "yfKCFvd5DmI": {
-      "attempts": 1,
-      "updated_at": "2026-11-11T05:30:48+00:00",
+      "attempts": 2,
+      "updated_at": "2026-11-11T12:59:10+00:00",
       "model": "qwen2.5:3b",
       "status": "failed",
       "error": "Recipe 1 has fewer than two ingredients"
@@ -1913,18 +1913,20 @@
       "error": null
     },
     "ST-POjO0G1s": {
-      "attempts": 1,
-      "updated_at": "2026-11-11T05:27:47+00:00",
+      "attempts": 2,
+      "updated_at": "2026-11-11T12:40:43+00:00",
       "model": "qwen2.5:3b",
       "status": "failed",
       "error": "Recipe 1 contains weakly supported ingredients: 장수풍"
     },
     "zgWef0HKAdw": {
-      "attempts": 1,
-      "updated_at": "2026-11-11T05:35:43+00:00",
+      "attempts": 2,
+      "updated_at": "2026-11-11T12:52:36+00:00",
       "model": "qwen2.5:3b",
-      "status": "failed",
-      "error": "Recipe 1 has fewer than two ingredients"
+      "status": "completed",
+      "error": null,
+      "source_warning": "HTTP fetch failed for www.youtube.com: HTTP Error 429: Too Many Requests",
+      "recipe_count": 1
     },
     "rKFKDAG3iXE": {
       "attempts": 1,
@@ -1985,18 +1987,19 @@
       "error": "Recipe 1 contains weakly supported ingredients: 멸치액젓"
     },
     "azno1TI628Y": {
-      "attempts": 1,
-      "updated_at": "2026-11-11T05:30:52+00:00",
+      "attempts": 2,
+      "updated_at": "2026-11-11T12:40:22+00:00",
       "model": "qwen2.5:3b",
       "status": "failed",
       "error": "Recipe 1 has fewer than two ingredients"
     },
     "GLEo1QG4YlA": {
-      "attempts": 1,
-      "updated_at": "2026-11-11T05:40:14+00:00",
+      "attempts": 2,
+      "updated_at": "2026-11-11T12:55:54+00:00",
       "model": "qwen2.5:3b",
-      "status": "failed",
-      "error": "Recipe 1 has fewer than two ingredients"
+      "status": "completed",
+      "error": null,
+      "recipe_count": 1
     },
     "T-Q8LUlkWj4": {
       "attempts": 1,
@@ -2055,8 +2058,8 @@
       "error": "Recipe 1 contains weakly supported ingredients: 계란 후라이, 파슬리"
     },
     "Yfmeg-Wpypo": {
-      "attempts": 1,
-      "updated_at": "2026-11-11T05:30:33+00:00",
+      "attempts": 2,
+      "updated_at": "2026-11-11T12:45:14+00:00",
       "model": "qwen2.5:3b",
       "status": "failed",
       "error": "Recipe 1 has fewer than two ingredients"
@@ -2136,11 +2139,11 @@
       "error": null
     },
     "3jt_vdD60tk": {
-      "attempts": 1,
-      "updated_at": "2026-11-11T05:26:49+00:00",
+      "attempts": 2,
+      "updated_at": "2026-11-11T13:24:12+00:00",
       "model": "qwen2.5:3b",
       "status": "failed",
-      "error": "Recipe 1 contains weakly supported ingredients: 고춧가루, 전분가루, 감자전분, 델파 흰부, 청양고추"
+      "error": "Recipe 1 contains weakly supported ingredients: 고춧가루, 전분가루, 감자전분, 시뻘건 고춧가루, 청양고추"
     },
     "3gf5nzer82Q": {
       "attempts": 1,
@@ -2203,18 +2206,19 @@
       "error": null
     },
     "cWrSFi_XRxA": {
-      "attempts": 1,
-      "updated_at": "2026-11-11T05:37:53+00:00",
+      "attempts": 2,
+      "updated_at": "2026-11-11T12:42:56+00:00",
       "model": "qwen2.5:3b",
       "status": "failed",
       "error": "Recipe 1 has fewer than two ingredients"
     },
     "0W2yuDsLKoc": {
-      "attempts": 1,
-      "updated_at": "2026-11-11T05:39:15+00:00",
+      "attempts": 2,
+      "updated_at": "2026-11-11T12:49:29+00:00",
       "model": "qwen2.5:3b",
       "status": "failed",
-      "error": "Recipe 1 has fewer than two ingredients"
+      "error": "Recipe 1 has fewer than two ingredients",
+      "source_warning": "HTTP fetch failed for www.youtube.com: HTTP Error 429: Too Many Requests"
     },
     "nlP4J-6At3k": {
       "attempts": 1,
@@ -2285,8 +2289,8 @@
       "error": null
     },
     "xrkfszDQQiQ": {
-      "attempts": 1,
-      "updated_at": "2026-11-11T05:45:17+00:00",
+      "attempts": 2,
+      "updated_at": "2026-11-11T12:58:24+00:00",
       "model": "qwen2.5:3b",
       "status": "failed",
       "error": "Recipe 1 must have between 2 and 10 steps"
@@ -2348,18 +2352,18 @@
       "error": "Recipe 1 has fewer than two ingredients"
     },
     "MzVefyDXInU": {
-      "attempts": 1,
-      "updated_at": "2026-11-11T05:27:20+00:00",
+      "attempts": 2,
+      "updated_at": "2026-11-11T12:57:49+00:00",
       "model": "qwen2.5:3b",
       "status": "failed",
       "error": "Recipe 1 has fewer than two ingredients"
     },
     "TIaPW_f3Uwg": {
-      "attempts": 1,
-      "updated_at": "2026-11-11T05:47:25+00:00",
+      "attempts": 2,
+      "updated_at": "2026-11-11T12:55:05+00:00",
       "model": "qwen2.5:3b",
       "status": "failed",
-      "error": "Ollama request failed: timed out"
+      "error": "Recipe 1 has fewer than two ingredients"
     },
     "GQcV9QJF95o": {
       "attempts": 1,
@@ -2420,8 +2424,8 @@
       "error": "Recipe 1 has fewer than two ingredients"
     },
     "oKeFuwqmmec": {
-      "attempts": 1,
-      "updated_at": "2026-11-11T05:25:19+00:00",
+      "attempts": 2,
+      "updated_at": "2026-11-11T12:54:20+00:00",
       "model": "qwen2.5:3b",
       "status": "failed",
       "error": "Recipe 1 has fewer than two ingredients"
@@ -2493,8 +2497,8 @@
       "error": "Recipe 1 has fewer than two ingredients"
     },
     "6M6u2Ll-dTY": {
-      "attempts": 1,
-      "updated_at": "2026-11-11T05:26:18+00:00",
+      "attempts": 2,
+      "updated_at": "2026-11-11T12:43:44+00:00",
       "model": "qwen2.5:3b",
       "status": "failed",
       "error": "Recipe 1 has fewer than two ingredients"
@@ -2564,11 +2568,13 @@
       "error": null
     },
     "nA-qs83bIXI": {
-      "attempts": 1,
-      "updated_at": "2026-11-11T05:49:56+00:00",
+      "attempts": 2,
+      "updated_at": "2026-11-11T12:46:43+00:00",
       "model": "qwen2.5:3b",
-      "status": "failed",
-      "error": "Recipe 1 contains weakly supported ingredients: 탑블레이드 버섯"
+      "status": "completed",
+      "error": null,
+      "source_warning": "HTTP fetch failed for www.youtube.com: HTTP Error 429: Too Many Requests",
+      "recipe_count": 1
     },
     "i0wtEZTHy3Q": {
       "attempts": 1,
@@ -2636,8 +2642,8 @@
       "error": "Recipe 1 contains weakly supported ingredients: 갈배"
     },
     "UB0J7ZpxzIQ": {
-      "attempts": 1,
-      "updated_at": "2026-11-11T05:51:44+00:00",
+      "attempts": 2,
+      "updated_at": "2026-11-11T12:42:55+00:00",
       "model": "qwen2.5:3b",
       "status": "failed",
       "error": "Recipe 1 has fewer than two ingredients"
@@ -2711,11 +2717,11 @@
       "error": "Recipe 1 must have between 2 and 10 steps"
     },
     "ZY5FGRyk9S8": {
-      "attempts": 1,
-      "updated_at": "2026-11-11T05:38:17+00:00",
+      "attempts": 2,
+      "updated_at": "2026-11-11T12:44:48+00:00",
       "model": "qwen2.5:3b",
       "status": "failed",
-      "error": "Recipe 2 contains weakly supported ingredients: 포메이로 스파게티 소스, 모차르트 치즈, 파슬리"
+      "error": "Recipe 1 contains weakly supported ingredients: 돼지고기, 양파, 대파"
     },
     "m3hIzb0rscI": {
       "attempts": 1,
@@ -2784,8 +2790,8 @@
       "error": "Recipe 1 must have between 2 and 10 steps"
     },
     "C_USZIO9cNY": {
-      "attempts": 1,
-      "updated_at": "2026-11-11T05:45:07+00:00",
+      "attempts": 2,
+      "updated_at": "2026-11-11T12:53:39+00:00",
       "model": "qwen2.5:3b",
       "status": "failed",
       "error": "Ollama request failed: timed out"
@@ -2860,15 +2866,15 @@
       "error": "Recipe 1 contains weakly supported ingredients: 스테이크소스 또는 동계소스, 장미향고추"
     },
     "bqG9VAyv_Oc": {
-      "attempts": 1,
-      "updated_at": "2026-11-11T05:33:21+00:00",
+      "attempts": 2,
+      "updated_at": "2026-11-11T12:43:59+00:00",
       "model": "qwen2.5:3b",
       "status": "failed",
       "error": "Recipe 1 has fewer than two ingredients"
     },
     "6ZqJm2KNCQo": {
-      "attempts": 1,
-      "updated_at": "2026-11-11T05:42:45+00:00",
+      "attempts": 2,
+      "updated_at": "2026-11-11T13:20:25+00:00",
       "model": "qwen2.5:3b",
       "status": "failed",
       "error": "Recipe 1 must have between 2 and 10 steps"
@@ -2932,18 +2938,18 @@
       "error": "Ollama request failed: timed out"
     },
     "R8OqYVRoKp0": {
-      "attempts": 1,
-      "updated_at": "2026-11-11T05:45:16+00:00",
-      "model": "qwen2.5:3b",
-      "status": "failed",
-      "error": "Recipe 1 contains weakly supported ingredients: 통삼겹살"
-    },
-    "Rhb3SsyD2xk": {
-      "attempts": 1,
-      "updated_at": "2026-11-11T05:56:29+00:00",
+      "attempts": 2,
+      "updated_at": "2026-11-11T12:39:26+00:00",
       "model": "qwen2.5:3b",
       "status": "failed",
       "error": "Recipe 1 has fewer than two ingredients"
+    },
+    "Rhb3SsyD2xk": {
+      "attempts": 2,
+      "updated_at": "2026-11-11T13:13:48+00:00",
+      "model": "qwen2.5:3b",
+      "status": "failed",
+      "error": "Recipe 1 contains weakly supported ingredients: 양기장, 밀집, 다진마늘"
     },
     "B_0W0LCOdVM": {
       "attempts": 1,
@@ -3009,11 +3015,11 @@
       "error": "Recipe 1 has fewer than two ingredients"
     },
     "hsfb9kXE5Oc": {
-      "attempts": 1,
-      "updated_at": "2026-11-11T05:38:40+00:00",
+      "attempts": 2,
+      "updated_at": "2026-11-11T13:08:28+00:00",
       "model": "qwen2.5:3b",
       "status": "failed",
-      "error": "Ollama request failed: HTTP Error 500: Internal Server Error"
+      "error": "Recipe 1 contains weakly supported ingredients: 불고기용 돼지고기, 대패삼겹살"
     },
     "oyf_j2A6tLs": {
       "attempts": 1,
@@ -3074,15 +3080,15 @@
       "error": "Recipe 1 must have between 2 and 10 steps"
     },
     "EXwi_7grEp0": {
-      "attempts": 1,
-      "updated_at": "2026-11-11T05:48:51+00:00",
+      "attempts": 2,
+      "updated_at": "2026-11-11T12:42:18+00:00",
       "model": "qwen2.5:3b",
       "status": "failed",
-      "error": "Ollama request failed: timed out"
+      "error": "Recipe 1 has fewer than two ingredients"
     },
     "MO22CNHhAMo": {
-      "attempts": 1,
-      "updated_at": "2026-11-11T05:51:29+00:00",
+      "attempts": 2,
+      "updated_at": "2026-11-11T12:47:29+00:00",
       "model": "qwen2.5:3b",
       "status": "failed",
       "error": "Recipe 1 has fewer than two ingredients"
@@ -3146,15 +3152,15 @@
       "error": "Recipe 1 contains weakly supported ingredients: 멸치 칼국수 라면, 멸치 칼국수 분말스프, 건더기 스프, 고춧가루"
     },
     "9fi1ZR1lRvw": {
-      "attempts": 1,
-      "updated_at": "2026-11-11T05:25:53+00:00",
+      "attempts": 2,
+      "updated_at": "2026-11-11T12:37:40+00:00",
       "model": "qwen2.5:3b",
       "status": "failed",
-      "error": "Recipe 1 contains weakly supported ingredients: 동기스 소스"
+      "error": "Recipe 1 contains weakly supported ingredients: 동치스 소스"
     },
     "72Jff8HUc2k": {
-      "attempts": 1,
-      "updated_at": "2026-11-11T05:31:01+00:00",
+      "attempts": 2,
+      "updated_at": "2026-11-11T12:58:31+00:00",
       "model": "qwen2.5:3b",
       "status": "failed",
       "error": "Recipe 1 must have between 2 and 10 steps"
@@ -3220,18 +3226,18 @@
       "recipe_count": 1
     },
     "kWZ7nP7D_RU": {
-      "attempts": 1,
-      "updated_at": "2026-11-11T05:26:22+00:00",
+      "attempts": 2,
+      "updated_at": "2026-11-11T12:51:47+00:00",
       "model": "qwen2.5:3b",
       "status": "failed",
       "error": "Recipe 1 contains weakly supported ingredients: 코코넛 밀크, 불닭소스, 밀착력"
     },
     "beYNXQgWmyQ": {
-      "attempts": 1,
-      "updated_at": "2026-11-11T05:33:09+00:00",
+      "attempts": 2,
+      "updated_at": "2026-11-11T13:15:18+00:00",
       "model": "qwen2.5:3b",
       "status": "failed",
-      "error": "Recipe 1 must have between 2 and 10 steps"
+      "error": "Recipe 1 has fewer than two ingredients"
     },
     "GVqdIAX9t5c": {
       "attempts": 1,
@@ -3302,57 +3308,63 @@
       "error": "Recipe 1 contains weakly supported ingredients: 하남자다 고추"
     },
     "EvxjiO8mTXg": {
-      "attempts": 1,
-      "updated_at": "2026-11-11T07:25:57+00:00",
+      "attempts": 2,
+      "updated_at": "2026-11-11T12:53:05+00:00",
       "model": "qwen2.5:3b",
-      "status": "failed",
-      "error": "Recipe 1 contains weakly supported ingredients: Bulgogi Meat, Cabbage, Kohlrabi, Onion, Green Onion"
+      "status": "completed",
+      "error": null,
+      "source_warning": "HTTP fetch failed for www.youtube.com: HTTP Error 429: Too Many Requests",
+      "recipe_count": 1
     },
     "FS30zCcz02M": {
-      "attempts": 1,
-      "updated_at": "2026-11-11T07:31:57+00:00",
+      "attempts": 2,
+      "updated_at": "2026-11-11T12:45:57+00:00",
       "model": "qwen2.5:3b",
-      "status": "failed",
-      "error": "Recipe 1 must have between 2 and 10 steps"
+      "status": "completed",
+      "error": null,
+      "source_warning": "HTTP fetch failed for www.youtube.com: HTTP Error 429: Too Many Requests",
+      "recipe_count": 1
     },
     "Qd28cSHGf0Q": {
-      "attempts": 1,
-      "updated_at": "2026-11-11T07:33:18+00:00",
+      "attempts": 2,
+      "updated_at": "2026-11-11T12:44:59+00:00",
       "model": "qwen2.5:3b",
       "status": "failed",
       "error": "Recipe 1 has fewer than two ingredients"
     },
     "MQvgFS7bA6Q": {
-      "attempts": 1,
-      "updated_at": "2026-11-11T07:38:35+00:00",
+      "attempts": 2,
+      "updated_at": "2026-11-11T13:03:49+00:00",
       "model": "qwen2.5:3b",
       "status": "failed",
       "error": "Recipe 1 must have between 2 and 10 steps"
     },
     "NdRqRu-ZU9I": {
-      "attempts": 1,
-      "updated_at": "2026-11-11T07:39:57+00:00",
+      "attempts": 2,
+      "updated_at": "2026-11-11T12:48:15+00:00",
       "model": "qwen2.5:3b",
-      "status": "failed",
-      "error": "Recipe 1 contains weakly supported ingredients: 떡살"
+      "status": "completed",
+      "error": null,
+      "source_warning": "HTTP fetch failed for www.youtube.com: HTTP Error 429: Too Many Requests",
+      "recipe_count": 1
     },
     "EmnhCX7Wia8": {
-      "attempts": 1,
-      "updated_at": "2026-11-11T07:45:08+00:00",
+      "attempts": 2,
+      "updated_at": "2026-11-11T12:53:16+00:00",
       "model": "qwen2.5:3b",
       "status": "failed",
       "error": "Recipe 1 must have between 2 and 10 steps"
     },
     "iDoqDup04AA": {
-      "attempts": 1,
-      "updated_at": "2026-11-11T07:46:27+00:00",
+      "attempts": 2,
+      "updated_at": "2026-11-11T12:48:33+00:00",
       "model": "qwen2.5:3b",
       "status": "failed",
       "error": "Recipe 1 has fewer than two ingredients"
     },
     "lJKtJLU6DM0": {
-      "attempts": 1,
-      "updated_at": "2026-11-11T07:51:39+00:00",
+      "attempts": 2,
+      "updated_at": "2026-11-11T13:06:56+00:00",
       "model": "qwen2.5:3b",
       "status": "failed",
       "error": "Recipe 1 must have between 2 and 10 steps"
@@ -3373,18 +3385,18 @@
       "error": null
     },
     "92GLGiUgtiM": {
-      "attempts": 1,
-      "updated_at": "2026-11-11T07:39:32+00:00",
+      "attempts": 2,
+      "updated_at": "2026-11-11T12:37:06+00:00",
       "model": "qwen2.5:3b",
       "status": "failed",
-      "error": "Recipe 1 has fewer than two ingredients"
+      "error": "Recipe 1 contains weakly supported ingredients: 생오리 고기, 대파, 고춧가루, 장조림, 구간장"
     },
     "CLxKZkwZbik": {
-      "attempts": 1,
-      "updated_at": "2026-11-11T07:50:18+00:00",
+      "attempts": 2,
+      "updated_at": "2026-11-11T12:56:19+00:00",
       "model": "qwen2.5:3b",
       "status": "failed",
-      "error": "Recipe 1 must have between 2 and 10 steps"
+      "error": "Recipe 1 contains weakly supported ingredients: 치킨스톡"
     },
     "ZuciTGjIc3s": {
       "attempts": 1,
@@ -3395,39 +3407,44 @@
       "error": null
     },
     "JDuVgzT5cQM": {
-      "attempts": 1,
-      "updated_at": "2026-11-11T07:55:56+00:00",
+      "attempts": 2,
+      "updated_at": "2026-11-11T12:45:27+00:00",
       "model": "qwen2.5:3b",
       "status": "failed",
-      "error": "Recipe 1 contains weakly supported ingredients: 진순이"
+      "error": "Recipe 1 contains weakly supported ingredients: 진순이, 라면스프, 고춧가루"
     },
     "Odtrmie0yCE": {
-      "attempts": 1,
-      "updated_at": "2026-11-11T07:58:07+00:00",
+      "attempts": 2,
+      "updated_at": "2026-11-11T12:46:48+00:00",
       "model": "qwen2.5:3b",
-      "status": "failed",
-      "error": "Recipe 1 contains weakly supported ingredients: 불소소, 멸치젓, 다진면"
+      "status": "completed",
+      "error": null,
+      "recipe_count": 1
     },
     "0z_q78wSQQw": {
-      "attempts": 1,
-      "updated_at": "2026-11-11T08:07:40+00:00",
+      "attempts": 2,
+      "updated_at": "2026-11-11T12:47:15+00:00",
       "model": "qwen2.5:3b",
-      "status": "failed",
-      "error": "Recipe 1 must have between 2 and 10 steps"
+      "status": "completed",
+      "error": null,
+      "source_warning": "HTTP fetch failed for www.youtube.com: HTTP Error 429: Too Many Requests",
+      "recipe_count": 1
     },
     "AW6mq5K5X4A": {
-      "attempts": 1,
-      "updated_at": "2026-11-11T08:10:31+00:00",
+      "attempts": 2,
+      "updated_at": "2026-11-11T12:49:09+00:00",
       "model": "qwen2.5:3b",
       "status": "failed",
-      "error": "Recipe 1 contains weakly supported ingredients: 밀가루, 통깨소스, 굴소스"
+      "error": "Recipe 1 contains weakly supported ingredients: 통깨소스, 굴소스"
     },
     "-XlFM0YSWZk": {
-      "attempts": 1,
-      "updated_at": "2026-11-11T08:12:29+00:00",
+      "attempts": 2,
+      "updated_at": "2026-11-11T12:58:46+00:00",
       "model": "qwen2.5:3b",
-      "status": "failed",
-      "error": "Recipe 1 contains weakly supported ingredients: 풀데기"
+      "status": "completed",
+      "error": null,
+      "source_warning": "HTTP fetch failed for www.youtube.com: HTTP Error 429: Too Many Requests",
+      "recipe_count": 1
     },
     "fN2qY3zE2ao": {
       "attempts": 2,
@@ -3446,32 +3463,32 @@
       "error": null
     },
     "Os_-a82kJcE": {
-      "attempts": 1,
-      "updated_at": "2026-11-11T07:29:03+00:00",
+      "attempts": 2,
+      "updated_at": "2026-11-11T12:49:34+00:00",
       "model": "qwen2.5:3b",
       "status": "failed",
       "error": "Recipe 1 has fewer than two ingredients"
     },
     "tlh2z7Z3-3o": {
-      "attempts": 1,
-      "updated_at": "2026-11-11T07:30:10+00:00",
+      "attempts": 2,
+      "updated_at": "2026-11-11T12:38:40+00:00",
       "model": "qwen2.5:3b",
       "status": "failed",
       "error": "Recipe 1 has fewer than two ingredients"
     },
     "OBJYDeQ_d40": {
-      "attempts": 1,
-      "updated_at": "2026-11-11T07:38:08+00:00",
-      "model": "qwen2.5:3b",
-      "status": "failed",
-      "error": "Recipe 1 has fewer than two ingredients"
-    },
-    "AYlSAiqKavI": {
-      "attempts": 1,
-      "updated_at": "2026-11-11T07:43:29+00:00",
+      "attempts": 2,
+      "updated_at": "2026-11-11T13:00:58+00:00",
       "model": "qwen2.5:3b",
       "status": "failed",
       "error": "Recipe 1 must have between 2 and 10 steps"
+    },
+    "AYlSAiqKavI": {
+      "attempts": 2,
+      "updated_at": "2026-11-11T13:10:37+00:00",
+      "model": "qwen2.5:3b",
+      "status": "failed",
+      "error": "Recipe 1 has fewer than two ingredients"
     },
     "-R0-lLRhOzY": {
       "attempts": 1,
@@ -3482,22 +3499,22 @@
       "error": null
     },
     "z6ePf2807fo": {
-      "attempts": 1,
-      "updated_at": "2026-11-11T07:45:37+00:00",
+      "attempts": 2,
+      "updated_at": "2026-11-11T12:42:04+00:00",
       "model": "qwen2.5:3b",
       "status": "failed",
       "error": "Recipe 1 has fewer than two ingredients"
     },
     "LUhdgS2FAmo": {
-      "attempts": 1,
-      "updated_at": "2026-11-11T07:46:35+00:00",
+      "attempts": 2,
+      "updated_at": "2026-11-11T13:21:08+00:00",
       "model": "qwen2.5:3b",
       "status": "failed",
-      "error": "Recipe 1 contains weakly supported ingredients: 통조림 햄"
+      "error": "Recipe 1 must have between 2 and 10 steps"
     },
     "jTaIPqet4Bo": {
-      "attempts": 1,
-      "updated_at": "2026-11-11T07:48:46+00:00",
+      "attempts": 2,
+      "updated_at": "2026-11-11T13:30:39+00:00",
       "model": "qwen2.5:3b",
       "status": "failed",
       "error": "Recipe 1 contains weakly supported ingredients: 다진 마늘"
@@ -3510,8 +3527,8 @@
       "error": "Recipe 1 contains weakly supported ingredients: 진간장, 사과 농축액"
     },
     "zrX8CU2zhK0": {
-      "attempts": 1,
-      "updated_at": "2026-11-11T07:39:32+00:00",
+      "attempts": 2,
+      "updated_at": "2026-11-11T12:40:16+00:00",
       "model": "qwen2.5:3b",
       "status": "failed",
       "error": "Recipe 1 has fewer than two ingredients"
@@ -3525,8 +3542,8 @@
       "error": null
     },
     "h7N5ap6mxwM": {
-      "attempts": 1,
-      "updated_at": "2026-11-11T07:50:52+00:00",
+      "attempts": 2,
+      "updated_at": "2026-11-11T13:02:38+00:00",
       "model": "qwen2.5:3b",
       "status": "failed",
       "error": "Recipe 1 must have between 2 and 10 steps"
@@ -3540,29 +3557,31 @@
       "error": null
     },
     "8Al5wiGKi5U": {
-      "attempts": 1,
-      "updated_at": "2026-11-11T07:54:44+00:00",
+      "attempts": 2,
+      "updated_at": "2026-11-11T13:02:07+00:00",
       "model": "qwen2.5:3b",
       "status": "failed",
       "error": "Recipe 1 contains weakly supported ingredients: 다진마늘"
     },
     "ozUmTI5v-NY": {
-      "attempts": 1,
-      "updated_at": "2026-11-11T07:56:04+00:00",
+      "attempts": 2,
+      "updated_at": "2026-11-11T12:45:52+00:00",
       "model": "qwen2.5:3b",
-      "status": "failed",
-      "error": "Recipe 1 contains weakly supported ingredients: 통조림 햄"
+      "status": "completed",
+      "error": null,
+      "source_warning": "HTTP fetch failed for www.youtube.com: HTTP Error 429: Too Many Requests",
+      "recipe_count": 1
     },
     "_1T1UQ9ugtc": {
-      "attempts": 1,
-      "updated_at": "2026-11-11T08:03:18+00:00",
+      "attempts": 2,
+      "updated_at": "2026-11-11T13:19:56+00:00",
       "model": "qwen2.5:3b",
       "status": "failed",
       "error": "Recipe 1 has fewer than two ingredients"
     },
     "M7rcfaZi3vA": {
-      "attempts": 1,
-      "updated_at": "2026-11-11T08:04:45+00:00",
+      "attempts": 2,
+      "updated_at": "2026-11-11T12:37:41+00:00",
       "model": "qwen2.5:3b",
       "status": "failed",
       "error": "Recipe 1 contains weakly supported ingredients: 대파, 탑블레이드 버섯"
@@ -3583,57 +3602,59 @@
       "error": null
     },
     "uCScD54PvgI": {
-      "attempts": 1,
-      "updated_at": "2026-11-11T07:28:12+00:00",
+      "attempts": 2,
+      "updated_at": "2026-11-11T12:34:38+00:00",
       "model": "qwen2.5:3b",
       "status": "failed",
       "error": "Recipe 1 has fewer than two ingredients"
     },
     "riNtpnCCXLE": {
-      "attempts": 1,
-      "updated_at": "2026-11-11T07:31:44+00:00",
+      "attempts": 2,
+      "updated_at": "2026-11-11T12:36:59+00:00",
       "model": "qwen2.5:3b",
       "status": "failed",
       "error": "Recipe 1 contains weakly supported ingredients: 시뻘건 고춧가루"
     },
     "F06bjLEIHsU": {
-      "attempts": 1,
-      "updated_at": "2026-11-11T07:36:22+00:00",
+      "attempts": 2,
+      "updated_at": "2026-11-11T12:40:29+00:00",
       "model": "qwen2.5:3b",
       "status": "failed",
-      "error": "Recipe 1 contains weakly supported ingredients: 토마토 스파게티 소스"
+      "error": "Recipe 1 contains an unsupported step quantity",
+      "source_warning": "HTTP fetch failed for www.youtube.com: HTTP Error 429: Too Many Requests"
     },
     "i03CvBgTJ94": {
-      "attempts": 1,
-      "updated_at": "2026-11-11T07:38:04+00:00",
+      "attempts": 2,
+      "updated_at": "2026-11-11T12:51:48+00:00",
       "model": "qwen2.5:3b",
       "status": "failed",
       "error": "Recipe 1 has fewer than two ingredients"
     },
     "hoOelvADuew": {
-      "attempts": 1,
-      "updated_at": "2026-11-11T07:41:37+00:00",
+      "attempts": 2,
+      "updated_at": "2026-11-11T12:53:17+00:00",
       "model": "qwen2.5:3b",
       "status": "failed",
-      "error": "Recipe 1 contains weakly supported ingredients: 양파, 대파, 마늘, 월계수, 통후추"
+      "error": "Recipe 1 has fewer than two ingredients"
     },
     "u9Xz-qCuTYQ": {
-      "attempts": 1,
-      "updated_at": "2026-11-11T07:47:16+00:00",
+      "attempts": 2,
+      "updated_at": "2026-11-11T13:06:29+00:00",
       "model": "qwen2.5:3b",
       "status": "failed",
       "error": "Recipe 1 has fewer than two ingredients"
     },
     "L-f0tQ3d9zE": {
-      "attempts": 1,
-      "updated_at": "2026-11-11T07:48:46+00:00",
+      "attempts": 2,
+      "updated_at": "2026-11-11T12:47:35+00:00",
       "model": "qwen2.5:3b",
-      "status": "failed",
-      "error": "Recipe 1 has fewer than two ingredients"
+      "status": "completed",
+      "error": null,
+      "recipe_count": 1
     },
     "pz0xdIQHN2c": {
-      "attempts": 1,
-      "updated_at": "2026-11-11T07:50:12+00:00",
+      "attempts": 2,
+      "updated_at": "2026-11-11T13:04:24+00:00",
       "model": "qwen2.5:3b",
       "status": "failed",
       "error": "Recipe 1 has fewer than two ingredients"
@@ -3655,8 +3676,8 @@
       "recipe_count": 1
     },
     "U0CACco2z_E": {
-      "attempts": 1,
-      "updated_at": "2026-11-11T07:27:21+00:00",
+      "attempts": 2,
+      "updated_at": "2026-11-11T12:35:07+00:00",
       "model": "qwen2.5:3b",
       "status": "failed",
       "error": "Recipe 1 has fewer than two ingredients"
@@ -3670,18 +3691,20 @@
       "error": null
     },
     "shF9O_a8Mnc": {
-      "attempts": 1,
-      "updated_at": "2026-11-11T07:34:17+00:00",
+      "attempts": 2,
+      "updated_at": "2026-11-11T12:57:23+00:00",
       "model": "qwen2.5:3b",
       "status": "failed",
       "error": "Recipe 1 has fewer than two ingredients"
     },
     "523X8bhIBlY": {
-      "attempts": 1,
-      "updated_at": "2026-11-11T07:43:56+00:00",
+      "attempts": 2,
+      "updated_at": "2026-11-11T12:34:09+00:00",
       "model": "qwen2.5:3b",
-      "status": "failed",
-      "error": "Recipe 1 has fewer than two ingredients"
+      "status": "completed",
+      "error": null,
+      "source_warning": "HTTP fetch failed for www.youtube.com: HTTP Error 429: Too Many Requests",
+      "recipe_count": 1
     },
     "rQu3OFubpw8": {
       "attempts": 1,
@@ -3692,25 +3715,29 @@
       "error": null
     },
     "34waB35zkg0": {
-      "attempts": 1,
-      "updated_at": "2026-11-11T07:49:06+00:00",
+      "attempts": 2,
+      "updated_at": "2026-11-11T13:04:44+00:00",
       "model": "qwen2.5:3b",
       "status": "failed",
       "error": "Recipe 1 contains weakly supported ingredients: 양파, 고춧가루"
     },
     "qNbiypEbD_A": {
-      "attempts": 1,
-      "updated_at": "2026-11-11T07:51:56+00:00",
+      "attempts": 2,
+      "updated_at": "2026-11-11T13:22:00+00:00",
       "model": "qwen2.5:3b",
-      "status": "failed",
-      "error": "Recipe 1 has fewer than two ingredients"
+      "status": "completed",
+      "error": null,
+      "source_warning": "HTTP fetch failed for www.youtube.com: HTTP Error 429: Too Many Requests",
+      "recipe_count": 2
     },
     "Mtk7YLBSeWs": {
-      "attempts": 1,
-      "updated_at": "2026-11-11T08:01:30+00:00",
+      "attempts": 2,
+      "updated_at": "2026-11-11T13:27:16+00:00",
       "model": "qwen2.5:3b",
-      "status": "failed",
-      "error": "Recipe 1 has fewer than two ingredients"
+      "status": "completed",
+      "error": null,
+      "source_warning": "HTTP fetch failed for www.youtube.com: HTTP Error 429: Too Many Requests",
+      "recipe_count": 1
     },
     "NboCJ7d2Bug": {
       "attempts": 1,
@@ -3728,63 +3755,61 @@
       "source_warning": "ies for the authentication. See  https://github.com/yt-dlp/yt-dlp/wiki/FAQ#how-do-i-pass-cookies-to-yt-dlp  for how to manually pass cookies. Also see  https://github.com/yt-dlp/yt-dlp/wiki/Extractors#exporting-youtube-cookies  for tips on effectively exporting YouTube cookies | ERROR: [youtube] _iqXgdaa9iY: This video is unavailable. Error code: 152 - 18 | Invidious fallback failed: https://yt.chocolatemoo53.com: HTTP fetch failed for yt.chocolatemoo53.com: HTTP Error 500: Internal Server Error"
     },
     "VSZ_MlCZCdw": {
-      "attempts": 1,
-      "updated_at": "2026-11-11T07:25:46+00:00",
+      "attempts": 2,
+      "updated_at": "2026-11-11T12:36:10+00:00",
       "model": "qwen2.5:3b",
       "status": "failed",
       "error": "Recipe 1 contains weakly supported ingredients: 케첩"
     },
     "AsAdCgy7wKs": {
-      "attempts": 1,
-      "updated_at": "2026-11-11T07:38:07+00:00",
+      "attempts": 2,
+      "updated_at": "2026-11-11T12:49:30+00:00",
       "model": "qwen2.5:3b",
       "status": "failed",
-      "error": "Recipe 1 must have between 2 and 10 steps"
+      "error": "Recipe 1 contains weakly supported ingredients: 소고기 다시다나 치킨스톡"
     },
     "d9265vWKoxY": {
-      "attempts": 1,
-      "updated_at": "2026-11-11T07:56:51+00:00",
+      "attempts": 2,
+      "updated_at": "2026-11-11T12:33:34+00:00",
+      "model": "qwen2.5:3b",
+      "status": "failed",
+      "error": "Recipe 1 has fewer than two ingredients",
+      "source_warning": "HTTP fetch failed for www.youtube.com: HTTP Error 429: Too Many Requests"
+    },
+    "_PezlASl7tM": {
+      "attempts": 2,
+      "updated_at": "2026-11-11T13:10:39+00:00",
       "model": "qwen2.5:3b",
       "status": "failed",
       "error": "Recipe 1 must have between 2 and 10 steps"
     },
-    "_PezlASl7tM": {
-      "attempts": 1,
-      "updated_at": "2026-11-11T08:15:14+00:00",
-      "model": "qwen2.5:3b",
-      "status": "failed",
-      "error": "Model returned more than 12 recipes for one video"
-    },
     "1kPHYA9NI0o": {
-      "attempts": 1,
-      "updated_at": "2026-11-11T08:17:07+00:00",
+      "attempts": 2,
+      "updated_at": "2026-11-11T12:34:59+00:00",
       "model": "qwen2.5:3b",
       "status": "failed",
       "error": "Recipe 1 has fewer than two ingredients"
     },
     "eS9R4sn5e9A": {
-      "attempts": 1,
-      "updated_at": "2026-11-11T08:17:43+00:00",
+      "attempts": 2,
+      "updated_at": "2026-11-11T13:02:48+00:00",
       "model": "qwen2.5:3b",
-      "source_warning": "or --cookies for the authentication. See  https://github.com/yt-dlp/yt-dlp/wiki/FAQ#how-do-i-pass-cookies-to-yt-dlp  for how to manually pass cookies. Also see  https://github.com/yt-dlp/yt-dlp/wiki/Extractors#exporting-youtube-cookies  for tips on effectively exporting YouTube cookies | ERROR: [youtube] eS9R4sn5e9A: This video is unavailable. Error code: 152 - 18 | Invidious fallback failed: https://yt.chocolatemoo53.com: HTTP fetch failed for yt.chocolatemoo53.com: The read operation timed out",
       "status": "failed",
-      "error": "No usable caption or detailed video description was available"
+      "error": "Recipe 1 must have between 2 and 10 steps"
     },
     "ivYg7btGMN4": {
-      "attempts": 1,
-      "updated_at": "2026-11-11T08:18:18+00:00",
+      "attempts": 2,
+      "updated_at": "2026-11-11T13:06:34+00:00",
       "model": "qwen2.5:3b",
-      "source_warning": "or --cookies for the authentication. See  https://github.com/yt-dlp/yt-dlp/wiki/FAQ#how-do-i-pass-cookies-to-yt-dlp  for how to manually pass cookies. Also see  https://github.com/yt-dlp/yt-dlp/wiki/Extractors#exporting-youtube-cookies  for tips on effectively exporting YouTube cookies | ERROR: [youtube] ivYg7btGMN4: This video is unavailable. Error code: 152 - 18 | Invidious fallback failed: https://yt.chocolatemoo53.com: HTTP fetch failed for yt.chocolatemoo53.com: The read operation timed out",
       "status": "failed",
-      "error": "No usable caption or detailed video description was available"
+      "error": "Recipe 1 has fewer than two ingredients"
     },
     "OmPAiuBaV00": {
-      "attempts": 1,
-      "updated_at": "2026-11-11T08:18:51+00:00",
+      "attempts": 2,
+      "updated_at": "2026-11-11T12:58:20+00:00",
       "model": "qwen2.5:3b",
-      "source_warning": "ies for the authentication. See  https://github.com/yt-dlp/yt-dlp/wiki/FAQ#how-do-i-pass-cookies-to-yt-dlp  for how to manually pass cookies. Also see  https://github.com/yt-dlp/yt-dlp/wiki/Extractors#exporting-youtube-cookies  for tips on effectively exporting YouTube cookies | ERROR: [youtube] OmPAiuBaV00: This video is unavailable. Error code: 152 - 18 | Invidious fallback failed: https://yt.chocolatemoo53.com: HTTP fetch failed for yt.chocolatemoo53.com: HTTP Error 500: Internal Server Error",
       "status": "failed",
-      "error": "No usable caption or detailed video description was available"
+      "error": "Recipe 1 must have between 2 and 10 steps"
     },
     "tVZTt-TXrAI": {
       "attempts": 1,
@@ -3802,50 +3827,50 @@
       "error": "Recipe 1 contains weakly supported ingredients: 다진 마늘"
     },
     "eYDKb3p3MGc": {
-      "attempts": 1,
-      "updated_at": "2026-11-11T07:37:31+00:00",
+      "attempts": 2,
+      "updated_at": "2026-11-11T12:36:29+00:00",
       "model": "qwen2.5:3b",
       "status": "failed",
-      "error": "Recipe 1 must have between 2 and 10 steps"
+      "error": "Recipe 1 contains weakly supported ingredients: 다진 마늘, 분말스프"
     },
     "E6oimsJOyJA": {
-      "attempts": 1,
-      "updated_at": "2026-11-11T07:40:56+00:00",
+      "attempts": 2,
+      "updated_at": "2026-11-11T12:38:32+00:00",
       "model": "qwen2.5:3b",
       "status": "failed",
       "error": "Recipe 1 contains weakly supported ingredients: 편의점에서 파는 닭 가슴살"
     },
     "bOCtxtJJnoI": {
-      "attempts": 1,
-      "updated_at": "2026-11-11T07:52:15+00:00",
+      "attempts": 2,
+      "updated_at": "2026-11-11T12:52:04+00:00",
       "model": "qwen2.5:3b",
       "status": "failed",
       "error": "Recipe 1 must have between 2 and 10 steps"
     },
     "tD7esLlG4uI": {
-      "attempts": 1,
-      "updated_at": "2026-11-11T08:00:49+00:00",
+      "attempts": 2,
+      "updated_at": "2026-11-11T12:41:36+00:00",
+      "model": "qwen2.5:3b",
+      "status": "failed",
+      "error": "Recipe 1 contains an unsupported step quantity"
+    },
+    "Hv1tVHBtHsY": {
+      "attempts": 2,
+      "updated_at": "2026-11-11T12:57:30+00:00",
       "model": "qwen2.5:3b",
       "status": "failed",
       "error": "Recipe 1 must have between 2 and 10 steps"
     },
-    "Hv1tVHBtHsY": {
-      "attempts": 1,
-      "updated_at": "2026-11-11T08:03:15+00:00",
-      "model": "qwen2.5:3b",
-      "status": "failed",
-      "error": "Recipe 1 contains weakly supported ingredients: 된장, 고추장, 굴소스"
-    },
     "0H8m8k7PSVo": {
-      "attempts": 1,
-      "updated_at": "2026-11-11T08:05:33+00:00",
+      "attempts": 2,
+      "updated_at": "2026-11-11T12:36:04+00:00",
       "model": "qwen2.5:3b",
       "status": "failed",
-      "error": "Recipe 1 contains weakly supported ingredients: 불맛, 양념장"
+      "error": "Recipe 1 contains weakly supported ingredients: 불소스, 양파"
     },
     "vyM4Qc2G6w0": {
-      "attempts": 1,
-      "updated_at": "2026-11-11T08:14:44+00:00",
+      "attempts": 2,
+      "updated_at": "2026-11-11T13:12:04+00:00",
       "model": "qwen2.5:3b",
       "status": "failed",
       "error": "Recipe 1 has fewer than two ingredients"
@@ -3883,8 +3908,8 @@
       "error": null
     },
     "xTe9GnPEaBA": {
-      "attempts": 1,
-      "updated_at": "2026-11-11T07:24:31+00:00",
+      "attempts": 2,
+      "updated_at": "2026-11-11T12:39:33+00:00",
       "model": "qwen2.5:3b",
       "status": "failed",
       "error": "Recipe 1 contains weakly supported ingredients: 진매 분말스프, 시금치, 동깨 소스"
@@ -3916,25 +3941,27 @@
       "error": null
     },
     "vgythASbWMs": {
-      "attempts": 1,
-      "updated_at": "2026-11-11T07:32:17+00:00",
+      "attempts": 2,
+      "updated_at": "2026-11-11T13:02:47+00:00",
       "model": "qwen2.5:3b",
       "status": "failed",
       "error": "Title promises 3 recipes but model returned 1"
     },
     "TEIx5lbW118": {
-      "attempts": 1,
-      "updated_at": "2026-11-11T07:32:57+00:00",
+      "attempts": 2,
+      "updated_at": "2026-11-11T12:36:45+00:00",
       "model": "qwen2.5:3b",
-      "status": "failed",
-      "error": "Recipe 1 contains weakly supported ingredients: 칼국수 라면, 고춧가루"
+      "status": "completed",
+      "error": null,
+      "source_warning": "HTTP fetch failed for www.youtube.com: HTTP Error 429: Too Many Requests",
+      "recipe_count": 1
     },
     "89Vf_szHODQ": {
-      "attempts": 1,
-      "updated_at": "2026-11-11T07:34:27+00:00",
+      "attempts": 2,
+      "updated_at": "2026-11-11T12:59:27+00:00",
       "model": "qwen2.5:3b",
       "status": "failed",
-      "error": "Recipe 1 contains weakly supported ingredients: 고춧가루, 국간장, 멸치액젓, 대파, 청양고추"
+      "error": "Recipe 1 contains weakly supported ingredients: 대파, 치킨, 고춧가루"
     },
     "eMu83u-8ue8": {
       "attempts": 1,
@@ -3952,25 +3979,25 @@
       "error": null
     },
     "1NqD9W3gmjg": {
-      "attempts": 1,
-      "updated_at": "2026-11-11T07:26:29+00:00",
+      "attempts": 2,
+      "updated_at": "2026-11-11T12:36:14+00:00",
       "model": "qwen2.5:3b",
       "status": "failed",
       "error": "Recipe 1 contains weakly supported ingredients: 숙주나 콩나물, 팽이버섯"
     },
     "4cNBsC30k6Y": {
-      "attempts": 1,
-      "updated_at": "2026-11-11T07:28:39+00:00",
+      "attempts": 2,
+      "updated_at": "2026-11-11T12:41:55+00:00",
+      "model": "qwen2.5:3b",
+      "status": "failed",
+      "error": "Recipe 1 contains weakly supported ingredients: 마늘, 굴소스, 국민소스"
+    },
+    "dwaHv5vENwk": {
+      "attempts": 2,
+      "updated_at": "2026-11-11T12:39:49+00:00",
       "model": "qwen2.5:3b",
       "status": "failed",
       "error": "Recipe 1 has fewer than two ingredients"
-    },
-    "dwaHv5vENwk": {
-      "attempts": 1,
-      "updated_at": "2026-11-11T07:41:48+00:00",
-      "model": "qwen2.5:3b",
-      "status": "failed",
-      "error": "Recipe 1 must have between 2 and 10 steps"
     },
     "MCWKQhN53kU": {
       "attempts": 1,
@@ -3980,33 +4007,33 @@
       "error": "Recipe 1 must have between 2 and 10 steps"
     },
     "PNcobd75wr0": {
-      "attempts": 1,
-      "updated_at": "2026-11-11T08:09:18+00:00",
-      "model": "qwen2.5:3b",
-      "status": "failed",
-      "error": "Recipe 1 has fewer than two ingredients"
-    },
-    "FMBA8pD2Pzw": {
-      "attempts": 1,
-      "updated_at": "2026-11-11T08:12:10+00:00",
-      "model": "qwen2.5:3b",
-      "status": "failed",
-      "error": "Recipe 1 contains weakly supported ingredients: 진순이, 대파삼겹살, 라면스프, 고춧가루, 우유"
-    },
-    "kRgjwcxH8GM": {
-      "attempts": 1,
-      "updated_at": "2026-11-11T08:22:34+00:00",
+      "attempts": 2,
+      "updated_at": "2026-11-11T13:21:54+00:00",
       "model": "qwen2.5:3b",
       "status": "failed",
       "error": "Recipe 1 must have between 2 and 10 steps"
     },
-    "tPXZ-Ai3KVk": {
-      "attempts": 1,
-      "updated_at": "2026-11-11T08:23:48+00:00",
+    "FMBA8pD2Pzw": {
+      "attempts": 2,
+      "updated_at": "2026-11-11T13:24:01+00:00",
       "model": "qwen2.5:3b",
-      "source_warning": "Invidious caption fetch failed: HTTP fetch failed for yt.chocolatemoo53.com: The read operation timed out | HTTP fetch failed for yt.chocolatemoo53.com: The read operation timed out",
       "status": "failed",
-      "error": "No usable caption or detailed video description was available"
+      "error": "Recipe 1 contains weakly supported ingredients: 대파삼겹살, 라면스프, 고춧가루, 우유, 포메이로스 소스"
+    },
+    "kRgjwcxH8GM": {
+      "attempts": 2,
+      "updated_at": "2026-11-11T13:03:43+00:00",
+      "model": "qwen2.5:3b",
+      "status": "completed",
+      "error": null,
+      "recipe_count": 1
+    },
+    "tPXZ-Ai3KVk": {
+      "attempts": 2,
+      "updated_at": "2026-11-11T12:49:25+00:00",
+      "model": "qwen2.5:3b",
+      "status": "failed",
+      "error": "Recipe 1 has fewer than two ingredients"
     },
     "dE_oCNtt3i4": {
       "attempts": 1,
@@ -4024,18 +4051,22 @@
       "error": "Recipe 1 must have between 2 and 10 steps"
     },
     "rBhPM_e_4pg": {
-      "attempts": 1,
-      "updated_at": "2026-11-11T07:41:46+00:00",
+      "attempts": 2,
+      "updated_at": "2026-11-11T12:32:50+00:00",
       "model": "qwen2.5:3b",
-      "status": "failed",
-      "error": "Recipe 1 has fewer than two ingredients"
+      "status": "completed",
+      "error": null,
+      "source_warning": "HTTP fetch failed for www.youtube.com: HTTP Error 429: Too Many Requests",
+      "recipe_count": 1
     },
     "ZDY0mQCdam0": {
-      "attempts": 1,
-      "updated_at": "2026-11-11T07:44:02+00:00",
+      "attempts": 2,
+      "updated_at": "2026-11-11T12:54:46+00:00",
       "model": "qwen2.5:3b",
-      "status": "failed",
-      "error": "Recipe 1 has fewer than two ingredients"
+      "status": "completed",
+      "error": null,
+      "source_warning": "HTTP fetch failed for www.youtube.com: HTTP Error 429: Too Many Requests",
+      "recipe_count": 1
     },
     "a1VIyg8xnRA": {
       "attempts": 1,
@@ -4045,39 +4076,41 @@
       "error": "Recipe 1 has fewer than two ingredients"
     },
     "GtVtN6sC0Y4": {
-      "attempts": 1,
-      "updated_at": "2026-11-11T07:52:51+00:00",
+      "attempts": 2,
+      "updated_at": "2026-11-11T12:47:45+00:00",
       "model": "qwen2.5:3b",
       "status": "failed",
       "error": "Recipe 1 must have between 2 and 10 steps"
     },
     "VeU-wl-ABUM": {
-      "attempts": 1,
-      "updated_at": "2026-11-11T07:54:19+00:00",
+      "attempts": 2,
+      "updated_at": "2026-11-11T12:43:12+00:00",
       "model": "qwen2.5:3b",
       "status": "failed",
-      "error": "Recipe 1 contains weakly supported ingredients: 양파, 대파"
+      "error": "Recipe 1 has fewer than two ingredients"
     },
     "Zh1RDUQxEuY": {
-      "attempts": 1,
-      "updated_at": "2026-11-11T07:55:55+00:00",
+      "attempts": 2,
+      "updated_at": "2026-11-11T12:45:38+00:00",
       "model": "qwen2.5:3b",
       "status": "failed",
       "error": "Recipe 1 contains weakly supported ingredients: 콩나물"
     },
     "owqzI4I4nMI": {
-      "attempts": 1,
-      "updated_at": "2026-11-11T07:58:32+00:00",
+      "attempts": 2,
+      "updated_at": "2026-11-11T13:26:45+00:00",
       "model": "qwen2.5:3b",
       "status": "failed",
       "error": "Recipe 1 contains weakly supported ingredients: 콩국물"
     },
     "YHG03iTCGZY": {
-      "attempts": 1,
-      "updated_at": "2026-11-11T07:59:59+00:00",
+      "attempts": 2,
+      "updated_at": "2026-11-11T13:16:08+00:00",
       "model": "qwen2.5:3b",
-      "status": "failed",
-      "error": "Recipe 1 has fewer than two ingredients"
+      "status": "completed",
+      "error": null,
+      "source_warning": "HTTP fetch failed for www.youtube.com: HTTP Error 429: Too Many Requests",
+      "recipe_count": 1
     },
     "hyCfPckKBiw": {
       "attempts": 1,
@@ -4097,29 +4130,33 @@
       "recipe_count": 1
     },
     "7ED6CsYWlg0": {
-      "attempts": 1,
-      "updated_at": "2026-11-11T07:55:03+00:00",
+      "attempts": 2,
+      "updated_at": "2026-11-11T12:45:31+00:00",
       "model": "qwen2.5:3b",
-      "status": "failed",
-      "error": "Recipe 1 contains weakly supported ingredients: 강동원 참치, 양파, 진간장"
+      "status": "completed",
+      "error": null,
+      "source_warning": "HTTP fetch failed for www.youtube.com: HTTP Error 429: Too Many Requests",
+      "recipe_count": 1
     },
     "hS81lI_llT4": {
-      "attempts": 1,
-      "updated_at": "2026-11-11T07:56:57+00:00",
+      "attempts": 2,
+      "updated_at": "2026-11-11T12:33:08+00:00",
       "model": "qwen2.5:3b",
-      "status": "failed",
-      "error": "Recipe 1 has fewer than two ingredients"
+      "status": "completed",
+      "error": null,
+      "source_warning": "HTTP fetch failed for www.youtube.com: HTTP Error 429: Too Many Requests",
+      "recipe_count": 1
     },
     "mdMRWP9T8h0": {
-      "attempts": 1,
-      "updated_at": "2026-11-11T07:58:18+00:00",
+      "attempts": 2,
+      "updated_at": "2026-11-11T12:42:30+00:00",
       "model": "qwen2.5:3b",
       "status": "failed",
       "error": "Recipe 1 has fewer than two ingredients"
     },
     "USo60UhpUAs": {
-      "attempts": 1,
-      "updated_at": "2026-11-11T07:59:27+00:00",
+      "attempts": 2,
+      "updated_at": "2026-11-11T12:45:54+00:00",
       "model": "qwen2.5:3b",
       "status": "failed",
       "error": "Recipe 1 contains weakly supported ingredients: 파슬리"
@@ -4146,8 +4183,8 @@
       "error": "Recipe 1 contains weakly supported ingredients: 진간장, 굴소스"
     },
     "Xvl5zCzE47o": {
-      "attempts": 1,
-      "updated_at": "2026-11-11T08:06:07+00:00",
+      "attempts": 2,
+      "updated_at": "2026-11-11T12:57:50+00:00",
       "model": "qwen2.5:3b",
       "status": "failed",
       "error": "Recipe 1 has fewer than two ingredients"
@@ -4181,32 +4218,34 @@
       "error": "Recipe 1 contains weakly supported ingredients: 사리곰탕면 분말스프"
     },
     "hiW1CGRcE4c": {
-      "attempts": 1,
-      "updated_at": "2026-11-11T07:48:06+00:00",
+      "attempts": 2,
+      "updated_at": "2026-11-11T12:37:12+00:00",
       "model": "qwen2.5:3b",
       "status": "failed",
-      "error": "Recipe 1 contains weakly supported ingredients: 다진 마늘"
+      "error": "No usable caption or detailed video description was available",
+      "source_warning": "ies for the authentication. See  https://github.com/yt-dlp/yt-dlp/wiki/FAQ#how-do-i-pass-cookies-to-yt-dlp  for how to manually pass cookies. Also see  https://github.com/yt-dlp/yt-dlp/wiki/Extractors#exporting-youtube-cookies  for tips on effectively exporting YouTube cookies | ERROR: [youtube] hiW1CGRcE4c: This video is unavailable. Error code: 152 - 18 | Invidious fallback failed: https://yt.chocolatemoo53.com: HTTP fetch failed for yt.chocolatemoo53.com: HTTP Error 500: Internal Server Error"
     },
     "EjulXyMFSRE": {
-      "attempts": 1,
-      "updated_at": "2026-11-11T07:50:28+00:00",
+      "attempts": 2,
+      "updated_at": "2026-11-11T12:44:05+00:00",
       "model": "qwen2.5:3b",
       "status": "failed",
       "error": "Recipe 1 contains weakly supported ingredients: 매운 라면 스프"
     },
     "bUmKO2e42hs": {
-      "attempts": 1,
-      "updated_at": "2026-11-11T07:52:23+00:00",
+      "attempts": 2,
+      "updated_at": "2026-11-11T12:43:49+00:00",
       "model": "qwen2.5:3b",
       "status": "failed",
-      "error": "Recipe 1 contains weakly supported ingredients: 밀착제, 진간장, 굴소스, 줄 오지가루, 청양고추"
+      "error": "No usable caption or detailed video description was available",
+      "source_warning": "ies for the authentication. See  https://github.com/yt-dlp/yt-dlp/wiki/FAQ#how-do-i-pass-cookies-to-yt-dlp  for how to manually pass cookies. Also see  https://github.com/yt-dlp/yt-dlp/wiki/Extractors#exporting-youtube-cookies  for tips on effectively exporting YouTube cookies | ERROR: [youtube] bUmKO2e42hs: This video is unavailable. Error code: 152 - 18 | Invidious fallback failed: https://yt.chocolatemoo53.com: HTTP fetch failed for yt.chocolatemoo53.com: HTTP Error 500: Internal Server Error"
     },
     "LkxxWW50tJA": {
-      "attempts": 1,
-      "updated_at": "2026-11-11T07:54:31+00:00",
+      "attempts": 2,
+      "updated_at": "2026-11-11T13:06:06+00:00",
       "model": "qwen2.5:3b",
       "status": "failed",
-      "error": "Recipe 1 contains weakly supported ingredients: 사골 라면, 대패삼겹살"
+      "error": "Recipe 1 has fewer than two ingredients"
     },
     "ULBbAAfj_HU": {
       "attempts": 1,
@@ -4217,18 +4256,18 @@
       "error": null
     },
     "A49bLqoZfvs": {
-      "attempts": 1,
-      "updated_at": "2026-11-11T07:57:18+00:00",
+      "attempts": 2,
+      "updated_at": "2026-11-11T12:49:04+00:00",
       "model": "qwen2.5:3b",
       "status": "failed",
-      "error": "Recipe 1 contains weakly supported ingredients: 신김치, 생강"
+      "error": "Recipe 1 contains weakly supported ingredients: 신김치"
     },
     "pytfhtkddGM": {
-      "attempts": 1,
-      "updated_at": "2026-11-11T07:58:36+00:00",
+      "attempts": 2,
+      "updated_at": "2026-11-11T13:26:26+00:00",
       "model": "qwen2.5:3b",
       "status": "failed",
-      "error": "Recipe 1 contains weakly supported ingredients: 통깨"
+      "error": "Recipe 1 contains weakly supported ingredients: 진간장, 통깨"
     },
     "wHiBxoXqpOE": {
       "attempts": 1,
@@ -4246,36 +4285,38 @@
       "error": "Recipe 1 has fewer than two ingredients"
     },
     "twqR9XWCx4o": {
-      "attempts": 1,
-      "updated_at": "2026-11-11T07:30:30+00:00",
+      "attempts": 2,
+      "updated_at": "2026-11-11T12:39:50+00:00",
       "model": "qwen2.5:3b",
       "status": "failed",
       "error": "Recipe 1 has fewer than two ingredients"
     },
     "wBRdfscbKrY": {
-      "attempts": 1,
-      "updated_at": "2026-11-11T07:34:29+00:00",
+      "attempts": 2,
+      "updated_at": "2026-11-11T12:41:33+00:00",
       "model": "qwen2.5:3b",
       "status": "failed",
       "error": "Recipe 1 contains weakly supported ingredients: 게맛살 혹은 크래미"
     },
     "Z2tYdH9LxUA": {
-      "attempts": 1,
-      "updated_at": "2026-11-11T07:37:35+00:00",
+      "attempts": 2,
+      "updated_at": "2026-11-11T12:40:09+00:00",
       "model": "qwen2.5:3b",
       "status": "failed",
       "error": "Recipe 1 has fewer than two ingredients"
     },
     "lWMP4FWnrOY": {
-      "attempts": 1,
-      "updated_at": "2026-11-11T07:40:11+00:00",
+      "attempts": 2,
+      "updated_at": "2026-11-11T12:41:16+00:00",
       "model": "qwen2.5:3b",
-      "status": "failed",
-      "error": "Recipe 1 contains weakly supported ingredients: 양파, 대파, 알배추, 순덕 숭덩, 팽이버섯"
+      "status": "completed",
+      "error": null,
+      "source_warning": "HTTP fetch failed for www.youtube.com: HTTP Error 429: Too Many Requests",
+      "recipe_count": 1
     },
     "H765dCkyCWQ": {
-      "attempts": 1,
-      "updated_at": "2026-11-11T07:43:18+00:00",
+      "attempts": 2,
+      "updated_at": "2026-11-11T12:46:47+00:00",
       "model": "qwen2.5:3b",
       "status": "failed",
       "error": "Recipe 1 contains weakly supported ingredients: 진간장, 양파, 대파, 조선호"
@@ -4289,18 +4330,18 @@
       "error": null
     },
     "m1LRhNESEyw": {
-      "attempts": 1,
-      "updated_at": "2026-11-11T07:48:04+00:00",
+      "attempts": 2,
+      "updated_at": "2026-11-11T12:59:59+00:00",
       "model": "qwen2.5:3b",
       "status": "failed",
       "error": "Recipe 1 contains weakly supported ingredients: 청양고추, 양파"
     },
     "WLx4YXmXOeI": {
-      "attempts": 1,
-      "updated_at": "2026-11-11T07:59:46+00:00",
+      "attempts": 2,
+      "updated_at": "2026-11-11T12:50:24+00:00",
       "model": "qwen2.5:3b",
       "status": "failed",
-      "error": "Recipe 1 must have between 2 and 10 steps"
+      "error": "Recipe 1 has fewer than two ingredients"
     },
     "yVHf5EBOWuk": {
       "attempts": 2,
@@ -4319,8 +4360,8 @@
       "error": null
     },
     "skWSuzj_86E": {
-      "attempts": 1,
-      "updated_at": "2026-11-11T07:33:53+00:00",
+      "attempts": 2,
+      "updated_at": "2026-11-11T12:42:04+00:00",
       "model": "qwen2.5:3b",
       "status": "failed",
       "error": "Recipe 1 has fewer than two ingredients"
@@ -4342,36 +4383,37 @@
       "error": null
     },
     "z0xuMMSVTZg": {
-      "attempts": 1,
-      "updated_at": "2026-11-11T07:40:42+00:00",
+      "attempts": 2,
+      "updated_at": "2026-11-11T12:55:57+00:00",
       "model": "qwen2.5:3b",
       "status": "failed",
       "error": "Recipe 1 has fewer than two ingredients"
     },
     "PtBJbe4B3Qo": {
-      "attempts": 1,
-      "updated_at": "2026-11-11T07:42:15+00:00",
+      "attempts": 2,
+      "updated_at": "2026-11-11T12:45:48+00:00",
       "model": "qwen2.5:3b",
       "status": "failed",
       "error": "Recipe 1 contains weakly supported ingredients: 고춧가루, 치킨 독"
     },
     "n2UKqhIH-ZU": {
-      "attempts": 1,
-      "updated_at": "2026-11-11T07:43:49+00:00",
+      "attempts": 2,
+      "updated_at": "2026-11-11T12:48:01+00:00",
       "model": "qwen2.5:3b",
       "status": "failed",
       "error": "Recipe 1 contains weakly supported ingredients: 양파"
     },
     "JZh6dx96Nhg": {
-      "attempts": 1,
-      "updated_at": "2026-11-11T07:50:31+00:00",
+      "attempts": 2,
+      "updated_at": "2026-11-11T12:57:47+00:00",
       "model": "qwen2.5:3b",
-      "status": "failed",
-      "error": "Recipe 1 must have between 2 and 10 steps"
+      "status": "completed",
+      "error": null,
+      "recipe_count": 1
     },
     "vDVAbcYZAFg": {
-      "attempts": 1,
-      "updated_at": "2026-11-11T07:51:44+00:00",
+      "attempts": 2,
+      "updated_at": "2026-11-11T13:19:29+00:00",
       "model": "qwen2.5:3b",
       "status": "failed",
       "error": "Recipe 1 has fewer than two ingredients"
@@ -4391,60 +4433,63 @@
       "error": "Recipe 1 must have between 2 and 10 steps"
     },
     "d38dA9MG7wo": {
-      "attempts": 1,
-      "updated_at": "2026-11-11T07:34:59+00:00",
+      "attempts": 2,
+      "updated_at": "2026-11-11T12:47:48+00:00",
       "model": "qwen2.5:3b",
       "status": "failed",
       "error": "Recipe 1 contains weakly supported ingredients: 다진 돼지고기, 팽이버섯, 표고버섯, 미니 버섯, 마늘"
     },
     "Rxv_-xknlDY": {
-      "attempts": 1,
-      "updated_at": "2026-11-11T07:37:49+00:00",
+      "attempts": 2,
+      "updated_at": "2026-11-11T12:43:30+00:00",
       "model": "qwen2.5:3b",
       "status": "failed",
       "error": "Recipe 1 has fewer than two ingredients"
     },
     "rrPQxz2o-yA": {
-      "attempts": 1,
-      "updated_at": "2026-11-11T07:41:47+00:00",
+      "attempts": 2,
+      "updated_at": "2026-11-11T12:54:32+00:00",
       "model": "qwen2.5:3b",
       "status": "failed",
       "error": "Recipe 1 has fewer than two ingredients"
     },
     "FRv7Qa6K254": {
-      "attempts": 1,
-      "updated_at": "2026-11-11T07:43:04+00:00",
+      "attempts": 2,
+      "updated_at": "2026-11-11T12:47:49+00:00",
       "model": "qwen2.5:3b",
       "status": "failed",
-      "error": "Recipe 1 contains weakly supported ingredients: 양념장, 정구지, 김계란"
+      "error": "Recipe 1 contains weakly supported ingredients: 국수, 정구지, 김계란"
     },
     "2a_vJrvHRqg": {
-      "attempts": 1,
-      "updated_at": "2026-11-11T07:44:29+00:00",
+      "attempts": 2,
+      "updated_at": "2026-11-11T12:42:49+00:00",
       "model": "qwen2.5:3b",
       "status": "failed",
       "error": "Recipe 1 has fewer than two ingredients"
     },
     "5zB4hDTHP1o": {
-      "attempts": 1,
-      "updated_at": "2026-11-11T07:45:44+00:00",
+      "attempts": 2,
+      "updated_at": "2026-11-11T12:47:06+00:00",
       "model": "qwen2.5:3b",
       "status": "failed",
       "error": "Recipe 1 has fewer than two ingredients"
     },
     "BJIHMCGqAxc": {
-      "attempts": 1,
-      "updated_at": "2026-11-11T07:48:03+00:00",
+      "attempts": 2,
+      "updated_at": "2026-11-11T12:42:34+00:00",
       "model": "qwen2.5:3b",
       "status": "failed",
-      "error": "Recipe 1 contains weakly supported ingredients: 진간장, 함박스테이크 혹은 미트볼, 모자르트 치즈, 흰바비, 파슬리"
+      "error": "Recipe 1 has fewer than two ingredients",
+      "source_warning": "HTTP fetch failed for www.youtube.com: HTTP Error 429: Too Many Requests"
     },
     "o-uD8ND5pHc": {
-      "attempts": 1,
-      "updated_at": "2026-11-11T07:49:02+00:00",
+      "attempts": 2,
+      "updated_at": "2026-11-11T13:24:34+00:00",
       "model": "qwen2.5:3b",
-      "status": "failed",
-      "error": "Recipe 1 contains weakly supported ingredients: 우동사리, 대파"
+      "status": "completed",
+      "error": null,
+      "source_warning": "HTTP fetch failed for www.youtube.com: HTTP Error 429: Too Many Requests",
+      "recipe_count": 1
     },
     "mmTN3sCUU8E": {
       "attempts": 2,
@@ -4461,57 +4506,57 @@
       "error": "Recipe 1 contains weakly supported ingredients: 고추기름, 동깨소스"
     },
     "DV-BO9xbErU": {
-      "attempts": 1,
-      "updated_at": "2026-11-11T07:29:32+00:00",
+      "attempts": 2,
+      "updated_at": "2026-11-11T12:38:11+00:00",
       "model": "qwen2.5:3b",
       "status": "failed",
       "error": "Recipe 1 has fewer than two ingredients"
     },
     "nnazPq5fTzM": {
-      "attempts": 1,
-      "updated_at": "2026-11-11T07:32:29+00:00",
+      "attempts": 2,
+      "updated_at": "2026-11-11T12:52:27+00:00",
       "model": "qwen2.5:3b",
       "status": "failed",
-      "error": "Recipe 1 contains weakly supported ingredients: 옥수수 캔"
+      "error": "Recipe 1 contains weakly supported ingredients: 옥수수 캔, 국민 소스"
     },
     "ZdbSHUlHiUc": {
-      "attempts": 1,
-      "updated_at": "2026-11-11T07:32:57+00:00",
+      "attempts": 2,
+      "updated_at": "2026-11-11T12:39:10+00:00",
       "model": "qwen2.5:3b",
       "status": "failed",
       "error": "Recipe 1 has fewer than two ingredients"
     },
     "lIH7NRImFVU": {
-      "attempts": 1,
-      "updated_at": "2026-11-11T07:33:49+00:00",
+      "attempts": 2,
+      "updated_at": "2026-11-11T12:40:03+00:00",
       "model": "qwen2.5:3b",
       "status": "failed",
       "error": "Recipe 1 has fewer than two ingredients"
     },
     "uvHiFau1TXA": {
-      "attempts": 1,
-      "updated_at": "2026-11-11T07:35:04+00:00",
+      "attempts": 2,
+      "updated_at": "2026-11-11T12:57:12+00:00",
       "model": "qwen2.5:3b",
       "status": "failed",
       "error": "Recipe 1 has fewer than two ingredients"
     },
     "yi83sq0mHFc": {
-      "attempts": 1,
-      "updated_at": "2026-11-11T07:41:56+00:00",
+      "attempts": 2,
+      "updated_at": "2026-11-11T12:53:07+00:00",
       "model": "qwen2.5:3b",
       "status": "failed",
-      "error": "Recipe 1 must have between 2 and 10 steps"
+      "error": "Recipe 1 has fewer than two ingredients"
     },
     "G8DzdpIIlPc": {
-      "attempts": 1,
-      "updated_at": "2026-11-11T07:43:23+00:00",
+      "attempts": 2,
+      "updated_at": "2026-11-11T12:49:31+00:00",
       "model": "qwen2.5:3b",
       "status": "failed",
       "error": "Recipe 1 contains weakly supported ingredients: 김치, 얼음, 통깨"
     },
     "e_bpcOBuqx4": {
-      "attempts": 1,
-      "updated_at": "2026-11-11T07:45:22+00:00",
+      "attempts": 2,
+      "updated_at": "2026-11-11T13:11:04+00:00",
       "model": "qwen2.5:3b",
       "status": "failed",
       "error": "Recipe 1 contains weakly supported ingredients: 우동 타리, 숙주나 콩나물"
@@ -4540,29 +4585,29 @@
       "error": null
     },
     "TTcOkpBSYW4": {
-      "attempts": 1,
-      "updated_at": "2026-11-11T07:57:33+00:00",
+      "attempts": 2,
+      "updated_at": "2026-11-11T12:41:53+00:00",
       "model": "qwen2.5:3b",
       "status": "failed",
-      "error": "Recipe 1 contains weakly supported ingredients: 다진 마늘"
+      "error": "Recipe 1 has fewer than two ingredients"
     },
     "JHrPeAejKjw": {
-      "attempts": 1,
-      "updated_at": "2026-11-11T07:59:35+00:00",
+      "attempts": 2,
+      "updated_at": "2026-11-11T13:04:18+00:00",
       "model": "qwen2.5:3b",
       "status": "failed",
       "error": "Recipe 1 has fewer than two ingredients"
     },
     "RAWT-ns__lg": {
-      "attempts": 1,
-      "updated_at": "2026-11-11T08:01:16+00:00",
+      "attempts": 2,
+      "updated_at": "2026-11-11T13:06:05+00:00",
       "model": "qwen2.5:3b",
       "status": "failed",
       "error": "Recipe 1 has fewer than two ingredients"
     },
     "KoMK7zVRUlg": {
-      "attempts": 1,
-      "updated_at": "2026-11-11T08:13:28+00:00",
+      "attempts": 2,
+      "updated_at": "2026-11-11T12:55:11+00:00",
       "model": "qwen2.5:3b",
       "status": "failed",
       "error": "Recipe 1 must have between 2 and 10 steps"
@@ -4576,19 +4621,18 @@
       "error": null
     },
     "XJ1dDJRtm8k": {
-      "attempts": 1,
-      "updated_at": "2026-11-11T08:27:35+00:00",
+      "attempts": 2,
+      "updated_at": "2026-11-11T13:10:39+00:00",
       "model": "qwen2.5:3b",
       "status": "failed",
-      "error": "Recipe 1 must have between 2 and 10 steps"
+      "error": "Recipe 1 contains weakly supported ingredients: 다진 매실, 당근, 소금, 참기름"
     },
     "IX6r9DPCzRo": {
-      "attempts": 1,
-      "updated_at": "2026-11-11T08:29:07+00:00",
+      "attempts": 2,
+      "updated_at": "2026-11-11T13:23:14+00:00",
       "model": "qwen2.5:3b",
-      "source_warning": "Invidious caption fetch failed: HTTP fetch failed for yt.chocolatemoo53.com: The read operation timed out | HTTP fetch failed for yt.chocolatemoo53.com: The read operation timed out",
       "status": "failed",
-      "error": "No usable caption or detailed video description was available"
+      "error": "Recipe 1 contains weakly supported ingredients: 매운 라면"
     },
     "deDdJAruDGM": {
       "attempts": 1,
@@ -4599,15 +4643,17 @@
       "error": null
     },
     "pnsuPV9UwpA": {
-      "attempts": 1,
-      "updated_at": "2026-11-11T07:26:55+00:00",
+      "attempts": 2,
+      "updated_at": "2026-11-11T12:34:56+00:00",
       "model": "qwen2.5:3b",
-      "status": "failed",
-      "error": "Recipe 1 contains weakly supported ingredients: 어묵, 비엔나 소시지, 양배추, 메추리알"
+      "status": "completed",
+      "error": null,
+      "source_warning": "HTTP fetch failed for www.youtube.com: HTTP Error 429: Too Many Requests",
+      "recipe_count": 1
     },
     "GnhxqhiRt-M": {
-      "attempts": 1,
-      "updated_at": "2026-11-11T07:32:57+00:00",
+      "attempts": 2,
+      "updated_at": "2026-11-11T12:38:56+00:00",
       "model": "qwen2.5:3b",
       "status": "failed",
       "error": "Recipe 1 contains weakly supported ingredients: 두툼한 통삼겹살, 동깨소스"
@@ -4629,36 +4675,39 @@
       "error": null
     },
     "Yc1Y02rIUcw": {
-      "attempts": 1,
-      "updated_at": "2026-11-11T07:47:26+00:00",
+      "attempts": 2,
+      "updated_at": "2026-11-11T12:45:06+00:00",
       "model": "qwen2.5:3b",
       "status": "failed",
-      "error": "Recipe 1 contains weakly supported ingredients: 냉동고기만두, 비비고, 층간장, 라면 사리"
+      "error": "Recipe 1 contains weakly supported ingredients: 냉동고기만두, 비비고, 층간장"
     },
     "Fp2lKtt9SF4": {
-      "attempts": 1,
-      "updated_at": "2026-11-11T07:50:22+00:00",
+      "attempts": 2,
+      "updated_at": "2026-11-11T12:40:56+00:00",
       "model": "qwen2.5:3b",
-      "status": "failed",
-      "error": "Recipe 1 contains weakly supported ingredients: 대파, 화기름"
+      "status": "completed",
+      "error": null,
+      "source_warning": "HTTP fetch failed for www.youtube.com: HTTP Error 429: Too Many Requests",
+      "recipe_count": 1
     },
     "BW1WYTEo680": {
-      "attempts": 1,
-      "updated_at": "2026-11-11T07:52:35+00:00",
+      "attempts": 2,
+      "updated_at": "2026-11-11T12:58:35+00:00",
       "model": "qwen2.5:3b",
       "status": "failed",
       "error": "Recipe 1 contains weakly supported ingredients: 빨간라면, 대파, 치즈"
     },
     "NwjM3h5Pl7Y": {
-      "attempts": 1,
-      "updated_at": "2026-11-11T08:08:36+00:00",
+      "attempts": 2,
+      "updated_at": "2026-11-11T13:23:36+00:00",
       "model": "qwen2.5:3b",
       "status": "failed",
-      "error": "Recipe 1 must have between 2 and 10 steps"
+      "error": "Recipe 1 contains weakly supported ingredients: 대파, 양파, 장미향파, 고춧가루, 고추장",
+      "source_warning": "HTTP fetch failed for www.youtube.com: HTTP Error 429: Too Many Requests"
     },
     "oar0icIxOAA": {
-      "attempts": 1,
-      "updated_at": "2026-11-11T08:20:07+00:00",
+      "attempts": 2,
+      "updated_at": "2026-11-11T12:42:39+00:00",
       "model": "qwen2.5:3b",
       "status": "failed",
       "error": "Recipe 1 must have between 2 and 10 steps"
@@ -4671,67 +4720,73 @@
       "error": "Recipe 1 has fewer than two ingredients"
     },
     "dwhn9BsmOt4": {
-      "attempts": 1,
-      "updated_at": "2026-11-11T07:25:17+00:00",
+      "attempts": 2,
+      "updated_at": "2026-11-11T12:33:42+00:00",
       "model": "qwen2.5:3b",
       "status": "failed",
       "error": "Recipe 1 has fewer than two ingredients"
     },
     "Mw3VD0xGNjc": {
-      "attempts": 1,
-      "updated_at": "2026-11-11T07:27:26+00:00",
+      "attempts": 2,
+      "updated_at": "2026-11-11T12:34:28+00:00",
       "model": "qwen2.5:3b",
-      "status": "failed",
-      "error": "Recipe 1 has fewer than two ingredients"
+      "status": "completed",
+      "error": null,
+      "source_warning": "HTTP fetch failed for www.youtube.com: HTTP Error 429: Too Many Requests",
+      "recipe_count": 1
     },
     "_V_82ctw8o8": {
-      "attempts": 1,
-      "updated_at": "2026-11-11T07:28:58+00:00",
+      "attempts": 2,
+      "updated_at": "2026-11-11T12:45:35+00:00",
       "model": "qwen2.5:3b",
       "status": "failed",
       "error": "Recipe 1 has fewer than two ingredients"
     },
     "VxPEBmV3CYQ": {
-      "attempts": 1,
-      "updated_at": "2026-11-11T07:35:17+00:00",
+      "attempts": 2,
+      "updated_at": "2026-11-11T12:48:08+00:00",
       "model": "qwen2.5:3b",
       "status": "failed",
       "error": "Recipe 1 must have between 2 and 10 steps"
     },
     "_vPdWjGz3VU": {
-      "attempts": 1,
-      "updated_at": "2026-11-11T07:36:37+00:00",
+      "attempts": 2,
+      "updated_at": "2026-11-11T12:48:56+00:00",
       "model": "qwen2.5:3b",
-      "status": "failed",
-      "error": "Recipe 1 contains weakly supported ingredients: 고춧가루, 고추장"
+      "status": "completed",
+      "error": null,
+      "source_warning": "HTTP fetch failed for www.youtube.com: HTTP Error 429: Too Many Requests",
+      "recipe_count": 1
     },
     "FzuQnHq_4n4": {
-      "attempts": 1,
-      "updated_at": "2026-11-11T07:38:38+00:00",
+      "attempts": 2,
+      "updated_at": "2026-11-11T13:08:46+00:00",
       "model": "qwen2.5:3b",
       "status": "failed",
       "error": "Recipe 1 contains weakly supported ingredients: 고추장"
     },
     "uoxp5NEorGU": {
-      "attempts": 1,
-      "updated_at": "2026-11-11T07:39:59+00:00",
+      "attempts": 2,
+      "updated_at": "2026-11-11T12:55:57+00:00",
       "model": "qwen2.5:3b",
-      "status": "failed",
-      "error": "Recipe 1 contains weakly supported ingredients: 고춧가루, 다진 매너"
+      "status": "completed",
+      "error": null,
+      "source_warning": "HTTP fetch failed for www.youtube.com: HTTP Error 429: Too Many Requests",
+      "recipe_count": 1
     },
     "cH4SnijL2NQ": {
-      "attempts": 1,
-      "updated_at": "2026-11-11T07:40:58+00:00",
+      "attempts": 2,
+      "updated_at": "2026-11-11T13:08:08+00:00",
       "model": "qwen2.5:3b",
       "status": "failed",
       "error": "Recipe 1 has fewer than two ingredients"
     },
     "we6t7LEy7sM": {
-      "attempts": 1,
-      "updated_at": "2026-11-11T07:43:13+00:00",
+      "attempts": 2,
+      "updated_at": "2026-11-11T13:09:49+00:00",
       "model": "qwen2.5:3b",
       "status": "failed",
-      "error": "Recipe 1 has fewer than two ingredients"
+      "error": "Recipe 1 must have between 2 and 10 steps"
     },
     "4QnufD00LII": {
       "attempts": 1,
@@ -8192,6 +8247,181 @@
       "model": "qwen2.5:3b",
       "status": "failed",
       "error": "Recipe 1 contains weakly supported ingredients: 쌈장, 다짐"
+    },
+    "E0GevyFmJMU": {
+      "attempts": 1,
+      "updated_at": "2026-11-11T12:33:11+00:00",
+      "model": "qwen2.5:3b",
+      "status": "failed",
+      "error": "Recipe 1 has fewer than two ingredients"
+    },
+    "jo2Qam2HKj4": {
+      "attempts": 1,
+      "updated_at": "2026-11-11T12:34:11+00:00",
+      "model": "qwen2.5:3b",
+      "source_warning": "HTTP fetch failed for www.youtube.com: HTTP Error 429: Too Many Requests",
+      "status": "completed",
+      "recipe_count": 1,
+      "error": null
+    },
+    "-pA3DD-YFe8": {
+      "attempts": 1,
+      "updated_at": "2026-11-11T12:31:40+00:00",
+      "model": "qwen2.5:3b",
+      "status": "failed",
+      "error": "Recipe 1 has fewer than two ingredients"
+    },
+    "kwluOT_Sp2I": {
+      "attempts": 1,
+      "updated_at": "2026-11-11T12:41:45+00:00",
+      "model": "qwen2.5:3b",
+      "status": "failed",
+      "error": "Recipe 1 must have between 2 and 10 steps"
+    },
+    "-3sq7G48mQU": {
+      "attempts": 1,
+      "updated_at": "2026-11-11T12:31:55+00:00",
+      "model": "qwen2.5:3b",
+      "status": "failed",
+      "error": "Recipe 1 has fewer than two ingredients"
+    },
+    "xbR0UQitMXI": {
+      "attempts": 1,
+      "updated_at": "2026-11-11T12:32:33+00:00",
+      "model": "qwen2.5:3b",
+      "status": "failed",
+      "error": "Recipe 1 contains weakly supported ingredients: 청양고추, 마요네즈"
+    },
+    "exdf1j3NkZg": {
+      "attempts": 1,
+      "updated_at": "2026-11-11T12:31:53+00:00",
+      "model": "qwen2.5:3b",
+      "source_warning": "HTTP fetch failed for www.youtube.com: HTTP Error 429: Too Many Requests",
+      "status": "completed",
+      "recipe_count": 1,
+      "error": null
+    },
+    "wcyF4w5L-lw": {
+      "attempts": 1,
+      "updated_at": "2026-11-11T12:33:31+00:00",
+      "model": "qwen2.5:3b",
+      "status": "failed",
+      "error": "Recipe 1 has fewer than two ingredients"
+    },
+    "8fUJat1cJEs": {
+      "attempts": 1,
+      "updated_at": "2026-11-11T12:32:15+00:00",
+      "model": "qwen2.5:3b",
+      "status": "failed",
+      "error": "Recipe 1 has fewer than two ingredients"
+    },
+    "ZCYDAVFYF24": {
+      "attempts": 1,
+      "updated_at": "2026-11-11T12:32:07+00:00",
+      "model": "qwen2.5:3b",
+      "status": "failed",
+      "error": "Recipe 1 contains weakly supported ingredients: 흰밥, 침기름, 마요네즈, 참기름치"
+    },
+    "u2cmyx5G3Mk": {
+      "attempts": 1,
+      "updated_at": "2026-11-11T12:44:55+00:00",
+      "model": "qwen2.5:3b",
+      "status": "failed",
+      "error": "Recipe 1 contains weakly supported ingredients: 단무지"
+    },
+    "ub7m5wRlr7Q": {
+      "attempts": 1,
+      "updated_at": "2026-11-11T12:52:24+00:00",
+      "model": "qwen2.5:3b",
+      "status": "failed",
+      "error": "Recipe 1 has fewer than two ingredients"
+    },
+    "baS3o5i7708": {
+      "attempts": 1,
+      "updated_at": "2026-11-11T12:31:41+00:00",
+      "model": "qwen2.5:3b",
+      "status": "failed",
+      "error": "Recipe 1 has fewer than two ingredients"
+    },
+    "CIe0ro-ZjmE": {
+      "attempts": 1,
+      "updated_at": "2026-11-11T12:38:45+00:00",
+      "model": "qwen2.5:3b",
+      "status": "failed",
+      "error": "Recipe 1 must have between 2 and 10 steps"
+    },
+    "eyeOojOPoXM": {
+      "attempts": 1,
+      "updated_at": "2026-11-11T12:40:16+00:00",
+      "model": "qwen2.5:3b",
+      "status": "failed",
+      "error": "Recipe 1 has fewer than two ingredients"
+    },
+    "DQMvU0vIZPk": {
+      "attempts": 1,
+      "updated_at": "2026-11-11T12:40:43+00:00",
+      "model": "qwen2.5:3b",
+      "source_warning": "HTTP fetch failed for www.youtube.com: HTTP Error 429: Too Many Requests",
+      "status": "completed",
+      "recipe_count": 1,
+      "error": null
+    },
+    "oA_P1eod0bo": {
+      "attempts": 1,
+      "updated_at": "2026-11-11T12:32:41+00:00",
+      "model": "qwen2.5:3b",
+      "status": "failed",
+      "error": "Recipe 1 has fewer than two ingredients"
+    },
+    "cpR3d68p4GY": {
+      "attempts": 1,
+      "updated_at": "2026-11-11T12:41:53+00:00",
+      "model": "qwen2.5:3b",
+      "status": "failed",
+      "error": "Recipe 1 must have between 2 and 10 steps"
+    },
+    "gAy3kTAjCDk": {
+      "attempts": 1,
+      "updated_at": "2026-11-11T12:31:32+00:00",
+      "model": "qwen2.5:3b",
+      "status": "failed",
+      "error": "Recipe 1 contains weakly supported ingredients: 양념장"
+    },
+    "hPPF0f39Kxc": {
+      "attempts": 1,
+      "updated_at": "2026-11-11T12:36:43+00:00",
+      "model": "qwen2.5:3b",
+      "status": "failed",
+      "error": "Recipe 1 must have between 2 and 10 steps"
+    },
+    "ltBNbTeCM4Y": {
+      "attempts": 1,
+      "updated_at": "2026-11-11T12:33:39+00:00",
+      "model": "qwen2.5:3b",
+      "status": "failed",
+      "error": "Ollama request failed: HTTP Error 500: Internal Server Error"
+    },
+    "MroA9GZ9084": {
+      "attempts": 1,
+      "updated_at": "2026-11-11T12:31:47+00:00",
+      "model": "qwen2.5:3b",
+      "status": "completed",
+      "recipe_count": 1,
+      "error": null
+    },
+    "HhM5LS1BZHg": {
+      "attempts": 1,
+      "updated_at": "2026-11-11T12:37:57+00:00",
+      "model": "qwen2.5:3b",
+      "status": "failed",
+      "error": "Recipe 1 has fewer than two ingredients"
+    },
+    "fpfSrJHJDfc": {
+      "attempts": 1,
+      "updated_at": "2026-11-11T12:37:45+00:00",
+      "model": "qwen2.5:3b",
+      "status": "failed",
+      "error": "Recipe 1 must have between 2 and 10 steps"
     }
   }
 }
