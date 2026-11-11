@@ -34,6 +34,13 @@ ALIASES = {
     "국간장": "간장",
     "올리브오일": "올리브유",
     "오일": "식용유",
+    "쥬키니": "주키니",
+}
+
+# A family query is intentionally directional: searching for "호박" should find
+# 애호박/단호박/주키니, while searching for "애호박" should stay specific.
+INGREDIENT_FAMILIES = {
+    "호박": {"호박", "애호박", "단호박", "주키니"},
 }
 
 PANTRY_STAPLES = {
@@ -162,6 +169,23 @@ def _recipe_ingredients(conn: sqlite3.Connection, recipe_id: int) -> list[str]:
     return result
 
 
+def _ingredient_is_available(ingredient: str, available: set[str]) -> bool:
+    if ingredient in available:
+        return True
+    return any(
+        family in available and ingredient in members
+        for family, members in INGREDIENT_FAMILIES.items()
+    )
+
+
+def _family_query_matches(recipe_ingredients: set[str], available: set[str]) -> list[str]:
+    return sorted(
+        family
+        for family, members in INGREDIENT_FAMILIES.items()
+        if family in available and bool(recipe_ingredients & members)
+    )
+
+
 def _title_matches(title: str, available: set[str]) -> list[str]:
     compact_title = re.sub(r"\s+", "", title.lower())
     matches: list[str] = []
@@ -172,6 +196,7 @@ def _title_matches(title: str, available: set[str]) -> list[str]:
             for alias, canonical in ALIASES.items()
             if canonical == ingredient and len(alias.replace(" ", "")) > 1
         )
+        terms.update(term.replace(" ", "") for term in INGREDIENT_FAMILIES.get(ingredient, set()))
         if any(term and term in compact_title for term in terms):
             matches.append(ingredient)
     return sorted(matches)
@@ -204,19 +229,38 @@ def recommend(
         if not recipe_ingredients:
             continue
         ingredient_set = set(recipe_ingredients)
-        user_matches = ingredient_set & available
-        pantry_matches = (ingredient_set & assumed_pantry) - user_matches
-        missing = ingredient_set - effective_available
+        user_matches = {
+            ingredient
+            for ingredient in ingredient_set
+            if _ingredient_is_available(ingredient, available)
+        }
+        pantry_matches = {
+            ingredient
+            for ingredient in ingredient_set
+            if ingredient not in user_matches
+            and _ingredient_is_available(ingredient, assumed_pantry)
+        }
+        missing = {
+            ingredient
+            for ingredient in ingredient_set
+            if not _ingredient_is_available(ingredient, effective_available)
+        }
         title_matches = _title_matches(row["name"], available)
+        family_matches = _family_query_matches(ingredient_set, available)
         if not user_matches:
             continue
-        if max_missing is not None and len(missing) > max_missing and not title_matches:
+        if (
+            max_missing is not None
+            and len(missing) > max_missing
+            and not title_matches
+            and not family_matches
+        ):
             continue
 
         non_pantry = ingredient_set - PANTRY_STAPLES
-        relevant_matches = len(non_pantry & available)
+        relevant_matches = len(non_pantry & user_matches)
         coverage = min((relevant_matches + len(pantry_matches)) / len(ingredient_set), 1.0)
-        input_utilization = len(user_matches) / max(len(available), 1)
+        input_utilization = min(len(user_matches) / max(len(available), 1), 1.0)
         title_relevance = len(title_matches) / max(len(available), 1)
         confidence = float(row["confidence"])
         can_make_now = not missing
@@ -238,6 +282,10 @@ def recommend(
             reason = f"{matched_title}가 요리 제목의 주재료와 직접 일치해요."
             if re.search(r"\d+\s*(?:가지|개)", row["name"]):
                 reason += " 여러 레시피를 묶은 영상이라 재료 목록은 전체 요리의 합계예요."
+        elif family_matches:
+            matched_family = ", ".join(family_matches)
+            matched_recipe_names = ", ".join(matched_names)
+            reason = f"{matched_family} 재료군인 {matched_recipe_names}이 들어 있어요."
         else:
             missing_summary = ", ".join(missing_names[:4]) + (
                 f" 외 {len(missing_names) - 4}개" if len(missing_names) > 4 else ""

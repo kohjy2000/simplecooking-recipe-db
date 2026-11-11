@@ -45,6 +45,8 @@ def test_parses_natural_korean_ingredient_query() -> None:
 def test_aliases_are_canonicalized() -> None:
     assert canonicalize_ingredient("달걀") == "계란"
     assert canonicalize_ingredient("콘") == "옥수수"
+    assert canonicalize_ingredient("쥬키니") == "주키니"
+    assert canonicalize_ingredient("애호박") == "애호박"
 
 
 def test_exact_recipe_ranks_before_recipe_with_missing_items(tmp_path) -> None:
@@ -96,4 +98,57 @@ def test_title_match_is_not_filtered_by_many_aggregate_ingredients(tmp_path) -> 
 
     assert results[0].name == "참치 요리 5가지"
     assert "제목의 주재료와 직접 일치" in results[0].reason
+
+
+def test_broad_pumpkin_query_finds_zucchini_even_with_many_missing_items(tmp_path) -> None:
+    with connect(tmp_path / "recipes.sqlite") as conn:
+        initialize(conn)
+        _seed(conn)
+        conn.execute(
+            "INSERT INTO videos (video_id, title, url, status) VALUES ('stew', '매콤한 찌개', 'https://youtu.be/stew', 'completed')"
+        )
+        recipe_id = conn.execute(
+            """
+            INSERT INTO recipes (video_id, name, confidence, needs_review, source_kind)
+            VALUES ('stew', '매콤한 찌개', 0.9, 0, 'description')
+            """
+        ).lastrowid
+        for position, name in enumerate(
+            ["애호박", "두부", "버섯", "양파", "대파", "고추장", "멸치액젓"], start=1
+        ):
+            conn.execute(
+                "INSERT INTO ingredients (recipe_id, position, name, raw_text) VALUES (?, ?, ?, ?)",
+                (recipe_id, position, name, name),
+            )
+        conn.commit()
+        parsed, results = recommend(conn, "호박", max_missing=2)
+
+    assert parsed == ["호박"]
+    assert results[0].name == "매콤한 찌개"
+    assert results[0].matched_ingredients == ["애호박"]
+    assert "호박 재료군인 애호박" in results[0].reason
+
+
+def test_specific_zucchini_query_does_not_match_sweet_pumpkin(tmp_path) -> None:
+    with connect(tmp_path / "recipes.sqlite") as conn:
+        initialize(conn)
+        _seed(conn)
+        conn.execute(
+            "INSERT INTO videos (video_id, title, url, status) VALUES ('pumpkin', '단호박찜', 'https://youtu.be/pumpkin', 'completed')"
+        )
+        recipe_id = conn.execute(
+            """
+            INSERT INTO recipes (video_id, name, confidence, needs_review, source_kind)
+            VALUES ('pumpkin', '단호박찜', 0.9, 0, 'description')
+            """
+        ).lastrowid
+        conn.execute(
+            "INSERT INTO ingredients (recipe_id, position, name, raw_text) VALUES (?, 1, '단호박', '단호박')",
+            (recipe_id,),
+        )
+        conn.commit()
+        parsed, results = recommend(conn, "애호박", max_missing=5)
+
+    assert parsed == ["애호박"]
+    assert all(result.name != "단호박찜" for result in results)
 
