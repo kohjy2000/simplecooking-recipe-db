@@ -58,7 +58,8 @@ jobs:
     if: needs.plan.outputs.has_work == 'true'
     strategy:
       fail-fast: false
-      max-parallel: 20
+      # Reserve two account-level runner slots for CI and Pages deployments.
+      max-parallel: 18
       matrix:
         shard: ${{ fromJSON(needs.plan.outputs.shards) }}
     runs-on: ubuntu-latest
