@@ -44,6 +44,8 @@ INGREDIENT_FAMILIES = {
     "호박": {"호박", "애호박", "단호박", "주키니"},
     "닭": {"닭", "닭고기", "닭가슴살", "닭다리살", "닭다리", "닭봉", "닭날개", "통닭"},
 }
+PREPARATION_PREFIXES = ("익힌 ", "삶은 ", "구운 ", "냉동 ", "생 ", "통")
+CUT_SUFFIXES = (" 정육", "정육", "고기", "살")
 
 PANTRY_STAPLES = {
     "물",
@@ -178,8 +180,33 @@ def _recipe_ingredients(conn: sqlite3.Connection, recipe_id: int) -> list[str]:
     return result
 
 
+def _ingredient_forms(value: str) -> set[str]:
+    forms = {value.strip()}
+    changed = True
+    while changed:
+        changed = False
+        for form in forms.copy():
+            for prefix in PREPARATION_PREFIXES:
+                if form.startswith(prefix) and len(form) - len(prefix) >= 2:
+                    reduced = form[len(prefix) :].strip()
+                    if reduced not in forms:
+                        forms.add(reduced)
+                        changed = True
+            for suffix in CUT_SUFFIXES:
+                if form.endswith(suffix) and len(form) - len(suffix) >= 2:
+                    reduced = form[: -len(suffix)].strip()
+                    if reduced not in forms:
+                        forms.add(reduced)
+                        changed = True
+    return {form for form in forms if form}
+
+
+def _ingredients_equivalent(left: str, right: str) -> bool:
+    return bool(_ingredient_forms(left) & _ingredient_forms(right))
+
+
 def _ingredient_is_available(ingredient: str, available: set[str]) -> bool:
-    if ingredient in available:
+    if any(_ingredients_equivalent(ingredient, query) for query in available):
         return True
     return any(
         family in available
@@ -254,7 +281,11 @@ def recommend(
         if not recipe_ingredients:
             continue
         ingredient_set = set(recipe_ingredients)
-        exact_user_matches = ingredient_set & available
+        direct_user_matches = {
+            ingredient
+            for ingredient in ingredient_set
+            if any(_ingredients_equivalent(ingredient, query) for query in available)
+        }
         user_matches = {
             ingredient
             for ingredient in ingredient_set
@@ -279,7 +310,7 @@ def recommend(
             max_missing is not None
             and len(missing) > max_missing
             and not title_matches
-            and not exact_user_matches
+            and not direct_user_matches
             and not family_matches
         ):
             continue

@@ -17,6 +17,8 @@ const ingredientFamilies = {
   호박: new Set(["호박", "애호박", "단호박", "주키니"]),
   닭: new Set(["닭", "닭고기", "닭가슴살", "닭다리살", "닭다리", "닭봉", "닭날개", "통닭"]),
 };
+const preparationPrefixes = ["익힌 ", "삶은 ", "구운 ", "냉동 ", "생 ", "통"];
+const cutSuffixes = [" 정육", "정육", "고기", "살"];
 const pantryStaples = new Set([
   "물", "소금", "후추", "설탕", "식용유", "참기름", "간장", "식초", "고춧가루",
 ]);
@@ -70,7 +72,42 @@ const titleMatches = (title, available) => {
   });
 };
 
-const ingredientIsAvailable = (ingredient, available) => available.has(ingredient)
+const ingredientForms = (value) => {
+  const forms = new Set([value.trim()]);
+  let changed = true;
+  while (changed) {
+    changed = false;
+    [...forms].forEach((form) => {
+      preparationPrefixes.forEach((prefix) => {
+        if (form.startsWith(prefix) && form.length - prefix.length >= 2) {
+          const reduced = form.slice(prefix.length).trim();
+          if (!forms.has(reduced)) {
+            forms.add(reduced);
+            changed = true;
+          }
+        }
+      });
+      cutSuffixes.forEach((suffix) => {
+        if (form.endsWith(suffix) && form.length - suffix.length >= 2) {
+          const reduced = form.slice(0, -suffix.length).trim();
+          if (!forms.has(reduced)) {
+            forms.add(reduced);
+            changed = true;
+          }
+        }
+      });
+    });
+  }
+  return forms;
+};
+
+const ingredientsEquivalent = (left, right) => {
+  const rightForms = ingredientForms(right);
+  return [...ingredientForms(left)].some((form) => rightForms.has(form));
+};
+
+const ingredientIsAvailable = (ingredient, available) => [...available]
+  .some((query) => ingredientsEquivalent(ingredient, query))
   || Object.entries(ingredientFamilies).some(([family, members]) => available.has(family)
     && [...members].some((member) => ingredient === member
       || (member.length > 1 && ingredient.includes(member))));
@@ -98,7 +135,8 @@ const recommendInBrowser = async (message, assumePantry) => {
 
   const recommendations = staticRecipes.map((recipe) => {
     const names = [...new Set(recipe.ingredients.map((item) => canonicalize(item.name)).filter(Boolean))];
-    const exactMatches = names.filter((name) => available.has(name));
+    const exactMatches = names.filter((name) => [...available]
+      .some((query) => ingredientsEquivalent(name, query)));
     const matched = names.filter((name) => ingredientIsAvailable(name, available));
     const pantry = names.filter((name) => !matched.includes(name)
       && ingredientIsAvailable(name, assumed));

@@ -212,7 +212,7 @@ def test_broad_chicken_query_finds_portioned_chicken_breast(tmp_path) -> None:
     assert results[0].reason == "닭이 요리 제목의 주재료와 직접 일치해요."
 
 
-def test_broad_chicken_query_matches_qualified_cut_name(tmp_path) -> None:
+def test_specific_chicken_leg_query_matches_qualified_cut_name(tmp_path) -> None:
     with connect(tmp_path / "recipes.sqlite") as conn:
         initialize(conn)
         _seed(conn)
@@ -230,9 +230,33 @@ def test_broad_chicken_query_matches_qualified_cut_name(tmp_path) -> None:
             (recipe_id,),
         )
         conn.commit()
-        parsed, results = recommend(conn, "닭", max_missing=2)
+        parsed, results = recommend(conn, "닭다리", max_missing=2)
 
-    assert parsed == ["닭"]
+    assert parsed == ["닭다리"]
     assert results[0].name == "치킨난반"
     assert results[0].matched_ingredients == ["닭다리살 정육"]
+
+
+def test_partial_text_does_not_confuse_pepper_with_gochujang(tmp_path) -> None:
+    with connect(tmp_path / "recipes.sqlite") as conn:
+        initialize(conn)
+        _seed(conn)
+        conn.execute(
+            "INSERT INTO videos (video_id, title, url, status) VALUES ('paste', '양념밥', 'https://youtu.be/paste', 'completed')"
+        )
+        recipe_id = conn.execute(
+            """
+            INSERT INTO recipes (video_id, name, confidence, needs_review, source_kind)
+            VALUES ('paste', '양념밥', 0.9, 0, 'description')
+            """
+        ).lastrowid
+        conn.execute(
+            "INSERT INTO ingredients (recipe_id, position, name, raw_text) VALUES (?, 1, '고추장', '고추장')",
+            (recipe_id,),
+        )
+        conn.commit()
+        parsed, results = recommend(conn, "고추", max_missing=5)
+
+    assert parsed == ["고추"]
+    assert all(result.name != "양념밥" for result in results)
 
