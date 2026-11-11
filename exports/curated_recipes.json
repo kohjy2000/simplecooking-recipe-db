@@ -4012,5 +4012,2371 @@
     "tips": [],
     "curated_at": "2026-11-11T05:14:01+00:00",
     "curation_model": "qwen2.5:3b"
+  },
+  {
+    "video_id": "2UEG2zfqQOI-01",
+    "source_video_id": "2UEG2zfqQOI",
+    "name": "목살도리탕",
+    "summary": "목살도리탕은 입맛 없을 때 무조건 밥 3공기 먹입니다.",
+    "servings": null,
+    "prep_minutes": null,
+    "cook_minutes": null,
+    "confidence": 0.9,
+    "needs_review": false,
+    "source_kind": "automated_curated",
+    "source_url": "https://www.youtube.com/watch?v=2UEG2zfqQOI&t=0s",
+    "published_at": null,
+    "video_title": "입맛 없을 때 이거면 무조건 밥 3공기 먹습니다.",
+    "ingredients": [
+      {
+        "position": 1,
+        "section": "재료 또는 양념",
+        "name": "목살",
+        "amount": "500g",
+        "unit": null,
+        "note": null,
+        "raw_text": "목살 500g"
+      },
+      {
+        "position": 2,
+        "section": "재료 또는 양념",
+        "name": "감자",
+        "amount": "1~2알",
+        "unit": null,
+        "note": null,
+        "raw_text": "감자 1~2알"
+      },
+      {
+        "position": 3,
+        "section": "재료 또는 양념",
+        "name": "양파",
+        "amount": "1/2개",
+        "unit": null,
+        "note": null,
+        "raw_text": "양파 1/2개"
+      },
+      {
+        "position": 4,
+        "section": "재료 또는 양념",
+        "name": "대파",
+        "amount": "1/2대",
+        "unit": null,
+        "note": null,
+        "raw_text": "대파 1/2대"
+      },
+      {
+        "position": 5,
+        "section": "재료 또는 양념",
+        "name": "청양고추",
+        "amount": "1개",
+        "unit": null,
+        "note": null,
+        "raw_text": "청양고추 1개"
+      }
+    ],
+    "steps": [
+      "후라이팬에 목살을 겉면만 구워줍니다.",
+      "물 2컵(약 360ml), 감자, 고추장 2스푼, 굴소스 1스푼, 설탕 1스푼, 고춧가루 1스푼, 다진 마늘 1스푼을 넣어줍니다.",
+      "감자가 익을 때까지 약불에서 푹 끓여줍니다.",
+      "국물이 걸쭉한 느낌이 나면 양파, 대파, 청양고추를 넣고 숨이 죽을 때까지 끓여줍니다.",
+      "통깨를 뿌려 마무리합니다."
+    ],
+    "tips": [],
+    "curated_at": "2026-11-11T05:51:43+00:00",
+    "curation_model": "qwen2.5:3b"
+  },
+  {
+    "video_id": "yHAps3twJdI-01",
+    "source_video_id": "yHAps3twJdI",
+    "name": "순두부찌개",
+    "summary": "절대 실패할 수 없는 맛있는 순두부찌개 레시피",
+    "servings": 1,
+    "prep_minutes": null,
+    "cook_minutes": null,
+    "confidence": 0.9,
+    "needs_review": false,
+    "source_kind": "automated_curated",
+    "source_url": "https://www.youtube.com/watch?v=yHAps3twJdI&t=0s",
+    "published_at": null,
+    "video_title": "절대 실패할 수 없는 순두부찌개 레시피",
+    "ingredients": [
+      {
+        "position": 1,
+        "section": "재료 또는 양념",
+        "name": "다진 돼지고기",
+        "amount": "100g",
+        "unit": "g",
+        "note": null,
+        "raw_text": "다진 돼지고기 100g g"
+      },
+      {
+        "position": 2,
+        "section": "재료 또는 양념",
+        "name": "순두부",
+        "amount": "1봉",
+        "unit": "봉",
+        "note": null,
+        "raw_text": "순두부 1봉 봉"
+      },
+      {
+        "position": 3,
+        "section": "재료 또는 양념",
+        "name": "대파",
+        "amount": "1/4개",
+        "unit": "개",
+        "note": null,
+        "raw_text": "대파 1/4개 개"
+      },
+      {
+        "position": 4,
+        "section": "재료 또는 양념",
+        "name": "양파",
+        "amount": "1/4개",
+        "unit": "개",
+        "note": null,
+        "raw_text": "양파 1/4개 개"
+      },
+      {
+        "position": 5,
+        "section": "재료 또는 양념",
+        "name": "애호박",
+        "amount": null,
+        "unit": null,
+        "note": null,
+        "raw_text": "애호박"
+      },
+      {
+        "position": 6,
+        "section": "양념",
+        "name": "고춧가루",
+        "amount": "2스푼",
+        "unit": "스푼",
+        "note": null,
+        "raw_text": "고춧가루 2스푼 스푼"
+      },
+      {
+        "position": 7,
+        "section": "양념",
+        "name": "다진 마늘",
+        "amount": "1스푼",
+        "unit": "스푼",
+        "note": null,
+        "raw_text": "다진 마늘 1스푼 스푼"
+      },
+      {
+        "position": 8,
+        "section": "양념",
+        "name": "멸치액젓",
+        "amount": "2스푼",
+        "unit": "스푼",
+        "note": null,
+        "raw_text": "멸치액젓 2스푼 스푼"
+      },
+      {
+        "position": 9,
+        "section": "양념",
+        "name": "진간장",
+        "amount": "1스푼",
+        "unit": "스푼",
+        "note": null,
+        "raw_text": "진간장 1스푼 스푼"
+      },
+      {
+        "position": 10,
+        "section": "양념",
+        "name": "후추",
+        "amount": null,
+        "unit": null,
+        "note": null,
+        "raw_text": "후추"
+      }
+    ],
+    "steps": [
+      "식용유 34스푼을 뚝배기에 넉넉하게 둘러줍니다.",
+      "대파와 다진 돼지고기를 뚝배기에 넣고 볶아줍니다.",
+      "고춧가루 2스푼을 넣고 10~20초간 볶아줍니다.",
+      "물 2컵(약 360ml)을 부어줍니다.",
+      "다진 마늘 1스푼, 멸치액젓 2스푼, 진간장 1스푼으로 간해줍니다.",
+      "건더기 재료를 다 넣어줍니다.",
+      "5분 이상 푹 끓여줍니다.",
+      "계란, 후추, 청양고추 등 입맛에 맞게 추가해줍니다."
+    ],
+    "tips": [],
+    "curated_at": "2026-11-11T05:25:07+00:00",
+    "curation_model": "qwen2.5:3b"
+  },
+  {
+    "video_id": "T9n9kL58VBk-01",
+    "source_video_id": "T9n9kL58VBk",
+    "name": "목살 김치 카레",
+    "summary": "양파, 김치, 목살을 이용한 카레 요리법",
+    "servings": 1,
+    "prep_minutes": null,
+    "cook_minutes": null,
+    "confidence": 0.9,
+    "needs_review": false,
+    "source_kind": "automated_curated",
+    "source_url": "https://www.youtube.com/watch?v=T9n9kL58VBk&t=0s",
+    "published_at": null,
+    "video_title": "이건 남자들의 소울 푸드로 가능합니다.",
+    "ingredients": [
+      {
+        "position": 1,
+        "section": "재료 또는 양념",
+        "name": "양파",
+        "amount": "1/2",
+        "unit": "큰술",
+        "note": null,
+        "raw_text": "양파 1/2 큰술"
+      },
+      {
+        "position": 2,
+        "section": "재료 또는 양념",
+        "name": "목살",
+        "amount": "300g",
+        "unit": null,
+        "note": null,
+        "raw_text": "목살 300g"
+      },
+      {
+        "position": 3,
+        "section": "재료 또는 양념",
+        "name": "김치",
+        "amount": null,
+        "unit": null,
+        "note": null,
+        "raw_text": "김치"
+      }
+    ],
+    "steps": [
+      "팬에 식용유를 넉넉하게 눌러준다.",
+      "양파 반개를 대략적으로 채썰어 올려준다.",
+      "목살이나 삼겹살 등 원하는 돼지고기를 300g 정도 비벼서 야무지게 썰어 올려준다.",
+      "자른 김치 두 개 스푼을 올려준다. 양파와 김치를 팬에 올려 볶아준다.",
+      "양파와 김치에서 나오는 수분을 제거한 후 볶아준다.",
+      "다진 마늘 반대반과 설탕 한 스푼을 추가해 섞어준다.",
+      "종이컵 한 컵 플러스 반컵의 물을 부어준다.",
+      "선택한 카레가루와 미끼를 세스푼 넣어준다.",
+      "칼가루를 잘 섞어 원하는 양이 될 때까지 한번 졸여준다.",
+      "밥 한 공기 중앙에 카레를 올려준다. 후추와 파슬리를 넉넉하게 뿌려준다."
+    ],
+    "tips": [],
+    "curated_at": "2026-11-11T05:32:08+00:00",
+    "curation_model": "qwen2.5:3b"
+  },
+  {
+    "video_id": "VlfXcoU6DOs-01",
+    "source_video_id": "VlfXcoU6DOs",
+    "name": "겉바속 쫀 두부 햄 구이 덮밥",
+    "summary": "간단하고 맛있는 두부 햄 구이 덮밥을 만드는 방법",
+    "servings": null,
+    "prep_minutes": null,
+    "cook_minutes": null,
+    "confidence": 0.9,
+    "needs_review": false,
+    "source_kind": "automated_curated",
+    "source_url": "https://www.youtube.com/watch?v=VlfXcoU6DOs&t=0s",
+    "published_at": null,
+    "video_title": "직장인들이 좋아할 만한 요리 1위",
+    "ingredients": [
+      {
+        "position": 1,
+        "section": "재료 또는 양념",
+        "name": "두부",
+        "amount": null,
+        "unit": null,
+        "note": null,
+        "raw_text": "두부"
+      },
+      {
+        "position": 2,
+        "section": "재료 또는 양념",
+        "name": "통조림 햄",
+        "amount": null,
+        "unit": null,
+        "note": null,
+        "raw_text": "통조림 햄"
+      },
+      {
+        "position": 3,
+        "section": "재료 또는 양념",
+        "name": "감자 전분",
+        "amount": null,
+        "unit": null,
+        "note": null,
+        "raw_text": "감자 전분"
+      },
+      {
+        "position": 4,
+        "section": "재료 또는 양념",
+        "name": "식용유",
+        "amount": null,
+        "unit": null,
+        "note": null,
+        "raw_text": "식용유"
+      }
+    ],
+    "steps": [
+      "두부 한 모를 준비해줍니다. 두부는 반 갈라주고 먹기 좋은 크기로 썰어줍니다. 이 두부 한 모면 오늘 만드는 요리 두 번은 해먹을 수 있습니다.",
+      "통조림 햄도 먹기 좋은 크기로 썰어준 뒤 두부와 비슷한 양으로 먹을 만큼 준비합니다. 통조림 햄은 이미 짭짤하기 때문에 두부에만 소금으로 살짝 밑간을 해주고",
+      "감자 전분을 골고루 흩뿌려 주고 두부와 햄이 앞뒤로 뽀얗게 되도록 분칠을 해줍니다.",
+      "팬에 식용유를 넉넉하게 둘러 주고 전분가루 범벅이 된 두부와 햄을 다 올려주고 앞뒤로 진한 갈색빛이 띄울 때까지 노릿하게 한번 구워줍니다.",
+      "이러면 겉은 바삭하고 속은 쫀득쫀득한 완벽한 두부 햄 구이가 됩니다.",
+      "마 한 줄로 설명하면 두부 햄 썰어서 전분 바르고 굽는다고 생각하시면 됩니다.",
+      "다 됐으면 뜨끈한 흰밥 위로 보기 좋게 다 올려주고 다시 팬으로 돌아가서 물을 종이컵 1/3컵 약 60ml 부어주고 굴소스 1스푼과 국민 소스인 동깨스 소스를 1스푼 넣어주고 설탕 1스푼까지 넣어준 뒤 잘 섞어주면서 한번 끓여줍니다.",
+      "이렇게만 해도 달콤 짭짤한 완벽한 소스가 됩니다. 만든 소스도 입맛에 맞게 골고루 뿌려주고 대파의 초록한 부분이나 쪽파, 부추 등 초록한 색감을 더해주고 통깨나 후추와사비 등 입맛에 맞게 올려줍니다.",
+      "와사비가 정말 잘 어울리니 꼭 올려드시는 걸 추천드립니다.",
+      "이러면 달콤 짭짤하고 겉바속 쫀 두부 햄 구이 덮밥이 완성됩니다."
+    ],
+    "tips": [],
+    "curated_at": "2026-11-11T05:25:14+00:00",
+    "curation_model": "qwen2.5:3b"
+  },
+  {
+    "video_id": "Ui7tciUD3Nc-01",
+    "source_video_id": "Ui7tciUD3Nc",
+    "name": "중화냉면",
+    "summary": "간단한 중화냉면 레시피입니다.",
+    "servings": null,
+    "prep_minutes": null,
+    "cook_minutes": null,
+    "confidence": 0.9,
+    "needs_review": false,
+    "source_kind": "automated_curated",
+    "source_url": "https://www.youtube.com/watch?v=Ui7tciUD3Nc&t=0s",
+    "published_at": null,
+    "video_title": "제발 올 여름 이건 꼭 먹어봐야합니다!",
+    "ingredients": [
+      {
+        "position": 1,
+        "section": "재료 또는 양념",
+        "name": "면사리",
+        "amount": null,
+        "unit": null,
+        "note": null,
+        "raw_text": "면사리"
+      },
+      {
+        "position": 2,
+        "section": "재료 또는 양념",
+        "name": "냉동새우",
+        "amount": null,
+        "unit": null,
+        "note": null,
+        "raw_text": "냉동새우"
+      },
+      {
+        "position": 3,
+        "section": "양념 재료",
+        "name": "땅콩버터",
+        "amount": "1스푼",
+        "unit": null,
+        "note": null,
+        "raw_text": "땅콩버터 1스푼"
+      },
+      {
+        "position": 4,
+        "section": "양념 재료",
+        "name": "진간장",
+        "amount": "1스푼",
+        "unit": null,
+        "note": null,
+        "raw_text": "진간장 1스푼"
+      },
+      {
+        "position": 5,
+        "section": "양념 재료",
+        "name": "설탕",
+        "amount": "1스푼",
+        "unit": null,
+        "note": null,
+        "raw_text": "설탕 1스푼"
+      },
+      {
+        "position": 6,
+        "section": "양념 재료",
+        "name": "연겨자",
+        "amount": "1/2스푼",
+        "unit": null,
+        "note": null,
+        "raw_text": "연겨자 1/2스푼"
+      }
+    ],
+    "steps": [
+      "면사리와 냉동새우를 한번에 익혀 차갑게 행궈줍니다.",
+      "면사리와 냉동새우, 땅콩버터, 진간장, 설탕, 연겨자를 넣고 잘 저어줍니다.",
+      "소스를 준비한 뒤 팔팔 끓는 물에 면사리를 넣고 끓여줍니다.",
+      "면이 익으면 차가운 물을 넣어 가라앉게 합니다.",
+      "면을 차가운 물로 씻어 물기를 제거하고 탈탈 털어줍니다.",
+      "그릇에 면을 담아 냉면육수 한 팩을 부어줍니다.",
+      "땅콩소스를 넣고 오이를 사선으로 썰어 넣습니다.",
+      "새우와 계란이 있다면 함께 올려주고, 마지막으로 얼음을 올려줍니다."
+    ],
+    "tips": [],
+    "curated_at": "2026-11-11T05:41:47+00:00",
+    "curation_model": "qwen2.5:3b"
+  },
+  {
+    "video_id": "eQHWLvUMdTo-01",
+    "source_video_id": "eQHWLvUMdTo",
+    "name": "닭칼국수",
+    "summary": "닭칼국수를 만드는 방법입니다.",
+    "servings": null,
+    "prep_minutes": null,
+    "cook_minutes": null,
+    "confidence": 0.9,
+    "needs_review": false,
+    "source_kind": "automated_curated",
+    "source_url": "https://www.youtube.com/watch?v=eQHWLvUMdTo&t=0s",
+    "published_at": null,
+    "video_title": "제발 복날에 이거 한번만 드셔보세요",
+    "ingredients": [
+      {
+        "position": 1,
+        "section": "재료 또는 양념",
+        "name": "멸치 칼국수 라면",
+        "amount": null,
+        "unit": null,
+        "note": null,
+        "raw_text": "멸치 칼국수 라면"
+      },
+      {
+        "position": 2,
+        "section": "재료 또는 양념",
+        "name": "닭가슴살 (100g)",
+        "amount": "100g",
+        "unit": null,
+        "note": null,
+        "raw_text": "닭가슴살 (100g) 100g"
+      },
+      {
+        "position": 3,
+        "section": "재료 또는 양념",
+        "name": "양파",
+        "amount": null,
+        "unit": null,
+        "note": null,
+        "raw_text": "양파"
+      },
+      {
+        "position": 4,
+        "section": "재료 또는 양념",
+        "name": "애호박",
+        "amount": null,
+        "unit": null,
+        "note": null,
+        "raw_text": "애호박"
+      },
+      {
+        "position": 5,
+        "section": "재료 또는 양념",
+        "name": "대파",
+        "amount": null,
+        "unit": null,
+        "note": null,
+        "raw_text": "대파"
+      },
+      {
+        "position": 6,
+        "section": "재료 또는 양념",
+        "name": "청양고추",
+        "amount": null,
+        "unit": null,
+        "note": null,
+        "raw_text": "청양고추"
+      }
+    ],
+    "steps": [
+      "닭가슴살은 전자레인지에 돌려서 먹기 좋게 뜯어줍니다.",
+      "닭가슴살, 맛소금 1꼬집, 후추 조금, 다진 마늘 1/2스푼, 참기름 조금을 넣고 닭건더기를 만들어줍니다.",
+      "물 3컵 + 1/2컵 (약 600~630ml), 스프, 멸치 액젓 1스푼을 넣고 끓여줍니다.",
+      "면, 양파, 애호박, 닭건더기 2/3, 청양고추를 넣고 면을 익혀줍니다.",
+      "면이 익었으면 남은 닭건더기 1/3과 대파를 올려줍니다."
+    ],
+    "tips": [],
+    "curated_at": "2026-11-11T05:23:22+00:00",
+    "curation_model": "qwen2.5:3b"
+  },
+  {
+    "video_id": "SpeLKF1oPW8-01",
+    "source_video_id": "SpeLKF1oPW8",
+    "name": "목살덮밥",
+    "summary": "목살과 감자로 만든 간단한 덮밥입니다.",
+    "servings": null,
+    "prep_minutes": null,
+    "cook_minutes": null,
+    "confidence": 0.9,
+    "needs_review": false,
+    "source_kind": "automated_curated",
+    "source_url": "https://www.youtube.com/watch?v=SpeLKF1oPW8&t=0s",
+    "published_at": null,
+    "video_title": "SNS에서 난리난 대존맛 조합",
+    "ingredients": [
+      {
+        "position": 1,
+        "section": "재료 또는 양념",
+        "name": "목살",
+        "amount": "300g",
+        "unit": "g",
+        "note": null,
+        "raw_text": "목살 300g g"
+      },
+      {
+        "position": 2,
+        "section": "재료 또는 양념",
+        "name": "감자",
+        "amount": null,
+        "unit": null,
+        "note": null,
+        "raw_text": "감자"
+      },
+      {
+        "position": 3,
+        "section": "양념",
+        "name": "식용유",
+        "amount": null,
+        "unit": null,
+        "note": null,
+        "raw_text": "식용유"
+      },
+      {
+        "position": 4,
+        "section": "양념",
+        "name": "감자전분",
+        "amount": "1/2스푼",
+        "unit": "스푼",
+        "note": null,
+        "raw_text": "감자전분 1/2스푼 스푼"
+      },
+      {
+        "position": 5,
+        "section": "양념",
+        "name": "설탕",
+        "amount": "1스푼",
+        "unit": "스푼",
+        "note": null,
+        "raw_text": "설탕 1스푼 스푼"
+      },
+      {
+        "position": 6,
+        "section": "양념",
+        "name": "돈가스소스",
+        "amount": "1스푼",
+        "unit": "스푼",
+        "note": null,
+        "raw_text": "돈가스소스 1스푼 스푼"
+      },
+      {
+        "position": 7,
+        "section": "양념",
+        "name": "굴소스",
+        "amount": "1스푼",
+        "unit": "스푼",
+        "note": null,
+        "raw_text": "굴소스 1스푼 스푼"
+      },
+      {
+        "position": 8,
+        "section": "양념",
+        "name": "대파",
+        "amount": null,
+        "unit": null,
+        "note": null,
+        "raw_text": "대파"
+      },
+      {
+        "position": 9,
+        "section": "양념",
+        "name": "다진마늘",
+        "amount": "1/2스푼",
+        "unit": "스푼",
+        "note": null,
+        "raw_text": "다진마늘 1/2스푼 스푼"
+      },
+      {
+        "position": 10,
+        "section": "양념",
+        "name": "후추",
+        "amount": null,
+        "unit": null,
+        "note": null,
+        "raw_text": "후추"
+      }
+    ],
+    "steps": [
+      "식용유 두른 팬에 목살과 감자를 올려서 볶아줍니다.",
+      "감자전분 1/2스푼을 넣고 볶아줍니다.",
+      "설탕 1스푼, 돈가스소스 1스푼, 굴소스 1스푼, 대파, 다진마늘 1/2스푼, 후추를 뿌려 볶아줍니다.",
+      "밥 위로 올려 마무리합니다."
+    ],
+    "tips": [],
+    "curated_at": "2026-11-11T05:57:45+00:00",
+    "curation_model": "qwen2.5:3b"
+  },
+  {
+    "video_id": "xtjqqNEaE6k-01",
+    "source_video_id": "xtjqqNEaE6k",
+    "name": "참치두부조림",
+    "summary": "간단한 참치두부조림 레시피입니다.",
+    "servings": null,
+    "prep_minutes": null,
+    "cook_minutes": null,
+    "confidence": 0.9,
+    "needs_review": false,
+    "source_kind": "automated_curated",
+    "source_url": "https://www.youtube.com/watch?v=xtjqqNEaE6k&t=0s",
+    "published_at": null,
+    "video_title": "제발 공기밥 3그릇 미리 준비하세요!",
+    "ingredients": [
+      {
+        "position": 1,
+        "section": "재료 또는 양념",
+        "name": "두부",
+        "amount": "300g",
+        "unit": "g",
+        "note": null,
+        "raw_text": "두부 300g g"
+      },
+      {
+        "position": 2,
+        "section": "재료 또는 양념",
+        "name": "참치",
+        "amount": "100g",
+        "unit": "g",
+        "note": null,
+        "raw_text": "참치 100g g"
+      },
+      {
+        "position": 3,
+        "section": "재료 또는 양념",
+        "name": "양파",
+        "amount": null,
+        "unit": null,
+        "note": null,
+        "raw_text": "양파"
+      },
+      {
+        "position": 4,
+        "section": "재료 또는 양념",
+        "name": "대파",
+        "amount": null,
+        "unit": null,
+        "note": null,
+        "raw_text": "대파"
+      },
+      {
+        "position": 5,
+        "section": "재료 또는 양념",
+        "name": "팽이버섯",
+        "amount": null,
+        "unit": null,
+        "note": null,
+        "raw_text": "팽이버섯"
+      }
+    ],
+    "steps": [
+      "두부를 300g짜리로 준비해주세요. 크고 단단한 부침 두부를 사용하시면 좋습니다. 두부를 가로로 포 뜨듯이 가운데를 잘라서 십자가 모양으로 썰어주세요.",
+      "참치 한캔(100g)과 양파, 대파, 팽이버섯을 준비해주세요. 다른 야채를 사용하시어도 됩니다.",
+      "양파는 대략적으로 채로 잘라서 썰어주세요. 대파 역시 크기 상관없이 썰어주세요. 팽이버섯은 밑동만 잘라주세요.",
+      "양념장을 만들어주세요. 짭짜리 진간장 1스푼, 멸치육수 대신 사용할 멸치액젓 1스푼, 마법의 굴소스 1스푼, 설탕 1스푼, 고춧가루 2스푼, 다진 마늘 1스푼을 준비해주세요.",
+      "양념장에 물 1컵(약 180ml)을 부어 잘 섞어주세요. 팬에 식용유를 한두스푼 넉넉하게 둘러주세요. 두부를 다 올려주세요.",
+      "두부를 앞뒤로 노릇하게 튀기듯이 구워주세요. 조림하기 전에 한번 구워주면 두부가 잘 으스러지지 않고 노릿하게 구워져 맛이 더 좋아집니다.",
+      "두부가 맛있는 갈색빛이 띄었으면 양파와 대파를 빈 공간에 넣고 팽이버섯을 대략적으로 손으로 지翦해 올려주세요.",
+      "양념장을 양파와 대파 위에 부어주세요. 뚜껑을 덮고 중약불에서 2분간 뜨끈하게 익혀주세요.",
+      "팽이버섯이 금방 숨이 죽게 되면 뚜껑을 열고 양념을 골고루 잘 섞어주세요. 양념이 배도록 뜨끈하게 끓여주세요.",
+      "마지막으로 참치 한캔을 기름과 같이 다 넣어주세요. 기름을 빼고 참치만 넣어도 되지만 기름과 같이 넣어주면 참치의 맛이 더 올라와 감칠맛도 배가 되니 추천드립니다."
+    ],
+    "tips": [],
+    "curated_at": "2026-11-11T06:03:49+00:00",
+    "curation_model": "qwen2.5:3b"
+  },
+  {
+    "video_id": "JBTyH1oTdqQ-01",
+    "source_video_id": "JBTyH1oTdqQ",
+    "name": "양념치킨",
+    "summary": "양념치킨을 만드는 방법입니다.",
+    "servings": null,
+    "prep_minutes": null,
+    "cook_minutes": null,
+    "confidence": 0.9,
+    "needs_review": false,
+    "source_kind": "automated_curated",
+    "source_url": "https://www.youtube.com/watch?v=JBTyH1oTdqQ&t=0s",
+    "published_at": null,
+    "video_title": "여러분이 생각하는 바로 그건 아닙니다.",
+    "ingredients": [
+      {
+        "position": 1,
+        "section": "재료 또는 양념",
+        "name": "닭다리살 정육",
+        "amount": null,
+        "unit": null,
+        "note": null,
+        "raw_text": "닭다리살 정육"
+      },
+      {
+        "position": 2,
+        "section": "재료 또는 양념",
+        "name": "감자 전분",
+        "amount": null,
+        "unit": null,
+        "note": null,
+        "raw_text": "감자 전분"
+      }
+    ],
+    "steps": [
+      "닭다리살 정육에 소금, 후추, 진간장 1스푼, 식초 2스푼으로 밑간을 한 뒤 감자전분 4~5스푼을 넣고 잘 섞어줍니다.",
+      "팬에 식용유를 두르고 앞뒤로 잘 구워줍니다.",
+      "고추장 1/2스푼, 양념치킨 소스 4~5스푼, 사이다 2~3스푼 넣고 잘 섞어서 양념치킨으로 만들어줍니다.",
+      "마요소스를 뿌려 마무리합니다."
+    ],
+    "tips": [],
+    "curated_at": "2026-11-11T05:35:18+00:00",
+    "curation_model": "qwen2.5:3b"
+  },
+  {
+    "video_id": "XmqJvwCK4VM-01",
+    "source_video_id": "XmqJvwCK4VM",
+    "name": "오삼새",
+    "summary": "간단하고 풍성한 오삼새 레시피",
+    "servings": null,
+    "prep_minutes": null,
+    "cook_minutes": null,
+    "confidence": 0.9,
+    "needs_review": false,
+    "source_kind": "automated_curated",
+    "source_url": "https://www.youtube.com/watch?v=XmqJvwCK4VM&t=0s",
+    "published_at": null,
+    "video_title": "집에서 이것도 가능하다고???",
+    "ingredients": [
+      {
+        "position": 1,
+        "section": "재료 또는 양념",
+        "name": "삼겹살",
+        "amount": "200g",
+        "unit": "g",
+        "note": null,
+        "raw_text": "삼겹살 200g g"
+      },
+      {
+        "position": 2,
+        "section": "재료 또는 양념",
+        "name": "오징어",
+        "amount": null,
+        "unit": null,
+        "note": null,
+        "raw_text": "오징어"
+      },
+      {
+        "position": 3,
+        "section": "재료 또는 양념",
+        "name": "새우",
+        "amount": null,
+        "unit": null,
+        "note": null,
+        "raw_text": "새우"
+      },
+      {
+        "position": 4,
+        "section": "재료 또는 양념",
+        "name": "대파",
+        "amount": null,
+        "unit": null,
+        "note": null,
+        "raw_text": "대파"
+      },
+      {
+        "position": 5,
+        "section": "재료 또는 양념",
+        "name": "양파",
+        "amount": null,
+        "unit": null,
+        "note": null,
+        "raw_text": "양파"
+      },
+      {
+        "position": 6,
+        "section": "재료 또는 양념",
+        "name": "양배추",
+        "amount": null,
+        "unit": null,
+        "note": null,
+        "raw_text": "양배추"
+      },
+      {
+        "position": 7,
+        "section": "재료 또는 양념",
+        "name": "컵누들",
+        "amount": null,
+        "unit": null,
+        "note": null,
+        "raw_text": "컵누들"
+      },
+      {
+        "position": 8,
+        "section": "재료 또는 양념",
+        "name": "사골곰탕육수",
+        "amount": "1",
+        "unit": "개",
+        "note": null,
+        "raw_text": "사골곰탕육수 1 개"
+      }
+    ],
+    "steps": [
+      "대파와 양파를 썰어 널찍한 팬에 올려줍니다.",
+      "양파와 대파, 양배추를 바닥에 깔아줍니다.",
+      "대패삼겹살을 먹기 좋은 크기로 썰어줍니다.",
+      "오징어와 새우를 절단한 것을 얹어줍니다.",
+      "컵누들을 얹어줍니다.",
+      "양배추를 얹어줍니다.",
+      "사골곰탕육수를 부어줍니다.",
+      "1스푼의 시뻘건가루를 넣어줍니다.",
+      "해물과 고기를 모두 익혀줍니다."
+    ],
+    "tips": [],
+    "curated_at": "2026-11-11T05:40:18+00:00",
+    "curation_model": "qwen2.5:3b"
+  },
+  {
+    "video_id": "WJ94ndavO0M-01",
+    "source_video_id": "WJ94ndavO0M",
+    "name": "크림 카레 우동",
+    "summary": "크림 카레 우동을 만드는 방법입니다.",
+    "servings": null,
+    "prep_minutes": null,
+    "cook_minutes": null,
+    "confidence": 0.9,
+    "needs_review": false,
+    "source_kind": "automated_curated",
+    "source_url": "https://www.youtube.com/watch?v=WJ94ndavO0M&t=0s",
+    "published_at": null,
+    "video_title": "헉 이걸 만들어 줬더니 솔로 탈출하였습니다!!",
+    "ingredients": [
+      {
+        "position": 1,
+        "section": "재료 또는 양념",
+        "name": "양파",
+        "amount": null,
+        "unit": null,
+        "note": null,
+        "raw_text": "양파"
+      },
+      {
+        "position": 2,
+        "section": "재료 또는 양념",
+        "name": "우유",
+        "amount": "1컵",
+        "unit": "컵",
+        "note": null,
+        "raw_text": "우유 1컵 컵"
+      },
+      {
+        "position": 3,
+        "section": "재료 또는 양념",
+        "name": "생크림",
+        "amount": "1컵",
+        "unit": "컵",
+        "note": null,
+        "raw_text": "생크림 1컵 컵"
+      },
+      {
+        "position": 4,
+        "section": "재료 또는 양념",
+        "name": "카레 가루",
+        "amount": "3스푼",
+        "unit": "스푼",
+        "note": null,
+        "raw_text": "카레 가루 3스푼 스푼"
+      },
+      {
+        "position": 5,
+        "section": "재료 또는 양념",
+        "name": "크래미",
+        "amount": null,
+        "unit": null,
+        "note": null,
+        "raw_text": "크래미"
+      },
+      {
+        "position": 6,
+        "section": "재료 또는 양념",
+        "name": "다진 마늘",
+        "amount": "1스푼",
+        "unit": "스푼",
+        "note": null,
+        "raw_text": "다진 마늘 1스푼 스푼"
+      },
+      {
+        "position": 7,
+        "section": "재료 또는 양념",
+        "name": "우동면",
+        "amount": null,
+        "unit": null,
+        "note": null,
+        "raw_text": "우동면"
+      }
+    ],
+    "steps": [
+      "양파를 팬에 볶아줍니다.",
+      "우유 1컵 (약 180ml), 생크림 1컵 (약 180ml)을 부어줍니다.",
+      "우동면, 다진 마늘 1스푼, 카레 가루 크게 3스푼(약 60g), 크래미를 넣고 우동면이 풀릴 때까지 끓여줍니다.",
+      "크래미를 더 얹어주거나 파슬리를 뿌려줍니다."
+    ],
+    "tips": [],
+    "curated_at": "2026-11-11T05:41:13+00:00",
+    "curation_model": "qwen2.5:3b"
+  },
+  {
+    "video_id": "B-XKcCsh5ho-01",
+    "source_video_id": "B-XKcCsh5ho",
+    "name": "애호박 찌개",
+    "summary": "이 애호박 찌개만 있으면 밥 3공기까지 먹을 수 있습니다.",
+    "servings": null,
+    "prep_minutes": null,
+    "cook_minutes": null,
+    "confidence": 0.9,
+    "needs_review": false,
+    "source_kind": "automated_curated",
+    "source_url": "https://www.youtube.com/watch?v=B-XKcCsh5ho&t=0s",
+    "published_at": null,
+    "video_title": "이걸로 ㄹㅇ 밥 3공기 먹었습니다.",
+    "ingredients": [
+      {
+        "position": 1,
+        "section": "재료 또는 양념",
+        "name": "돼지고기",
+        "amount": "200g",
+        "unit": "g",
+        "note": null,
+        "raw_text": "돼지고기 200g g"
+      },
+      {
+        "position": 2,
+        "section": "재료 또는 양념",
+        "name": "애호박",
+        "amount": null,
+        "unit": null,
+        "note": null,
+        "raw_text": "애호박"
+      },
+      {
+        "position": 3,
+        "section": "재료 또는 양념",
+        "name": "양파",
+        "amount": null,
+        "unit": null,
+        "note": null,
+        "raw_text": "양파"
+      }
+    ],
+    "steps": [
+      "돼지고기를 200g으로 준비하고, 두툼하게 썰어 길쭉하게 썰어줍니다.",
+      "애호박을 크고 묵직한 애호박으로 준비하고, 사선으로 썰어 길쭉하게 썰어줍니다.",
+      "양파 한 개를 준비하고, 애호박처럼 길쭉하게 채 썰어줍니다.",
+      "식용유 두 세스푼을 팬이나 냄비에 두고, 준비해둔 돼지고기를 넣어줍니다. 고기를 펼쳐주면서 겉면이 노릿해지도록 한번 구워줍니다.",
+      "고기의 겉면이 갈색빛이 나면, 고추장을 한스푼, 한국인의 다진 마늘 한스푼, 그리고 시뻘건 고춧가루 한스푼을 넣어줍니다.",
+      "양념 재료를 바닥에 깔린 돼지 흔적이 있는 기름과 함께 볶아줍니다.",
+      "고추장이 볶아지고, 고추기름이 나오게 되면, 약불로 불을 조절합니다. 종이컵 2컵의 물을 부어, 썰어 놓은 애호박과 양파를 넣어줍니다.",
+      "채소 육수를 넣으면 좋지만, 그걸 만들 시간이 없으니 애호박과 양파를 듬뿍 넣고 끓여줍니다.",
+      "새우젓을 조금씩 넣어 맛을 보면서 간을 맞춰줍니다. 네, 이렇게 오늘은 간장이나 소금 없이 액젓으로만 간을 맞춰주면 됩니다.",
+      "넣은 재료에서 맛있는 육수가 나오도록 한번 푹 끓여줍니다."
+    ],
+    "tips": [],
+    "curated_at": "2026-11-11T05:48:11+00:00",
+    "curation_model": "qwen2.5:3b"
+  },
+  {
+    "video_id": "nzpOTjzYZPU-01",
+    "source_video_id": "nzpOTjzYZPU",
+    "name": "햄과 스파ム을 이용한 김밥",
+    "summary": "햄과 스파ム을 이용해 만든 김밥입니다.",
+    "servings": null,
+    "prep_minutes": null,
+    "cook_minutes": null,
+    "confidence": 0.9,
+    "needs_review": false,
+    "source_kind": "automated_curated",
+    "source_url": "https://www.youtube.com/watch?v=nzpOTjzYZPU&t=0s",
+    "published_at": null,
+    "video_title": "스팸을 가장 맛있게 먹는 방법 (이것보다 맛있는 방법 없음)",
+    "ingredients": [
+      {
+        "position": 1,
+        "section": "재료 또는 양념",
+        "name": "햄",
+        "amount": "1/2",
+        "unit": "큰술",
+        "note": null,
+        "raw_text": "햄 1/2 큰술"
+      },
+      {
+        "position": 2,
+        "section": "재료 또는 양념",
+        "name": "스팸",
+        "amount": null,
+        "unit": null,
+        "note": null,
+        "raw_text": "스팸"
+      }
+    ],
+    "steps": [
+      "인자편에 시용률을 살짝만 둘러주고",
+      "명절날 받은 햄 하나를 잘게 으려주고 스팸을 잘게 썰어 준비한다",
+      "햄과 스파ム을 모두 넣어 주입 골고를 볶아서",
+      "진간 한 스푼과 설탕을 넣고 볶아준다",
+      "불을 끄고 청양고추 대개를 잘게 썰어 넣고",
+      "고추를 섞어준다 밥 두 공기와 볶아 놓은 고추 햄을 넣고",
+      "참기름 두 손까지 둘러준다",
+      "밥발알이 으려지지 않도록 조심조심 잘 섞어준다",
+      "김밥용 김을 얇게 펼쳐주고 참기름을 마사지하여",
+      "통깨와 마요네즈를 뿌려준다"
+    ],
+    "tips": [],
+    "curated_at": "2026-11-11T06:06:27+00:00",
+    "curation_model": "qwen2.5:3b"
+  },
+  {
+    "video_id": "xuG9pgQqhtY-01",
+    "source_video_id": "xuG9pgQqhtY",
+    "name": "팽이불닭볶음면",
+    "summary": "한국불닭볶음면에 팽이버섯을 추가한 맛있는 조리 방법",
+    "servings": null,
+    "prep_minutes": null,
+    "cook_minutes": null,
+    "confidence": 0.9,
+    "needs_review": false,
+    "source_kind": "automated_curated",
+    "source_url": "https://www.youtube.com/watch?v=xuG9pgQqhtY&t=0s",
+    "published_at": null,
+    "video_title": "한국보다 외국에서 더 유명한 불닭볶음면 먹는 방법",
+    "ingredients": [
+      {
+        "position": 1,
+        "section": "재료 또는 양념",
+        "name": "불닭볶음면",
+        "amount": null,
+        "unit": null,
+        "note": null,
+        "raw_text": "불닭볶음면"
+      },
+      {
+        "position": 2,
+        "section": "재료 또는 양념",
+        "name": "팽이버섯",
+        "amount": "150g",
+        "unit": "g",
+        "note": null,
+        "raw_text": "팽이버섯 150g g"
+      }
+    ],
+    "steps": [
+      "먼저 불닭볶음면을 준비합니다.",
+      "팽이버섯을 준비합니다. 150g의 양으로 1봉지 양입니다.",
+      "팽이버섯의 밑동을 잘라주고 물에 헹구어줍니다. 너무 오랫동안 씻으면 영양성분이 다 빠져나가니 살짝만 헹궈주면 됩니다.",
+      "팽이버섯을 먹기 좋은 한 입 크기로 잘라줍니다.",
+      "팽이버섯과 불닭볶음면을 팔팔 끓는 물에 넣습니다. 3분간 푹 익혀줍니다.",
+      "팽이버섯을 넣고 30초간 더 익혀줍니다. 물은 34스푼 정도만 남겨주고 다 버려줍니다.",
+      "스테이끼나 동깨스 소스 반스푼, 달달하게 설탕 반스푼, 다진 마늘 반스푼, 시뻘건 불닭 소스를 넣어줍니다.",
+      "약불에서 1분간 양념을 섞어주면서 은은하게 볶아줍니다.",
+      "다시 불닭볶음면을 넣고 약불에서 1분간 양념을 섞어줍니다.",
+      "면을 빼고 슬라이스 치즈 한장과 김보레기, 통깨를 뿌려줍니다."
+    ],
+    "tips": [],
+    "curated_at": "2026-11-11T06:18:22+00:00",
+    "curation_model": "qwen2.5:3b"
+  },
+  {
+    "video_id": "zaVXUffTajU-01",
+    "source_video_id": "zaVXUffTajU",
+    "name": "불고기 전골",
+    "summary": "간단하고 맛있는 불고기 전골 요리법",
+    "servings": 1,
+    "prep_minutes": null,
+    "cook_minutes": null,
+    "confidence": 0.9,
+    "needs_review": false,
+    "source_kind": "automated_curated",
+    "source_url": "https://www.youtube.com/watch?v=zaVXUffTajU&t=0s",
+    "published_at": null,
+    "video_title": "이게 바로 자취계의 에르메스 요리",
+    "ingredients": [
+      {
+        "position": 1,
+        "section": "재료 또는 양념",
+        "name": "소고기",
+        "amount": null,
+        "unit": null,
+        "note": null,
+        "raw_text": "소고기"
+      },
+      {
+        "position": 2,
+        "section": "양념",
+        "name": "진간장",
+        "amount": null,
+        "unit": null,
+        "note": null,
+        "raw_text": "진간장"
+      },
+      {
+        "position": 3,
+        "section": "양념",
+        "name": "굴소스",
+        "amount": null,
+        "unit": null,
+        "note": null,
+        "raw_text": "굴소스"
+      },
+      {
+        "position": 4,
+        "section": "양념",
+        "name": "설탕",
+        "amount": null,
+        "unit": null,
+        "note": null,
+        "raw_text": "설탕"
+      },
+      {
+        "position": 5,
+        "section": "양념",
+        "name": "식초",
+        "amount": null,
+        "unit": null,
+        "note": null,
+        "raw_text": "식초"
+      },
+      {
+        "position": 6,
+        "section": "양념",
+        "name": "치킨스톡",
+        "amount": null,
+        "unit": null,
+        "note": null,
+        "raw_text": "치킨스톡"
+      },
+      {
+        "position": 7,
+        "section": "양념",
+        "name": "후추",
+        "amount": null,
+        "unit": null,
+        "note": null,
+        "raw_text": "후추"
+      },
+      {
+        "position": 8,
+        "section": "양념",
+        "name": "마늘",
+        "amount": null,
+        "unit": null,
+        "note": null,
+        "raw_text": "마늘"
+      }
+    ],
+    "steps": [
+      "먼저 불고기용으로 얇게 썰린 소고기를 준비해 줍니다. 비싼 소고기 대신 불고기용 돼지고기를 사용해도 좋습니다. 준비해 둔 고기는 먹기 좋게 한입 크기로 잘라줍니다.",
+      "양파 반개를 대충 채썰어 줍니다. 여기까지만 하면 오늘 요이 절반에 끝난 겁니다. 인자 팬에 소고기를 살짝만 둘러주고 양파와 소고기를 다 넣어줍니다. 다 같이 한번 볶아줍니다. 만약 고기가 뭉쳐 있다면 하나하나씩 만 다이 뜯어 주시면 됩니다. 양파도 서서히 갈색빛이 뛰면서 소이 겉면에 피기가 사라졌다면 물을 종이컵 2 컵에 넣어줍니다. 여기에 굴소스 한 스푼과 돈깨스 소스 한 스푼을 넣어줍니다.",
+      "이제 설탕 한 스푼과 식초를 넣어줍니다. 식초는 일반 식초를 사용해도 되지만 사과 식초를 사용하는게 와 맛이 좋습니다. 추가로 다시 다나 치킨 속을 1스푼 살짝만 넣어 줍니다. 이때 치킨 스톡 대신 혼다 실을 사용하면 더욱 가까운 맛을 낼 수 있습니다. 양념장을 잘 섞어주고 촉촉한 정도로만 수분이 남아 있도록 센불에서 맛있게 쫄여 주시면 됩니다.",
+      "오랜만에 왔는데이, 양반 아직도 돈깨스 소스에 환자하고 있네. 저한테 왜 그러세요? 촉촉할 정도로만 수분이 남았으면 뜨근한 흰밥 위에 다 올려주고 이 위로 후추를 볼볼이 뿌려주면 더욱 먹음직스러워. 그하고 김계란 노른자와 쪽파 혹은 대파에 초록초록한 부분을 올려주면 실제로 만드는데 5분도 안 걸리는 초 간난 규동이 완성됩니다.",
+      "먼저 보래 불고기 소이를 300g 정도 담아주고 여기에 진간장 두 스푼과 굴소스 두 스푼으로 가늘 해주고 클하고 달달하게 설탕 한 스푼과 잡내도 잡고 진한 맛을 더해 줄 다진 매일도 한 스푼 놓고 후추도 넉넉하게 뿌려줍니다. 이제 인자 팬의 양념에 재우는 고기와 양념장을 한 번에 다 넣어주고 파채도 올려주고 파채는 많으면 많을수록 맛있으니 넉넉하게 올려주는게 좋습니다. 불린 당면도 올려주고 은은한 중약불에서 고기만 껴 주시면 끝입니다.",
+      "마고기가 익으면 당면 파채는 다 맛있게 익게 되는 겁니다. 추가로 양파나 버섯 측량 고추 등 원하는 야채나 각종 사이를 추가하시면 더욱 좋습니다. 고기도 막 크기가 크다면 먹기 좋 한니 크기로 잘라줍니다. 손질된 무도 팬 위로 올려주고 얇은 소고기도 150g 정도 올려줍니다. 저는 저렴한 냉동 우상 기업을 사용했습니다. 이제 팬에 소고기를 두 스푼 둘러주고 뜨뜻하게 한번 데워줍니다.",
+      "파이어 여기에 길바닥에 돌아다니는 흔한 소고기를 넣어줍니다. 아니 이게 다 썰려 있는 줄 알았는데 한 덩어리지 모양 뜨끈뜨끈하게 소고기를 익혀 주다가 폭탄받아라. 소고기 겉면을 치킨 타월로 수분 제거를 안 해주면 꽃끼 이렇게 기름이 튈 수도 있으니 폭탄주 야소 바닥면이 대충 익었으며 뒤집어 주고 반대쪽 면도 스근하게 익혀 줍니다.",
+      "찌글찌글 건면이 어느 정도 익었다면 한입 크기로 잘라줍니다. 그하고 잘린 부분도 겉부분만 잘 익혀줍니다. 찌글찌글 이제 여기에 썰어 놓은 감자를 다 넣어주고 그라고 감자 겉면도 살짝 갈색빛이 돌게 한번 볶아줍니다.",
+      "콜라 한 컵 가득 보어 줍니다. 전에도 말했듯이 콜라는 치킨 먹고 남은 콜라를 사용하시면 됩니다. 여기에 진간장 세대를 넣어 짭짤하게 맞춰주고 올리고당 두 스푼도 추가로 넣어줍니다. 올리고당이 없다면 설탕을 쓰셔도 됩니다. 이제인 약불에서 은은하게 조여주면서 익혀 주시면 됩니다. 뽀글보글 이때 중간중간에 한 번씩 감자를 뒤집어주면서 콜라 수면 위에 있는 감자를 바닥으로 가게 해줍니다.",
+      "감자가 푹 잠기지 않아도 알맞게 익습니다. 국물이 어느 정도 졸라가 자박자박 해졌으면 감자를 젓가락으로 한번 찔러보고 쑥 잘 들어간다면 다 익은 겁니다. 마지막으로 참기름을 한 방울씩 살짝 둘러주고 이빨에 꼈을 때 고수부 향이 터지는 통깨도 후두두 뿌려줍니다."
+    ],
+    "tips": [],
+    "curated_at": "2026-11-11T06:21:12+00:00",
+    "curation_model": "qwen2.5:3b"
+  },
+  {
+    "video_id": "8g_-_vgHqmU-01",
+    "source_video_id": "8g_-_vgHqmU",
+    "name": "삼겹살 구이",
+    "summary": "삼겹살을 정확히 100배 더 맛있게 구워 먹는 방법",
+    "servings": null,
+    "prep_minutes": null,
+    "cook_minutes": null,
+    "confidence": 0.9,
+    "needs_review": false,
+    "source_kind": "automated_curated",
+    "source_url": "https://www.youtube.com/watch?v=8g_-_vgHqmU&t=0s",
+    "published_at": null,
+    "video_title": "퇴근 후 삼겹살 100배 더 맛있게 드세요.",
+    "ingredients": [
+      {
+        "position": 1,
+        "section": "재료 또는 양념",
+        "name": "삼겹살",
+        "amount": null,
+        "unit": null,
+        "note": null,
+        "raw_text": "삼겹살"
+      },
+      {
+        "position": 2,
+        "section": "양념",
+        "name": "소금",
+        "amount": null,
+        "unit": null,
+        "note": null,
+        "raw_text": "소금"
+      },
+      {
+        "position": 3,
+        "section": "양념",
+        "name": "설탕",
+        "amount": null,
+        "unit": null,
+        "note": null,
+        "raw_text": "설탕"
+      },
+      {
+        "position": 4,
+        "section": "양념",
+        "name": "참기름",
+        "amount": null,
+        "unit": null,
+        "note": null,
+        "raw_text": "참기름"
+      },
+      {
+        "position": 5,
+        "section": "양념",
+        "name": "대파",
+        "amount": null,
+        "unit": null,
+        "note": null,
+        "raw_text": "대파"
+      }
+    ],
+    "steps": [
+      "삼겹살을 먹을만큼 준비합니다.",
+      "감자 한두알은 먹기 좋은 크기로 썰어줍니다.",
+      "전자레인지 용 찜기에 물을 살짝 뿌려줍니다.",
+      "전자레인지에 감자를 완전히 익혀줍니다.",
+      "대파 반대는 자기 썰어줍니다.",
+      "소금, 설탕, 참기름을 골고루 섞어줍니다.",
+      "삼겹살을 다 올려줍니다.",
+      "소금을 넉넉하게 해줍니다.",
+      "삼겹살을 전분 한 스푼을 골고루 뿌려줍니다.",
+      "기름에 삼겹살을 볶아줍니다. 대파를 올려줍니다."
+    ],
+    "tips": [],
+    "curated_at": "2026-11-11T06:35:00+00:00",
+    "curation_model": "qwen2.5:3b"
+  },
+  {
+    "video_id": "tmLglJNybi8-01",
+    "source_video_id": "tmLglJNybi8",
+    "name": "불닭볶음면",
+    "summary": "불닭볶음면을 더 맛있게 먹어보는 방법입니다.",
+    "servings": null,
+    "prep_minutes": null,
+    "cook_minutes": null,
+    "confidence": 0.9,
+    "needs_review": false,
+    "source_kind": "automated_curated",
+    "source_url": "https://www.youtube.com/watch?v=tmLglJNybi8&t=0s",
+    "published_at": null,
+    "video_title": "이거 하나면 디저트까지 완벽",
+    "ingredients": [
+      {
+        "position": 1,
+        "section": "재료 또는 양념",
+        "name": "불닭볶음면",
+        "amount": null,
+        "unit": null,
+        "note": null,
+        "raw_text": "불닭볶음면"
+      },
+      {
+        "position": 2,
+        "section": "재료 또는 양념",
+        "name": "대패삼겹살",
+        "amount": "200g",
+        "unit": null,
+        "note": null,
+        "raw_text": "대패삼겹살 200g"
+      },
+      {
+        "position": 3,
+        "section": "재료 또는 양념",
+        "name": "파채",
+        "amount": "100g",
+        "unit": null,
+        "note": null,
+        "raw_text": "파채 100g"
+      }
+    ],
+    "steps": [
+      "면사리는 미리 1~2분만 삶아둡니다.",
+      "팬에 대패삼겹살, 파채를 넣고 볶아줍니다.",
+      "만들어둔 소스, 면 사리를 넣고 볶아줍니다. (소스 - 불닭 소스 1봉, 돈가스 소스 3스푼, 다진 마늘 1스푼)",
+      "남은 파채, 후레이크, 참기름을 살짝 둘러 마무리합니다."
+    ],
+    "tips": [],
+    "curated_at": "2026-11-11T07:18:46+00:00",
+    "curation_model": "qwen2.5:3b"
+  },
+  {
+    "video_id": "m3hIzb0rscI-01",
+    "source_video_id": "m3hIzb0rscI",
+    "name": "드라이 카레",
+    "summary": "드라이 카레를 만드는 방법을 설명합니다.",
+    "servings": null,
+    "prep_minutes": null,
+    "cook_minutes": null,
+    "confidence": 0.9,
+    "needs_review": false,
+    "source_kind": "automated_curated",
+    "source_url": "https://www.youtube.com/watch?v=m3hIzb0rscI&t=0s",
+    "published_at": null,
+    "video_title": "늘 먹던 것과는 다르고 처음 먹어보는 맛일 겁니다.",
+    "ingredients": [
+      {
+        "position": 1,
+        "section": "재료 또는 양념",
+        "name": "다진 돼지고기",
+        "amount": "200g",
+        "unit": "g",
+        "note": null,
+        "raw_text": "다진 돼지고기 200g g"
+      },
+      {
+        "position": 2,
+        "section": "재료 또는 양념",
+        "name": "양파",
+        "amount": null,
+        "unit": null,
+        "note": null,
+        "raw_text": "양파"
+      },
+      {
+        "position": 3,
+        "section": "재료 또는 양념",
+        "name": "당근",
+        "amount": null,
+        "unit": null,
+        "note": null,
+        "raw_text": "당근"
+      },
+      {
+        "position": 4,
+        "section": "재료 또는 양념",
+        "name": "카레가루",
+        "amount": null,
+        "unit": null,
+        "note": null,
+        "raw_text": "카레가루"
+      }
+    ],
+    "steps": [
+      "다진 돼지고기에 소금, 후추를 간한 뒤 볶아줍니다.",
+      "다진 양파(돼지고기와 비슷한 양), 다진 당근(돼지고기 1/2 양), 다진 마늘 1스푼을 넣고 볶아줍니다.",
+      "케찹 1스푼, 돈가스 소스 1스푼, 카레가루 2스푼을 넣고 볶아줍니다.",
+      "밥 위에 볶은 카레, 계란 노른자, 파슬리를 뿌려줍니다."
+    ],
+    "tips": [],
+    "curated_at": "2026-11-11T05:39:00+00:00",
+    "curation_model": "qwen2.5:3b"
+  },
+  {
+    "video_id": "TR8WdSeR1Jw-01",
+    "source_video_id": "TR8WdSeR1Jw",
+    "name": "만두 감자 계란 국",
+    "summary": "간단하고 빠른 끓임으로 만드는 국 요리",
+    "servings": null,
+    "prep_minutes": null,
+    "cook_minutes": null,
+    "confidence": 0.9,
+    "needs_review": false,
+    "source_kind": "automated_curated",
+    "source_url": "https://www.youtube.com/watch?v=TR8WdSeR1Jw&t=0s",
+    "published_at": null,
+    "video_title": "그래도 이정도면 쉽지 않나요?",
+    "ingredients": [
+      {
+        "position": 1,
+        "section": "재료 또는 양념",
+        "name": "만두",
+        "amount": null,
+        "unit": null,
+        "note": null,
+        "raw_text": "만두"
+      },
+      {
+        "position": 2,
+        "section": "재료 또는 양념",
+        "name": "감자",
+        "amount": "1",
+        "unit": "개",
+        "note": null,
+        "raw_text": "감자 1 개"
+      },
+      {
+        "position": 3,
+        "section": "재료 또는 양념",
+        "name": "계란",
+        "amount": "2",
+        "unit": "알",
+        "note": null,
+        "raw_text": "계란 2 알"
+      }
+    ],
+    "steps": [
+      "먼저 본인이 좋아하는 냉동만두를 준비해주세요.",
+      "그리고 주먹보다 작은 감자 하나를 준비해주세요. 얇게 썰어주세요.",
+      "냄비에 물을 종이컵 3컵 부어주세요. 따로 육수를 내지 않기 때문에 치킨스톡 반스푼과 멸치액젓 한스푼을 넣어주세요.",
+      "이 두가지만 넣어도 엄청난 맛을 내는 육수가 완성됩니다.",
+      "감자와 냉동만두를 넣고 보글보글 끓여주세요. 감자와 만두가 익을 때까지 끓여주세요.",
+      "계란 두 알을 찍고 까서 잘 풀어주세요. 한바퀴 싹 뚫어주세요.",
+      "대충 썰어서 넉넉하게 넣어주세요.",
+      "마지막으로 후추를 살짝 뿌려주세요.",
+      "이제 한 숟가락 먹으면 정말 맛있는 만두 감자 계란 국이 완성됩니다."
+    ],
+    "tips": [],
+    "curated_at": "2026-11-11T05:46:49+00:00",
+    "curation_model": "qwen2.5:3b"
+  },
+  {
+    "video_id": "JQUeuvCH1V0-01",
+    "source_video_id": "JQUeuvCH1V0",
+    "name": "치킨난반",
+    "summary": "치킨난반을 만들어 보자",
+    "servings": null,
+    "prep_minutes": null,
+    "cook_minutes": null,
+    "confidence": 0.9,
+    "needs_review": false,
+    "source_kind": "automated_curated",
+    "source_url": "https://www.youtube.com/watch?v=JQUeuvCH1V0&t=0s",
+    "published_at": null,
+    "video_title": "제발 치킨집에서 이거 팔아주세요",
+    "ingredients": [
+      {
+        "position": 1,
+        "section": "재료 또는 양념",
+        "name": "닭다리살 정육",
+        "amount": "350g",
+        "unit": "g",
+        "note": null,
+        "raw_text": "닭다리살 정육 350g g"
+      },
+      {
+        "position": 2,
+        "section": "양념",
+        "name": "소금",
+        "amount": "1꼬집",
+        "unit": null,
+        "note": null,
+        "raw_text": "소금 1꼬집"
+      },
+      {
+        "position": 3,
+        "section": "양념",
+        "name": "전분 가루",
+        "amount": "2~3스푼",
+        "unit": "스푼",
+        "note": null,
+        "raw_text": "전분 가루 2~3스푼 스푼"
+      },
+      {
+        "position": 4,
+        "section": "양념",
+        "name": "식용유",
+        "amount": null,
+        "unit": null,
+        "note": null,
+        "raw_text": "식용유"
+      },
+      {
+        "position": 5,
+        "section": "양념",
+        "name": "진간장",
+        "amount": "2스푼",
+        "unit": "스푼",
+        "note": null,
+        "raw_text": "진간장 2스푼 스푼"
+      },
+      {
+        "position": 6,
+        "section": "양념",
+        "name": "설탕",
+        "amount": "2스푼",
+        "unit": "스푼",
+        "note": null,
+        "raw_text": "설탕 2스푼 스푼"
+      },
+      {
+        "position": 7,
+        "section": "양념",
+        "name": "식초",
+        "amount": "2스푼",
+        "unit": "스푼",
+        "note": null,
+        "raw_text": "식초 2스푼 스푼"
+      },
+      {
+        "position": 8,
+        "section": "양념",
+        "name": "물",
+        "amount": "2스푼",
+        "unit": "스푼",
+        "note": null,
+        "raw_text": "물 2스푼 스푼"
+      },
+      {
+        "position": 9,
+        "section": "양념",
+        "name": "양파",
+        "amount": null,
+        "unit": null,
+        "note": null,
+        "raw_text": "양파"
+      }
+    ],
+    "steps": [
+      "닭다리살 정육에 소금 1꼬집, 전분 가루 2~3스푼을 묻혀줍니다.",
+      "팬에 식용유를 두르고 닭다리살을 바삭하게 구워줍니다.",
+      "바삭하게 구운 닭다리살을 간장 소스에 버무려줍니다.",
+      "간장 소스 - 진간장 2스푼, 설탕 2스푼, 식초 2스푼, 물 2스푼",
+      "각종 야채, 타르타르 소스, 파슬리를 뿌려줍니다.",
+      "타르타르 소스 - 다진 양파, 삶은 계란 2알, 마요네즈 3스푼, 케찹 1스푼, 소금 조금, 후추 조금"
+    ],
+    "tips": [],
+    "curated_at": "2026-11-11T05:48:42+00:00",
+    "curation_model": "qwen2.5:3b"
+  },
+  {
+    "video_id": "JTt0qm44wK4-01",
+    "source_video_id": "JTt0qm44wK4",
+    "name": "삼겹살과 감자로 만드는 순살 감자탕",
+    "summary": "이 요리는 간단하고 비용 효율적이며, 돼지고기와 감자가 주요 재료로 사용됩니다.",
+    "servings": null,
+    "prep_minutes": null,
+    "cook_minutes": null,
+    "confidence": 0.9,
+    "needs_review": false,
+    "source_kind": "automated_curated",
+    "source_url": "https://www.youtube.com/watch?v=JTt0qm44wK4&t=0s",
+    "published_at": null,
+    "video_title": "이건 만들면 진짜 쌉니다.",
+    "ingredients": [
+      {
+        "position": 1,
+        "section": "재료 또는 양념",
+        "name": "돼지고기",
+        "amount": "300g",
+        "unit": "g",
+        "note": null,
+        "raw_text": "돼지고기 300g g"
+      },
+      {
+        "position": 2,
+        "section": "재료 또는 양념",
+        "name": "감자",
+        "amount": "1",
+        "unit": "개",
+        "note": null,
+        "raw_text": "감자 1 개"
+      }
+    ],
+    "steps": [
+      "냄비나 또배기에 물 종이컵 두컵을 넣고, 바늘을 보주고 고추장 반스푼과 된장, 싱간장 반스푼, 다진마늘 한입을 넣어 설탕 반스푼까지 넣어준다.",
+      "준 뒤에 된장과 고추장이 잘 풀릴 때까지 저어주면 국물은 준비된다.",
+      "돼지고기를 300g 넣어주고, 추가로 제 머리통만한 감자 하나도 대충 잘라서 올려 준 뒤에 물이 절반 정도 없어질 때까지 약불에서 20분 이상 푹 끓여준다.",
+      "마침 오랫동안 끓여주는게 오늘의 포인트입니다.",
+      "마침 깻잎 여섯 장 대충 손으로 짙어서 돌려주고 이거 빠지면 [음악] 굉장히 씁섭한 술이 들개가 가루를 한 스푼까지 넣어주면 밥석에서 간단하게 끓여먹기 좋은 초간단 순살 감자탕이 완성됩니다."
+    ],
+    "tips": [],
+    "curated_at": "2026-11-11T05:52:46+00:00",
+    "curation_model": "qwen2.5:3b"
+  },
+  {
+    "video_id": "0CuW0Pmcawk-01",
+    "source_video_id": "0CuW0Pmcawk",
+    "name": "제육볶음",
+    "summary": "간단하고 맛있는 한국 요리",
+    "servings": null,
+    "prep_minutes": null,
+    "cook_minutes": null,
+    "confidence": 0.9,
+    "needs_review": false,
+    "source_kind": "automated_curated",
+    "source_url": "https://www.youtube.com/watch?v=0CuW0Pmcawk&t=0s",
+    "published_at": null,
+    "video_title": "제육볶음 이런 것도 먹어봤음?",
+    "ingredients": [
+      {
+        "position": 1,
+        "section": "재료 또는 양념",
+        "name": "돼지고기",
+        "amount": "200g",
+        "unit": "g",
+        "note": null,
+        "raw_text": "돼지고기 200g g"
+      },
+      {
+        "position": 2,
+        "section": "재료 또는 양념",
+        "name": "대파",
+        "amount": "1/2",
+        "unit": "개",
+        "note": null,
+        "raw_text": "대파 1/2 개"
+      },
+      {
+        "position": 3,
+        "section": "재료 또는 양념",
+        "name": "청양고추",
+        "amount": null,
+        "unit": null,
+        "note": null,
+        "raw_text": "청양고추"
+      },
+      {
+        "position": 4,
+        "section": "재료 또는 양념",
+        "name": "양파",
+        "amount": "반개",
+        "unit": "개",
+        "note": null,
+        "raw_text": "양파 반개 개"
+      },
+      {
+        "position": 5,
+        "section": "재료 또는 양념",
+        "name": "우동사리",
+        "amount": null,
+        "unit": null,
+        "note": null,
+        "raw_text": "우동사리"
+      }
+    ],
+    "steps": [
+      "돼지고기를 200g 준비합니다. 불고기용 앞다리살을 가지고 왔지만, 돼지고기의 흔적이 있는 다른 부위도 좋습니다.",
+      "돼지고기는 먹기 좋은 크기로 풍덩풍덩 썰어줍니다.",
+      "대파 1/2개와 청양고추 1개를 준비합니다. 여유가 있으신 분들은 흰부분과 초록부분을 준비해주세요.",
+      "대파는 대략적으로 칼질 잘하는 척하면서 썰어줍니다. 청양고추는 대략적으로 썰어 준비해줍니다.",
+      "양파 반개를 대략적으로 썰어줍니다. 돼지고기와 대파를 팬에 넣고, 기름을 한두스푼 넣어 볶습니다.",
+      "대파가 갈색빛이 띄고 돼지고기 겉면에 핏기가 없을 때까지 볶아줍니다.",
+      "돼지고기가 잘 익었다면, 고추장 1스푼, 스테이크나 동깨소스 2스푼, 설탕 1스푼, 다진 마늘 1스푼, 시금치가루 1스푼을 넣어 볶습니다.",
+      "양파와 대파를 넣고, 청양고추를 넣어 볶습니다. 물 1컵(약 180ml)을 부어 넣어줍니다. 우동사리를 넣어줍니다.",
+      "우동사리를 미리 불려놓지 않았다면, 뚜껑을 덮고 팬 내부의 열기로 촉촉하게 익혀줍니다.",
+      "양이 다 차면 밥을 한입씩 껴서 터지면 제육볶음이 완성됩니다."
+    ],
+    "tips": [],
+    "curated_at": "2026-11-11T06:15:23+00:00",
+    "curation_model": "qwen2.5:3b"
+  },
+  {
+    "video_id": "Ebs-EM7ebeQ-01",
+    "source_video_id": "Ebs-EM7ebeQ",
+    "name": "치킨볶음밥",
+    "summary": "새로운 볶음밥으로 치킨을 먹는 방법입니다.",
+    "servings": 1,
+    "prep_minutes": null,
+    "cook_minutes": null,
+    "confidence": 0.9,
+    "needs_review": false,
+    "source_kind": "automated_curated",
+    "source_url": "https://www.youtube.com/watch?v=Ebs-EM7ebeQ&t=0s",
+    "published_at": null,
+    "video_title": "치킨이 지겨우신 분들을 위한 치킨볶음밥",
+    "ingredients": [
+      {
+        "position": 1,
+        "section": "재료 또는 양념",
+        "name": "닭다리살",
+        "amount": null,
+        "unit": null,
+        "note": null,
+        "raw_text": "닭다리살"
+      },
+      {
+        "position": 2,
+        "section": "재료 또는 양념",
+        "name": "양파",
+        "amount": "1/4",
+        "unit": "개",
+        "note": null,
+        "raw_text": "양파 1/4 개"
+      },
+      {
+        "position": 3,
+        "section": "재료 또는 양념",
+        "name": "파프리카",
+        "amount": null,
+        "unit": null,
+        "note": null,
+        "raw_text": "파프리카"
+      }
+    ],
+    "steps": [
+      "닭다리살을 준비합니다. 닭다리살 대신 닭가슴살이나 다른 닭고기 부위도 좋습니다. 닭다리살은 1인분 기준 200g 정도만 있으면 충분합니다. 그리고 먹기 좋은 크기로 썰어줍니다.",
+      "양파 1/4개를 준비해서 가로세로 잘게 썰어줍니다. 보기 좋게 빨간 색감을 위해 파프리카도 양파와 비슷한 양으로 잘게 썰어줍니다.",
+      "팬에 식용유를 두세 스푼 둘러주고 한번 뜨끈하게 팬을 달궈줍니다. 썰어 놓은 닭고기를 껍질 부분이 바닥으로 가게끔 올려줍니다.",
+      "소금과 후추를 뿌려 살짝 밑간을 해주고 닭고기 겉면에 맛있는 갈색빛이 띄면서 바로 한개를 찝어서 먹어도 될 정도 까지 바싹 익혀줍니다.",
+      "마침내 닭고기가 다 익었는지 확인하는 방법은 그냥 반 잘라 보시면 됩니다. 이렇게 눈으로 확인하면서 안쪽에 핑크빛이 다 사라지게 익혀줍니다.",
+      "노릿하게 잘 익었으면 닭고기를 빼주고 닭의 온기가 남아있는 기름 위로 다진 양파를 다 넣어줍니다.",
+      "냉장고에 돌아다니는 다른 야채 중 볶음밥에 어울리는 아무거나 넣어줍니다. 다진 마늘 반스푼과 1/4스푼의 치킨스톡을 넣어줍니다.",
+      "마법의 굴소스를 1/3스푼 넣어줍니다. 야채도 숨이 죽게 한번 잘 볶아줍니다. 밥 한 공기 200g을 넣고 밥도 다 같이 볶아줍니다.",
+      "치킨스톡이 없다면 굴소스를 조금 더 추가하여 간을 맞춰주시거나 맛소금을 살짝 넣어 입맛에 맞게 간을 해주시면 됩니다.",
+      "마지막으로 닭고기와 정말 잘 어울리는 깻잎을 서너장 준비해서 대충 손으로 지뜯어서 흩뿌려줍니다. 밥을 빼주고 미리 빼둔 갈색 빛깔의 닭고기를 토핑으로 얹어줍니다."
+    ],
+    "tips": [],
+    "curated_at": "2026-11-11T06:26:56+00:00",
+    "curation_model": "qwen2.5:3b"
+  },
+  {
+    "video_id": "oBXKTqGHc_0-01",
+    "source_video_id": "oBXKTqGHc_0",
+    "name": "마늘보쌈",
+    "summary": "초간단 마늘보쌈 레시피",
+    "servings": null,
+    "prep_minutes": null,
+    "cook_minutes": null,
+    "confidence": 0.9,
+    "needs_review": false,
+    "source_kind": "automated_curated",
+    "source_url": "https://www.youtube.com/watch?v=oBXKTqGHc_0&t=0s",
+    "published_at": null,
+    "video_title": "외국인 100중 88명이 보면 기겁할 초간단 보쌈 만들기",
+    "ingredients": [
+      {
+        "position": 1,
+        "section": "재료 또는 양념",
+        "name": "통삼겹살",
+        "amount": "500g",
+        "unit": "g",
+        "note": null,
+        "raw_text": "통삼겹살 500g g"
+      },
+      {
+        "position": 2,
+        "section": "재료 또는 양념",
+        "name": "통마늘",
+        "amount": "약 150g",
+        "unit": "g",
+        "note": null,
+        "raw_text": "통마늘 약 150g g"
+      }
+    ],
+    "steps": [
+      "안녕하십니까 자취요리 박무땡 입니다.",
+      "통삼겹살 500g을 준비합니다. 다른 부위를 사용해도 됩니다.",
+      "통삼겹살을 썰어 냄비에 넣습니다. 통삼겹살의 껍질 부분을 바닥으로 놓습니다.",
+      "통삼겹살을 끓여서 지방이 익으면 기름을 뽑습니다. 통삼겹살의 앞 뒤 옆면을 모두 잘 익혀줍니다.",
+      "콜라 3컵과 진간장 1컵을 3:1 비율로 섞어줍니다.",
+      "콜라와 진간장을 약불에서 끓여줍니다. 통마늘을 약 150g 정도 준비합니다.",
+      "통마늘을 썰어 물을 한두 바퀴 둘러줍니다. 통마늘을 전자레인지에 45분간 돌려줍니다.",
+      "마늘을 잘 익히고 설탕 3스푼과 맛소금 1/4스푼을 넣어줍니다.",
+      "마늘을 으깨어 설탕과 잘 섞어줍니다. 통삼겹살을 빼어 국물이 자박자박해진 상태로 썰어줍니다.",
+      "통마늘 소스를 고기 위에 뿌려줍니다. 통깨를 뿌려줍니다."
+    ],
+    "tips": [],
+    "curated_at": "2026-11-11T06:30:52+00:00",
+    "curation_model": "qwen2.5:3b"
+  },
+  {
+    "video_id": "ICn_P0APNx4-01",
+    "source_video_id": "ICn_P0APNx4",
+    "name": "매운 크림 라면",
+    "summary": "간단하고 비싼 파스타 대용 레시피",
+    "servings": null,
+    "prep_minutes": null,
+    "cook_minutes": null,
+    "confidence": 0.9,
+    "needs_review": false,
+    "source_kind": "automated_curated",
+    "source_url": "https://www.youtube.com/watch?v=ICn_P0APNx4&t=0s",
+    "published_at": null,
+    "video_title": "파스타 먹고 싶은데 가격이 부담스러울땐 매운크림라면",
+    "ingredients": [
+      {
+        "position": 1,
+        "section": "재료 또는 양념",
+        "name": "매운 라면",
+        "amount": null,
+        "unit": null,
+        "note": null,
+        "raw_text": "매운 라면"
+      },
+      {
+        "position": 2,
+        "section": "재료 또는 양념",
+        "name": "우유",
+        "amount": "2컵",
+        "unit": "큰술",
+        "note": null,
+        "raw_text": "우유 2컵 큰술"
+      },
+      {
+        "position": 3,
+        "section": "재료 또는 양념",
+        "name": "양파",
+        "amount": null,
+        "unit": null,
+        "note": null,
+        "raw_text": "양파"
+      },
+      {
+        "position": 4,
+        "section": "재료 또는 양념",
+        "name": "청양고추",
+        "amount": null,
+        "unit": null,
+        "note": null,
+        "raw_text": "청양고추"
+      }
+    ],
+    "steps": [
+      "팬에 식용유를 두세스푼 둘러 주고 양파 1/4개를 대충 채 썰어서 다 넣어줍니다.",
+      "이때 양파는 많으면 많을수록 맛이 좋으니 아낌없이 주는 양파를 골라서 넣 으시면 됩니다.",
+      "그리고 이거 양파가 탄 거 아닌가 라는 생각이 들 때까지 볶아주시면 됩니다.",
+      "양파가 흐물흐물해지고 꺼뭇한 부분이 보인다면 우유를 2컵 약 360ml 부어 줍니다.",
+      "면도 넣고 야채 뽀시레기도 한 봉지 다 넣어 주고 매운 분말 스프는 1봉지 다 넣으면 짤 수도 있으니 2/3봉 넣어줍니다.",
+      "나중에 먹어보면서 간이 부족하면 남은 분말 스프를 추가로 넣으시면 됩니다.",
+      "좀 더 시뻘건 색감을 원한다면 고춧가루를 반스푼 추가해주셔도 좋습니다.",
+      "면이 알맞게 잘 익었으면 제 이빨처럼 누런 슬라이스 치즈 한 장 올려주고 매콤한 맛을 더해줄 이런 청양고추도 잘게 썰어서 흩뿌려줍니다.",
+      "마지막으로 있어 보이게 파슬리도 뿌려 마무리해 줍니다.",
+      "다 됐으면 이제 화장실에서 양말 벗지 말고 비상 휴지로도 사용 가능한 다용도 받침대 위로 팬을 올려줍니다."
+    ],
+    "tips": [],
+    "curated_at": "2026-11-11T06:19:54+00:00",
+    "curation_model": "qwen2.5:3b"
+  },
+  {
+    "video_id": "86chKdRUVSg-01",
+    "source_video_id": "86chKdRUVSg",
+    "name": "한국어 푸딩 계란찜",
+    "summary": "초간단 계란찜 레시피를 제공합니다.",
+    "servings": null,
+    "prep_minutes": null,
+    "cook_minutes": null,
+    "confidence": 0.9,
+    "needs_review": false,
+    "source_kind": "automated_curated",
+    "source_url": "https://www.youtube.com/watch?v=86chKdRUVSg&t=0s",
+    "published_at": null,
+    "video_title": "초간단 푸딩 계란찜",
+    "ingredients": [
+      {
+        "position": 1,
+        "section": "재료 또는 양념",
+        "name": "계란",
+        "amount": "4알",
+        "unit": null,
+        "note": null,
+        "raw_text": "계란 4알"
+      },
+      {
+        "position": 2,
+        "section": "재료 또는 양념",
+        "name": "맛소금",
+        "amount": "2g",
+        "unit": null,
+        "note": null,
+        "raw_text": "맛소금 2g"
+      },
+      {
+        "position": 3,
+        "section": "재료 또는 양념",
+        "name": "치킨스톡",
+        "amount": "2g",
+        "unit": null,
+        "note": null,
+        "raw_text": "치킨스톡 2g"
+      },
+      {
+        "position": 4,
+        "section": "재료 또는 양념",
+        "name": "물",
+        "amount": "400ml",
+        "unit": null,
+        "note": null,
+        "raw_text": "물 400ml"
+      }
+    ],
+    "steps": [
+      "계란 4알을 톡톡敲을 치고 계란 껍질을 제거합니다.",
+      "계란을 포크나 젓가락으로 풀어줍니다.",
+      "계란물을 400ml의 물과 함께 넣고, 우유를 추가로 2컵과 1/4컵을 더해줍니다.",
+      "맛소금과 치킨스톡을 1/4와 1/3 스푼씩 넣어줍니다.",
+      "계란물에 물을 부어주고, 소금을 잘 흔들어줍니다.",
+      "계란물을 채에 담아 알끈을 걸러냅니다. 계란물 위에 남아있는 기포를 제거합니다.",
+      "뚜껑을 완전히 덮지 않고, 살짝 덮어주고 전자레인지에 700W로 3분을 돌려줍니다.",
+      "계란찜이 완전히 익지 않았다면, 추가로 1분씩 3번 더 돌려줍니다.",
+      "계란찜을 꺼내서 흔들어 계란물이 어느 정도 익었는지 확인합니다.",
+      "계란찜을 다시 돌려서 완전히 익은 계란찜을 만듭니다."
+    ],
+    "tips": [],
+    "curated_at": "2026-11-11T06:28:40+00:00",
+    "curation_model": "qwen2.5:3b"
+  },
+  {
+    "video_id": "OJHRmo5dK-8-01",
+    "source_video_id": "OJHRmo5dK-8",
+    "name": "닭도리탕",
+    "summary": "닭도리탕을 만드는 간단한 방법입니다.",
+    "servings": null,
+    "prep_minutes": null,
+    "cook_minutes": null,
+    "confidence": 0.9,
+    "needs_review": false,
+    "source_kind": "automated_curated",
+    "source_url": "https://www.youtube.com/watch?v=OJHRmo5dK-8&t=0s",
+    "published_at": null,
+    "video_title": "이거 만든 사람 진짜 상 받으세요.",
+    "ingredients": [
+      {
+        "position": 1,
+        "section": "재료 또는 양념",
+        "name": "사리곰탕",
+        "amount": null,
+        "unit": null,
+        "note": null,
+        "raw_text": "사리곰탕"
+      },
+      {
+        "position": 2,
+        "section": "재료 또는 양념",
+        "name": "다진 마늘",
+        "amount": null,
+        "unit": null,
+        "note": null,
+        "raw_text": "다진 마늘"
+      },
+      {
+        "position": 3,
+        "section": "재료 또는 양념",
+        "name": "고춧가루",
+        "amount": null,
+        "unit": null,
+        "note": null,
+        "raw_text": "고춧가루"
+      },
+      {
+        "position": 4,
+        "section": "재료 또는 양념",
+        "name": "설탕",
+        "amount": null,
+        "unit": null,
+        "note": null,
+        "raw_text": "설탕"
+      },
+      {
+        "position": 5,
+        "section": "재료",
+        "name": "닭다리살 정육",
+        "amount": "350g",
+        "unit": null,
+        "note": null,
+        "raw_text": "닭다리살 정육 350g"
+      },
+      {
+        "position": 6,
+        "section": "재료",
+        "name": "감자",
+        "amount": "2알",
+        "unit": null,
+        "note": null,
+        "raw_text": "감자 2알"
+      },
+      {
+        "position": 7,
+        "section": "재료",
+        "name": "양파",
+        "amount": null,
+        "unit": null,
+        "note": null,
+        "raw_text": "양파"
+      },
+      {
+        "position": 8,
+        "section": "재료",
+        "name": "대파",
+        "amount": null,
+        "unit": null,
+        "note": null,
+        "raw_text": "대파"
+      }
+    ],
+    "steps": [
+      "물 2컵반(약 450ml), 고추장 크게 1스푼, 다진 마늘 1스푼, 고춧가루 2스푼, 설탕 2스푼, 사리곰탕 분말스프, 건더기 스프를 넣어 육수를 완성시킵니다.",
+      "닭다리살 정육 350g, 감자 2알을 넣고 물이 절반이 되도록 끓여줍니다.",
+      "양파, 대파를 넣고 익혀줍니다.",
+      "통깨를 뿌려 마무리합니다. 닭도리탕 완성."
+    ],
+    "tips": [],
+    "curated_at": "2026-11-11T05:38:44+00:00",
+    "curation_model": "qwen2.5:3b"
+  },
+  {
+    "video_id": "OJHRmo5dK-8-02",
+    "source_video_id": "OJHRmo5dK-8",
+    "name": "볶음 라면",
+    "summary": "닭도리탕을 재료로 만든 볶음 라면을 만드는 방법입니다.",
+    "servings": null,
+    "prep_minutes": null,
+    "cook_minutes": null,
+    "confidence": 0.9,
+    "needs_review": false,
+    "source_kind": "automated_curated",
+    "source_url": "https://www.youtube.com/watch?v=OJHRmo5dK-8&t=0s",
+    "published_at": null,
+    "video_title": "이거 만든 사람 진짜 상 받으세요.",
+    "ingredients": [
+      {
+        "position": 1,
+        "section": "재료 또는 양념",
+        "name": "사리곰탕",
+        "amount": null,
+        "unit": null,
+        "note": null,
+        "raw_text": "사리곰탕"
+      },
+      {
+        "position": 2,
+        "section": "재료 또는 양념",
+        "name": "다진 마늘",
+        "amount": null,
+        "unit": null,
+        "note": null,
+        "raw_text": "다진 마늘"
+      },
+      {
+        "position": 3,
+        "section": "재료 또는 양념",
+        "name": "고춧가루",
+        "amount": null,
+        "unit": null,
+        "note": null,
+        "raw_text": "고춧가루"
+      },
+      {
+        "position": 4,
+        "section": "재료 또는 양념",
+        "name": "설탕",
+        "amount": null,
+        "unit": null,
+        "note": null,
+        "raw_text": "설탕"
+      },
+      {
+        "position": 5,
+        "section": "재료",
+        "name": "닭다리살 정육",
+        "amount": "350g",
+        "unit": null,
+        "note": null,
+        "raw_text": "닭다리살 정육 350g"
+      },
+      {
+        "position": 6,
+        "section": "재료",
+        "name": "감자",
+        "amount": "2알",
+        "unit": null,
+        "note": null,
+        "raw_text": "감자 2알"
+      },
+      {
+        "position": 7,
+        "section": "재료",
+        "name": "양파",
+        "amount": null,
+        "unit": null,
+        "note": null,
+        "raw_text": "양파"
+      },
+      {
+        "position": 8,
+        "section": "재료",
+        "name": "대파",
+        "amount": null,
+        "unit": null,
+        "note": null,
+        "raw_text": "대파"
+      },
+      {
+        "position": 9,
+        "section": "재료",
+        "name": "라면",
+        "amount": null,
+        "unit": null,
+        "note": null,
+        "raw_text": "라면"
+      }
+    ],
+    "steps": [
+      "약 450ml의 물에 고추장 크게 1스푼, 다진 마늘 1스푼, 고춧가루 2스푼, 설탕 2스푼, 사리곰탕 분말스프, 건더기 스프를 넣어 육수를 완성시킵니다.",
+      "닭다리살 정육 350g, 감자 2알을 넣고 물이 절반이 되도록 끓여줍니다.",
+      "양파, 대파를 넣고 익혀줍니다.",
+      "약 1분간 삶은 라면을 넣고 마저 익혀줍니다."
+    ],
+    "tips": [],
+    "curated_at": "2026-11-11T05:38:44+00:00",
+    "curation_model": "qwen2.5:3b"
+  },
+  {
+    "video_id": "VZADH5SKD7E-01",
+    "source_video_id": "VZADH5SKD7E",
+    "name": "참치 김치볶음밥",
+    "summary": "간단하고 실패 없이 맛있는 참치 김치볶음밥",
+    "servings": null,
+    "prep_minutes": null,
+    "cook_minutes": null,
+    "confidence": 0.9,
+    "needs_review": false,
+    "source_kind": "automated_curated",
+    "source_url": "https://www.youtube.com/watch?v=VZADH5SKD7E&t=0s",
+    "published_at": null,
+    "video_title": "제발 볶음밥 이렇게 해보세요",
+    "ingredients": [
+      {
+        "position": 1,
+        "section": "재료 또는 양념",
+        "name": "김치",
+        "amount": "23",
+        "unit": "스푼",
+        "note": null,
+        "raw_text": "김치 23 스푼"
+      },
+      {
+        "position": 2,
+        "section": "재료 또는 양념",
+        "name": "대파",
+        "amount": null,
+        "unit": null,
+        "note": null,
+        "raw_text": "대파"
+      },
+      {
+        "position": 3,
+        "section": "재료 또는 양념",
+        "name": "진간장",
+        "amount": "1",
+        "unit": "스푼",
+        "note": null,
+        "raw_text": "진간장 1 스푼"
+      },
+      {
+        "position": 4,
+        "section": "재료 또는 양념",
+        "name": "설탕",
+        "amount": "반",
+        "unit": "스푼",
+        "note": null,
+        "raw_text": "설탕 반 스푼"
+      },
+      {
+        "position": 5,
+        "section": "재료 또는 양념",
+        "name": "고춧가루",
+        "amount": "1",
+        "unit": "스푼",
+        "note": null,
+        "raw_text": "고춧가루 1 스푼"
+      },
+      {
+        "position": 6,
+        "section": "재료 또는 양념",
+        "name": "마요네즈",
+        "amount": "1",
+        "unit": "스푼",
+        "note": null,
+        "raw_text": "마요네즈 1 스푼"
+      }
+    ],
+    "steps": [
+      "김치 23스푼을 준비합니다. 대파를 흰색과 초록색 구분 없이 준비하고, 대략적으로 칼질 잘하는 척 썰어줍니다.",
+      "대파는 많으면 많을수록 맛이 좋으니 넉넉하게 준비합니다. 대파를 다 넣고, 진간장 1스푼과 설탕 반스푼을 넣어 줍니다.",
+      "설탕을 더해 익은 김치를 만든다면 설탕 1스푼을 넣고, 밖에서 파는 달달한 김치라면 설탕을 생략합니다. 시 뻘은 색감을 위해 고춧가루 1스푼과 비장의 재료 마요네즈 1스푼을 넣어 줍니다.",
+      "마요네즈를 넣으면 느끼한 맛보다는 김치와 정말 잘 어울려서 상상 이상의 맛으로 신세계를 볼 수 있습니다. 팬에 식용유 한두스푼을 둘러주고, 잘 비벼놓은 김치를 다 넣어줍니다.",
+      "김치를 약불에서 볶아서 살짝 뻑뻑한 느낌이 들 때까지 볶아줍니다. 밥 한공기를 넣고, 밥을 잘 섞어줍니다.",
+      "밥을 넣고 나서는 양념이 타면 안되니 몇 가닥 안 남은 제 머리털처럼 꺼질 듯 말 듯한 더 약한 약불에서 볶아줍니다.",
+      "중간에 맛을 보면서 짜다면 밥을 추가하거나 싱겁다면 소금 혹은 간장을 조금씩 추가하면서 볶아줍니다. 밥이 잘 섞였으면 참치 한캔을 준비해가 기름과 같이 다 넣어줍니다.",
+      "기름을 넣지 않고 참치만 넣고 싶다면 기름을 빼고 참치만 넣어주셔도 됩니다. 진한 참치의 향을 끼고 싶다면 기름까지 넣는 걸 추천드립니다.",
+      "참치를 처음부터 넣고 볶아주면 참치의 맛도 묻히고 흔적도 찾아볼 수 없게 흩어져 버리니 이렇게 참치는 마지막에 넣어 줄 수 있습니다.",
+      "마침내 마지막 하이라이트 후추도 톡톡 뿌려주고, 이어 보이게 파슬리도 뿌려 마무리 해줍니다. 양이 많아 팬 채로 빼줍니다."
+    ],
+    "tips": [],
+    "curated_at": "2026-11-11T05:48:57+00:00",
+    "curation_model": "qwen2.5:3b"
+  },
+  {
+    "video_id": "GVqdIAX9t5c-01",
+    "source_video_id": "GVqdIAX9t5c",
+    "name": "군만두 양념찌개",
+    "summary": "냉동만두와 양배추, 양념을 이용한 간단한 양념찌개",
+    "servings": null,
+    "prep_minutes": null,
+    "cook_minutes": null,
+    "confidence": 0.9,
+    "needs_review": false,
+    "source_kind": "automated_curated",
+    "source_url": "https://www.youtube.com/watch?v=GVqdIAX9t5c&t=0s",
+    "published_at": null,
+    "video_title": "집에 냉동만두가 있다면 무조건 꺼내세요!",
+    "ingredients": [
+      {
+        "position": 1,
+        "section": "양배추",
+        "name": "양배추",
+        "amount": null,
+        "unit": null,
+        "note": null,
+        "raw_text": "양배추"
+      },
+      {
+        "position": 2,
+        "section": "양념",
+        "name": "양념장",
+        "amount": "양념장",
+        "unit": "양념장",
+        "note": null,
+        "raw_text": "양념장 양념장 양념장"
+      }
+    ],
+    "steps": [
+      "냉동만두를 준비하고 양배추를 얇게 썰어 준비한다.",
+      "양배추와 양념장을 양배추 위에 얹어 양념을 발라준다.",
+      "양배추와 양념을 양배추 위에 얹어 양념을 발라준다.",
+      "양배추와 양념을 양배추 위에 얹어 양념을 발라준다.",
+      "양배추와 양념을 양배추 위에 얹어 양념을 발라준다.",
+      "양배추와 양념을 양배추 위에 얹어 양념을 발라준다.",
+      "양배추와 양념을 양배추 위에 얹어 양념을 발라준다.",
+      "양배추와 양념을 양배추 위에 얹어 양념을 발라준다.",
+      "양배추와 양념을 양배추 위에 얹어 양념을 발라준다.",
+      "양배추와 양념을 양배추 위에 얹어 양념을 발라준다."
+    ],
+    "tips": [],
+    "curated_at": "2026-11-11T05:37:18+00:00",
+    "curation_model": "qwen2.5:3b"
+  },
+  {
+    "video_id": "1sl8mSQb2jE-01",
+    "source_video_id": "1sl8mSQb2jE",
+    "name": "미역줄기볶음",
+    "summary": "미역줄기와 양파, 당근으로 만드는 간단한 반찬",
+    "servings": null,
+    "prep_minutes": null,
+    "cook_minutes": null,
+    "confidence": 0.9,
+    "needs_review": false,
+    "source_kind": "automated_curated",
+    "source_url": "https://www.youtube.com/watch?v=1sl8mSQb2jE&t=0s",
+    "published_at": null,
+    "video_title": "초간단 자취 반찬",
+    "ingredients": [
+      {
+        "position": 1,
+        "section": "재료 또는 양념",
+        "name": "미역줄기",
+        "amount": "300g",
+        "unit": "g",
+        "note": null,
+        "raw_text": "미역줄기 300g g"
+      },
+      {
+        "position": 2,
+        "section": "재료 또는 양념",
+        "name": "양파",
+        "amount": null,
+        "unit": null,
+        "note": null,
+        "raw_text": "양파"
+      },
+      {
+        "position": 3,
+        "section": "재료 또는 양념",
+        "name": "당근",
+        "amount": null,
+        "unit": null,
+        "note": null,
+        "raw_text": "당근"
+      }
+    ],
+    "steps": [
+      "미역줄기는 흐르는 물에 2~3번 씻어주고 먹기 좋은 크기로 잘라준 뒤 2분간 데쳐줍니다.",
+      "식용유를 두른 팬에 다진 마늘 1/2스푼을 볶아줍니다.",
+      "데친 미역줄기, 채썬 당근, 채썬 양파, 치킨스톡 1/4스푼을 넣고 야채 숨이 죽을 때까지 볶아줍니다.",
+      "참기름 2~3스푼, 통깨를 뿌려 마무리합니다."
+    ],
+    "tips": [],
+    "curated_at": "2026-11-11T05:38:52+00:00",
+    "curation_model": "qwen2.5:3b"
+  },
+  {
+    "video_id": "-_nK9H2trq0-01",
+    "source_video_id": "-_nK9H2trq0",
+    "name": "닭도리탕",
+    "summary": "닭도리탕을 만드는 간단한 방법입니다.",
+    "servings": null,
+    "prep_minutes": null,
+    "cook_minutes": null,
+    "confidence": 0.9,
+    "needs_review": false,
+    "source_kind": "automated_curated",
+    "source_url": "https://www.youtube.com/watch?v=-_nK9H2trq0&t=0s",
+    "published_at": null,
+    "video_title": "발로 만들어도 절대 실패없습니다.",
+    "ingredients": [
+      {
+        "position": 1,
+        "section": "재료 또는 양념",
+        "name": "닭",
+        "amount": null,
+        "unit": null,
+        "note": null,
+        "raw_text": "닭"
+      },
+      {
+        "position": 2,
+        "section": "재료 또는 양념",
+        "name": "감자",
+        "amount": "2~3알",
+        "unit": null,
+        "note": null,
+        "raw_text": "감자 2~3알"
+      },
+      {
+        "position": 3,
+        "section": "재료 또는 양념",
+        "name": "양파",
+        "amount": "1개",
+        "unit": null,
+        "note": null,
+        "raw_text": "양파 1개"
+      },
+      {
+        "position": 4,
+        "section": "재료 또는 양념",
+        "name": "대파",
+        "amount": "1대",
+        "unit": null,
+        "note": null,
+        "raw_text": "대파 1대"
+      },
+      {
+        "position": 5,
+        "section": "재료 또는 양념",
+        "name": "청양고추",
+        "amount": "2~3개",
+        "unit": null,
+        "note": null,
+        "raw_text": "청양고추 2~3개"
+      }
+    ],
+    "steps": [
+      "닭은 끓는 물에 2~3분간 데쳐줍니다.",
+      "데친 닭에 물 5컵(약 900ml), 고추장 크게 1스푼, 진간장 3스푼, 고춧가루 3스푼, 설탕 3스푼, 다진 마늘 1스푼, 치킨스톡 1/3스푼, 감자를 넣고 센불에서 15분간 끓여줍니다.",
+      "물이 절반 정도 졸았을 때 양파, 대파, 청양고추를 넣고 5분간 더 끓여줍니다."
+    ],
+    "tips": [],
+    "curated_at": "2026-11-11T05:39:36+00:00",
+    "curation_model": "qwen2.5:3b"
   }
 ]
