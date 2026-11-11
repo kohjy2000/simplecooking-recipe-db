@@ -8806,5 +8806,542 @@
     "tips": [],
     "curated_at": "2026-11-11T08:51:07+00:00",
     "curation_model": "qwen2.5:3b"
+  },
+  {
+    "video_id": "eNhBZzHcZbM-01",
+    "source_video_id": "eNhBZzHcZbM",
+    "name": "골뱅이 마늘 볶음",
+    "summary": "골뱅이와 마늘을 볶아 맛있는 국수 조미료로 만듭니다.",
+    "servings": null,
+    "prep_minutes": null,
+    "cook_minutes": null,
+    "confidence": 0.9,
+    "needs_review": false,
+    "source_kind": "automated_curated",
+    "source_url": "https://www.youtube.com/watch?v=eNhBZzHcZbM&t=0s",
+    "published_at": null,
+    "video_title": "이게 두쫀쿠보다 훨씬 맛있습니다.",
+    "ingredients": [
+      {
+        "position": 1,
+        "section": "재료 또는 양념",
+        "name": "골뱅이",
+        "amount": null,
+        "unit": null,
+        "note": null,
+        "raw_text": "골뱅이"
+      },
+      {
+        "position": 2,
+        "section": "재료 또는 양념",
+        "name": "마늘",
+        "amount": null,
+        "unit": null,
+        "note": null,
+        "raw_text": "마늘"
+      }
+    ],
+    "steps": [
+      "골뱅이 한 개를 준비하고 국물과 분리시킵니다.",
+      "남은 국물은 버리지 마세요. 골뱅이를 편으로 둘러줍니다.",
+      "골뱅이와 비슷한 양으로 마늘을 편 썰어 줍니다.",
+      "마늘을 5mm 정도 두툼하게 편 썰어줍니다. 소금무추로 간을 해주고 볶습니다.",
+      "고추 두 개를 굵직하게 썰어 넣고 볶습니다.",
+      "불을 완전히 끈 상태에서 화면을 끊습니다.",
+      "골뱅이 궁어 세네 스푼을 골뱅이에 뿌려주고, 펜에 남은 열기를 이용해 쫄여줍니다.",
+      "두 개의 골뱅이 마늘 볶음을 준비합니다.",
+      "인전물 600mm에 면과 액상수퍼를 다 놓고 불이 다 쫄아질 때까지 끓여줍니다.",
+      "체다 치즈 두 장과 골뱅이 마늘 볶음을 넣어 프레이크 뽀시레기를 뿌려줍니다."
+    ],
+    "tips": [],
+    "curated_at": "2026-11-11T10:44:41+00:00",
+    "curation_model": "qwen2.5:3b"
+  },
+  {
+    "video_id": "2emAzeOal2U-01",
+    "source_video_id": "2emAzeOal2U",
+    "name": "대존맛 목살과 양배추 밥",
+    "summary": "이 두 가지 요리는 대존맛 목살과 양배추 밥으로 구성됩니다.",
+    "servings": null,
+    "prep_minutes": null,
+    "cook_minutes": null,
+    "confidence": 0.9,
+    "needs_review": false,
+    "source_kind": "automated_curated",
+    "source_url": "https://www.youtube.com/watch?v=2emAzeOal2U&t=0s",
+    "published_at": null,
+    "video_title": "이제는 너무 유명해져버린 대존맛 조합",
+    "ingredients": [
+      {
+        "position": 1,
+        "section": "재료 또는 양념",
+        "name": "목살",
+        "amount": "200g",
+        "unit": null,
+        "note": null,
+        "raw_text": "목살 200g"
+      },
+      {
+        "position": 2,
+        "section": "재료 또는 양념",
+        "name": "양배추",
+        "amount": "1/3컵",
+        "unit": null,
+        "note": null,
+        "raw_text": "양배추 1/3컵"
+      }
+    ],
+    "steps": [
+      "목살을 두툼한 통목사로 썰어 놓습니다.",
+      "목살에 소금과 후추를 뿌려 살짝 밑을 해줍니다.",
+      "목살을 구워서 바삭하게 익혀줍니다.",
+      "목살이 익으면 양배추를 썰어 올려줍니다.",
+      "양배추에 소금, 설탕, 후추를 넣고 끓여줍니다.",
+      "양배추와 목살을 양배추 밥에 올려줍니다.",
+      "양배추 밥에 김계란 노른자와 흰와사비를 얹어줍니다.",
+      "마지막으로 후추를 뿌려줍니다."
+    ],
+    "tips": [],
+    "curated_at": "2026-11-11T10:30:07+00:00",
+    "curation_model": "qwen2.5:3b"
+  },
+  {
+    "video_id": "WfhQtsGu8qE-01",
+    "source_video_id": "WfhQtsGu8qE",
+    "name": "불닭 덮밥",
+    "summary": "매콤한 양념장을 활용한 촉촉하고 맛있는 불닭 덮밥을 만듭니다.",
+    "servings": null,
+    "prep_minutes": null,
+    "cook_minutes": null,
+    "confidence": 0.9,
+    "needs_review": false,
+    "source_kind": "automated_curated",
+    "source_url": "https://www.youtube.com/watch?v=WfhQtsGu8qE&t=0s",
+    "published_at": null,
+    "video_title": "진짜 맛있게 매콤하게 만드는 방법",
+    "ingredients": [
+      {
+        "position": 1,
+        "section": "재료 또는 양념",
+        "name": "식용유",
+        "amount": "넉넉하게",
+        "unit": null,
+        "note": null,
+        "raw_text": "식용유 넉넉하게"
+      },
+      {
+        "position": 2,
+        "section": "재료 또는 양념",
+        "name": "닭다리살 정육",
+        "amount": "300g",
+        "unit": null,
+        "note": null,
+        "raw_text": "닭다리살 정육 300g"
+      },
+      {
+        "position": 3,
+        "section": "재료 또는 양념",
+        "name": "양파",
+        "amount": "반개",
+        "unit": null,
+        "note": null,
+        "raw_text": "양파 반개"
+      },
+      {
+        "position": 4,
+        "section": "재료 또는 양념",
+        "name": "불닭 소스",
+        "amount": "2스푼",
+        "unit": null,
+        "note": null,
+        "raw_text": "불닭 소스 2스푼"
+      },
+      {
+        "position": 5,
+        "section": "재료 또는 양념",
+        "name": "고추장",
+        "amount": "1/2스푼",
+        "unit": null,
+        "note": null,
+        "raw_text": "고추장 1/2스푼"
+      },
+      {
+        "position": 6,
+        "section": "재료 또는 양념",
+        "name": "다진 마늘",
+        "amount": "1/2스푼",
+        "unit": null,
+        "note": null,
+        "raw_text": "다진 마늘 1/2스푼"
+      },
+      {
+        "position": 7,
+        "section": "재료 또는 양념",
+        "name": "설탕",
+        "amount": "1스푼",
+        "unit": null,
+        "note": null,
+        "raw_text": "설탕 1스푼"
+      },
+      {
+        "position": 8,
+        "section": "재료 또는 양념",
+        "name": "물",
+        "amount": "두세스푼",
+        "unit": null,
+        "note": null,
+        "raw_text": "물 두세스푼"
+      }
+    ],
+    "steps": [
+      "먼저 팬에 식용유를 넉넉하게 둘러주고 닭다리살 정육을 300g 올려주고",
+      "앞뒤로 뒤집어 주면서 노릿하게 구워줍니다 찌글찌글 먹기 좋은 크기로 잘라주면 더 좋겠죠",
+      "잘 구워진 닭고기 중에 비주얼 좋은 여성만 몇 개 빼주고",
+      "양파 반개를 채소로 올려주고 양파도 숨이 죽을 때까지 볶아주다가",
+      "매콤한 불닭 소스 2스푼, 고추장 1/2스푼, 다진 마늘 1/2스푼, 설탕 1스푼, 물 두세스푼을 넣어주고",
+      "골고루 섞어 맛있는 불닭 소스로 만들어 주고 그대로 다 넣어줍니다",
+      "다 같이 한 번 더 볶아주면서 촉촉한 덮밥 양념을 완성시켜 준 뒤에",
+      "뜨끈한 흰밥 위로 다 부어주고 청양 고추나 혹은 대파, 쪽파도 좋습니다",
+      "그라고 처음에 빼던 닭고기와 후추를 뿌려주면 됩니다",
+      "그러면 매콤한 불닭 덮밥이 완성됩니다."
+    ],
+    "tips": [],
+    "curated_at": "2026-11-11T10:22:24+00:00",
+    "curation_model": "qwen2.5:3b"
+  },
+  {
+    "video_id": "FC6-u3kM1Yw-01",
+    "source_video_id": "FC6-u3kM1Yw",
+    "name": "짬뽕",
+    "summary": "짬뽕 라면을 만드는 방법입니다.",
+    "servings": null,
+    "prep_minutes": null,
+    "cook_minutes": null,
+    "confidence": 0.9,
+    "needs_review": false,
+    "source_kind": "automated_curated",
+    "source_url": "https://www.youtube.com/watch?v=FC6-u3kM1Yw&t=0s",
+    "published_at": null,
+    "video_title": "200만 유튜버가 다음날 해장 하는 방법",
+    "ingredients": [
+      {
+        "position": 1,
+        "section": "재료 또는 양념",
+        "name": "우삼겹",
+        "amount": "200g",
+        "unit": "g",
+        "note": null,
+        "raw_text": "우삼겹 200g g"
+      },
+      {
+        "position": 2,
+        "section": "재료 또는 양념",
+        "name": "양파",
+        "amount": "1/2",
+        "unit": "개",
+        "note": null,
+        "raw_text": "양파 1/2 개"
+      },
+      {
+        "position": 3,
+        "section": "재료 또는 양념",
+        "name": "대파",
+        "amount": "반대",
+        "unit": "개",
+        "note": null,
+        "raw_text": "대파 반대 개"
+      },
+      {
+        "position": 4,
+        "section": "양념",
+        "name": "고춧가루",
+        "amount": "1스푼",
+        "unit": "스푼",
+        "note": null,
+        "raw_text": "고춧가루 1스푼 스푼"
+      },
+      {
+        "position": 5,
+        "section": "양념",
+        "name": "진간장",
+        "amount": "1스푼",
+        "unit": "스푼",
+        "note": null,
+        "raw_text": "진간장 1스푼 스푼"
+      }
+    ],
+    "steps": [
+      "후라이팬에 우삼겹 200g, 양파 1/2개, 대파 반대를 뿌려주고 볶아줍니다.",
+      "고춧가루 1스푼과 진간장 1스푼을 넣고 볶아줍니다.",
+      "물 500ml와 라면 스프, 다진 마늘 1/2스푼, 면을 넣고 끓여줍니다.",
+      "면이 다 익기 1분전에 숙주를 소량 넣고 익혀줍니다.",
+      "조미유를 뿌려 마무리합니다."
+    ],
+    "tips": [],
+    "curated_at": "2026-11-11T10:29:15+00:00",
+    "curation_model": "qwen2.5:3b"
+  },
+  {
+    "video_id": "vlPqkuHIdCc-01",
+    "source_video_id": "vlPqkuHIdCc",
+    "name": "콘치즈 불닭볶음면",
+    "summary": "콘치즈 불닭볶음면을 만드는 방법을 설명합니다.",
+    "servings": null,
+    "prep_minutes": null,
+    "cook_minutes": null,
+    "confidence": 0.9,
+    "needs_review": false,
+    "source_kind": "automated_curated",
+    "source_url": "https://www.youtube.com/watch?v=vlPqkuHIdCc&t=0s",
+    "published_at": null,
+    "video_title": "이건 너무 맛있어서 주기적으로 먹어줘야 합니다.",
+    "ingredients": [
+      {
+        "position": 1,
+        "section": "재료 또는 양념",
+        "name": "불닭볶음면",
+        "amount": "2개",
+        "unit": null,
+        "note": null,
+        "raw_text": "불닭볶음면 2개"
+      },
+      {
+        "position": 2,
+        "section": "재료 또는 양념",
+        "name": "스위트콘",
+        "amount": "4스푼",
+        "unit": null,
+        "note": null,
+        "raw_text": "스위트콘 4스푼"
+      },
+      {
+        "position": 3,
+        "section": "재료 또는 양념",
+        "name": "모짜렐라 치즈",
+        "amount": "4스푼",
+        "unit": null,
+        "note": null,
+        "raw_text": "모짜렐라 치즈 4스푼"
+      },
+      {
+        "position": 4,
+        "section": "양념",
+        "name": "마요네즈",
+        "amount": "4스푼",
+        "unit": null,
+        "note": null,
+        "raw_text": "마요네즈 4스푼"
+      },
+      {
+        "position": 5,
+        "section": "양념",
+        "name": "설탕",
+        "amount": "1스푼",
+        "unit": null,
+        "note": null,
+        "raw_text": "설탕 1스푼"
+      },
+      {
+        "position": 6,
+        "section": "재료 또는 양념",
+        "name": "메추리알",
+        "amount": "10알",
+        "unit": null,
+        "note": null,
+        "raw_text": "메추리알 10알"
+      }
+    ],
+    "steps": [
+      "불닭볶음면 2개를 준비합니다.",
+      "스위트콘 4스푼, 모짜렐라 치즈 4스푼, 마요네즈 4스푼, 설탕 1스푼, 메추리알 10알을 섞어 준비합니다.",
+      "물 4컵(약 720ml)에 불닭볶음면 2개를 끓여줍니다.",
+      "불닭볶음면 위로 (1)을 올려주고 뚜껑 덮고 1분간 치즈를 녹여줍니다.",
+      "후레이크까지 뿌려주면 끝입니다."
+    ],
+    "tips": [],
+    "curated_at": "2026-11-11T10:16:59+00:00",
+    "curation_model": "qwen2.5:3b"
+  },
+  {
+    "video_id": "R65yVMc48Dw-01",
+    "source_video_id": "R65yVMc48Dw",
+    "name": "전자레인지 치즈 치밥",
+    "summary": "전자레인지로 만든 치즈 치밥입니다.",
+    "servings": null,
+    "prep_minutes": null,
+    "cook_minutes": null,
+    "confidence": 0.9,
+    "needs_review": false,
+    "source_kind": "automated_curated",
+    "source_url": "https://www.youtube.com/watch?v=R65yVMc48Dw&t=0s",
+    "published_at": null,
+    "video_title": "전자레인지로 이 정도면 진짜 미친 겁니다.",
+    "ingredients": [
+      {
+        "position": 1,
+        "section": "재료 또는 양념",
+        "name": "밥",
+        "amount": null,
+        "unit": null,
+        "note": null,
+        "raw_text": "밥"
+      },
+      {
+        "position": 2,
+        "section": "재료 또는 양념",
+        "name": "소스",
+        "amount": null,
+        "unit": null,
+        "note": null,
+        "raw_text": "소스"
+      },
+      {
+        "position": 3,
+        "section": "재료 또는 양념",
+        "name": "치즈",
+        "amount": "1/2",
+        "unit": "큰술",
+        "note": null,
+        "raw_text": "치즈 1/2 큰술"
+      }
+    ],
+    "steps": [
+      "전자레인지 사용 가능한 그릇에 밥 한 공기를 깔고 다지 장바 한 총과 핫 바베큐맛 닭가슴살 두 팩을 소스 한 방으로도 남김없이 깔끔하게 넣습니다.",
+      "모자르트 치즈를 듬뿍 뿌려주고 선자레인지 오급만 둘러주면 매콤달콤한 바베큐 맛에 초간단 치즈 치밥이 완성됩니다."
+    ],
+    "tips": [],
+    "curated_at": "2026-11-11T10:26:58+00:00",
+    "curation_model": "qwen2.5:3b"
+  },
+  {
+    "video_id": "bW033rdObu4-01",
+    "source_video_id": "bW033rdObu4",
+    "name": "소세지 뚜밥",
+    "summary": "간단하고 빠른 소세지 뚜밥 레시피",
+    "servings": null,
+    "prep_minutes": null,
+    "cook_minutes": null,
+    "confidence": 0.9,
+    "needs_review": false,
+    "source_kind": "automated_curated",
+    "source_url": "https://www.youtube.com/watch?v=bW033rdObu4&t=0s",
+    "published_at": null,
+    "video_title": "너무 쉬워서 영상이 1분도 안됨",
+    "ingredients": [
+      {
+        "position": 1,
+        "section": "재료 또는 양념",
+        "name": "소시지",
+        "amount": "1/2",
+        "unit": "개",
+        "note": null,
+        "raw_text": "소시지 1/2 개"
+      },
+      {
+        "position": 2,
+        "section": "재료 또는 양념",
+        "name": "양파",
+        "amount": null,
+        "unit": null,
+        "note": null,
+        "raw_text": "양파"
+      },
+      {
+        "position": 3,
+        "section": "재료 또는 양념",
+        "name": "소세지",
+        "amount": "1",
+        "unit": "개",
+        "note": null,
+        "raw_text": "소세지 1 개"
+      },
+      {
+        "position": 4,
+        "section": "재료 또는 양념",
+        "name": "계란",
+        "amount": "1",
+        "unit": "개",
+        "note": null,
+        "raw_text": "계란 1 개"
+      }
+    ],
+    "steps": [
+      "칼집을 내주고 인자팬에 소시지를 넓게 둘러준다.",
+      "양파를 얍실하게 썰어 올려준다.",
+      "소세지를 인자팬에 올려주고 기름 위로 굴려 바삭하게 구워준다.",
+      "소세지와 양파를 찌글찌글하게 빼온다.",
+      "소세지와 양파에 신간 두 스푼과 설탕 한 스푼을 넣고 끓여준다.",
+      "계란을 골고루 풀어 넣고 그대로 부어준다.",
+      "계란이 흐물해질 때까지 끓여준다.",
+      "소세지와 양파, 계란이 잘 섞이면 계란을 살짝만 익혀주면 끝이다."
+    ],
+    "tips": [],
+    "curated_at": "2026-11-11T10:18:28+00:00",
+    "curation_model": "qwen2.5:3b"
+  },
+  {
+    "video_id": "j9AFJHDQSdI-01",
+    "source_video_id": "j9AFJHDQSdI",
+    "name": "다진 고기와 계란 요리",
+    "summary": "다진 고기와 계란을 볶아 만든 요리",
+    "servings": null,
+    "prep_minutes": null,
+    "cook_minutes": null,
+    "confidence": 0.9,
+    "needs_review": false,
+    "source_kind": "automated_curated",
+    "source_url": "https://www.youtube.com/watch?v=j9AFJHDQSdI&t=0s",
+    "published_at": null,
+    "video_title": "일본 SNS에서 대박 터진 계란 먹는 방법",
+    "ingredients": [
+      {
+        "position": 1,
+        "section": "재료 또는 양념",
+        "name": "양파",
+        "amount": "반개",
+        "unit": null,
+        "note": null,
+        "raw_text": "양파 반개"
+      },
+      {
+        "position": 2,
+        "section": "재료 또는 양념",
+        "name": "고기",
+        "amount": "300g",
+        "unit": null,
+        "note": null,
+        "raw_text": "고기 300g"
+      },
+      {
+        "position": 3,
+        "section": "재료 또는 양념",
+        "name": "마늘",
+        "amount": "한 스푼",
+        "unit": null,
+        "note": null,
+        "raw_text": "마늘 한 스푼"
+      },
+      {
+        "position": 4,
+        "section": "재료 또는 양념",
+        "name": "계란",
+        "amount": null,
+        "unit": null,
+        "note": null,
+        "raw_text": "계란"
+      }
+    ],
+    "steps": [
+      "편에 시용률 넉넉하게 둘러주고 양파 반개를 기억 때가리맨기로 입체가",
+      "양파와 고기를 300g 올려줍니다. 그리고 다마늘 한 스푼만 추가해주고 전체적으로 갈색빛지 띄게 골고 한번 볶아 줍니다.",
+      "계란 내알을 올려줍니다. 뒤에 모자르트 치즈를 듬뿍 뿌려 줍니다.",
+      "뚜껑을 덮고 계란과 치즈를 익혀줍니다. 마지막으로 후추만 뿌려주면 일본 SNS에서 유행하는 떠먹는 치즈 한박이 완성됩니다.",
+      "다진 양파와 다진 돼지고기를 넣고 골고오를 볶아 줍니다. 돼지고기가 익었을 때쯤 카레가루 한 스푼을 넣고 한 번 더 볶아줍니다.",
+      "동깨 소스 넉넉하게 둘러주고 계란을 넣고 깻잎 한 두 장 대충치 뜯어서 올려줍니다. 뚜껑을 넣고 계란만 이겨 줍니다.",
+      "계란 내알을 올려줍니다. 마지막으로 후추만 뿌려주면 에그인이넬 스타일의 계란 요리까지 완성됩니다."
+    ],
+    "tips": [],
+    "curated_at": "2026-11-11T10:27:15+00:00",
+    "curation_model": "qwen2.5:3b"
   }
 ]
