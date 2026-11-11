@@ -4714,6 +4714,1497 @@
       "model": "qwen2.5:3b",
       "status": "failed",
       "error": "Recipe 1 has fewer than two ingredients"
+    },
+    "4QnufD00LII": {
+      "attempts": 1,
+      "updated_at": "2026-11-11T08:31:10+00:00",
+      "model": "qwen2.5:3b",
+      "source_warning": "or --cookies for the authentication. See  https://github.com/yt-dlp/yt-dlp/wiki/FAQ#how-do-i-pass-cookies-to-yt-dlp  for how to manually pass cookies. Also see  https://github.com/yt-dlp/yt-dlp/wiki/Extractors#exporting-youtube-cookies  for tips on effectively exporting YouTube cookies | ERROR: [youtube] 4QnufD00LII: This video is unavailable. Error code: 152 - 18 | Invidious fallback failed: https://yt.chocolatemoo53.com: HTTP fetch failed for yt.chocolatemoo53.com: The read operation timed out",
+      "status": "failed",
+      "error": "No usable caption or detailed video description was available"
+    },
+    "IenRd9gBWSY": {
+      "attempts": 1,
+      "updated_at": "2026-11-11T08:31:46+00:00",
+      "model": "qwen2.5:3b",
+      "source_warning": "or --cookies for the authentication. See  https://github.com/yt-dlp/yt-dlp/wiki/FAQ#how-do-i-pass-cookies-to-yt-dlp  for how to manually pass cookies. Also see  https://github.com/yt-dlp/yt-dlp/wiki/Extractors#exporting-youtube-cookies  for tips on effectively exporting YouTube cookies | ERROR: [youtube] IenRd9gBWSY: This video is unavailable. Error code: 152 - 18 | Invidious fallback failed: https://yt.chocolatemoo53.com: HTTP fetch failed for yt.chocolatemoo53.com: The read operation timed out",
+      "status": "failed",
+      "error": "No usable caption or detailed video description was available"
+    },
+    "L795SddFCKQ": {
+      "attempts": 1,
+      "updated_at": "2026-11-11T08:32:21+00:00",
+      "model": "qwen2.5:3b",
+      "source_warning": "or --cookies for the authentication. See  https://github.com/yt-dlp/yt-dlp/wiki/FAQ#how-do-i-pass-cookies-to-yt-dlp  for how to manually pass cookies. Also see  https://github.com/yt-dlp/yt-dlp/wiki/Extractors#exporting-youtube-cookies  for tips on effectively exporting YouTube cookies | ERROR: [youtube] L795SddFCKQ: This video is unavailable. Error code: 152 - 18 | Invidious fallback failed: https://yt.chocolatemoo53.com: HTTP fetch failed for yt.chocolatemoo53.com: The read operation timed out",
+      "status": "failed",
+      "error": "No usable caption or detailed video description was available"
+    },
+    "nJ0HIBPROD4": {
+      "attempts": 1,
+      "updated_at": "2026-11-11T08:43:12+00:00",
+      "model": "qwen2.5:3b",
+      "status": "failed",
+      "error": "Recipe 1 must have between 2 and 10 steps"
+    },
+    "PIA5vy2Ucos": {
+      "attempts": 1,
+      "updated_at": "2026-11-11T08:44:25+00:00",
+      "model": "qwen2.5:3b",
+      "status": "failed",
+      "error": "Recipe 1 has fewer than two ingredients"
+    },
+    "03Yl1ZIUuTM": {
+      "attempts": 1,
+      "updated_at": "2026-11-11T08:46:49+00:00",
+      "model": "qwen2.5:3b",
+      "status": "failed",
+      "error": "Recipe 1 contains weakly supported ingredients: 김치 계란, 베이컨, 동채소 소스"
+    },
+    "EGAr6kWAQWE": {
+      "attempts": 1,
+      "updated_at": "2026-11-11T08:56:13+00:00",
+      "model": "qwen2.5:3b",
+      "status": "failed",
+      "error": "Recipe 1 must have between 2 and 10 steps"
+    },
+    "94709t6ecnk": {
+      "attempts": 1,
+      "updated_at": "2026-11-11T08:58:57+00:00",
+      "model": "qwen2.5:3b",
+      "status": "failed",
+      "error": "Recipe 1 contains weakly supported ingredients: 즉석밥, 참치, 버터"
+    },
+    "IYnC223hl_E": {
+      "attempts": 1,
+      "updated_at": "2026-11-11T09:03:20+00:00",
+      "model": "qwen2.5:3b",
+      "status": "failed",
+      "error": "Recipe 1 has fewer than two ingredients"
+    },
+    "OHDO5rbK3hw": {
+      "attempts": 1,
+      "updated_at": "2026-11-11T09:13:04+00:00",
+      "model": "qwen2.5:3b",
+      "status": "failed",
+      "error": "Recipe 1 must have between 2 and 10 steps"
+    },
+    "wSSLyALP9NQ": {
+      "attempts": 1,
+      "updated_at": "2026-11-11T08:32:30+00:00",
+      "model": "qwen2.5:3b",
+      "source_warning": "Invidious caption fetch failed: HTTP fetch failed for yt.chocolatemoo53.com: The read operation timed out | HTTP fetch failed for yt.chocolatemoo53.com: The read operation timed out",
+      "status": "failed",
+      "error": "No usable caption or detailed video description was available"
+    },
+    "s_xJ4iU5jPQ": {
+      "attempts": 1,
+      "updated_at": "2026-11-11T08:33:05+00:00",
+      "model": "qwen2.5:3b",
+      "source_warning": "ies for the authentication. See  https://github.com/yt-dlp/yt-dlp/wiki/FAQ#how-do-i-pass-cookies-to-yt-dlp  for how to manually pass cookies. Also see  https://github.com/yt-dlp/yt-dlp/wiki/Extractors#exporting-youtube-cookies  for tips on effectively exporting YouTube cookies | ERROR: [youtube] s_xJ4iU5jPQ: This video is unavailable. Error code: 152 - 18 | Invidious fallback failed: https://yt.chocolatemoo53.com: HTTP fetch failed for yt.chocolatemoo53.com: HTTP Error 500: Internal Server Error",
+      "status": "failed",
+      "error": "No usable caption or detailed video description was available"
+    },
+    "SgOH7A-fOnY": {
+      "attempts": 1,
+      "updated_at": "2026-11-11T08:41:15+00:00",
+      "model": "qwen2.5:3b",
+      "status": "failed",
+      "error": "Recipe 1 has fewer than two ingredients"
+    },
+    "V2BdvjNj28M": {
+      "attempts": 1,
+      "updated_at": "2026-11-11T08:43:34+00:00",
+      "model": "qwen2.5:3b",
+      "status": "failed",
+      "error": "Recipe 1 contains weakly supported ingredients: 마늘, 밀크, 파슬리"
+    },
+    "avCJ3cbiVaU": {
+      "attempts": 1,
+      "updated_at": "2026-11-11T08:52:14+00:00",
+      "model": "qwen2.5:3b",
+      "status": "failed",
+      "error": "Recipe 1 must have between 2 and 10 steps"
+    },
+    "oq0hTsSmiZA": {
+      "attempts": 1,
+      "updated_at": "2026-11-11T08:53:15+00:00",
+      "model": "qwen2.5:3b",
+      "status": "completed",
+      "recipe_count": 1,
+      "error": null
+    },
+    "t6dqKN9ZNMQ": {
+      "attempts": 1,
+      "updated_at": "2026-11-11T08:54:20+00:00",
+      "model": "qwen2.5:3b",
+      "status": "failed",
+      "error": "Recipe 1 contains weakly supported ingredients: 계란 노른자, 진자, 설탕"
+    },
+    "oH7ck91f_dY": {
+      "attempts": 1,
+      "updated_at": "2026-11-11T08:56:37+00:00",
+      "model": "qwen2.5:3b",
+      "status": "failed",
+      "error": "Recipe 1 contains weakly supported ingredients: 진짬뽕의 건더기 스프"
+    },
+    "P0roR_L1E90": {
+      "attempts": 1,
+      "updated_at": "2026-11-11T08:57:32+00:00",
+      "model": "qwen2.5:3b",
+      "status": "failed",
+      "error": "Recipe 1 has fewer than two ingredients"
+    },
+    "W2tVTWywrR8": {
+      "attempts": 1,
+      "updated_at": "2026-11-11T08:58:29+00:00",
+      "model": "qwen2.5:3b",
+      "status": "failed",
+      "error": "Recipe 1 has fewer than two ingredients"
+    },
+    "ER6lJngnnTg": {
+      "attempts": 1,
+      "updated_at": "2026-11-11T08:30:42+00:00",
+      "model": "qwen2.5:3b",
+      "source_warning": "ies for the authentication. See  https://github.com/yt-dlp/yt-dlp/wiki/FAQ#how-do-i-pass-cookies-to-yt-dlp  for how to manually pass cookies. Also see  https://github.com/yt-dlp/yt-dlp/wiki/Extractors#exporting-youtube-cookies  for tips on effectively exporting YouTube cookies | ERROR: [youtube] ER6lJngnnTg: This video is unavailable. Error code: 152 - 18 | Invidious fallback failed: https://yt.chocolatemoo53.com: HTTP fetch failed for yt.chocolatemoo53.com: HTTP Error 500: Internal Server Error",
+      "status": "failed",
+      "error": "No usable caption or detailed video description was available"
+    },
+    "27QjNjZozek": {
+      "attempts": 1,
+      "updated_at": "2026-11-11T08:31:17+00:00",
+      "model": "qwen2.5:3b",
+      "source_warning": "or --cookies for the authentication. See  https://github.com/yt-dlp/yt-dlp/wiki/FAQ#how-do-i-pass-cookies-to-yt-dlp  for how to manually pass cookies. Also see  https://github.com/yt-dlp/yt-dlp/wiki/Extractors#exporting-youtube-cookies  for tips on effectively exporting YouTube cookies | ERROR: [youtube] 27QjNjZozek: This video is unavailable. Error code: 152 - 18 | Invidious fallback failed: https://yt.chocolatemoo53.com: HTTP fetch failed for yt.chocolatemoo53.com: The read operation timed out",
+      "status": "failed",
+      "error": "No usable caption or detailed video description was available"
+    },
+    "Djo_xRjQjv8": {
+      "attempts": 1,
+      "updated_at": "2026-11-11T08:32:01+00:00",
+      "model": "qwen2.5:3b",
+      "source_warning": "ies for the authentication. See  https://github.com/yt-dlp/yt-dlp/wiki/FAQ#how-do-i-pass-cookies-to-yt-dlp  for how to manually pass cookies. Also see  https://github.com/yt-dlp/yt-dlp/wiki/Extractors#exporting-youtube-cookies  for tips on effectively exporting YouTube cookies | ERROR: [youtube] Djo_xRjQjv8: This video is unavailable. Error code: 152 - 18 | Invidious fallback failed: https://yt.chocolatemoo53.com: HTTP fetch failed for yt.chocolatemoo53.com: HTTP Error 500: Internal Server Error",
+      "status": "failed",
+      "error": "No usable caption or detailed video description was available"
+    },
+    "ig0PnRCeS3s": {
+      "attempts": 1,
+      "updated_at": "2026-11-11T08:32:35+00:00",
+      "model": "qwen2.5:3b",
+      "source_warning": "or --cookies for the authentication. See  https://github.com/yt-dlp/yt-dlp/wiki/FAQ#how-do-i-pass-cookies-to-yt-dlp  for how to manually pass cookies. Also see  https://github.com/yt-dlp/yt-dlp/wiki/Extractors#exporting-youtube-cookies  for tips on effectively exporting YouTube cookies | ERROR: [youtube] ig0PnRCeS3s: This video is unavailable. Error code: 152 - 18 | Invidious fallback failed: https://yt.chocolatemoo53.com: HTTP fetch failed for yt.chocolatemoo53.com: The read operation timed out",
+      "status": "failed",
+      "error": "No usable caption or detailed video description was available"
+    },
+    "xWYIjgjSn3w": {
+      "attempts": 1,
+      "updated_at": "2026-11-11T08:33:54+00:00",
+      "model": "qwen2.5:3b",
+      "source_warning": "Invidious caption fetch failed: HTTP fetch failed for yt.chocolatemoo53.com: The read operation timed out | HTTP fetch failed for yt.chocolatemoo53.com: The read operation timed out",
+      "status": "failed",
+      "error": "No usable caption or detailed video description was available"
+    },
+    "3_x5zj0b62o": {
+      "attempts": 1,
+      "updated_at": "2026-11-11T08:38:37+00:00",
+      "model": "qwen2.5:3b",
+      "status": "failed",
+      "error": "Recipe 1 contains weakly supported ingredients: 냉동 새우, 진간장"
+    },
+    "mUwIN_XB3hg": {
+      "attempts": 1,
+      "updated_at": "2026-11-11T08:40:30+00:00",
+      "model": "qwen2.5:3b",
+      "status": "failed",
+      "error": "Recipe 1 has fewer than two ingredients"
+    },
+    "JpP1b4zW0xg": {
+      "attempts": 1,
+      "updated_at": "2026-11-11T08:52:23+00:00",
+      "model": "qwen2.5:3b",
+      "status": "failed",
+      "error": "Recipe 1 must have between 2 and 10 steps"
+    },
+    "8TrNZiOaqKU": {
+      "attempts": 1,
+      "updated_at": "2026-11-11T08:54:51+00:00",
+      "model": "qwen2.5:3b",
+      "status": "failed",
+      "error": "Recipe 1 contains weakly supported ingredients: 단호박, 양파, 대가리, 계란라이스, 땡초"
+    },
+    "yzPXIdA9e2Q": {
+      "attempts": 1,
+      "updated_at": "2026-11-11T09:06:48+00:00",
+      "model": "qwen2.5:3b",
+      "status": "failed",
+      "error": "Recipe 1 must have between 2 and 10 steps"
+    },
+    "imFVE7QaXyY": {
+      "attempts": 1,
+      "updated_at": "2026-11-11T08:32:01+00:00",
+      "model": "qwen2.5:3b",
+      "source_warning": "ies for the authentication. See  https://github.com/yt-dlp/yt-dlp/wiki/FAQ#how-do-i-pass-cookies-to-yt-dlp  for how to manually pass cookies. Also see  https://github.com/yt-dlp/yt-dlp/wiki/Extractors#exporting-youtube-cookies  for tips on effectively exporting YouTube cookies | ERROR: [youtube] imFVE7QaXyY: This video is unavailable. Error code: 152 - 18 | Invidious fallback failed: https://yt.chocolatemoo53.com: HTTP fetch failed for yt.chocolatemoo53.com: HTTP Error 500: Internal Server Error",
+      "status": "failed",
+      "error": "No usable caption or detailed video description was available"
+    },
+    "6aoS3lLCssk": {
+      "attempts": 1,
+      "updated_at": "2026-11-11T08:32:38+00:00",
+      "model": "qwen2.5:3b",
+      "source_warning": "or --cookies for the authentication. See  https://github.com/yt-dlp/yt-dlp/wiki/FAQ#how-do-i-pass-cookies-to-yt-dlp  for how to manually pass cookies. Also see  https://github.com/yt-dlp/yt-dlp/wiki/Extractors#exporting-youtube-cookies  for tips on effectively exporting YouTube cookies | ERROR: [youtube] 6aoS3lLCssk: This video is unavailable. Error code: 152 - 18 | Invidious fallback failed: https://yt.chocolatemoo53.com: HTTP fetch failed for yt.chocolatemoo53.com: The read operation timed out",
+      "status": "failed",
+      "error": "No usable caption or detailed video description was available"
+    },
+    "Nj4e1kR3d6A": {
+      "attempts": 1,
+      "updated_at": "2026-11-11T08:33:13+00:00",
+      "model": "qwen2.5:3b",
+      "source_warning": "or --cookies for the authentication. See  https://github.com/yt-dlp/yt-dlp/wiki/FAQ#how-do-i-pass-cookies-to-yt-dlp  for how to manually pass cookies. Also see  https://github.com/yt-dlp/yt-dlp/wiki/Extractors#exporting-youtube-cookies  for tips on effectively exporting YouTube cookies | ERROR: [youtube] Nj4e1kR3d6A: This video is unavailable. Error code: 152 - 18 | Invidious fallback failed: https://yt.chocolatemoo53.com: HTTP fetch failed for yt.chocolatemoo53.com: The read operation timed out",
+      "status": "failed",
+      "error": "No usable caption or detailed video description was available"
+    },
+    "1WBnCUUIxIM": {
+      "attempts": 1,
+      "updated_at": "2026-11-11T08:33:39+00:00",
+      "model": "qwen2.5:3b",
+      "source_warning": "ies for the authentication. See  https://github.com/yt-dlp/yt-dlp/wiki/FAQ#how-do-i-pass-cookies-to-yt-dlp  for how to manually pass cookies. Also see  https://github.com/yt-dlp/yt-dlp/wiki/Extractors#exporting-youtube-cookies  for tips on effectively exporting YouTube cookies | ERROR: [youtube] 1WBnCUUIxIM: This video is unavailable. Error code: 152 - 18 | Invidious fallback failed: https://yt.chocolatemoo53.com: HTTP fetch failed for yt.chocolatemoo53.com: HTTP Error 500: Internal Server Error",
+      "status": "failed",
+      "error": "No usable caption or detailed video description was available"
+    },
+    "eiDxYfhUAqc": {
+      "attempts": 1,
+      "updated_at": "2026-11-11T08:47:22+00:00",
+      "model": "qwen2.5:3b",
+      "status": "failed",
+      "error": "Recipe 1 must have between 2 and 10 steps"
+    },
+    "1Wuf4iJFlXo": {
+      "attempts": 1,
+      "updated_at": "2026-11-11T09:06:50+00:00",
+      "model": "qwen2.5:3b",
+      "status": "failed",
+      "error": "Recipe 1 must have between 2 and 10 steps"
+    },
+    "0SR0IIjceW8": {
+      "attempts": 1,
+      "updated_at": "2026-11-11T09:08:53+00:00",
+      "model": "qwen2.5:3b",
+      "status": "failed",
+      "error": "Recipe 1 has fewer than two ingredients"
+    },
+    "BspbzdN-g7Y": {
+      "attempts": 1,
+      "updated_at": "2026-11-11T09:10:16+00:00",
+      "model": "qwen2.5:3b",
+      "status": "failed",
+      "error": "Recipe 1 has fewer than two ingredients"
+    },
+    "Kfj7-PPLI20": {
+      "attempts": 1,
+      "updated_at": "2026-11-11T09:13:31+00:00",
+      "model": "qwen2.5:3b",
+      "status": "failed",
+      "error": "Recipe 1 contains weakly supported ingredients: 꼬추장, 침 기름"
+    },
+    "XQtM21zHgSk": {
+      "attempts": 1,
+      "updated_at": "2026-11-11T09:14:56+00:00",
+      "model": "qwen2.5:3b",
+      "status": "failed",
+      "error": "Recipe 1 has fewer than two ingredients"
+    },
+    "wXWaeaUYtZc": {
+      "attempts": 1,
+      "updated_at": "2026-11-11T08:31:30+00:00",
+      "model": "qwen2.5:3b",
+      "source_warning": "or --cookies for the authentication. See  https://github.com/yt-dlp/yt-dlp/wiki/FAQ#how-do-i-pass-cookies-to-yt-dlp  for how to manually pass cookies. Also see  https://github.com/yt-dlp/yt-dlp/wiki/Extractors#exporting-youtube-cookies  for tips on effectively exporting YouTube cookies | ERROR: [youtube] wXWaeaUYtZc: This video is unavailable. Error code: 152 - 18 | Invidious fallback failed: https://yt.chocolatemoo53.com: HTTP fetch failed for yt.chocolatemoo53.com: The read operation timed out",
+      "status": "failed",
+      "error": "No usable caption or detailed video description was available"
+    },
+    "eoofdR1CiU0": {
+      "attempts": 1,
+      "updated_at": "2026-11-11T08:32:06+00:00",
+      "model": "qwen2.5:3b",
+      "source_warning": "on. See  https://github.com/yt-dlp/yt-dlp/wiki/FAQ#how-do-i-pass-cookies-to-yt-dlp  for how to manually pass cookies. Also see  https://github.com/yt-dlp/yt-dlp/wiki/Extractors#exporting-youtube-cookies  for tips on effectively exporting YouTube cookies | ERROR: [youtube] eoofdR1CiU0: This video is unavailable. Error code: 152 - 18 | Invidious fallback failed: https://yt.chocolatemoo53.com: HTTP fetch failed for yt.chocolatemoo53.com: <urlopen error _ssl.c:994: The handshake operation timed out>",
+      "status": "failed",
+      "error": "No usable caption or detailed video description was available"
+    },
+    "BPQrhXTc2Wg": {
+      "attempts": 1,
+      "updated_at": "2026-11-11T08:32:37+00:00",
+      "model": "qwen2.5:3b",
+      "source_warning": "ies for the authentication. See  https://github.com/yt-dlp/yt-dlp/wiki/FAQ#how-do-i-pass-cookies-to-yt-dlp  for how to manually pass cookies. Also see  https://github.com/yt-dlp/yt-dlp/wiki/Extractors#exporting-youtube-cookies  for tips on effectively exporting YouTube cookies | ERROR: [youtube] BPQrhXTc2Wg: This video is unavailable. Error code: 152 - 18 | Invidious fallback failed: https://yt.chocolatemoo53.com: HTTP fetch failed for yt.chocolatemoo53.com: HTTP Error 500: Internal Server Error",
+      "status": "failed",
+      "error": "No usable caption or detailed video description was available"
+    },
+    "6UDuyY8vrIg": {
+      "attempts": 1,
+      "updated_at": "2026-11-11T08:33:05+00:00",
+      "model": "qwen2.5:3b",
+      "source_warning": "ies for the authentication. See  https://github.com/yt-dlp/yt-dlp/wiki/FAQ#how-do-i-pass-cookies-to-yt-dlp  for how to manually pass cookies. Also see  https://github.com/yt-dlp/yt-dlp/wiki/Extractors#exporting-youtube-cookies  for tips on effectively exporting YouTube cookies | ERROR: [youtube] 6UDuyY8vrIg: This video is unavailable. Error code: 152 - 18 | Invidious fallback failed: https://yt.chocolatemoo53.com: HTTP fetch failed for yt.chocolatemoo53.com: HTTP Error 500: Internal Server Error",
+      "status": "failed",
+      "error": "No usable caption or detailed video description was available"
+    },
+    "NeMZ3QyO2EY": {
+      "attempts": 1,
+      "updated_at": "2026-11-11T08:36:00+00:00",
+      "model": "qwen2.5:3b",
+      "status": "failed",
+      "error": "Recipe 1 contains weakly supported ingredients: 고춧가루"
+    },
+    "EHyuvIc4jmE": {
+      "attempts": 1,
+      "updated_at": "2026-11-11T08:38:27+00:00",
+      "model": "qwen2.5:3b",
+      "status": "failed",
+      "error": "Recipe 1 contains weakly supported ingredients: 냉동 대표 삼겹살, 대파 흰 부분"
+    },
+    "vBx9HPeJkuQ": {
+      "attempts": 1,
+      "updated_at": "2026-11-11T08:40:14+00:00",
+      "model": "qwen2.5:3b",
+      "status": "failed",
+      "error": "Recipe 1 contains weakly supported ingredients: 두부, 콩나물, 양파"
+    },
+    "w99UZpoYoa8": {
+      "attempts": 1,
+      "updated_at": "2026-11-11T08:42:26+00:00",
+      "model": "qwen2.5:3b",
+      "status": "failed",
+      "error": "Recipe 1 must have between 2 and 10 steps"
+    },
+    "fiVsJSl_U_U": {
+      "attempts": 1,
+      "updated_at": "2026-11-11T08:44:15+00:00",
+      "model": "qwen2.5:3b",
+      "status": "failed",
+      "error": "Recipe 1 contains weakly supported ingredients: 돈깨스 소스, 마요네즈"
+    },
+    "j0J4oWt06c0": {
+      "attempts": 1,
+      "updated_at": "2026-11-11T08:45:30+00:00",
+      "model": "qwen2.5:3b",
+      "status": "failed",
+      "error": "Ollama request failed: HTTP Error 500: Internal Server Error"
+    },
+    "5k7JVlibU94": {
+      "attempts": 1,
+      "updated_at": "2026-11-11T08:31:44+00:00",
+      "model": "qwen2.5:3b",
+      "source_warning": "or --cookies for the authentication. See  https://github.com/yt-dlp/yt-dlp/wiki/FAQ#how-do-i-pass-cookies-to-yt-dlp  for how to manually pass cookies. Also see  https://github.com/yt-dlp/yt-dlp/wiki/Extractors#exporting-youtube-cookies  for tips on effectively exporting YouTube cookies | ERROR: [youtube] 5k7JVlibU94: This video is unavailable. Error code: 152 - 18 | Invidious fallback failed: https://yt.chocolatemoo53.com: HTTP fetch failed for yt.chocolatemoo53.com: The read operation timed out",
+      "status": "failed",
+      "error": "No usable caption or detailed video description was available"
+    },
+    "LwRpJ_bFl-E": {
+      "attempts": 1,
+      "updated_at": "2026-11-11T08:32:18+00:00",
+      "model": "qwen2.5:3b",
+      "source_warning": "on. See  https://github.com/yt-dlp/yt-dlp/wiki/FAQ#how-do-i-pass-cookies-to-yt-dlp  for how to manually pass cookies. Also see  https://github.com/yt-dlp/yt-dlp/wiki/Extractors#exporting-youtube-cookies  for tips on effectively exporting YouTube cookies | ERROR: [youtube] LwRpJ_bFl-E: This video is unavailable. Error code: 152 - 18 | Invidious fallback failed: https://yt.chocolatemoo53.com: HTTP fetch failed for yt.chocolatemoo53.com: <urlopen error _ssl.c:994: The handshake operation timed out>",
+      "status": "failed",
+      "error": "No usable caption or detailed video description was available"
+    },
+    "Em6Vyra0qUc": {
+      "attempts": 1,
+      "updated_at": "2026-11-11T08:32:47+00:00",
+      "model": "qwen2.5:3b",
+      "source_warning": "ies for the authentication. See  https://github.com/yt-dlp/yt-dlp/wiki/FAQ#how-do-i-pass-cookies-to-yt-dlp  for how to manually pass cookies. Also see  https://github.com/yt-dlp/yt-dlp/wiki/Extractors#exporting-youtube-cookies  for tips on effectively exporting YouTube cookies | ERROR: [youtube] Em6Vyra0qUc: This video is unavailable. Error code: 152 - 18 | Invidious fallback failed: https://yt.chocolatemoo53.com: HTTP fetch failed for yt.chocolatemoo53.com: HTTP Error 500: Internal Server Error",
+      "status": "failed",
+      "error": "No usable caption or detailed video description was available"
+    },
+    "lwRdnzdcBmY": {
+      "attempts": 1,
+      "updated_at": "2026-11-11T08:33:12+00:00",
+      "model": "qwen2.5:3b",
+      "source_warning": "ies for the authentication. See  https://github.com/yt-dlp/yt-dlp/wiki/FAQ#how-do-i-pass-cookies-to-yt-dlp  for how to manually pass cookies. Also see  https://github.com/yt-dlp/yt-dlp/wiki/Extractors#exporting-youtube-cookies  for tips on effectively exporting YouTube cookies | ERROR: [youtube] lwRdnzdcBmY: This video is unavailable. Error code: 152 - 18 | Invidious fallback failed: https://yt.chocolatemoo53.com: HTTP fetch failed for yt.chocolatemoo53.com: HTTP Error 500: Internal Server Error",
+      "status": "failed",
+      "error": "No usable caption or detailed video description was available"
+    },
+    "-G5liJsNoZw": {
+      "attempts": 1,
+      "updated_at": "2026-11-11T08:37:44+00:00",
+      "model": "qwen2.5:3b",
+      "source_warning": "HTTP fetch failed for www.youtube.com: HTTP Error 429: Too Many Requests",
+      "status": "failed",
+      "error": "Recipe 1 must have between 2 and 10 steps"
+    },
+    "D0JprCh7RDM": {
+      "attempts": 1,
+      "updated_at": "2026-11-11T08:38:29+00:00",
+      "model": "qwen2.5:3b",
+      "status": "failed",
+      "error": "Recipe 1 has fewer than two ingredients"
+    },
+    "g768zA6Ep0E": {
+      "attempts": 1,
+      "updated_at": "2026-11-11T08:40:39+00:00",
+      "model": "qwen2.5:3b",
+      "status": "failed",
+      "error": "Recipe 1 contains weakly supported ingredients: 갈색빛 대패 삼겹살, 끈 고춧가루, 진간장, 토메이로 스파게티 소스, 스파게티 면"
+    },
+    "MXuYLMtdfWc": {
+      "attempts": 1,
+      "updated_at": "2026-11-11T08:48:24+00:00",
+      "model": "qwen2.5:3b",
+      "status": "failed",
+      "error": "Recipe 1 has fewer than two ingredients"
+    },
+    "Wvnz6HQQ0VE": {
+      "attempts": 1,
+      "updated_at": "2026-11-11T08:50:02+00:00",
+      "model": "qwen2.5:3b",
+      "status": "failed",
+      "error": "Recipe 1 contains weakly supported ingredients: 밀치 카수 라면, 진간장, 비주얼 좋은 고개, 멸치 칼국수"
+    },
+    "pxsdnpj5s0U": {
+      "attempts": 1,
+      "updated_at": "2026-11-11T08:54:22+00:00",
+      "model": "qwen2.5:3b",
+      "source_warning": "HTTP fetch failed for www.youtube.com: HTTP Error 429: Too Many Requests",
+      "status": "failed",
+      "error": "Recipe 1 has fewer than two ingredients"
+    },
+    "2S32FiGB1G8": {
+      "attempts": 1,
+      "updated_at": "2026-11-11T08:32:05+00:00",
+      "model": "qwen2.5:3b",
+      "source_warning": "or --cookies for the authentication. See  https://github.com/yt-dlp/yt-dlp/wiki/FAQ#how-do-i-pass-cookies-to-yt-dlp  for how to manually pass cookies. Also see  https://github.com/yt-dlp/yt-dlp/wiki/Extractors#exporting-youtube-cookies  for tips on effectively exporting YouTube cookies | ERROR: [youtube] 2S32FiGB1G8: This video is unavailable. Error code: 152 - 18 | Invidious fallback failed: https://yt.chocolatemoo53.com: HTTP fetch failed for yt.chocolatemoo53.com: The read operation timed out",
+      "status": "failed",
+      "error": "No usable caption or detailed video description was available"
+    },
+    "FOlN5385Aqs": {
+      "attempts": 1,
+      "updated_at": "2026-11-11T08:32:18+00:00",
+      "model": "qwen2.5:3b",
+      "source_warning": "ies for the authentication. See  https://github.com/yt-dlp/yt-dlp/wiki/FAQ#how-do-i-pass-cookies-to-yt-dlp  for how to manually pass cookies. Also see  https://github.com/yt-dlp/yt-dlp/wiki/Extractors#exporting-youtube-cookies  for tips on effectively exporting YouTube cookies | ERROR: [youtube] FOlN5385Aqs: This video is unavailable. Error code: 152 - 18 | Invidious fallback failed: https://yt.chocolatemoo53.com: HTTP fetch failed for yt.chocolatemoo53.com: HTTP Error 500: Internal Server Error",
+      "status": "failed",
+      "error": "No usable caption or detailed video description was available"
+    },
+    "k_0YT7nAyAU": {
+      "attempts": 1,
+      "updated_at": "2026-11-11T08:32:50+00:00",
+      "model": "qwen2.5:3b",
+      "source_warning": "ies for the authentication. See  https://github.com/yt-dlp/yt-dlp/wiki/FAQ#how-do-i-pass-cookies-to-yt-dlp  for how to manually pass cookies. Also see  https://github.com/yt-dlp/yt-dlp/wiki/Extractors#exporting-youtube-cookies  for tips on effectively exporting YouTube cookies | ERROR: [youtube] k_0YT7nAyAU: This video is unavailable. Error code: 152 - 18 | Invidious fallback failed: https://yt.chocolatemoo53.com: HTTP fetch failed for yt.chocolatemoo53.com: HTTP Error 500: Internal Server Error",
+      "status": "failed",
+      "error": "No usable caption or detailed video description was available"
+    },
+    "EVIXnMhfsYw": {
+      "attempts": 1,
+      "updated_at": "2026-11-11T08:33:30+00:00",
+      "model": "qwen2.5:3b",
+      "source_warning": "HTTP fetch failed for www.youtube.com: HTTP Error 429: Too Many Requests",
+      "status": "failed",
+      "error": "Recipe 1 contains weakly supported ingredients: GetObjectQuote"
+    },
+    "0dI5URtcX0A": {
+      "attempts": 1,
+      "updated_at": "2026-11-11T08:34:43+00:00",
+      "model": "qwen2.5:3b",
+      "source_warning": "Invidious caption fetch failed: HTTP fetch failed for yt.chocolatemoo53.com: The read operation timed out | HTTP fetch failed for yt.chocolatemoo53.com: The read operation timed out",
+      "status": "failed",
+      "error": "No usable caption or detailed video description was available"
+    },
+    "yMGBNlyq6Qo": {
+      "attempts": 1,
+      "updated_at": "2026-11-11T08:35:19+00:00",
+      "model": "qwen2.5:3b",
+      "source_warning": "or --cookies for the authentication. See  https://github.com/yt-dlp/yt-dlp/wiki/FAQ#how-do-i-pass-cookies-to-yt-dlp  for how to manually pass cookies. Also see  https://github.com/yt-dlp/yt-dlp/wiki/Extractors#exporting-youtube-cookies  for tips on effectively exporting YouTube cookies | ERROR: [youtube] yMGBNlyq6Qo: This video is unavailable. Error code: 152 - 18 | Invidious fallback failed: https://yt.chocolatemoo53.com: HTTP fetch failed for yt.chocolatemoo53.com: The read operation timed out",
+      "status": "failed",
+      "error": "No usable caption or detailed video description was available"
+    },
+    "MkpoihbWfa4": {
+      "attempts": 1,
+      "updated_at": "2026-11-11T08:36:35+00:00",
+      "model": "qwen2.5:3b",
+      "source_warning": "Invidious caption fetch failed: HTTP fetch failed for yt.chocolatemoo53.com: The read operation timed out | HTTP fetch failed for yt.chocolatemoo53.com: The read operation timed out",
+      "status": "failed",
+      "error": "No usable caption or detailed video description was available"
+    },
+    "7ENsgNBKyKg": {
+      "attempts": 1,
+      "updated_at": "2026-11-11T08:41:24+00:00",
+      "model": "qwen2.5:3b",
+      "status": "failed",
+      "error": "Recipe 1 must have between 2 and 10 steps"
+    },
+    "lqh-9ee88NI": {
+      "attempts": 1,
+      "updated_at": "2026-11-11T08:42:19+00:00",
+      "model": "qwen2.5:3b",
+      "status": "failed",
+      "error": "Recipe 1 contains weakly supported ingredients: 깨끗하게 헹긴 양배추, 밀, 고춧가루"
+    },
+    "JxroENC7Lxo": {
+      "attempts": 1,
+      "updated_at": "2026-11-11T08:43:01+00:00",
+      "model": "qwen2.5:3b",
+      "status": "failed",
+      "error": "Recipe 1 has fewer than two ingredients"
+    },
+    "s7MxBfF-a1o": {
+      "attempts": 1,
+      "updated_at": "2026-11-11T08:31:18+00:00",
+      "model": "qwen2.5:3b",
+      "source_warning": "HTTP fetch failed for www.youtube.com: HTTP Error 429: Too Many Requests",
+      "status": "failed",
+      "error": "Recipe 1 has fewer than two ingredients"
+    },
+    "TZYkHOdIOOk": {
+      "attempts": 1,
+      "updated_at": "2026-11-11T08:32:33+00:00",
+      "model": "qwen2.5:3b",
+      "source_warning": "Invidious caption fetch failed: HTTP fetch failed for yt.chocolatemoo53.com: The read operation timed out | HTTP fetch failed for yt.chocolatemoo53.com: The read operation timed out",
+      "status": "failed",
+      "error": "No usable caption or detailed video description was available"
+    },
+    "4STedxyR8qc": {
+      "attempts": 1,
+      "updated_at": "2026-11-11T08:32:41+00:00",
+      "model": "qwen2.5:3b",
+      "source_warning": "ies for the authentication. See  https://github.com/yt-dlp/yt-dlp/wiki/FAQ#how-do-i-pass-cookies-to-yt-dlp  for how to manually pass cookies. Also see  https://github.com/yt-dlp/yt-dlp/wiki/Extractors#exporting-youtube-cookies  for tips on effectively exporting YouTube cookies | ERROR: [youtube] 4STedxyR8qc: This video is unavailable. Error code: 152 - 18 | Invidious fallback failed: https://yt.chocolatemoo53.com: HTTP fetch failed for yt.chocolatemoo53.com: HTTP Error 500: Internal Server Error",
+      "status": "failed",
+      "error": "No usable caption or detailed video description was available"
+    },
+    "qYP38kH4NPQ": {
+      "attempts": 1,
+      "updated_at": "2026-11-11T08:33:08+00:00",
+      "model": "qwen2.5:3b",
+      "source_warning": "ies for the authentication. See  https://github.com/yt-dlp/yt-dlp/wiki/FAQ#how-do-i-pass-cookies-to-yt-dlp  for how to manually pass cookies. Also see  https://github.com/yt-dlp/yt-dlp/wiki/Extractors#exporting-youtube-cookies  for tips on effectively exporting YouTube cookies | ERROR: [youtube] qYP38kH4NPQ: This video is unavailable. Error code: 152 - 18 | Invidious fallback failed: https://yt.chocolatemoo53.com: HTTP fetch failed for yt.chocolatemoo53.com: HTTP Error 500: Internal Server Error",
+      "status": "failed",
+      "error": "No usable caption or detailed video description was available"
+    },
+    "_aT1muPpIZ8": {
+      "attempts": 1,
+      "updated_at": "2026-11-11T08:34:45+00:00",
+      "model": "qwen2.5:3b",
+      "status": "failed",
+      "error": "Recipe 1 contains weakly supported ingredients: 밀크, 붉은 고추장, 케첩, 불닭 라면에 들어 있는 액상 스프, 우유"
+    },
+    "GxiOHpQ7FIw": {
+      "attempts": 1,
+      "updated_at": "2026-11-11T08:35:20+00:00",
+      "model": "qwen2.5:3b",
+      "source_warning": "or --cookies for the authentication. See  https://github.com/yt-dlp/yt-dlp/wiki/FAQ#how-do-i-pass-cookies-to-yt-dlp  for how to manually pass cookies. Also see  https://github.com/yt-dlp/yt-dlp/wiki/Extractors#exporting-youtube-cookies  for tips on effectively exporting YouTube cookies | ERROR: [youtube] GxiOHpQ7FIw: This video is unavailable. Error code: 152 - 18 | Invidious fallback failed: https://yt.chocolatemoo53.com: HTTP fetch failed for yt.chocolatemoo53.com: The read operation timed out",
+      "status": "failed",
+      "error": "No usable caption or detailed video description was available"
+    },
+    "oshD4w_8Png": {
+      "attempts": 1,
+      "updated_at": "2026-11-11T08:42:56+00:00",
+      "model": "qwen2.5:3b",
+      "status": "failed",
+      "error": "Recipe 1 must have between 2 and 10 steps"
+    },
+    "nMr5IcSPovQ": {
+      "attempts": 1,
+      "updated_at": "2026-11-11T08:47:50+00:00",
+      "model": "qwen2.5:3b",
+      "status": "failed",
+      "error": "Recipe 1 has fewer than two ingredients"
+    },
+    "zxQWlA4rDQc": {
+      "attempts": 1,
+      "updated_at": "2026-11-11T08:48:26+00:00",
+      "model": "qwen2.5:3b",
+      "status": "failed",
+      "error": "Recipe 1 has fewer than two ingredients"
+    },
+    "lf-t1PPL_F8": {
+      "attempts": 1,
+      "updated_at": "2026-11-11T08:49:34+00:00",
+      "model": "qwen2.5:3b",
+      "status": "failed",
+      "error": "Recipe 1 contains weakly supported ingredients: 크림 치즈, 계란, 밀크"
+    },
+    "AyCrLcBd1f0": {
+      "attempts": 1,
+      "updated_at": "2026-11-11T08:31:14+00:00",
+      "model": "qwen2.5:3b",
+      "source_warning": "or --cookies for the authentication. See  https://github.com/yt-dlp/yt-dlp/wiki/FAQ#how-do-i-pass-cookies-to-yt-dlp  for how to manually pass cookies. Also see  https://github.com/yt-dlp/yt-dlp/wiki/Extractors#exporting-youtube-cookies  for tips on effectively exporting YouTube cookies | ERROR: [youtube] AyCrLcBd1f0: This video is unavailable. Error code: 152 - 18 | Invidious fallback failed: https://yt.chocolatemoo53.com: HTTP fetch failed for yt.chocolatemoo53.com: The read operation timed out",
+      "status": "failed",
+      "error": "No usable caption or detailed video description was available"
+    },
+    "7P7iPASXsgk": {
+      "attempts": 1,
+      "updated_at": "2026-11-11T08:31:50+00:00",
+      "model": "qwen2.5:3b",
+      "source_warning": "ies for the authentication. See  https://github.com/yt-dlp/yt-dlp/wiki/FAQ#how-do-i-pass-cookies-to-yt-dlp  for how to manually pass cookies. Also see  https://github.com/yt-dlp/yt-dlp/wiki/Extractors#exporting-youtube-cookies  for tips on effectively exporting YouTube cookies | ERROR: [youtube] 7P7iPASXsgk: This video is unavailable. Error code: 152 - 18 | Invidious fallback failed: https://yt.chocolatemoo53.com: HTTP fetch failed for yt.chocolatemoo53.com: HTTP Error 500: Internal Server Error",
+      "status": "failed",
+      "error": "No usable caption or detailed video description was available"
+    },
+    "p2ihnbGUQjA": {
+      "attempts": 1,
+      "updated_at": "2026-11-11T08:32:09+00:00",
+      "model": "qwen2.5:3b",
+      "source_warning": "ies for the authentication. See  https://github.com/yt-dlp/yt-dlp/wiki/FAQ#how-do-i-pass-cookies-to-yt-dlp  for how to manually pass cookies. Also see  https://github.com/yt-dlp/yt-dlp/wiki/Extractors#exporting-youtube-cookies  for tips on effectively exporting YouTube cookies | ERROR: [youtube] p2ihnbGUQjA: This video is unavailable. Error code: 152 - 18 | Invidious fallback failed: https://yt.chocolatemoo53.com: HTTP fetch failed for yt.chocolatemoo53.com: HTTP Error 500: Internal Server Error",
+      "status": "failed",
+      "error": "No usable caption or detailed video description was available"
+    },
+    "8HNJhsPAWck": {
+      "attempts": 1,
+      "updated_at": "2026-11-11T08:32:46+00:00",
+      "model": "qwen2.5:3b",
+      "source_warning": "or --cookies for the authentication. See  https://github.com/yt-dlp/yt-dlp/wiki/FAQ#how-do-i-pass-cookies-to-yt-dlp  for how to manually pass cookies. Also see  https://github.com/yt-dlp/yt-dlp/wiki/Extractors#exporting-youtube-cookies  for tips on effectively exporting YouTube cookies | ERROR: [youtube] 8HNJhsPAWck: This video is unavailable. Error code: 152 - 18 | Invidious fallback failed: https://yt.chocolatemoo53.com: HTTP fetch failed for yt.chocolatemoo53.com: The read operation timed out",
+      "status": "failed",
+      "error": "No usable caption or detailed video description was available"
+    },
+    "6Ww9EVQ5eWs": {
+      "attempts": 1,
+      "updated_at": "2026-11-11T08:35:05+00:00",
+      "model": "qwen2.5:3b",
+      "status": "failed",
+      "error": "Recipe 1 has fewer than two ingredients"
+    },
+    "MNsVjDwrWLE": {
+      "attempts": 1,
+      "updated_at": "2026-11-11T08:43:20+00:00",
+      "model": "qwen2.5:3b",
+      "status": "failed",
+      "error": "Recipe 1 must have between 2 and 10 steps"
+    },
+    "jxexB7vt7A0": {
+      "attempts": 1,
+      "updated_at": "2026-11-11T08:49:49+00:00",
+      "model": "qwen2.5:3b",
+      "status": "failed",
+      "error": "Recipe 1 must have between 2 and 10 steps"
+    },
+    "yY1RHRZ4248": {
+      "attempts": 1,
+      "updated_at": "2026-11-11T08:51:38+00:00",
+      "model": "qwen2.5:3b",
+      "status": "failed",
+      "error": "Recipe 1 contains weakly supported ingredients: 돼지고기 목살, 앞다리, 삼겹살, 앞다리 살, 뱃살"
+    },
+    "fDBchM7NFwM": {
+      "attempts": 1,
+      "updated_at": "2026-11-11T08:54:01+00:00",
+      "model": "qwen2.5:3b",
+      "status": "completed",
+      "recipe_count": 1,
+      "error": null
+    },
+    "_6ndvVC6z8w": {
+      "attempts": 1,
+      "updated_at": "2026-11-11T08:54:57+00:00",
+      "model": "qwen2.5:3b",
+      "status": "failed",
+      "error": "Recipe 1 contains weakly supported ingredients: 진땅 양념장"
+    },
+    "soqr6u5wAWI": {
+      "attempts": 1,
+      "updated_at": "2026-11-11T08:30:59+00:00",
+      "model": "qwen2.5:3b",
+      "source_warning": "ies for the authentication. See  https://github.com/yt-dlp/yt-dlp/wiki/FAQ#how-do-i-pass-cookies-to-yt-dlp  for how to manually pass cookies. Also see  https://github.com/yt-dlp/yt-dlp/wiki/Extractors#exporting-youtube-cookies  for tips on effectively exporting YouTube cookies | ERROR: [youtube] soqr6u5wAWI: This video is unavailable. Error code: 152 - 18 | Invidious fallback failed: https://yt.chocolatemoo53.com: HTTP fetch failed for yt.chocolatemoo53.com: HTTP Error 500: Internal Server Error",
+      "status": "failed",
+      "error": "No usable caption or detailed video description was available"
+    },
+    "ItQtrM8p6A0": {
+      "attempts": 1,
+      "updated_at": "2026-11-11T08:31:38+00:00",
+      "model": "qwen2.5:3b",
+      "source_warning": "or --cookies for the authentication. See  https://github.com/yt-dlp/yt-dlp/wiki/FAQ#how-do-i-pass-cookies-to-yt-dlp  for how to manually pass cookies. Also see  https://github.com/yt-dlp/yt-dlp/wiki/Extractors#exporting-youtube-cookies  for tips on effectively exporting YouTube cookies | ERROR: [youtube] ItQtrM8p6A0: This video is unavailable. Error code: 152 - 18 | Invidious fallback failed: https://yt.chocolatemoo53.com: HTTP fetch failed for yt.chocolatemoo53.com: The read operation timed out",
+      "status": "failed",
+      "error": "No usable caption or detailed video description was available"
+    },
+    "2WEAUQplBQM": {
+      "attempts": 1,
+      "updated_at": "2026-11-11T08:33:39+00:00",
+      "model": "qwen2.5:3b",
+      "status": "failed",
+      "error": "Recipe 1 has fewer than two ingredients"
+    },
+    "RIeQOtCskCU": {
+      "attempts": 1,
+      "updated_at": "2026-11-11T08:34:16+00:00",
+      "model": "qwen2.5:3b",
+      "source_warning": "or --cookies for the authentication. See  https://github.com/yt-dlp/yt-dlp/wiki/FAQ#how-do-i-pass-cookies-to-yt-dlp  for how to manually pass cookies. Also see  https://github.com/yt-dlp/yt-dlp/wiki/Extractors#exporting-youtube-cookies  for tips on effectively exporting YouTube cookies | ERROR: [youtube] RIeQOtCskCU: This video is unavailable. Error code: 152 - 18 | Invidious fallback failed: https://yt.chocolatemoo53.com: HTTP fetch failed for yt.chocolatemoo53.com: The read operation timed out",
+      "status": "failed",
+      "error": "No usable caption or detailed video description was available"
+    },
+    "9uNNY-78-Zg": {
+      "attempts": 1,
+      "updated_at": "2026-11-11T08:36:21+00:00",
+      "model": "qwen2.5:3b",
+      "status": "failed",
+      "error": "Recipe 1 has fewer than two ingredients"
+    },
+    "MnpLBNXgkxk": {
+      "attempts": 1,
+      "updated_at": "2026-11-11T08:36:57+00:00",
+      "model": "qwen2.5:3b",
+      "source_warning": "or --cookies for the authentication. See  https://github.com/yt-dlp/yt-dlp/wiki/FAQ#how-do-i-pass-cookies-to-yt-dlp  for how to manually pass cookies. Also see  https://github.com/yt-dlp/yt-dlp/wiki/Extractors#exporting-youtube-cookies  for tips on effectively exporting YouTube cookies | ERROR: [youtube] MnpLBNXgkxk: This video is unavailable. Error code: 152 - 18 | Invidious fallback failed: https://yt.chocolatemoo53.com: HTTP fetch failed for yt.chocolatemoo53.com: The read operation timed out",
+      "status": "failed",
+      "error": "No usable caption or detailed video description was available"
+    },
+    "JdcwMzjd7lQ": {
+      "attempts": 1,
+      "updated_at": "2026-11-11T08:38:26+00:00",
+      "model": "qwen2.5:3b",
+      "status": "failed",
+      "error": "Recipe 1 has fewer than two ingredients"
+    },
+    "B9XoMISX9_E": {
+      "attempts": 1,
+      "updated_at": "2026-11-11T08:45:30+00:00",
+      "model": "qwen2.5:3b",
+      "status": "failed",
+      "error": "Recipe 1 has fewer than two ingredients"
+    },
+    "gUpqPq8_T0k": {
+      "attempts": 1,
+      "updated_at": "2026-11-11T08:46:18+00:00",
+      "model": "qwen2.5:3b",
+      "status": "failed",
+      "error": "Recipe 1 has fewer than two ingredients"
+    },
+    "qofBQ_xn388": {
+      "attempts": 1,
+      "updated_at": "2026-11-11T08:55:02+00:00",
+      "model": "qwen2.5:3b",
+      "status": "failed",
+      "error": "Recipe 1 has fewer than two ingredients"
+    },
+    "zWP7G9sJvhA": {
+      "attempts": 1,
+      "updated_at": "2026-11-11T08:46:27+00:00",
+      "model": "qwen2.5:3b",
+      "status": "failed",
+      "error": "Recipe 1 has fewer than two ingredients"
+    },
+    "ZJ5jwuqEZ0o": {
+      "attempts": 1,
+      "updated_at": "2026-11-11T08:58:06+00:00",
+      "model": "qwen2.5:3b",
+      "status": "failed",
+      "error": "Recipe 1 must have between 2 and 10 steps"
+    },
+    "hDLUavyM7RM": {
+      "attempts": 1,
+      "updated_at": "2026-11-11T09:18:12+00:00",
+      "model": "qwen2.5:3b",
+      "status": "failed",
+      "error": "Ollama request failed: timed out"
+    },
+    "cLLX9QufM-M": {
+      "attempts": 1,
+      "updated_at": "2026-11-11T09:19:32+00:00",
+      "model": "qwen2.5:3b",
+      "status": "failed",
+      "error": "Recipe 1 has fewer than two ingredients"
+    },
+    "5A3QjMZhmf4": {
+      "attempts": 1,
+      "updated_at": "2026-11-11T09:39:06+00:00",
+      "model": "qwen2.5:3b",
+      "status": "failed",
+      "error": "Recipe 1 has fewer than two ingredients"
+    },
+    "FBt0HUQOsgc": {
+      "attempts": 1,
+      "updated_at": "2026-11-11T09:42:13+00:00",
+      "model": "qwen2.5:3b",
+      "status": "failed",
+      "error": "Recipe 1 contains weakly supported ingredients: 대파, 돼지고기, 소금, 고춧가루, 멸치육수"
+    },
+    "otxPR8BazFk": {
+      "attempts": 1,
+      "updated_at": "2026-11-11T09:53:54+00:00",
+      "model": "qwen2.5:3b",
+      "status": "failed",
+      "error": "Recipe 1 must have between 2 and 10 steps"
+    },
+    "LrAibIHOWTo": {
+      "attempts": 1,
+      "updated_at": "2026-11-11T09:55:46+00:00",
+      "model": "qwen2.5:3b",
+      "status": "failed",
+      "error": "Recipe 1 has fewer than two ingredients"
+    },
+    "l5PPEGIJ560": {
+      "attempts": 1,
+      "updated_at": "2026-11-11T10:07:36+00:00",
+      "model": "qwen2.5:3b",
+      "status": "failed",
+      "error": "Recipe 1 has fewer than two ingredients"
+    },
+    "1Aq8BwvcIPg": {
+      "attempts": 1,
+      "updated_at": "2026-11-11T10:08:45+00:00",
+      "model": "qwen2.5:3b",
+      "status": "failed",
+      "error": "Recipe 1 has fewer than two ingredients"
+    },
+    "bi3qZh7-Ccc": {
+      "attempts": 1,
+      "updated_at": "2026-11-11T08:47:11+00:00",
+      "model": "qwen2.5:3b",
+      "status": "failed",
+      "error": "Recipe 1 has fewer than two ingredients"
+    },
+    "Nr2SEt2ihEE": {
+      "attempts": 1,
+      "updated_at": "2026-11-11T08:51:02+00:00",
+      "model": "qwen2.5:3b",
+      "status": "failed",
+      "error": "Recipe 1 contains weakly supported ingredients: 불고기용 양념, 고추장, 진간장, 붉은 고춧가루, 마늘"
+    },
+    "IBIY_jNlLJk": {
+      "attempts": 1,
+      "updated_at": "2026-11-11T08:54:10+00:00",
+      "model": "qwen2.5:3b",
+      "status": "failed",
+      "error": "Recipe 1 contains weakly supported ingredients: 레몬즙"
+    },
+    "niMyqoMPttE": {
+      "attempts": 1,
+      "updated_at": "2026-11-11T09:06:24+00:00",
+      "model": "qwen2.5:3b",
+      "status": "failed",
+      "error": "Recipe 1 must have between 2 and 10 steps"
+    },
+    "Zp9R9SPGguU": {
+      "attempts": 1,
+      "updated_at": "2026-11-11T09:07:33+00:00",
+      "model": "qwen2.5:3b",
+      "source_warning": "HTTP fetch failed for www.youtube.com: HTTP Error 429: Too Many Requests",
+      "status": "completed",
+      "recipe_count": 1,
+      "error": null
+    },
+    "a8pz2x5SUPY": {
+      "attempts": 1,
+      "updated_at": "2026-11-11T09:09:29+00:00",
+      "model": "qwen2.5:3b",
+      "status": "failed",
+      "error": "Recipe 1 has fewer than two ingredients"
+    },
+    "UUJ0dHMkbIU": {
+      "attempts": 1,
+      "updated_at": "2026-11-11T09:13:55+00:00",
+      "model": "qwen2.5:3b",
+      "status": "failed",
+      "error": "Recipe 1 contains weakly supported ingredients: 밀크, 양파, 모자르트치즈"
+    },
+    "TmH4Pv6IZvo": {
+      "attempts": 1,
+      "updated_at": "2026-11-11T09:26:14+00:00",
+      "model": "qwen2.5:3b",
+      "status": "failed",
+      "error": "Recipe 1 must have between 2 and 10 steps"
+    },
+    "RjGStKB3cEY": {
+      "attempts": 1,
+      "updated_at": "2026-11-11T09:38:05+00:00",
+      "model": "qwen2.5:3b",
+      "status": "failed",
+      "error": "Recipe 1 has fewer than two ingredients"
+    },
+    "pTZhOEmWTJ8": {
+      "attempts": 1,
+      "updated_at": "2026-11-11T09:40:01+00:00",
+      "model": "qwen2.5:3b",
+      "status": "failed",
+      "error": "Recipe 1 contains weakly supported ingredients: 떡볶이 떡"
+    },
+    "oXSdO5y6fD8": {
+      "attempts": 1,
+      "updated_at": "2026-11-11T08:32:30+00:00",
+      "model": "qwen2.5:3b",
+      "source_warning": "Invidious caption fetch failed: HTTP fetch failed for yt.chocolatemoo53.com: The read operation timed out | HTTP fetch failed for yt.chocolatemoo53.com: The read operation timed out",
+      "status": "failed",
+      "error": "No usable caption or detailed video description was available"
+    },
+    "leqQtXtNRFY": {
+      "attempts": 1,
+      "updated_at": "2026-11-11T08:32:38+00:00",
+      "model": "qwen2.5:3b",
+      "source_warning": "ies for the authentication. See  https://github.com/yt-dlp/yt-dlp/wiki/FAQ#how-do-i-pass-cookies-to-yt-dlp  for how to manually pass cookies. Also see  https://github.com/yt-dlp/yt-dlp/wiki/Extractors#exporting-youtube-cookies  for tips on effectively exporting YouTube cookies | ERROR: [youtube] leqQtXtNRFY: This video is unavailable. Error code: 152 - 18 | Invidious fallback failed: https://yt.chocolatemoo53.com: HTTP fetch failed for yt.chocolatemoo53.com: HTTP Error 500: Internal Server Error",
+      "status": "failed",
+      "error": "No usable caption or detailed video description was available"
+    },
+    "HcDU4tHz6dk": {
+      "attempts": 1,
+      "updated_at": "2026-11-11T08:34:27+00:00",
+      "model": "qwen2.5:3b",
+      "status": "failed",
+      "error": "Recipe 1 contains weakly supported ingredients: 밀크, 김치김치, 케이크 가루"
+    },
+    "bRVZ8temp8k": {
+      "attempts": 1,
+      "updated_at": "2026-11-11T08:34:33+00:00",
+      "model": "qwen2.5:3b",
+      "source_warning": "ies for the authentication. See  https://github.com/yt-dlp/yt-dlp/wiki/FAQ#how-do-i-pass-cookies-to-yt-dlp  for how to manually pass cookies. Also see  https://github.com/yt-dlp/yt-dlp/wiki/Extractors#exporting-youtube-cookies  for tips on effectively exporting YouTube cookies | ERROR: [youtube] bRVZ8temp8k: This video is unavailable. Error code: 152 - 18 | Invidious fallback failed: https://yt.chocolatemoo53.com: HTTP fetch failed for yt.chocolatemoo53.com: HTTP Error 500: Internal Server Error",
+      "status": "failed",
+      "error": "No usable caption or detailed video description was available"
+    },
+    "W33-azty2iU": {
+      "attempts": 1,
+      "updated_at": "2026-11-11T08:34:51+00:00",
+      "model": "qwen2.5:3b",
+      "source_warning": "ies for the authentication. See  https://github.com/yt-dlp/yt-dlp/wiki/FAQ#how-do-i-pass-cookies-to-yt-dlp  for how to manually pass cookies. Also see  https://github.com/yt-dlp/yt-dlp/wiki/Extractors#exporting-youtube-cookies  for tips on effectively exporting YouTube cookies | ERROR: [youtube] W33-azty2iU: This video is unavailable. Error code: 152 - 18 | Invidious fallback failed: https://yt.chocolatemoo53.com: HTTP fetch failed for yt.chocolatemoo53.com: HTTP Error 500: Internal Server Error",
+      "status": "failed",
+      "error": "No usable caption or detailed video description was available"
+    },
+    "5fi5PSK32qM": {
+      "attempts": 1,
+      "updated_at": "2026-11-11T08:40:27+00:00",
+      "model": "qwen2.5:3b",
+      "status": "failed",
+      "error": "Recipe 1 must have between 2 and 10 steps"
+    },
+    "Unceue-9Zco": {
+      "attempts": 1,
+      "updated_at": "2026-11-11T08:41:23+00:00",
+      "model": "qwen2.5:3b",
+      "status": "failed",
+      "error": "Recipe 1 contains weakly supported ingredients: 고춧가루, 우유, 토마토 소스, 파마스 치즈 가루"
+    },
+    "mnfADwHKfao": {
+      "attempts": 1,
+      "updated_at": "2026-11-11T08:42:46+00:00",
+      "model": "qwen2.5:3b",
+      "status": "completed",
+      "recipe_count": 1,
+      "error": null
+    },
+    "myOPYHQ6xyc": {
+      "attempts": 1,
+      "updated_at": "2026-11-11T08:45:42+00:00",
+      "model": "qwen2.5:3b",
+      "status": "completed",
+      "recipe_count": 1,
+      "error": null
+    },
+    "rjdBmL61Ozs": {
+      "attempts": 1,
+      "updated_at": "2026-11-11T08:46:27+00:00",
+      "model": "qwen2.5:3b",
+      "status": "failed",
+      "error": "Recipe 1 has fewer than two ingredients"
+    },
+    "BH8K1WY3UYE": {
+      "attempts": 1,
+      "updated_at": "2026-11-11T08:31:29+00:00",
+      "model": "qwen2.5:3b",
+      "source_warning": "or --cookies for the authentication. See  https://github.com/yt-dlp/yt-dlp/wiki/FAQ#how-do-i-pass-cookies-to-yt-dlp  for how to manually pass cookies. Also see  https://github.com/yt-dlp/yt-dlp/wiki/Extractors#exporting-youtube-cookies  for tips on effectively exporting YouTube cookies | ERROR: [youtube] BH8K1WY3UYE: This video is unavailable. Error code: 152 - 18 | Invidious fallback failed: https://yt.chocolatemoo53.com: HTTP fetch failed for yt.chocolatemoo53.com: The read operation timed out",
+      "status": "failed",
+      "error": "No usable caption or detailed video description was available"
+    },
+    "boRC45FDnPA": {
+      "attempts": 1,
+      "updated_at": "2026-11-11T08:31:56+00:00",
+      "model": "qwen2.5:3b",
+      "source_warning": "ies for the authentication. See  https://github.com/yt-dlp/yt-dlp/wiki/FAQ#how-do-i-pass-cookies-to-yt-dlp  for how to manually pass cookies. Also see  https://github.com/yt-dlp/yt-dlp/wiki/Extractors#exporting-youtube-cookies  for tips on effectively exporting YouTube cookies | ERROR: [youtube] boRC45FDnPA: This video is unavailable. Error code: 152 - 18 | Invidious fallback failed: https://yt.chocolatemoo53.com: HTTP fetch failed for yt.chocolatemoo53.com: HTTP Error 500: Internal Server Error",
+      "status": "failed",
+      "error": "No usable caption or detailed video description was available"
+    },
+    "pIg_yn9Viww": {
+      "attempts": 1,
+      "updated_at": "2026-11-11T08:32:30+00:00",
+      "model": "qwen2.5:3b",
+      "source_warning": "ies for the authentication. See  https://github.com/yt-dlp/yt-dlp/wiki/FAQ#how-do-i-pass-cookies-to-yt-dlp  for how to manually pass cookies. Also see  https://github.com/yt-dlp/yt-dlp/wiki/Extractors#exporting-youtube-cookies  for tips on effectively exporting YouTube cookies | ERROR: [youtube] pIg_yn9Viww: This video is unavailable. Error code: 152 - 18 | Invidious fallback failed: https://yt.chocolatemoo53.com: HTTP fetch failed for yt.chocolatemoo53.com: HTTP Error 500: Internal Server Error",
+      "status": "failed",
+      "error": "No usable caption or detailed video description was available"
+    },
+    "MGjWhqkO6rs": {
+      "attempts": 1,
+      "updated_at": "2026-11-11T08:32:40+00:00",
+      "model": "qwen2.5:3b",
+      "source_warning": "ies for the authentication. See  https://github.com/yt-dlp/yt-dlp/wiki/FAQ#how-do-i-pass-cookies-to-yt-dlp  for how to manually pass cookies. Also see  https://github.com/yt-dlp/yt-dlp/wiki/Extractors#exporting-youtube-cookies  for tips on effectively exporting YouTube cookies | ERROR: [youtube] MGjWhqkO6rs: This video is unavailable. Error code: 152 - 18 | Invidious fallback failed: https://yt.chocolatemoo53.com: HTTP fetch failed for yt.chocolatemoo53.com: HTTP Error 500: Internal Server Error",
+      "status": "failed",
+      "error": "No usable caption or detailed video description was available"
+    },
+    "Vg-MMI5E3M8": {
+      "attempts": 1,
+      "updated_at": "2026-11-11T08:33:15+00:00",
+      "model": "qwen2.5:3b",
+      "source_warning": "on. See  https://github.com/yt-dlp/yt-dlp/wiki/FAQ#how-do-i-pass-cookies-to-yt-dlp  for how to manually pass cookies. Also see  https://github.com/yt-dlp/yt-dlp/wiki/Extractors#exporting-youtube-cookies  for tips on effectively exporting YouTube cookies | ERROR: [youtube] Vg-MMI5E3M8: This video is unavailable. Error code: 152 - 18 | Invidious fallback failed: https://yt.chocolatemoo53.com: HTTP fetch failed for yt.chocolatemoo53.com: <urlopen error _ssl.c:994: The handshake operation timed out>",
+      "status": "failed",
+      "error": "No usable caption or detailed video description was available"
+    },
+    "yKcw_-TABDM": {
+      "attempts": 1,
+      "updated_at": "2026-11-11T08:33:50+00:00",
+      "model": "qwen2.5:3b",
+      "source_warning": "or --cookies for the authentication. See  https://github.com/yt-dlp/yt-dlp/wiki/FAQ#how-do-i-pass-cookies-to-yt-dlp  for how to manually pass cookies. Also see  https://github.com/yt-dlp/yt-dlp/wiki/Extractors#exporting-youtube-cookies  for tips on effectively exporting YouTube cookies | ERROR: [youtube] yKcw_-TABDM: This video is unavailable. Error code: 152 - 18 | Invidious fallback failed: https://yt.chocolatemoo53.com: HTTP fetch failed for yt.chocolatemoo53.com: The read operation timed out",
+      "status": "failed",
+      "error": "No usable caption or detailed video description was available"
+    },
+    "s1AHkXIVr_0": {
+      "attempts": 1,
+      "updated_at": "2026-11-11T08:43:57+00:00",
+      "model": "qwen2.5:3b",
+      "status": "failed",
+      "error": "Recipe 1 must have between 2 and 10 steps"
+    },
+    "DOzvFg3RvT0": {
+      "attempts": 1,
+      "updated_at": "2026-11-11T08:44:55+00:00",
+      "model": "qwen2.5:3b",
+      "status": "failed",
+      "error": "Recipe 1 has fewer than two ingredients"
+    },
+    "ALUiypVmNmA": {
+      "attempts": 1,
+      "updated_at": "2026-11-11T08:47:07+00:00",
+      "model": "qwen2.5:3b",
+      "status": "failed",
+      "error": "Recipe 1 contains weakly supported ingredients: 대파, 소시, 장류, 고춧가루, 마늘"
+    },
+    "EzMmkQyPZYs": {
+      "attempts": 1,
+      "updated_at": "2026-11-11T08:56:13+00:00",
+      "model": "qwen2.5:3b",
+      "status": "failed",
+      "error": "Recipe 1 must have between 2 and 10 steps"
+    },
+    "uiW9kJiwkic": {
+      "attempts": 1,
+      "updated_at": "2026-11-11T08:31:38+00:00",
+      "model": "qwen2.5:3b",
+      "source_warning": "ies for the authentication. See  https://github.com/yt-dlp/yt-dlp/wiki/FAQ#how-do-i-pass-cookies-to-yt-dlp  for how to manually pass cookies. Also see  https://github.com/yt-dlp/yt-dlp/wiki/Extractors#exporting-youtube-cookies  for tips on effectively exporting YouTube cookies | ERROR: [youtube] uiW9kJiwkic: This video is unavailable. Error code: 152 - 18 | Invidious fallback failed: https://yt.chocolatemoo53.com: HTTP fetch failed for yt.chocolatemoo53.com: HTTP Error 500: Internal Server Error",
+      "status": "failed",
+      "error": "No usable caption or detailed video description was available"
+    },
+    "E0EQ5Yp1Hgg": {
+      "attempts": 1,
+      "updated_at": "2026-11-11T08:32:12+00:00",
+      "model": "qwen2.5:3b",
+      "source_warning": "ies for the authentication. See  https://github.com/yt-dlp/yt-dlp/wiki/FAQ#how-do-i-pass-cookies-to-yt-dlp  for how to manually pass cookies. Also see  https://github.com/yt-dlp/yt-dlp/wiki/Extractors#exporting-youtube-cookies  for tips on effectively exporting YouTube cookies | ERROR: [youtube] E0EQ5Yp1Hgg: This video is unavailable. Error code: 152 - 18 | Invidious fallback failed: https://yt.chocolatemoo53.com: HTTP fetch failed for yt.chocolatemoo53.com: HTTP Error 500: Internal Server Error",
+      "status": "failed",
+      "error": "No usable caption or detailed video description was available"
+    },
+    "YG4qAmNpelc": {
+      "attempts": 1,
+      "updated_at": "2026-11-11T08:32:46+00:00",
+      "model": "qwen2.5:3b",
+      "source_warning": "ies for the authentication. See  https://github.com/yt-dlp/yt-dlp/wiki/FAQ#how-do-i-pass-cookies-to-yt-dlp  for how to manually pass cookies. Also see  https://github.com/yt-dlp/yt-dlp/wiki/Extractors#exporting-youtube-cookies  for tips on effectively exporting YouTube cookies | ERROR: [youtube] YG4qAmNpelc: This video is unavailable. Error code: 152 - 18 | Invidious fallback failed: https://yt.chocolatemoo53.com: HTTP fetch failed for yt.chocolatemoo53.com: HTTP Error 500: Internal Server Error",
+      "status": "failed",
+      "error": "No usable caption or detailed video description was available"
+    },
+    "QW_7h71oiw0": {
+      "attempts": 1,
+      "updated_at": "2026-11-11T08:33:24+00:00",
+      "model": "qwen2.5:3b",
+      "source_warning": "or --cookies for the authentication. See  https://github.com/yt-dlp/yt-dlp/wiki/FAQ#how-do-i-pass-cookies-to-yt-dlp  for how to manually pass cookies. Also see  https://github.com/yt-dlp/yt-dlp/wiki/Extractors#exporting-youtube-cookies  for tips on effectively exporting YouTube cookies | ERROR: [youtube] QW_7h71oiw0: This video is unavailable. Error code: 152 - 18 | Invidious fallback failed: https://yt.chocolatemoo53.com: HTTP fetch failed for yt.chocolatemoo53.com: The read operation timed out",
+      "status": "failed",
+      "error": "No usable caption or detailed video description was available"
+    },
+    "M-cSIib0ufM": {
+      "attempts": 1,
+      "updated_at": "2026-11-11T08:33:57+00:00",
+      "model": "qwen2.5:3b",
+      "source_warning": "ies for the authentication. See  https://github.com/yt-dlp/yt-dlp/wiki/FAQ#how-do-i-pass-cookies-to-yt-dlp  for how to manually pass cookies. Also see  https://github.com/yt-dlp/yt-dlp/wiki/Extractors#exporting-youtube-cookies  for tips on effectively exporting YouTube cookies | ERROR: [youtube] M-cSIib0ufM: This video is unavailable. Error code: 152 - 18 | Invidious fallback failed: https://yt.chocolatemoo53.com: HTTP fetch failed for yt.chocolatemoo53.com: HTTP Error 500: Internal Server Error",
+      "status": "failed",
+      "error": "No usable caption or detailed video description was available"
+    },
+    "GDvUO0m6HTo": {
+      "attempts": 1,
+      "updated_at": "2026-11-11T08:37:26+00:00",
+      "model": "qwen2.5:3b",
+      "status": "failed",
+      "error": "Recipe 1 contains weakly supported ingredients: 대파, 고추장, 진간장, 치킨소스, 양파"
+    },
+    "oVCyoNhyI9A": {
+      "attempts": 1,
+      "updated_at": "2026-11-11T08:38:38+00:00",
+      "model": "qwen2.5:3b",
+      "status": "failed",
+      "error": "Recipe 1 has fewer than two ingredients"
+    },
+    "4J8EF-W1RNQ": {
+      "attempts": 1,
+      "updated_at": "2026-11-11T08:42:19+00:00",
+      "model": "qwen2.5:3b",
+      "status": "failed",
+      "error": "Recipe 1 contains weakly supported ingredients: 토마토 맛이 나는 소스, 국민 소스인 동깨 소스"
+    },
+    "86J_RfMJi4Q": {
+      "attempts": 1,
+      "updated_at": "2026-11-11T08:44:03+00:00",
+      "model": "qwen2.5:3b",
+      "status": "failed",
+      "error": "Recipe 1 contains weakly supported ingredients: 매운라면, 토마토 맛이나는 케첩, 꼬리 이단 향, 청양고추, 양파"
+    },
+    "_n5VMen6gVM": {
+      "attempts": 1,
+      "updated_at": "2026-11-11T08:52:47+00:00",
+      "model": "qwen2.5:3b",
+      "status": "failed",
+      "error": "Recipe 1 must have between 2 and 10 steps"
+    },
+    "MIkFpSZL5us": {
+      "attempts": 1,
+      "updated_at": "2026-11-11T08:32:34+00:00",
+      "model": "qwen2.5:3b",
+      "source_warning": "ies for the authentication. See  https://github.com/yt-dlp/yt-dlp/wiki/FAQ#how-do-i-pass-cookies-to-yt-dlp  for how to manually pass cookies. Also see  https://github.com/yt-dlp/yt-dlp/wiki/Extractors#exporting-youtube-cookies  for tips on effectively exporting YouTube cookies | ERROR: [youtube] MIkFpSZL5us: This video is unavailable. Error code: 152 - 18 | Invidious fallback failed: https://yt.chocolatemoo53.com: HTTP fetch failed for yt.chocolatemoo53.com: HTTP Error 500: Internal Server Error",
+      "status": "failed",
+      "error": "No usable caption or detailed video description was available"
+    },
+    "7hKAcKHP-pM": {
+      "attempts": 1,
+      "updated_at": "2026-11-11T08:33:53+00:00",
+      "model": "qwen2.5:3b",
+      "source_warning": "Invidious caption fetch failed: HTTP fetch failed for yt.chocolatemoo53.com: <urlopen error _ssl.c:994: The handshake operation timed out> | HTTP fetch failed for yt.chocolatemoo53.com: The read operation timed out",
+      "status": "failed",
+      "error": "No usable caption or detailed video description was available"
+    },
+    "m9t1Pa-MfKM": {
+      "attempts": 1,
+      "updated_at": "2026-11-11T08:34:29+00:00",
+      "model": "qwen2.5:3b",
+      "source_warning": "or --cookies for the authentication. See  https://github.com/yt-dlp/yt-dlp/wiki/FAQ#how-do-i-pass-cookies-to-yt-dlp  for how to manually pass cookies. Also see  https://github.com/yt-dlp/yt-dlp/wiki/Extractors#exporting-youtube-cookies  for tips on effectively exporting YouTube cookies | ERROR: [youtube] m9t1Pa-MfKM: This video is unavailable. Error code: 152 - 18 | Invidious fallback failed: https://yt.chocolatemoo53.com: HTTP fetch failed for yt.chocolatemoo53.com: The read operation timed out",
+      "status": "failed",
+      "error": "No usable caption or detailed video description was available"
+    },
+    "vLWNlxVMdg8": {
+      "attempts": 1,
+      "updated_at": "2026-11-11T08:35:01+00:00",
+      "model": "qwen2.5:3b",
+      "source_warning": "ies for the authentication. See  https://github.com/yt-dlp/yt-dlp/wiki/FAQ#how-do-i-pass-cookies-to-yt-dlp  for how to manually pass cookies. Also see  https://github.com/yt-dlp/yt-dlp/wiki/Extractors#exporting-youtube-cookies  for tips on effectively exporting YouTube cookies | ERROR: [youtube] vLWNlxVMdg8: This video is unavailable. Error code: 152 - 18 | Invidious fallback failed: https://yt.chocolatemoo53.com: HTTP fetch failed for yt.chocolatemoo53.com: HTTP Error 500: Internal Server Error",
+      "status": "failed",
+      "error": "No usable caption or detailed video description was available"
+    },
+    "B8c89TIEsj8": {
+      "attempts": 1,
+      "updated_at": "2026-11-11T08:35:37+00:00",
+      "model": "qwen2.5:3b",
+      "source_warning": "or --cookies for the authentication. See  https://github.com/yt-dlp/yt-dlp/wiki/FAQ#how-do-i-pass-cookies-to-yt-dlp  for how to manually pass cookies. Also see  https://github.com/yt-dlp/yt-dlp/wiki/Extractors#exporting-youtube-cookies  for tips on effectively exporting YouTube cookies | ERROR: [youtube] B8c89TIEsj8: This video is unavailable. Error code: 152 - 18 | Invidious fallback failed: https://yt.chocolatemoo53.com: HTTP fetch failed for yt.chocolatemoo53.com: The read operation timed out",
+      "status": "failed",
+      "error": "No usable caption or detailed video description was available"
+    },
+    "ZNNM7Ribo3s": {
+      "attempts": 1,
+      "updated_at": "2026-11-11T08:37:28+00:00",
+      "model": "qwen2.5:3b",
+      "status": "failed",
+      "error": "Recipe 1 has fewer than two ingredients"
+    },
+    "R4RgT7DLg0s": {
+      "attempts": 1,
+      "updated_at": "2026-11-11T08:39:01+00:00",
+      "model": "qwen2.5:3b",
+      "status": "failed",
+      "error": "Recipe 1 contains weakly supported ingredients: 멸치 가죽수리"
+    },
+    "pXdu3RtN3aE": {
+      "attempts": 1,
+      "updated_at": "2026-11-11T08:39:57+00:00",
+      "model": "qwen2.5:3b",
+      "status": "failed",
+      "error": "Recipe 1 has fewer than two ingredients"
+    },
+    "ZS6D5vew4DU": {
+      "attempts": 1,
+      "updated_at": "2026-11-11T08:41:51+00:00",
+      "model": "qwen2.5:3b",
+      "status": "failed",
+      "error": "Recipe 1 has fewer than two ingredients"
+    },
+    "Xv5TA1aM-6s": {
+      "attempts": 1,
+      "updated_at": "2026-11-11T08:43:14+00:00",
+      "model": "qwen2.5:3b",
+      "status": "failed",
+      "error": "Recipe 1 contains weakly supported ingredients: 마늘, 치즈, 돈깨스 소스"
+    },
+    "NhpyHnkMnI4": {
+      "attempts": 1,
+      "updated_at": "2026-11-11T08:31:12+00:00",
+      "model": "qwen2.5:3b",
+      "source_warning": "ies for the authentication. See  https://github.com/yt-dlp/yt-dlp/wiki/FAQ#how-do-i-pass-cookies-to-yt-dlp  for how to manually pass cookies. Also see  https://github.com/yt-dlp/yt-dlp/wiki/Extractors#exporting-youtube-cookies  for tips on effectively exporting YouTube cookies | ERROR: [youtube] NhpyHnkMnI4: This video is unavailable. Error code: 152 - 18 | Invidious fallback failed: https://yt.chocolatemoo53.com: HTTP fetch failed for yt.chocolatemoo53.com: HTTP Error 500: Internal Server Error",
+      "status": "failed",
+      "error": "No usable caption or detailed video description was available"
+    },
+    "TODXQKr0BCY": {
+      "attempts": 1,
+      "updated_at": "2026-11-11T08:31:49+00:00",
+      "model": "qwen2.5:3b",
+      "source_warning": "or --cookies for the authentication. See  https://github.com/yt-dlp/yt-dlp/wiki/FAQ#how-do-i-pass-cookies-to-yt-dlp  for how to manually pass cookies. Also see  https://github.com/yt-dlp/yt-dlp/wiki/Extractors#exporting-youtube-cookies  for tips on effectively exporting YouTube cookies | ERROR: [youtube] TODXQKr0BCY: This video is unavailable. Error code: 152 - 18 | Invidious fallback failed: https://yt.chocolatemoo53.com: HTTP fetch failed for yt.chocolatemoo53.com: The read operation timed out",
+      "status": "failed",
+      "error": "No usable caption or detailed video description was available"
+    },
+    "Chy8RX2uO7w": {
+      "attempts": 1,
+      "updated_at": "2026-11-11T08:32:05+00:00",
+      "model": "qwen2.5:3b",
+      "source_warning": "ies for the authentication. See  https://github.com/yt-dlp/yt-dlp/wiki/FAQ#how-do-i-pass-cookies-to-yt-dlp  for how to manually pass cookies. Also see  https://github.com/yt-dlp/yt-dlp/wiki/Extractors#exporting-youtube-cookies  for tips on effectively exporting YouTube cookies | ERROR: [youtube] Chy8RX2uO7w: This video is unavailable. Error code: 152 - 18 | Invidious fallback failed: https://yt.chocolatemoo53.com: HTTP fetch failed for yt.chocolatemoo53.com: HTTP Error 500: Internal Server Error",
+      "status": "failed",
+      "error": "No usable caption or detailed video description was available"
+    },
+    "2bQYyENf270": {
+      "attempts": 1,
+      "updated_at": "2026-11-11T08:32:15+00:00",
+      "model": "qwen2.5:3b",
+      "source_warning": "ies for the authentication. See  https://github.com/yt-dlp/yt-dlp/wiki/FAQ#how-do-i-pass-cookies-to-yt-dlp  for how to manually pass cookies. Also see  https://github.com/yt-dlp/yt-dlp/wiki/Extractors#exporting-youtube-cookies  for tips on effectively exporting YouTube cookies | ERROR: [youtube] 2bQYyENf270: This video is unavailable. Error code: 152 - 18 | Invidious fallback failed: https://yt.chocolatemoo53.com: HTTP fetch failed for yt.chocolatemoo53.com: HTTP Error 500: Internal Server Error",
+      "status": "failed",
+      "error": "No usable caption or detailed video description was available"
+    },
+    "pYANzf_8P7w": {
+      "attempts": 1,
+      "updated_at": "2026-11-11T08:32:58+00:00",
+      "model": "qwen2.5:3b",
+      "source_warning": "or --cookies for the authentication. See  https://github.com/yt-dlp/yt-dlp/wiki/FAQ#how-do-i-pass-cookies-to-yt-dlp  for how to manually pass cookies. Also see  https://github.com/yt-dlp/yt-dlp/wiki/Extractors#exporting-youtube-cookies  for tips on effectively exporting YouTube cookies | ERROR: [youtube] pYANzf_8P7w: This video is unavailable. Error code: 152 - 18 | Invidious fallback failed: https://yt.chocolatemoo53.com: HTTP fetch failed for yt.chocolatemoo53.com: The read operation timed out",
+      "status": "failed",
+      "error": "No usable caption or detailed video description was available"
+    },
+    "bxgnZPZYbnc": {
+      "attempts": 1,
+      "updated_at": "2026-11-11T08:33:36+00:00",
+      "model": "qwen2.5:3b",
+      "source_warning": "or --cookies for the authentication. See  https://github.com/yt-dlp/yt-dlp/wiki/FAQ#how-do-i-pass-cookies-to-yt-dlp  for how to manually pass cookies. Also see  https://github.com/yt-dlp/yt-dlp/wiki/Extractors#exporting-youtube-cookies  for tips on effectively exporting YouTube cookies | ERROR: [youtube] bxgnZPZYbnc: This video is unavailable. Error code: 152 - 18 | Invidious fallback failed: https://yt.chocolatemoo53.com: HTTP fetch failed for yt.chocolatemoo53.com: The read operation timed out",
+      "status": "failed",
+      "error": "No usable caption or detailed video description was available"
+    },
+    "xzGd6E_vDrM": {
+      "attempts": 1,
+      "updated_at": "2026-11-11T08:50:08+00:00",
+      "model": "qwen2.5:3b",
+      "status": "failed",
+      "error": "Recipe 1 must have between 2 and 10 steps"
+    },
+    "7joY2Sci6I4": {
+      "attempts": 1,
+      "updated_at": "2026-11-11T09:04:10+00:00",
+      "model": "qwen2.5:3b",
+      "status": "failed",
+      "error": "Recipe 1 has fewer than two ingredients"
+    },
+    "yQTp4tues7E": {
+      "attempts": 1,
+      "updated_at": "2026-11-11T09:06:15+00:00",
+      "model": "qwen2.5:3b",
+      "status": "failed",
+      "error": "Recipe 1 contains weakly supported ingredients: 소량의 삼겹살, 밀크, 치킨 스톡, 파슬리"
+    },
+    "0RkFgxsqlV0": {
+      "attempts": 1,
+      "updated_at": "2026-11-11T09:15:47+00:00",
+      "model": "qwen2.5:3b",
+      "status": "failed",
+      "error": "Recipe 1 must have between 2 and 10 steps"
+    },
+    "OqUsBZvLjRM": {
+      "attempts": 1,
+      "updated_at": "2026-11-11T08:30:47+00:00",
+      "model": "qwen2.5:3b",
+      "source_warning": "ies for the authentication. See  https://github.com/yt-dlp/yt-dlp/wiki/FAQ#how-do-i-pass-cookies-to-yt-dlp  for how to manually pass cookies. Also see  https://github.com/yt-dlp/yt-dlp/wiki/Extractors#exporting-youtube-cookies  for tips on effectively exporting YouTube cookies | ERROR: [youtube] OqUsBZvLjRM: This video is unavailable. Error code: 152 - 18 | Invidious fallback failed: https://yt.chocolatemoo53.com: HTTP fetch failed for yt.chocolatemoo53.com: HTTP Error 500: Internal Server Error",
+      "status": "failed",
+      "error": "No usable caption or detailed video description was available"
+    },
+    "9vDOVySBkYM": {
+      "attempts": 1,
+      "updated_at": "2026-11-11T08:31:22+00:00",
+      "model": "qwen2.5:3b",
+      "source_warning": "on. See  https://github.com/yt-dlp/yt-dlp/wiki/FAQ#how-do-i-pass-cookies-to-yt-dlp  for how to manually pass cookies. Also see  https://github.com/yt-dlp/yt-dlp/wiki/Extractors#exporting-youtube-cookies  for tips on effectively exporting YouTube cookies | ERROR: [youtube] 9vDOVySBkYM: This video is unavailable. Error code: 152 - 18 | Invidious fallback failed: https://yt.chocolatemoo53.com: HTTP fetch failed for yt.chocolatemoo53.com: <urlopen error _ssl.c:994: The handshake operation timed out>",
+      "status": "failed",
+      "error": "No usable caption or detailed video description was available"
+    },
+    "0wxQADOkmpQ": {
+      "attempts": 1,
+      "updated_at": "2026-11-11T08:36:24+00:00",
+      "model": "qwen2.5:3b",
+      "status": "failed",
+      "error": "Recipe 1 contains weakly supported ingredients: 사골 육수, 참치캔, 대파, 삼겹살"
+    },
+    "9l2rn6d0D90": {
+      "attempts": 1,
+      "updated_at": "2026-11-11T08:36:57+00:00",
+      "model": "qwen2.5:3b",
+      "source_warning": "or --cookies for the authentication. See  https://github.com/yt-dlp/yt-dlp/wiki/FAQ#how-do-i-pass-cookies-to-yt-dlp  for how to manually pass cookies. Also see  https://github.com/yt-dlp/yt-dlp/wiki/Extractors#exporting-youtube-cookies  for tips on effectively exporting YouTube cookies | ERROR: [youtube] 9l2rn6d0D90: This video is unavailable. Error code: 152 - 18 | Invidious fallback failed: https://yt.chocolatemoo53.com: HTTP fetch failed for yt.chocolatemoo53.com: The read operation timed out",
+      "status": "failed",
+      "error": "No usable caption or detailed video description was available"
+    },
+    "MwmxZcuXmjo": {
+      "attempts": 1,
+      "updated_at": "2026-11-11T08:48:52+00:00",
+      "model": "qwen2.5:3b",
+      "status": "failed",
+      "error": "Recipe 1 must have between 2 and 10 steps"
+    },
+    "Fanpr4tV6w0": {
+      "attempts": 1,
+      "updated_at": "2026-11-11T08:50:27+00:00",
+      "model": "qwen2.5:3b",
+      "status": "failed",
+      "error": "Recipe 1 contains weakly supported ingredients: 비엔나 소세지"
+    },
+    "jDz7_KiY0w8": {
+      "attempts": 1,
+      "updated_at": "2026-11-11T09:02:11+00:00",
+      "model": "qwen2.5:3b",
+      "status": "failed",
+      "error": "Recipe 1 has fewer than two ingredients"
+    },
+    "lMwACML8ous": {
+      "attempts": 1,
+      "updated_at": "2026-11-11T09:04:26+00:00",
+      "model": "qwen2.5:3b",
+      "status": "failed",
+      "error": "Recipe 1 contains weakly supported ingredients: 불닭 소스, 고추장, 다진 마늘"
+    },
+    "eMBrZns0nf0": {
+      "attempts": 1,
+      "updated_at": "2026-11-11T09:06:13+00:00",
+      "model": "qwen2.5:3b",
+      "status": "failed",
+      "error": "Recipe 1 contains weakly supported ingredients: 대파, 다진 생강"
+    },
+    "VmDsji7LfUg": {
+      "attempts": 1,
+      "updated_at": "2026-11-11T09:07:41+00:00",
+      "model": "qwen2.5:3b",
+      "status": "failed",
+      "error": "Recipe 1 has fewer than two ingredients"
+    },
+    "5zyqTlThKR4": {
+      "attempts": 1,
+      "updated_at": "2026-11-11T08:31:30+00:00",
+      "model": "qwen2.5:3b",
+      "source_warning": "or --cookies for the authentication. See  https://github.com/yt-dlp/yt-dlp/wiki/FAQ#how-do-i-pass-cookies-to-yt-dlp  for how to manually pass cookies. Also see  https://github.com/yt-dlp/yt-dlp/wiki/Extractors#exporting-youtube-cookies  for tips on effectively exporting YouTube cookies | ERROR: [youtube] 5zyqTlThKR4: This video is unavailable. Error code: 152 - 18 | Invidious fallback failed: https://yt.chocolatemoo53.com: HTTP fetch failed for yt.chocolatemoo53.com: The read operation timed out",
+      "status": "failed",
+      "error": "No usable caption or detailed video description was available"
+    },
+    "Nhiv2vKg13A": {
+      "attempts": 1,
+      "updated_at": "2026-11-11T08:34:16+00:00",
+      "model": "qwen2.5:3b",
+      "status": "failed",
+      "error": "Recipe 1 contains weakly supported ingredients: 고추장, 진간장, 케첩, 다진마늘, 오수분"
+    },
+    "ZKna2gu4oEY": {
+      "attempts": 1,
+      "updated_at": "2026-11-11T08:35:38+00:00",
+      "model": "qwen2.5:3b",
+      "source_warning": "Invidious caption fetch failed: HTTP fetch failed for yt.chocolatemoo53.com: The read operation timed out | HTTP fetch failed for yt.chocolatemoo53.com: The read operation timed out",
+      "status": "failed",
+      "error": "No usable caption or detailed video description was available"
+    },
+    "cViOG9bmzSA": {
+      "attempts": 1,
+      "updated_at": "2026-11-11T08:35:58+00:00",
+      "model": "qwen2.5:3b",
+      "source_warning": "ies for the authentication. See  https://github.com/yt-dlp/yt-dlp/wiki/FAQ#how-do-i-pass-cookies-to-yt-dlp  for how to manually pass cookies. Also see  https://github.com/yt-dlp/yt-dlp/wiki/Extractors#exporting-youtube-cookies  for tips on effectively exporting YouTube cookies | ERROR: [youtube] cViOG9bmzSA: This video is unavailable. Error code: 152 - 18 | Invidious fallback failed: https://yt.chocolatemoo53.com: HTTP fetch failed for yt.chocolatemoo53.com: HTTP Error 500: Internal Server Error",
+      "status": "failed",
+      "error": "No usable caption or detailed video description was available"
+    },
+    "D0IAbgLAEVY": {
+      "attempts": 1,
+      "updated_at": "2026-11-11T08:36:27+00:00",
+      "model": "qwen2.5:3b",
+      "source_warning": "ies for the authentication. See  https://github.com/yt-dlp/yt-dlp/wiki/FAQ#how-do-i-pass-cookies-to-yt-dlp  for how to manually pass cookies. Also see  https://github.com/yt-dlp/yt-dlp/wiki/Extractors#exporting-youtube-cookies  for tips on effectively exporting YouTube cookies | ERROR: [youtube] D0IAbgLAEVY: This video is unavailable. Error code: 152 - 18 | Invidious fallback failed: https://yt.chocolatemoo53.com: HTTP fetch failed for yt.chocolatemoo53.com: HTTP Error 500: Internal Server Error",
+      "status": "failed",
+      "error": "No usable caption or detailed video description was available"
+    },
+    "hRsknnWVrPk": {
+      "attempts": 1,
+      "updated_at": "2026-11-11T08:39:11+00:00",
+      "model": "qwen2.5:3b",
+      "status": "failed",
+      "error": "Recipe 1 contains weakly supported ingredients: 컵누들, 마라탕 맛, 건두부, 팽이버섯, 대배버섯"
+    },
+    "w7EDYxGLomE": {
+      "attempts": 1,
+      "updated_at": "2026-11-11T08:50:07+00:00",
+      "model": "qwen2.5:3b",
+      "status": "failed",
+      "error": "Recipe 1 must have between 2 and 10 steps"
+    },
+    "Rhorjv__9_I": {
+      "attempts": 1,
+      "updated_at": "2026-11-11T08:51:07+00:00",
+      "model": "qwen2.5:3b",
+      "source_warning": "HTTP fetch failed for www.youtube.com: HTTP Error 429: Too Many Requests",
+      "status": "completed",
+      "recipe_count": 1,
+      "error": null
+    },
+    "uXO_zijlHnM": {
+      "attempts": 1,
+      "updated_at": "2026-11-11T09:01:12+00:00",
+      "model": "qwen2.5:3b",
+      "status": "failed",
+      "error": "Recipe 1 must have between 2 and 10 steps"
+    },
+    "18LEUvZH-xA": {
+      "attempts": 1,
+      "updated_at": "2026-11-11T09:02:33+00:00",
+      "model": "qwen2.5:3b",
+      "status": "failed",
+      "error": "Recipe 1 has fewer than two ingredients"
+    },
+    "BZSNUdckRCY": {
+      "attempts": 1,
+      "updated_at": "2026-11-11T08:31:26+00:00",
+      "model": "qwen2.5:3b",
+      "source_warning": "ies for the authentication. See  https://github.com/yt-dlp/yt-dlp/wiki/FAQ#how-do-i-pass-cookies-to-yt-dlp  for how to manually pass cookies. Also see  https://github.com/yt-dlp/yt-dlp/wiki/Extractors#exporting-youtube-cookies  for tips on effectively exporting YouTube cookies | ERROR: [youtube] BZSNUdckRCY: This video is unavailable. Error code: 152 - 18 | Invidious fallback failed: https://yt.chocolatemoo53.com: HTTP fetch failed for yt.chocolatemoo53.com: HTTP Error 500: Internal Server Error",
+      "status": "failed",
+      "error": "No usable caption or detailed video description was available"
+    },
+    "PyivVAjYUOU": {
+      "attempts": 1,
+      "updated_at": "2026-11-11T08:32:02+00:00",
+      "model": "qwen2.5:3b",
+      "source_warning": "or --cookies for the authentication. See  https://github.com/yt-dlp/yt-dlp/wiki/FAQ#how-do-i-pass-cookies-to-yt-dlp  for how to manually pass cookies. Also see  https://github.com/yt-dlp/yt-dlp/wiki/Extractors#exporting-youtube-cookies  for tips on effectively exporting YouTube cookies | ERROR: [youtube] PyivVAjYUOU: This video is unavailable. Error code: 152 - 18 | Invidious fallback failed: https://yt.chocolatemoo53.com: HTTP fetch failed for yt.chocolatemoo53.com: The read operation timed out",
+      "status": "failed",
+      "error": "No usable caption or detailed video description was available"
+    },
+    "5JD_iTp64vA": {
+      "attempts": 1,
+      "updated_at": "2026-11-11T08:32:28+00:00",
+      "model": "qwen2.5:3b",
+      "source_warning": "ies for the authentication. See  https://github.com/yt-dlp/yt-dlp/wiki/FAQ#how-do-i-pass-cookies-to-yt-dlp  for how to manually pass cookies. Also see  https://github.com/yt-dlp/yt-dlp/wiki/Extractors#exporting-youtube-cookies  for tips on effectively exporting YouTube cookies | ERROR: [youtube] 5JD_iTp64vA: This video is unavailable. Error code: 152 - 18 | Invidious fallback failed: https://yt.chocolatemoo53.com: HTTP fetch failed for yt.chocolatemoo53.com: HTTP Error 500: Internal Server Error",
+      "status": "failed",
+      "error": "No usable caption or detailed video description was available"
+    },
+    "04Z-XfTn4bU": {
+      "attempts": 1,
+      "updated_at": "2026-11-11T08:33:07+00:00",
+      "model": "qwen2.5:3b",
+      "source_warning": "or --cookies for the authentication. See  https://github.com/yt-dlp/yt-dlp/wiki/FAQ#how-do-i-pass-cookies-to-yt-dlp  for how to manually pass cookies. Also see  https://github.com/yt-dlp/yt-dlp/wiki/Extractors#exporting-youtube-cookies  for tips on effectively exporting YouTube cookies | ERROR: [youtube] 04Z-XfTn4bU: This video is unavailable. Error code: 152 - 18 | Invidious fallback failed: https://yt.chocolatemoo53.com: HTTP fetch failed for yt.chocolatemoo53.com: The read operation timed out",
+      "status": "failed",
+      "error": "No usable caption or detailed video description was available"
+    },
+    "OpxTh85qpsw": {
+      "attempts": 1,
+      "updated_at": "2026-11-11T08:33:37+00:00",
+      "model": "qwen2.5:3b",
+      "source_warning": "ies for the authentication. See  https://github.com/yt-dlp/yt-dlp/wiki/FAQ#how-do-i-pass-cookies-to-yt-dlp  for how to manually pass cookies. Also see  https://github.com/yt-dlp/yt-dlp/wiki/Extractors#exporting-youtube-cookies  for tips on effectively exporting YouTube cookies | ERROR: [youtube] OpxTh85qpsw: This video is unavailable. Error code: 152 - 18 | Invidious fallback failed: https://yt.chocolatemoo53.com: HTTP fetch failed for yt.chocolatemoo53.com: HTTP Error 500: Internal Server Error",
+      "status": "failed",
+      "error": "No usable caption or detailed video description was available"
+    },
+    "Bj4aZA_BW-Y": {
+      "attempts": 1,
+      "updated_at": "2026-11-11T08:34:54+00:00",
+      "model": "qwen2.5:3b",
+      "source_warning": "Invidious caption fetch failed: HTTP fetch failed for yt.chocolatemoo53.com: The read operation timed out | HTTP fetch failed for yt.chocolatemoo53.com: The read operation timed out",
+      "status": "failed",
+      "error": "No usable caption or detailed video description was available"
+    },
+    "Mf_nsvHsUJU": {
+      "attempts": 1,
+      "updated_at": "2026-11-11T08:36:54+00:00",
+      "model": "qwen2.5:3b",
+      "status": "failed",
+      "error": "Recipe 1 contains weakly supported ingredients: 진간장, 고춧가루, 마늘"
+    },
+    "o9BHS3mavQ0": {
+      "attempts": 1,
+      "updated_at": "2026-11-11T08:38:53+00:00",
+      "model": "qwen2.5:3b",
+      "status": "failed",
+      "error": "Recipe 1 contains weakly supported ingredients: 불소스, 시 뻘은 꼬치가, 다지"
+    },
+    "pJNqXfAWuCs": {
+      "attempts": 1,
+      "updated_at": "2026-11-11T08:41:27+00:00",
+      "model": "qwen2.5:3b",
+      "status": "failed",
+      "error": "Recipe 1 contains weakly supported ingredients: 부드러운 닭갈비, 양배추, 고추장, 양념장, 라면 스푼"
+    },
+    "NVHX_7JILgc": {
+      "attempts": 1,
+      "updated_at": "2026-11-11T08:43:31+00:00",
+      "model": "qwen2.5:3b",
+      "status": "failed",
+      "error": "Recipe 1 has fewer than two ingredients"
     }
   }
 }

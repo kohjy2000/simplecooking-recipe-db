@@ -8415,5 +8415,396 @@
     "tips": [],
     "curated_at": "2026-11-11T07:43:56+00:00",
     "curation_model": "qwen2.5:3b"
+  },
+  {
+    "video_id": "oq0hTsSmiZA-01",
+    "source_video_id": "oq0hTsSmiZA",
+    "name": "군만두",
+    "summary": "냉동만두를 활용한 군만두 요리법",
+    "servings": null,
+    "prep_minutes": null,
+    "cook_minutes": null,
+    "confidence": 0.9,
+    "needs_review": false,
+    "source_kind": "automated_curated",
+    "source_url": "https://www.youtube.com/watch?v=oq0hTsSmiZA&t=0s",
+    "published_at": null,
+    "video_title": "제발 냉동만두 이렇게 드셔보세요",
+    "ingredients": [
+      {
+        "position": 1,
+        "section": "재료 또는 양념",
+        "name": "냉동만두",
+        "amount": null,
+        "unit": null,
+        "note": null,
+        "raw_text": "냉동만두"
+      },
+      {
+        "position": 2,
+        "section": "재료 또는 양념",
+        "name": "양파",
+        "amount": null,
+        "unit": null,
+        "note": null,
+        "raw_text": "양파"
+      }
+    ],
+    "steps": [
+      "팬에 냉동만두를 넉넉하게 둘러주고",
+      "냉동만두를 앞뒤로 뒤집어주면서 모든 면이 갈색빛이 뜰 때까지 군만두가 되도록 구워줍니다",
+      "찌글찌글 어느 정도 전재 쪽으로 노릿하게 잘 구워졌으면 양파 반개를 얍실하게 쓸어가",
+      "양파를 다 같이 한번 볶아줍니다",
+      "볶은 양파에서 은은하게 발색 빛이 뛴다면 잘 꾸진 만두를 세네 개를 제외하고 모조리 잘라줍니다",
+      "소스를 넣고 양념을 퍼지도록 한번 저어줍니다",
+      "뜨끈한 흰바위로 군만두를 빼줍니다",
+      "10cm 권정열이 맞춰 줍니다",
+      "꼬지 가루를 살짝 흩뿌려 주고 후추를 넉넉하게 뿌려줍니다"
+    ],
+    "tips": [],
+    "curated_at": "2026-11-11T08:53:15+00:00",
+    "curation_model": "qwen2.5:3b"
+  },
+  {
+    "video_id": "fDBchM7NFwM-01",
+    "source_video_id": "fDBchM7NFwM",
+    "name": "시용과 계란 프라이",
+    "summary": "간단하고 맛있는 한국 요리",
+    "servings": null,
+    "prep_minutes": null,
+    "cook_minutes": null,
+    "confidence": 0.9,
+    "needs_review": false,
+    "source_kind": "automated_curated",
+    "source_url": "https://www.youtube.com/watch?v=fDBchM7NFwM&t=0s",
+    "published_at": null,
+    "video_title": "한국인이라면 무조건 좋아할 맛입니다.",
+    "ingredients": [
+      {
+        "position": 1,
+        "section": "재료 또는 양념",
+        "name": "시용",
+        "amount": null,
+        "unit": null,
+        "note": null,
+        "raw_text": "시용"
+      },
+      {
+        "position": 2,
+        "section": "재료 또는 양념",
+        "name": "계란",
+        "amount": "1",
+        "unit": "개",
+        "note": null,
+        "raw_text": "계란 1 개"
+      }
+    ],
+    "steps": [
+      "팬에 시용을 넉넉하게 둘러주고 계란 하나를 톡 가서 올려줍니다. 바닥에 깔린 시용을 끼얹어 주면서 계란을 튀듯이 맛있게 구워줍니다.",
+      "바삭하고 맛있는 반수 계란이 됩니다. 후라이가 됩니다. 맛있는 계란 후라이는 잠시 옆으로 빼줍니다.",
+      "양파 1개를 대충 썰어서 올려줍니다. 다른 김치를 소인 껏 한 컵 분량이 나오도록 올려줍니다.",
+      "고추장 반스푼과 설탕도 반스푼을 추가해줍니다. 집에 있는 김치가 맛에서 사온 달달한 시판용 김치라면 설탕은 생략하시는게 좋습니다.",
+      "양파와 고추장 김치까지 바닥에 흥건히 있는 식용유에 다같이 골고루 튀기듯 볶아줍니다.",
+      "볶아 맛있게 골고루 잘 볶아졌다면 강동원 형님 참치캔 하나 준비해가며 참치 살코기와 같이 들어 있는 기름까지 오조리 다 넣어줍니다.",
+      "달 그러고 촉촉하게 물 조이기 반컵을 추가해줍니다. 수분이 날아갈 때까지 한번 끓여줍니다.",
+      "진한 색을 원한다면 고춧가루를 추가해 주셔도 좋습니다. 마치 참지 김치찌개를 끓인듯한 진하고 맛있는 참지 김치가 됩니다.",
+      "국물이 짜박 자박하게 졸아들 때 참기름 한 바불 싹 눌러주면 끝입니다.",
+      "휘핑 다 됐으면 뜨끈한 흰밥 위로 계란 프라이와 피까지 넉넉하게 뿌려줍니다."
+    ],
+    "tips": [],
+    "curated_at": "2026-11-11T08:54:01+00:00",
+    "curation_model": "qwen2.5:3b"
+  },
+  {
+    "video_id": "Zp9R9SPGguU-01",
+    "source_video_id": "Zp9R9SPGguU",
+    "name": "참나물 비빔국수",
+    "summary": "참나물 비빔국수를 만듭니다.",
+    "servings": null,
+    "prep_minutes": null,
+    "cook_minutes": null,
+    "confidence": 0.9,
+    "needs_review": false,
+    "source_kind": "automated_curated",
+    "source_url": "https://www.youtube.com/watch?v=Zp9R9SPGguU&t=0s",
+    "published_at": null,
+    "video_title": "제발 이것만은 가격 올리지 마세요.",
+    "ingredients": [
+      {
+        "position": 1,
+        "section": "재료 또는 양념",
+        "name": "참나물",
+        "amount": null,
+        "unit": null,
+        "note": null,
+        "raw_text": "참나물"
+      },
+      {
+        "position": 2,
+        "section": "재료 또는 양념",
+        "name": "소면",
+        "amount": null,
+        "unit": null,
+        "note": null,
+        "raw_text": "소면"
+      },
+      {
+        "position": 3,
+        "section": "재료 또는 양념",
+        "name": "대패삼겹살",
+        "amount": null,
+        "unit": null,
+        "note": null,
+        "raw_text": "대패삼겹살"
+      }
+    ],
+    "steps": [
+      "참나물은 흐르는 물에 3~4번 세척 후 먹기 좋게 손질해줍니다.",
+      "소면은 미리 삶아 둡니다.",
+      "삶은 소면, 자른 김치 2스푼, 참나물, 양념장을 잘 섞어줍니다.",
+      "양념장은 고추장 1스푼, 진간장 1스푼, 고춧가루 1스푼, 설탕 2스푼, 식초 2스푼, 참기름 1스푼입니다.",
+      "추가로 대패 삼겹살을 곁들이면 더 맛있습니다.",
+      "후추, 통깨, 파슬리 등 집에 있는거 뿌려줍니다."
+    ],
+    "tips": [],
+    "curated_at": "2026-11-11T09:07:33+00:00",
+    "curation_model": "qwen2.5:3b"
+  },
+  {
+    "video_id": "mnfADwHKfao-01",
+    "source_video_id": "mnfADwHKfao",
+    "name": "당면 부대찌개",
+    "summary": "한 문장 설명",
+    "servings": null,
+    "prep_minutes": null,
+    "cook_minutes": null,
+    "confidence": 0.9,
+    "needs_review": false,
+    "source_kind": "automated_curated",
+    "source_url": "https://www.youtube.com/watch?v=mnfADwHKfao&t=0s",
+    "published_at": null,
+    "video_title": "이거 다들 잘못 알고 있습니다.",
+    "ingredients": [
+      {
+        "position": 1,
+        "section": "재료 또는 양념",
+        "name": "통조림 햄",
+        "amount": "200g",
+        "unit": "g",
+        "note": null,
+        "raw_text": "통조림 햄 200g g"
+      },
+      {
+        "position": 2,
+        "section": "재료 또는 양념",
+        "name": "비엔나 소시지",
+        "amount": null,
+        "unit": null,
+        "note": null,
+        "raw_text": "비엔나 소시지"
+      },
+      {
+        "position": 3,
+        "section": "재료 또는 양념",
+        "name": "양파",
+        "amount": "반개",
+        "unit": "개",
+        "note": null,
+        "raw_text": "양파 반개 개"
+      },
+      {
+        "position": 4,
+        "section": "재료 또는 양념",
+        "name": "두부",
+        "amount": "반모",
+        "unit": "모",
+        "note": null,
+        "raw_text": "두부 반모 모"
+      },
+      {
+        "position": 5,
+        "section": "재료 또는 양념",
+        "name": "자른 김치",
+        "amount": "2~3스푼",
+        "unit": "스푼",
+        "note": null,
+        "raw_text": "자른 김치 2~3스푼 스푼"
+      }
+    ],
+    "steps": [
+      "통조림 햄을 팬이나 전골 냄비에 대략 숟가락으로 퍼서 올려줍니다.",
+      "비엔나 소시지 같은 것들을 먹기 좋게 썰어서 올려줍니다.",
+      "양파를 대략 썰어서 올려줍니다.",
+      "두부를 먹기 좋게 썰어서 올려줍니다.",
+      "자른 김치를 2~3스푼 올려줍니다.",
+      "선택한 우동이나 매콤 맛을 가진 컵누들을 면과 스프로 올려줍니다.",
+      "고추장 1/2스푼과 베이크드 빈스를 넣고 케첩 2스푼을 넣습니다.",
+      "물 종이컵 3컵 (약 540ml)을 부어줍니다.",
+      "고온으로 섻은 불에서 정확히 5분만 푹 끓여줍니다.",
+      "후추를 한번 뿌려주면 완성됩니다."
+    ],
+    "tips": [],
+    "curated_at": "2026-11-11T08:42:46+00:00",
+    "curation_model": "qwen2.5:3b"
+  },
+  {
+    "video_id": "myOPYHQ6xyc-01",
+    "source_video_id": "myOPYHQ6xyc",
+    "name": "방울토마토 마리네이드",
+    "summary": "방울토마토를 팔팔 끓여서 껍질을 벗긴 후 양파와 함께 조리하여 마리네이드로 만듭니다.",
+    "servings": 1,
+    "prep_minutes": null,
+    "cook_minutes": null,
+    "confidence": 0.9,
+    "needs_review": false,
+    "source_kind": "automated_curated",
+    "source_url": "https://www.youtube.com/watch?v=myOPYHQ6xyc&t=0s",
+    "published_at": null,
+    "video_title": "집에 여자친구가 놀러 왔을 때 이대로만 하세요.",
+    "ingredients": [
+      {
+        "position": 1,
+        "section": "재료 또는 양념",
+        "name": "방울토마토",
+        "amount": null,
+        "unit": null,
+        "note": null,
+        "raw_text": "방울토마토"
+      },
+      {
+        "position": 2,
+        "section": "재료 또는 양념",
+        "name": "양파",
+        "amount": null,
+        "unit": null,
+        "note": null,
+        "raw_text": "양파"
+      },
+      {
+        "position": 3,
+        "section": "재료 또는 양념",
+        "name": "깻잎",
+        "amount": null,
+        "unit": null,
+        "note": null,
+        "raw_text": "깻잎"
+      },
+      {
+        "position": 4,
+        "section": "재료 또는 양념",
+        "name": "올리브유",
+        "amount": null,
+        "unit": null,
+        "note": null,
+        "raw_text": "올리브유"
+      },
+      {
+        "position": 5,
+        "section": "재료 또는 양념",
+        "name": "식초",
+        "amount": "1",
+        "unit": "큰술",
+        "note": null,
+        "raw_text": "식초 1 큰술"
+      },
+      {
+        "position": 6,
+        "section": "재료 또는 양념",
+        "name": "꿀",
+        "amount": "1",
+        "unit": "큰술",
+        "note": null,
+        "raw_text": "꿀 1 큰술"
+      },
+      {
+        "position": 7,
+        "section": "재료 또는 양념",
+        "name": "소금",
+        "amount": "4",
+        "unit": "큰술",
+        "note": null,
+        "raw_text": "소금 4 큰술"
+      },
+      {
+        "position": 8,
+        "section": "재료 또는 양념",
+        "name": "후추",
+        "amount": "1",
+        "unit": "큰술",
+        "note": null,
+        "raw_text": "후추 1 큰술"
+      }
+    ],
+    "steps": [
+      "방울토마토를 준비하고 흐르는 물로 세척합니다, 꼭지를 제거합니다.",
+      "팔팔 끓는 물에 방울토마토를 넣고 30초간 데칩니다.",
+      "보글보글 뜨거운 물에 방울토마토를 넣고 30초간 데칩니다.",
+      "방울토마토의 껍질이 벗겨질 때까지 30초간 데칩니다.",
+      "방울토마토의 껍질이 벗겨질 때까지 물을 베어주고 30초간 데칩니다.",
+      "방울토마토의 껍질이 벗겨질 때까지 뜨거운 물을 베어주고 30초간 데칩니다.",
+      "방울토마토의 껍질이 벗겨질 때까지 30초간 데칩니다.",
+      "방울토마토의 껍질이 벗겨질 때까지 30초간 데칩니다.",
+      "방울토마토의 껍질이 벗겨질 때까지 30초간 데칩니다.",
+      "방울토마토의 껍질이 벗겨질 때까지 30초간 데칩니다."
+    ],
+    "tips": [],
+    "curated_at": "2026-11-11T08:45:42+00:00",
+    "curation_model": "qwen2.5:3b"
+  },
+  {
+    "video_id": "Rhorjv__9_I-01",
+    "source_video_id": "Rhorjv__9_I",
+    "name": "전자레인지 차돌밥",
+    "summary": "전자레인지를 이용해 만든 차돌박이와 팽이버섯, 부추의 차돌밥",
+    "servings": null,
+    "prep_minutes": null,
+    "cook_minutes": null,
+    "confidence": 0.9,
+    "needs_review": false,
+    "source_kind": "automated_curated",
+    "source_url": "https://www.youtube.com/watch?v=Rhorjv__9_I&t=0s",
+    "published_at": null,
+    "video_title": "이거 요즘 SNS에서 난리 났음",
+    "ingredients": [
+      {
+        "position": 1,
+        "section": "재료 또는 양념",
+        "name": "차돌박이",
+        "amount": "150g",
+        "unit": null,
+        "note": null,
+        "raw_text": "차돌박이 150g"
+      },
+      {
+        "position": 2,
+        "section": "재료 또는 양념",
+        "name": "팽이버섯",
+        "amount": null,
+        "unit": null,
+        "note": null,
+        "raw_text": "팽이버섯"
+      },
+      {
+        "position": 3,
+        "section": "재료 또는 양념",
+        "name": "부추",
+        "amount": null,
+        "unit": null,
+        "note": null,
+        "raw_text": "부추"
+      }
+    ],
+    "steps": [
+      "전기레인지에 차돌박이를 잘게 썰어 준비한다.",
+      "팽이버섯과 차돌박이를 밥 1공기에 올려준다.",
+      "랩을 씌워준 뒤 전자레인지에 4~5분간 돌려준다.",
+      "전자레인지에서 차돌박이와 팽이버섯을 뽑아 준비한다.",
+      "부추를 잘게 썰어 준비한다.",
+      "부추와 계란 노른자, 양념장을 뿌려준다.",
+      "양념장은 진간장 2스푼, 설탕 1/2스푼, 고춧가루 1스푼, 식초 1스푼, 참기름 1스푼, 통깨 1스푼으로 만든다."
+    ],
+    "tips": [],
+    "curated_at": "2026-11-11T08:51:07+00:00",
+    "curation_model": "qwen2.5:3b"
   }
 ]
