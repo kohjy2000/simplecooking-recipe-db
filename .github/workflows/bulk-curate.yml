@@ -10,6 +10,9 @@ on:
         type: string
   schedule:
     - cron: "17 6 * * *"
+  workflow_run:
+    workflows: ["Ingest recipes"]
+    types: [completed]
 
 permissions:
   actions: write
@@ -21,6 +24,7 @@ concurrency:
 
 jobs:
   plan:
+    if: github.event_name != 'workflow_run' || github.event.workflow_run.conclusion == 'success'
     runs-on: ubuntu-latest
     outputs:
       eligible: ${{ steps.plan.outputs.eligible }}
