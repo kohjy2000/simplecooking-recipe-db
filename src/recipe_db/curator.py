@@ -27,6 +27,60 @@ PANTRY_EVIDENCE_EXEMPT = {
     "식초",
     "깨",
 }
+INGREDIENT_EVIDENCE_ALIASES = {
+    "스팸": ("spam", "cannedham", "luncheonmeat"),
+    "햄": ("ham", "cannedham", "luncheonmeat"),
+    "감자": ("potato",),
+    "당근": ("carrot",),
+    "애호박": ("zucchini", "courgette"),
+    "호박": ("pumpkin", "squash", "zucchini"),
+    "고구마": ("sweetpotato",),
+    "양파": ("onion",),
+    "대파": ("greenonion", "scallion", "springonion"),
+    "마늘": ("garlic",),
+    "다진마늘": ("mincedgarlic", "garlic"),
+    "버섯": ("mushroom",),
+    "두부": ("tofu",),
+    "계란": ("egg",),
+    "달걀": ("egg",),
+    "밥": ("rice",),
+    "참치": ("tuna",),
+    "김치": ("kimchi",),
+    "양배추": ("cabbage",),
+    "배추": ("cabbage",),
+    "브로콜리": ("broccoli",),
+    "토마토": ("tomato",),
+    "오이": ("cucumber",),
+    "옥수수": ("corn",),
+    "콩나물": ("beansprout",),
+    "돼지고기": ("pork",),
+    "삼겹살": ("porkbelly",),
+    "소고기": ("beef",),
+    "닭고기": ("chicken",),
+    "닭가슴살": ("chickenbreast",),
+    "새우": ("shrimp", "prawn"),
+    "어묵": ("fishcake",),
+    "라면": ("ramen", "instantnoodle"),
+    "국수": ("noodle",),
+    "치즈": ("cheese",),
+    "우유": ("milk",),
+    "버터": ("butter",),
+    "고추장": ("gochujang", "redpepperpaste", "chilipaste"),
+    "고춧가루": ("redpepperpowder", "chilipowder", "pepperflakes"),
+    "간장": ("soysauce",),
+    "굴소스": ("oystersauce",),
+    "멸치액젓": ("anchovyextract", "anchovyfishsauce", "fishsauce"),
+    "설탕": ("sugar",),
+    "소금": ("salt",),
+    "후추": ("pepper",),
+    "식용유": ("cookingoil", "oil"),
+    "참기름": ("sesameoil",),
+    "식초": ("vinegar",),
+    "마요네즈": ("mayonnaise", "mayo"),
+    "밀가루": ("flour",),
+    "전분": ("starch",),
+    "물": ("water",),
+}
 STEP_NOISE = ("구독", "좋아요", "알림 설정", "안녕하세요", "시청해", "영상에서")
 STEP_GROUNDING_TERMS = (
     "깨끗이",
@@ -104,6 +158,7 @@ def build_prompt(raw_recipe: dict[str, Any], source_bundle: str) -> str:
 - 영상 제목이 '5가지', '3개'처럼 개수를 말하면 반드시 그 개수만큼 서로 다른 레시피로 분리하세요.
 - 문장이 깨진 자막을 그대로 복사하지 말고 자연스러운 한국어 조리 문장으로 정리하세요.
 - 재료와 계량은 자료에서 확인되는 것만 쓰세요. 양이 분명하지 않으면 amount와 unit을 null로 두세요.
+- 각 재료의 source_quote에는 그 재료를 확인한 원문 구절을 번역하거나 고치지 말고 그대로 복사하세요.
 - 일반 상식으로 재료, 수량, 온도, 시간을 새로 만들어내지 마세요.
 - 각 레시피는 재료 2개 이상, 조리 단계 3~8개로 작성하세요.
 - 인사, 시식평, 구독 요청, 농담은 조리 단계에서 제외하세요.
@@ -119,7 +174,7 @@ JSON 형식:
       "servings": 1,
       "start_seconds": 0,
       "ingredients": [
-        {{"section": "재료 또는 양념", "name": "재료명", "amount": "1/2", "unit": "큰술", "note": null}}
+        {{"section": "재료 또는 양념", "name": "재료명", "amount": "1/2", "unit": "큰술", "note": null, "source_quote": "원문에서 재료를 확인한 짧은 구절"}}
       ],
       "steps": ["자연스러운 한국어 조리 문장"],
       "tips": ["자료에서 확인되는 조리 팁"]
@@ -224,19 +279,6 @@ def _expected_recipe_count(title: str) -> int | None:
     return count if 2 <= count <= 12 else None
 
 
-def _evidence_ratio(ingredients: list[dict[str, Any]], source_text: str) -> float:
-    source = _compact(source_text)
-    candidates = [
-        ingredient["name"]
-        for ingredient in ingredients
-        if ingredient["name"] not in PANTRY_EVIDENCE_EXEMPT
-    ]
-    if not candidates:
-        return 1.0
-    matches = sum(_compact(name) in source for name in candidates)
-    return matches / len(candidates)
-
-
 def _amount_variants(amount: str) -> set[str]:
     variants = {_compact(amount)}
     mapped = {
@@ -294,6 +336,7 @@ def _quantity_supported(
 def _ingredient_is_supported(
     name: str,
     *,
+    source_quote: str | None,
     title: str,
     description_text: str,
     caption_text: str | None,
@@ -307,6 +350,11 @@ def _ingredient_is_supported(
         return key in _compact(source_text)
     if key in _compact(title) or key in _compact(description_text):
         return True
+    quote = _compact(source_quote or "")
+    if len(quote) >= 3 and quote in _compact(source_text):
+        aliases = INGREDIENT_EVIDENCE_ALIASES.get(key, ())
+        if key in quote or any(_compact(alias) in quote for alias in aliases):
+            return True
     mentions = _compact(caption_text).count(key)
     return mentions >= (1 if name in PANTRY_EVIDENCE_EXEMPT else 2)
 
@@ -357,6 +405,7 @@ def normalize_model_output(
 
         ingredients: list[dict[str, Any]] = []
         ingredient_names: set[str] = set()
+        ingredient_quotes: dict[str, str | None] = {}
         for position, ingredient in enumerate(raw_ingredients, start=1):
             if not isinstance(ingredient, dict):
                 raise CurationError(f"Recipe {index} contains an invalid ingredient")
@@ -370,6 +419,8 @@ def normalize_model_output(
             amount = _clean_string(ingredient.get("amount"), maximum=20)
             unit = _clean_string(ingredient.get("unit"), maximum=20)
             note = _clean_string(ingredient.get("note"), maximum=80)
+            source_quote = _clean_string(ingredient.get("source_quote"), maximum=120)
+            ingredient_quotes[key] = source_quote
             section = _clean_string(ingredient.get("section"), maximum=30) or "재료"
             if not _quantity_supported(
                 name=ingredient_name,
@@ -391,13 +442,14 @@ def normalize_model_output(
                     "raw_text": raw_text,
                 }
             )
-        if len(ingredients) < 2 or _evidence_ratio(ingredients, source_text) < 0.5:
-            raise CurationError(f"Recipe {index} ingredients are not sufficiently supported by source")
+        if len(ingredients) < 2:
+            raise CurationError(f"Recipe {index} has fewer than two unique ingredients")
         unsupported = [
             item["name"]
             for item in ingredients
             if not _ingredient_is_supported(
                 item["name"],
+                source_quote=ingredient_quotes.get(_compact(item["name"])),
                 title=title,
                 description_text=description_text,
                 caption_text=caption_text,
@@ -493,6 +545,9 @@ def curate_batch(
     endpoint: str,
     generate: Callable[[str], str] | None = None,
     video_ids: list[str] | None = None,
+    shard_index: int | None = None,
+    shard_count: int | None = None,
+    review: bool = True,
 ) -> dict[str, int]:
     raw_file, curated_file, state_file = map(Path, (raw_path, curated_path, state_path))
     raw_recipes = _load_json(raw_file, [])
@@ -519,6 +574,12 @@ def curate_batch(
             video_state.get(str(recipe.get("video_id")), {}).get("attempts", 0)
         )
     )
+    if shard_count is not None:
+        if shard_count < 1 or shard_index is None or not 0 <= shard_index < shard_count:
+            raise CurationError("Invalid curation shard configuration")
+        candidates = [
+            recipe for position, recipe in enumerate(candidates) if position % shard_count == shard_index
+        ]
     candidates = candidates[:max_new]
     stats = {"attempted": 0, "completed": 0, "failed": 0, "recipes_added": 0}
 
@@ -548,12 +609,13 @@ def curate_batch(
                 if generate is not None
                 else call_ollama(prompt, model=model, endpoint=endpoint)
             )
-            review_prompt = build_review_prompt(source, generated)
-            generated = (
-                generate(review_prompt)
-                if generate is not None
-                else call_ollama(review_prompt, model=model, endpoint=endpoint)
-            )
+            if review:
+                review_prompt = build_review_prompt(source, generated)
+                generated = (
+                    generate(review_prompt)
+                    if generate is not None
+                    else call_ollama(review_prompt, model=model, endpoint=endpoint)
+                )
             recipes = normalize_model_output(
                 generated,
                 raw_recipe=raw_recipe,
@@ -580,3 +642,69 @@ def curate_batch(
         _write_json(curated_file, curated_recipes)
         _write_json(state_file, state)
     return stats
+
+
+def plan_curation(
+    *,
+    raw_path: str | Path,
+    curated_path: str | Path,
+    state_path: str | Path,
+    max_shards: int,
+) -> dict[str, Any]:
+    raw_recipes = _load_json(Path(raw_path), [])
+    curated_recipes = _load_json(Path(curated_path), [])
+    state = _load_json(Path(state_path), {"videos": {}})
+    video_state = state.get("videos") or {}
+    completed_ids = {
+        str(recipe.get("source_video_id") or recipe.get("video_id", "").rsplit("-", 1)[0])
+        for recipe in curated_recipes
+    }
+    eligible = [
+        recipe
+        for recipe in raw_recipes
+        if str(recipe.get("video_id")) not in completed_ids
+        and int(video_state.get(str(recipe.get("video_id")), {}).get("attempts", 0)) < MAX_ATTEMPTS
+    ]
+    shard_count = min(max(max_shards, 0), len(eligible))
+    return {
+        "eligible": len(eligible),
+        "shard_count": shard_count,
+        "shards": list(range(shard_count)),
+    }
+
+
+def merge_curation_shards(
+    *,
+    curated_path: str | Path,
+    state_path: str | Path,
+    shards_dir: str | Path,
+) -> dict[str, int]:
+    curated_file = Path(curated_path)
+    state_file = Path(state_path)
+    curated_recipes = _load_json(curated_file, [])
+    state = _load_json(state_file, {"videos": {}})
+    video_state = state.setdefault("videos", {})
+    known_recipe_ids = {str(recipe.get("video_id")) for recipe in curated_recipes}
+    recipes_added = 0
+    states_merged = 0
+
+    root = Path(shards_dir)
+    for shard_curated in sorted(root.rglob("curated.json")):
+        for recipe in _load_json(shard_curated, []):
+            recipe_id = str(recipe.get("video_id"))
+            if recipe_id and recipe_id not in known_recipe_ids:
+                curated_recipes.append(recipe)
+                known_recipe_ids.add(recipe_id)
+                recipes_added += 1
+
+    for shard_state in sorted(root.rglob("state.json")):
+        shard_videos = (_load_json(shard_state, {"videos": {}}).get("videos") or {})
+        for video_id, entry in shard_videos.items():
+            current = video_state.get(video_id)
+            if current is None or int(entry.get("attempts", 0)) >= int(current.get("attempts", 0)):
+                video_state[video_id] = entry
+                states_merged += 1
+
+    _write_json(curated_file, curated_recipes)
+    _write_json(state_file, state)
+    return {"recipes_added": recipes_added, "states_merged": states_merged}

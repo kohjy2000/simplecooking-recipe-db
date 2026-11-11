@@ -5,7 +5,12 @@ import json
 import pytest
 
 from recipe_db import curator
-from recipe_db.curator import CurationError, normalize_model_output
+from recipe_db.curator import (
+    CurationError,
+    merge_curation_shards,
+    normalize_model_output,
+    plan_curation,
+)
 
 
 def _raw_recipe() -> dict[str, object]:
@@ -236,3 +241,100 @@ def test_curate_batch_can_target_a_video(tmp_path, monkeypatch) -> None:
     state = json.loads(state_path.read_text(encoding="utf-8"))
     assert "video123" not in state["videos"]
     assert state["videos"]["video456"]["status"] == "completed"
+
+
+def test_english_source_quote_supports_korean_ingredient_name() -> None:
+    payload = json.loads(_model_output())
+    payload["recipes"] = payload["recipes"][:1]
+    payload["recipes"][0]["ingredients"] = [
+        {
+            "section": "재료",
+            "name": "감자",
+            "amount": None,
+            "unit": None,
+            "source_quote": "slice the potato",
+        },
+        {
+            "section": "재료",
+            "name": "당근",
+            "amount": None,
+            "unit": None,
+            "source_quote": "add the carrot",
+        },
+    ]
+    raw = _raw_recipe()
+    raw["video_title"] = "간단한 채소 요리"
+    source = "slice the potato and add the carrot to the pan"
+
+    recipes = normalize_model_output(
+        json.dumps(payload, ensure_ascii=False),
+        raw_recipe=raw,
+        source_text=source,
+        caption_text=source,
+        model="test-model",
+    )
+
+    assert [item["name"] for item in recipes[0]["ingredients"]] == ["감자", "당근"]
+
+
+def test_english_quote_does_not_support_unrelated_garbled_name() -> None:
+    payload = json.loads(_model_output())
+    payload["recipes"] = payload["recipes"][:1]
+    payload["recipes"][0]["ingredients"][0].update(
+        {"name": "은주", "source_quote": "add the onion"}
+    )
+    raw = _raw_recipe()
+    raw["video_title"] = "간단한 채소 요리"
+
+    with pytest.raises(CurationError, match="weakly supported ingredients: 은주"):
+        normalize_model_output(
+            json.dumps(payload, ensure_ascii=False),
+            raw_recipe=raw,
+            source_text="add the onion 참치 밥 김치",
+            caption_text="add the onion 참치 밥 김치",
+            model="test-model",
+        )
+
+
+def test_plan_and_merge_parallel_curation_shards(tmp_path) -> None:
+    raw_path = tmp_path / "raw.json"
+    curated_path = tmp_path / "curated.json"
+    state_path = tmp_path / "state.json"
+    shards_dir = tmp_path / "shards"
+    raw = []
+    for video_id in ("done", "exhausted", "new"):
+        recipe = _raw_recipe()
+        recipe["video_id"] = video_id
+        raw.append(recipe)
+    raw_path.write_text(json.dumps(raw), encoding="utf-8")
+    curated_path.write_text(
+        json.dumps([{"video_id": "done-01", "source_video_id": "done"}]), encoding="utf-8"
+    )
+    state_path.write_text(
+        json.dumps({"videos": {"exhausted": {"attempts": 3}}}), encoding="utf-8"
+    )
+
+    plan = plan_curation(
+        raw_path=raw_path,
+        curated_path=curated_path,
+        state_path=state_path,
+        max_shards=20,
+    )
+    assert plan == {"eligible": 1, "shard_count": 1, "shards": [0]}
+
+    shard = shards_dir / "curated-shard-0"
+    shard.mkdir(parents=True)
+    shard_recipe = {"video_id": "new-01", "source_video_id": "new"}
+    (shard / "curated.json").write_text(json.dumps([shard_recipe]), encoding="utf-8")
+    (shard / "state.json").write_text(
+        json.dumps({"videos": {"new": {"attempts": 1, "status": "completed"}}}),
+        encoding="utf-8",
+    )
+
+    stats = merge_curation_shards(
+        curated_path=curated_path,
+        state_path=state_path,
+        shards_dir=shards_dir,
+    )
+    assert stats["recipes_added"] == 1
+    assert len(json.loads(curated_path.read_text(encoding="utf-8"))) == 2

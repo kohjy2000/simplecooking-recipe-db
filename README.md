@@ -102,11 +102,13 @@ curl -X POST http://127.0.0.1:8765/api/recommend \
 GitHub의 **Actions → Ingest recipes → Run workflow**에서 한 번에 처리할 영상 수를 바꿔 수동 실행할
 수도 있습니다. 실행 후 DB와 내보내기 파일을 커밋하고, 동일 파일을 30일 보관 아티팩트로 올립니다.
 
-`Curate public recipes` 워크플로는 매일 05:47·17:47 UTC에 실행됩니다. 별도 API 키나 OpenAI API
-과금 없이 GitHub Actions 안에서 `qwen2.5:7b` 공개 모델을 Ollama로 실행합니다. 기본적으로 한 번에
-영상 3개를 정리하며, 제목·영상 설명·반복 자막으로 근거를 교차 확인합니다. 근거가 약한 재료나
-일반 상식으로 보충한 조리 단계가 하나라도 있으면 공개하지 않고 최대 3회까지 재시도합니다. 품질검사를
-통과한 공개 레시피가 바뀔 때만 `Deploy recommendation site`를 호출해 사이트까지 자동 재배포합니다.
+`Bulk curate all recipes` 워크플로는 매일 06:17 UTC에 실행됩니다. 별도 API 키나 OpenAI API 과금
+없이 GitHub Actions에서 `qwen2.5:3b` 공개 모델을 최대 20개 작업으로 병렬 실행해 아직 공개되지 않은
+원시 레시피 전체를 처리합니다. 제목·영상 설명·자막 원문 인용으로 재료 근거를 확인하며, 작업별 결과를
+격리한 뒤 마지막 단계에서 하나의 공개 DB로 병합합니다. 근거가 약하거나 깨진 결과는 공개하지 않고
+최대 3회까지 재시도합니다. 공개 레시피가 바뀔 때만 사이트를 자동 재배포합니다.
+
+`Curate public recipes`는 특정 영상 재검수와 모델 비교를 위한 수동 실행용 워크플로로 유지합니다.
 
 YouTube가 인증을 요구하면 저장소 Secret에 쿠키 파일 자체를 넣지 마세요. 로컬에서는
 `YTDLP_COOKIES_FILE`에 Netscape 형식 쿠키 파일 경로를 지정할 수 있습니다. GitHub Actions의 인증

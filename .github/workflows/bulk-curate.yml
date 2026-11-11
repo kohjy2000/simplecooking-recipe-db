@@ -1,0 +1,160 @@
+name: Bulk curate all recipes
+
+on:
+  workflow_dispatch:
+    inputs:
+      max_shards:
+        description: "Maximum parallel curation workers"
+        required: true
+        default: "20"
+        type: string
+  schedule:
+    - cron: "17 6 * * *"
+
+permissions:
+  actions: write
+  contents: write
+
+concurrency:
+  group: recipe-curation
+  cancel-in-progress: false
+
+jobs:
+  plan:
+    runs-on: ubuntu-latest
+    outputs:
+      eligible: ${{ steps.plan.outputs.eligible }}
+      has_work: ${{ steps.plan.outputs.has_work }}
+      shard_count: ${{ steps.plan.outputs.shard_count }}
+      shards: ${{ steps.plan.outputs.shards }}
+    steps:
+      - uses: actions/checkout@v4
+      - uses: astral-sh/setup-uv@v6
+        with:
+          enable-cache: true
+      - run: uv sync --frozen
+      - id: plan
+        env:
+          MAX_SHARDS: ${{ inputs.max_shards || '20' }}
+        run: |
+          plan="$(uv run recipe-db curation-plan --max-shards "$MAX_SHARDS")"
+          eligible="$(jq -r '.eligible' <<< "$plan")"
+          shard_count="$(jq -r '.shard_count' <<< "$plan")"
+          echo "eligible=$eligible" >> "$GITHUB_OUTPUT"
+          echo "shard_count=$shard_count" >> "$GITHUB_OUTPUT"
+          echo "shards=$(jq -c '.shards' <<< "$plan")" >> "$GITHUB_OUTPUT"
+          if [[ "$eligible" -gt 0 ]]; then
+            echo "has_work=true" >> "$GITHUB_OUTPUT"
+          else
+            echo "has_work=false" >> "$GITHUB_OUTPUT"
+          fi
+
+  curate:
+    needs: plan
+    if: needs.plan.outputs.has_work == 'true'
+    strategy:
+      fail-fast: false
+      max-parallel: 20
+      matrix:
+        shard: ${{ fromJSON(needs.plan.outputs.shards) }}
+    runs-on: ubuntu-latest
+    timeout-minutes: 360
+    env:
+      OLLAMA_HOST: 127.0.0.1:11434
+      OLLAMA_MODELS: /home/runner/.ollama/models
+      OLLAMA_CONTEXT_LENGTH: "24576"
+      CURATION_MODEL: qwen2.5:3b
+    steps:
+      - uses: actions/checkout@v4
+      - uses: astral-sh/setup-uv@v6
+        with:
+          enable-cache: true
+      - run: uv sync --frozen
+      - name: Cache local curation model
+        uses: actions/cache@v4
+        with:
+          path: ~/.ollama/models
+          key: ${{ runner.os }}-ollama-qwen2.5:3b-v1
+      - name: Install local model runner
+        run: curl -fsSL https://ollama.com/install.sh | sh
+      - name: Prepare isolated shard files
+        run: |
+          mkdir -p shard-output
+          cp exports/curated_recipes.json shard-output/curated.json
+          cp exports/curation_state.json shard-output/state.json
+      - name: Curate shard
+        env:
+          SHARD_INDEX: ${{ matrix.shard }}
+          SHARD_COUNT: ${{ needs.plan.outputs.shard_count }}
+        run: |
+          nohup ollama serve >/tmp/ollama.log 2>&1 &
+          for attempt in {1..30}; do
+            if curl -fsS http://127.0.0.1:11434/api/tags >/dev/null; then
+              break
+            fi
+            sleep 2
+          done
+          ollama pull "$CURATION_MODEL"
+          uv run recipe-db curate \
+            --raw exports/recipes.json \
+            --curated shard-output/curated.json \
+            --state shard-output/state.json \
+            --max-new 1000 \
+            --model "$CURATION_MODEL" \
+            --single-pass \
+            --shard-index "$SHARD_INDEX" \
+            --shard-count "$SHARD_COUNT"
+          jq empty shard-output/curated.json shard-output/state.json
+      - uses: actions/upload-artifact@v4
+        if: always()
+        with:
+          name: curated-shard-${{ matrix.shard }}
+          path: |
+            shard-output/curated.json
+            shard-output/state.json
+          if-no-files-found: error
+          retention-days: 2
+
+  merge:
+    needs: [plan, curate]
+    if: always() && needs.plan.outputs.has_work == 'true'
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          fetch-depth: 0
+      - uses: astral-sh/setup-uv@v6
+        with:
+          enable-cache: true
+      - run: uv sync --frozen
+      - uses: actions/download-artifact@v4
+        with:
+          pattern: curated-shard-*
+          path: bulk-artifacts
+      - name: Merge and validate public database
+        run: |
+          uv run recipe-db merge-curation-shards bulk-artifacts
+          jq empty exports/curated_recipes.json exports/curation_state.json
+          uv run pytest
+          uv run ruff check .
+      - name: Commit merged recipes
+        env:
+          GH_TOKEN: ${{ github.token }}
+        run: |
+          if ! git status --porcelain -- exports/curated_recipes.json exports/curation_state.json | grep -q .; then
+            echo "No bulk curation changes to commit."
+            exit 0
+          fi
+          curated_changed=false
+          if ! git diff --quiet -- exports/curated_recipes.json; then
+            curated_changed=true
+          fi
+          git config user.name "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git add exports/curated_recipes.json exports/curation_state.json
+          git commit -m "data: merge bulk curated recipes"
+          git pull --rebase origin main
+          git push origin main
+          if [[ "$curated_changed" == "true" ]]; then
+            gh workflow run pages.yml --ref main
+          fi

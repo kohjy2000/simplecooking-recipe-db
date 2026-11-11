@@ -4,7 +4,7 @@ import argparse
 import json
 import os
 
-from .curator import curate_batch
+from .curator import curate_batch, merge_curation_shards, plan_curation
 from .db import connect, initialize
 from .exporter import export_all
 from .pipeline import discover, process_pending
@@ -55,7 +55,27 @@ def _parser() -> argparse.ArgumentParser:
         default=[],
         help="Curate only this video ID; repeat to select multiple videos",
     )
+    curate_parser.add_argument("--single-pass", action="store_true")
+    curate_parser.add_argument("--shard-index", type=int)
+    curate_parser.add_argument("--shard-count", type=int)
     curate_parser.set_defaults(handler=_curate)
+
+    plan_parser = subparsers.add_parser(
+        "curation-plan", help="Plan parallel quality-gated curation shards"
+    )
+    plan_parser.add_argument("--raw", default="exports/recipes.json")
+    plan_parser.add_argument("--curated", default="exports/curated_recipes.json")
+    plan_parser.add_argument("--state", default="exports/curation_state.json")
+    plan_parser.add_argument("--max-shards", type=int, default=20)
+    plan_parser.set_defaults(handler=_curation_plan)
+
+    merge_parser = subparsers.add_parser(
+        "merge-curation-shards", help="Merge parallel curation artifacts"
+    )
+    merge_parser.add_argument("shards_dir")
+    merge_parser.add_argument("--curated", default="exports/curated_recipes.json")
+    merge_parser.add_argument("--state", default="exports/curation_state.json")
+    merge_parser.set_defaults(handler=_merge_curation_shards)
 
     recommend_parser = subparsers.add_parser(
         "recommend", help="Recommend recipes from available ingredients"
@@ -160,6 +180,12 @@ def _status(args: argparse.Namespace) -> None:
 def _curate(args: argparse.Namespace) -> None:
     if args.max_new < 1:
         raise SystemExit("--max-new must be at least 1")
+    if (args.shard_index is None) != (args.shard_count is None):
+        raise SystemExit("--shard-index and --shard-count must be used together")
+    if args.shard_count is not None and (
+        args.shard_count < 1 or not 0 <= args.shard_index < args.shard_count
+    ):
+        raise SystemExit("invalid shard index or count")
     stats = curate_batch(
         raw_path=args.raw,
         curated_path=args.curated,
@@ -168,6 +194,30 @@ def _curate(args: argparse.Namespace) -> None:
         model=args.model,
         endpoint=args.ollama_url,
         video_ids=args.video_id or None,
+        shard_index=args.shard_index,
+        shard_count=args.shard_count,
+        review=not args.single_pass,
+    )
+    print(json.dumps(stats, ensure_ascii=False, indent=2))
+
+
+def _curation_plan(args: argparse.Namespace) -> None:
+    if args.max_shards < 1:
+        raise SystemExit("--max-shards must be at least 1")
+    plan = plan_curation(
+        raw_path=args.raw,
+        curated_path=args.curated,
+        state_path=args.state,
+        max_shards=args.max_shards,
+    )
+    print(json.dumps(plan, ensure_ascii=False))
+
+
+def _merge_curation_shards(args: argparse.Namespace) -> None:
+    stats = merge_curation_shards(
+        curated_path=args.curated,
+        state_path=args.state,
+        shards_dir=args.shards_dir,
     )
     print(json.dumps(stats, ensure_ascii=False, indent=2))
 
