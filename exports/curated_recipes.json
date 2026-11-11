@@ -18519,5 +18519,1988 @@
     "tips": [],
     "curated_at": "2026-11-11T16:07:34+00:00",
     "curation_model": "qwen2.5:3b"
+  },
+  {
+    "video_id": "Qbvng_uwPYI-01",
+    "source_video_id": "Qbvng_uwPYI",
+    "name": "경상도 소고기 무국",
+    "summary": "한국 요리명, 자연스러운 한국어 조리 문장으로 정리한 요리 설명",
+    "servings": null,
+    "prep_minutes": null,
+    "cook_minutes": null,
+    "confidence": 0.9,
+    "needs_review": false,
+    "source_kind": "automated_curated",
+    "source_url": "https://www.youtube.com/watch?v=Qbvng_uwPYI&t=0s",
+    "published_at": null,
+    "video_title": "서울사람 99%가 모르는 '경상도 소고기 무국' 맛있게 끓이는 방법",
+    "ingredients": [
+      {
+        "position": 1,
+        "section": "재료 또는 양념",
+        "name": "소고기",
+        "amount": "150g",
+        "unit": "g",
+        "note": null,
+        "raw_text": "소고기 150g g"
+      },
+      {
+        "position": 2,
+        "section": "재료 또는 양념",
+        "name": "무",
+        "amount": null,
+        "unit": null,
+        "note": null,
+        "raw_text": "무"
+      },
+      {
+        "position": 3,
+        "section": "재료 또는 양념",
+        "name": "대파",
+        "amount": null,
+        "unit": null,
+        "note": null,
+        "raw_text": "대파"
+      },
+      {
+        "position": 4,
+        "section": "재료 또는 양념",
+        "name": "콩나물",
+        "amount": null,
+        "unit": null,
+        "note": null,
+        "raw_text": "콩나물"
+      },
+      {
+        "position": 5,
+        "section": "재료 또는 양념",
+        "name": "다진 마늘",
+        "amount": null,
+        "unit": null,
+        "note": null,
+        "raw_text": "다진 마늘"
+      },
+      {
+        "position": 6,
+        "section": "재료 또는 양념",
+        "name": "고춧가루",
+        "amount": null,
+        "unit": null,
+        "note": null,
+        "raw_text": "고춧가루"
+      },
+      {
+        "position": 7,
+        "section": "재료 또는 양념",
+        "name": "물",
+        "amount": null,
+        "unit": null,
+        "note": null,
+        "raw_text": "물"
+      }
+    ],
+    "steps": [
+      "소고기를 불고기용으로 준비해주세요.",
+      "무를 적당한 크기로 썰어주세요.",
+      "대파를 반 갈라주고 큼지막하게 숭덩숭덩 썰어주세요.",
+      "콩나물을 손질해주세요.",
+      "다진 마늘 한 스푼을 넣어주세요.",
+      "고춧가루 2스푼을 넣고 한번 더 볶아주세요.",
+      "물 양은 정해진 것 없이 딱 봤을 때 이건 국이다고 생각이 들게 부어주세요."
+    ],
+    "tips": [],
+    "curated_at": "2026-11-11T17:20:30+00:00",
+    "curation_model": "qwen2.5:3b"
+  },
+  {
+    "video_id": "QE9GLLU2ZqY-01",
+    "source_video_id": "QE9GLLU2ZqY",
+    "name": "순두부 계란 밥",
+    "summary": "바쁜 아침에 간편하게 만들 수 있는 순두부와 계란을 이용한 밥 요리",
+    "servings": null,
+    "prep_minutes": null,
+    "cook_minutes": null,
+    "confidence": 0.9,
+    "needs_review": false,
+    "source_kind": "automated_curated",
+    "source_url": "https://www.youtube.com/watch?v=QE9GLLU2ZqY&t=0s",
+    "published_at": null,
+    "video_title": "Three soft tofu egg rice recipes (easy breakfast ideas).",
+    "ingredients": [
+      {
+        "position": 1,
+        "section": "재료 또는 양념",
+        "name": "계란",
+        "amount": "2개",
+        "unit": null,
+        "note": null,
+        "raw_text": "계란 2개"
+      },
+      {
+        "position": 2,
+        "section": "재료 또는 양념",
+        "name": "순두부",
+        "amount": "반개",
+        "unit": null,
+        "note": null,
+        "raw_text": "순두부 반개"
+      },
+      {
+        "position": 3,
+        "section": "양념",
+        "name": "진간장",
+        "amount": "2스푼",
+        "unit": "스푼",
+        "note": null,
+        "raw_text": "진간장 2스푼 스푼"
+      },
+      {
+        "position": 4,
+        "section": "양념",
+        "name": "설탕",
+        "amount": "반스푼",
+        "unit": "스푼",
+        "note": null,
+        "raw_text": "설탕 반스푼 스푼"
+      }
+    ],
+    "steps": [
+      "먼저 팬에 기름을 살짝 둘러주고 불은 꺼둔 상태입니다.",
+      "계란 2개를 톡톡 까서 넣어줍니다. 계란을 잘 풀어 줍니다. 이때 쇠젓가락으로 하게 되면 팬 이 다 긁혀서",
+      "어무이한테 등짝을 뚜두리 맞을 수도 있으니 꼭 나무젓가락으로",
+      "하이소 그리고 순두부 하나를 준비해서 반 갈라주고 순두부 절반만 넣어줍니다.",
+      "그리고 대충 으깨어주고 이 위에 진간장 2스푼을 골고루 둘러주고",
+      "집에 굴소스가 있으신 분은 진간장 대신 굴소스를 사용하시면 더 맛 있습니다.",
+      "그리고 설탕 반스푼도 둘러줍니다. 설탕을 살짝 넣게 되면 감칠맛을 올려줍니다. 이제 불을 켜고",
+      "서서히 끓어오르면 계란을 잘 저어주면서 포슬하고 촉촉하게 익혀줍니다.",
+      "다 됐으면 뜨끈한 흰밥 위로 촉촉 하게 익은 계란을 올려줍니다.",
+      "있어 보이게 파의 초록한 부분도 올려주고 빠지면 섭한 파슬리도 뿌려줍니다."
+    ],
+    "tips": [],
+    "curated_at": "2026-11-11T17:22:00+00:00",
+    "curation_model": "qwen2.5:3b"
+  },
+  {
+    "video_id": "5hIT2CcvvUc-01",
+    "source_video_id": "5hIT2CcvvUc",
+    "name": "비빔 채소와 돈가스로 만든 간단 비빔 쫄면",
+    "summary": "비빔 쫄면을 간단하게 만들어보자",
+    "servings": null,
+    "prep_minutes": null,
+    "cook_minutes": null,
+    "confidence": 0.9,
+    "needs_review": false,
+    "source_kind": "automated_curated",
+    "source_url": "https://www.youtube.com/watch?v=5hIT2CcvvUc&t=0s",
+    "published_at": null,
+    "video_title": "돈가스랑 환상적인 콤비네이션 '쫄면' 만들기",
+    "ingredients": [
+      {
+        "position": 1,
+        "section": "재료 또는 양념",
+        "name": "쫄면사리",
+        "amount": null,
+        "unit": null,
+        "note": null,
+        "raw_text": "쫄면사리"
+      },
+      {
+        "position": 2,
+        "section": "재료 또는 양념",
+        "name": "콩나물",
+        "amount": null,
+        "unit": null,
+        "note": null,
+        "raw_text": "콩나물"
+      },
+      {
+        "position": 3,
+        "section": "재료 또는 양념",
+        "name": "양배추",
+        "amount": null,
+        "unit": null,
+        "note": null,
+        "raw_text": "양배추"
+      },
+      {
+        "position": 4,
+        "section": "재료 또는 양념",
+        "name": "양파",
+        "amount": null,
+        "unit": null,
+        "note": null,
+        "raw_text": "양파"
+      },
+      {
+        "position": 5,
+        "section": "재료 또는 양념",
+        "name": "깻잎",
+        "amount": null,
+        "unit": null,
+        "note": null,
+        "raw_text": "깻잎"
+      },
+      {
+        "position": 6,
+        "section": "양념장",
+        "name": "고추장",
+        "amount": "1스푼",
+        "unit": null,
+        "note": null,
+        "raw_text": "고추장 1스푼"
+      },
+      {
+        "position": 7,
+        "section": "양념장",
+        "name": "설탕",
+        "amount": "1스푼",
+        "unit": null,
+        "note": null,
+        "raw_text": "설탕 1스푼"
+      },
+      {
+        "position": 8,
+        "section": "양념장",
+        "name": "식초",
+        "amount": "1스푼",
+        "unit": null,
+        "note": null,
+        "raw_text": "식초 1스푼"
+      },
+      {
+        "position": 9,
+        "section": "양념장",
+        "name": "돈가스 소스",
+        "amount": "1스푼",
+        "unit": null,
+        "note": null,
+        "raw_text": "돈가스 소스 1스푼"
+      },
+      {
+        "position": 10,
+        "section": "양념장",
+        "name": "참기름",
+        "amount": "1스푼",
+        "unit": null,
+        "note": null,
+        "raw_text": "참기름 1스푼"
+      }
+    ],
+    "steps": [
+      "비빔 채소와 돈가스로 만든 간단 비빔 쫄면을 만들어보자",
+      "채소는 손질하여 준비해줍니다",
+      "쫄면 사리는 3분간 삶아준 뒤 찬물에 행궈줍니다",
+      "쫄면 위로 양념장, 채소를 올려 먹습니다"
+    ],
+    "tips": [],
+    "curated_at": "2026-11-11T17:26:38+00:00",
+    "curation_model": "qwen2.5:3b"
+  },
+  {
+    "video_id": "y4WCDS1znHo-01",
+    "source_video_id": "y4WCDS1znHo",
+    "name": "쌀국수",
+    "summary": "쌀국수를 만드는 간단한 방법입니다.",
+    "servings": 1,
+    "prep_minutes": null,
+    "cook_minutes": null,
+    "confidence": 0.9,
+    "needs_review": false,
+    "source_kind": "automated_curated",
+    "source_url": "https://www.youtube.com/watch?v=y4WCDS1znHo&t=0s",
+    "published_at": null,
+    "video_title": "cheap rice noodles",
+    "ingredients": [
+      {
+        "position": 1,
+        "section": "재료 또는 양념",
+        "name": "쌀국수면",
+        "amount": null,
+        "unit": null,
+        "note": null,
+        "raw_text": "쌀국수면"
+      },
+      {
+        "position": 2,
+        "section": "재료 또는 양념",
+        "name": "대패삼겹살",
+        "amount": "200g",
+        "unit": null,
+        "note": null,
+        "raw_text": "대패삼겹살 200g"
+      }
+    ],
+    "steps": [
+      "팬에 대패삼겹살을 올려줍니다.",
+      "기름이 살짝 나오기 시작하면 대파를 넣고 같이 볶아줍니다.",
+      "멸치액젓 1스푼, 진간장 1스푼을 넣고 볶아줍니다.",
+      "물 2+1/2컵 (약 450ml)을 부어주고 다진마늘 1/2스푼, 설탕 1/2스푼, 치킨스톡 1/3스푼, 숙주, 양파, 쌀국수면을 넣고 2~3분간 끓여줍니다.",
+      "식초 1/2스푼을 넣고 마무리해줍니다."
+    ],
+    "tips": [],
+    "curated_at": "2026-11-11T17:28:04+00:00",
+    "curation_model": "qwen2.5:3b"
+  },
+  {
+    "video_id": "UekEolhleeU-01",
+    "source_video_id": "UekEolhleeU",
+    "name": "간장계란밥",
+    "summary": "간장과 계란을 이용한 간단한 밥 요리",
+    "servings": null,
+    "prep_minutes": null,
+    "cook_minutes": null,
+    "confidence": 0.9,
+    "needs_review": false,
+    "source_kind": "automated_curated",
+    "source_url": "https://www.youtube.com/watch?v=UekEolhleeU&t=0s",
+    "published_at": null,
+    "video_title": "Simple Soy Sauce Egg Rice",
+    "ingredients": [
+      {
+        "position": 1,
+        "section": "재료 또는 양념",
+        "name": "계란",
+        "amount": "2개",
+        "unit": null,
+        "note": null,
+        "raw_text": "계란 2개"
+      },
+      {
+        "position": 2,
+        "section": "재료 또는 양념",
+        "name": "간장",
+        "amount": null,
+        "unit": null,
+        "note": null,
+        "raw_text": "간장"
+      }
+    ],
+    "steps": [
+      "팬에 기름을 두르고 계란 2개를 넣어 후라이합니다.",
+      "후라이한 계란을 빼고 남은 기름에 간장과 설탕을 넣어 끓입니다.",
+      "계란 후라이를 다시 팬에 넣고, 간장과 설탕을 넣어 끓여줍니다.",
+      "계란 후라이와 간장과 설탕이 잘 섞였을 때, 계란을 넣어줍니다.",
+      "계란이 잘 익을 때까지 팬을 뜨겁게 유지하고, 계란을 밖으로부터 안쪽으로 빼어 모으듯이 익혀줍니다.",
+      "계란이 잘 익으면, 계란 후라이와 간장과 설탕을 함께 섞어줍니다.",
+      "마무리로, 계란을 올려주고, 소금을 넣어 맛을 더합니다."
+    ],
+    "tips": [],
+    "curated_at": "2026-11-11T17:11:00+00:00",
+    "curation_model": "qwen2.5:3b"
+  },
+  {
+    "video_id": "6rJwbW4Fb8A-01",
+    "source_video_id": "6rJwbW4Fb8A",
+    "name": "초코파이와 초콜릿 반죽",
+    "summary": "초코파이와 초콜릿을 전자레인지에 녹여 브라우니 형태로 만드는 방법",
+    "servings": null,
+    "prep_minutes": null,
+    "cook_minutes": null,
+    "confidence": 0.9,
+    "needs_review": false,
+    "source_kind": "automated_curated",
+    "source_url": "https://www.youtube.com/watch?v=6rJwbW4Fb8A&t=0s",
+    "published_at": null,
+    "video_title": "초코파이와 초콜릿을 같이 전자레인지에 돌리면 생기는 일",
+    "ingredients": [
+      {
+        "position": 1,
+        "section": "재료 또는 양념",
+        "name": "초코파이",
+        "amount": "2개",
+        "unit": null,
+        "note": null,
+        "raw_text": "초코파이 2개"
+      },
+      {
+        "position": 2,
+        "section": "재료 또는 양념",
+        "name": "초코우유",
+        "amount": null,
+        "unit": null,
+        "note": null,
+        "raw_text": "초코우유"
+      },
+      {
+        "position": 3,
+        "section": "재료 또는 양념",
+        "name": "초콜릿",
+        "amount": null,
+        "unit": null,
+        "note": null,
+        "raw_text": "초콜릿"
+      }
+    ],
+    "steps": [
+      "전자레인지 사용 가능한 볼에 초코파이 2개를 넣고 초코우유 종이컵 약 50g을 넣고 전자레인지 1분간 돌려줍니다.",
+      "다 됐으면 전자레인지에서 빼주고 주걱이나 숟가락으로 녹은 초코파이를 큰 건더기가 안 보이게 잘 섞어 줍니다.",
+      "이러면 브라우니의 기본인 초코파이 반죽이 끝입니다. 전자레인지 사용 가능한 반찬통을 준비하고 식용유를 살짝 뿌려주고 닦아주면서 통안에 기름칠을 해 줍니다.",
+      "그리고 방금 만들어둔 초코파이 시트를 깔아주고 평평하게 잘 펴줍니다. 이에 초콜릿을 얹어주고 전자레인지에 2분 돌려줍니다.",
+      "그러면 초콜릿이 녹고 밑에 깔린 초코파이 시트는 포슬포슬하게 익어 있습니다.",
+      "녹은 초콜릿은 잼 바르듯이 다시 펴 발라주고 전자레인지에 1분 돌려준 초코파이 반죽물을 위로 부어줍니다. 그리고 평평하게 펴주고 또 초콜릿 올려주고 전자레인지 2분 돌려줍니다.",
+      "그리고 폭신한 빵 위에 녹은 초콜릿을 펴 주고 다시 초코파이 2개와 초코우유를 넣고 전자레인지 1분 돌려준 초코파이 반죽물을 위로 부어줍니다.",
+      "그리고 평평하게 펴주고 또 초콜릿 올려주고 전자레인지 2분 돌려줍니다.",
+      "그리고 폭신한 빵 위에 녹은 초콜릿을 펴 주고 다시 초코파이 반죽물을 부어주고 또 초콜릿 올려주고 전자레인지 2분 돌려줍니다.",
+      "그리고 원하는 크기가 될 때까지 반복해 주시면 됩니다."
+    ],
+    "tips": [],
+    "curated_at": "2026-11-11T17:32:30+00:00",
+    "curation_model": "qwen2.5:3b"
+  },
+  {
+    "video_id": "9QlKFZSVX4g-01",
+    "source_video_id": "9QlKFZSVX4g",
+    "name": "한국어 계란 토마토 볶음",
+    "summary": "간단한 계란과 토마토를 이용한 볶음 요리",
+    "servings": null,
+    "prep_minutes": null,
+    "cook_minutes": null,
+    "confidence": 0.9,
+    "needs_review": false,
+    "source_kind": "automated_curated",
+    "source_url": "https://www.youtube.com/watch?v=9QlKFZSVX4g&t=0s",
+    "published_at": null,
+    "video_title": "A fantastic tomato fried egg dish that you've never tasted before.",
+    "ingredients": [
+      {
+        "position": 1,
+        "section": "재료 또는 양념",
+        "name": "계란",
+        "amount": "3개",
+        "unit": null,
+        "note": null,
+        "raw_text": "계란 3개"
+      },
+      {
+        "position": 2,
+        "section": "재료 또는 양념",
+        "name": "토마토",
+        "amount": null,
+        "unit": null,
+        "note": null,
+        "raw_text": "토마토"
+      }
+    ],
+    "steps": [
+      "계란 3개를 톡톡톡 까서 넣어 줍니다. 계란을 풀어 줍니다. 소금을 한 꼬집 뿌려줍니다.",
+      "계란을 젓가락으로 휘저어 풀어 줍니다. 토마토를 준비해 줍니다. 토마토를 반 갈라주고 꼭지가 있는 부분은 사선으로 잘라서 빼줍니다.",
+      "토마토를 식용유에 넉넉히 둘러 주고 뜨뜻하게 데워 줍니다. 미리 풀어 놓았던 계란물을 부어줍니다.",
+      "바닥면이 살짝 부풀어 오르는 게 보이면 젓가락으로 휘저으며 스크램블 계란을 만들어 줍니다.",
+      "다 익은 스크램블 계란은 잠시 빼주고 다시 식용유를 넉넉히 둘러줍니다.",
+      "계란 찌꺼기들이 남아 있어도 상관없습니다. 토마토를 넣어 줍니다. 토마토를 식용유에 튀기듯이 한번 볶아줍니다.",
+      "토마토를 기름에 익혀주면 노화 원인이 되는 활성산소를 제거해 주는 라이코펜이 풍부해지니 토마토를 볶기만 해도 건강까지 생각하는 겁니다.",
+      "토마토 겉면이 살짝 볶아졌으면 여기에 굴 소스 한 스푼을 넣어서 감칠맛을 더해주고 진간장은 넣고 짭짤하게 간을 맞춰주고 후추도 살짝만 뿌려주고 토마토 향을 끌어올려줄 케첩을 한 스푼 가득 뿌려줍니다.",
+      "양념을 섞어 주듯이 한번 볶아줍니다. 청경채나 부추를 깨끗이 씻어 준비해 줍니다. 청경채를 넣어주고 청경채도 숨이 죽을 때까지 한번 볶아줍니다.",
+      "미리 빼두었던 몽글한 계란 스크램블도 넣어줍니다. 골고루 한 번 더 볶아주면 끝입니다."
+    ],
+    "tips": [],
+    "curated_at": "2026-11-11T17:30:47+00:00",
+    "curation_model": "qwen2.5:3b"
+  },
+  {
+    "video_id": "aeXCIhgUZ5c-01",
+    "source_video_id": "aeXCIhgUZ5c",
+    "name": "한국어 요리명",
+    "summary": "해물향과 시원한 국물 맛이 일품인 중국집 우동 스타일 해물라면",
+    "servings": null,
+    "prep_minutes": null,
+    "cook_minutes": null,
+    "confidence": 0.9,
+    "needs_review": false,
+    "source_kind": "automated_curated",
+    "source_url": "https://www.youtube.com/watch?v=aeXCIhgUZ5c&t=0s",
+    "published_at": null,
+    "video_title": "Chinese Udon style seafood ramen",
+    "ingredients": [
+      {
+        "position": 1,
+        "section": "재료 또는 양념",
+        "name": "사리곰탕 라면",
+        "amount": null,
+        "unit": null,
+        "note": null,
+        "raw_text": "사리곰탕 라면"
+      },
+      {
+        "position": 2,
+        "section": "재료 또는 양념",
+        "name": "냉동 해물",
+        "amount": null,
+        "unit": null,
+        "note": null,
+        "raw_text": "냉동 해물"
+      },
+      {
+        "position": 3,
+        "section": "재료 또는 양념",
+        "name": "숙주",
+        "amount": "100g 이상",
+        "unit": null,
+        "note": null,
+        "raw_text": "숙주 100g 이상"
+      },
+      {
+        "position": 4,
+        "section": "재료 또는 양념",
+        "name": "양파",
+        "amount": null,
+        "unit": null,
+        "note": null,
+        "raw_text": "양파"
+      },
+      {
+        "position": 5,
+        "section": "재료 또는 양념",
+        "name": "양배추",
+        "amount": null,
+        "unit": null,
+        "note": null,
+        "raw_text": "양배추"
+      }
+    ],
+    "steps": [
+      "물 3컵(약 560ml)을 넣고 냄비에 넣어 끓여줍니다.",
+      "냉동 해물과 숙주, 양파, 양배추를 넣고 끓여줍니다.",
+      "사리곰탕 라면을 넣어 끓여줍니다.",
+      "마법의 굴소스와 해물, 사리곰탕 라면을 넣어 끓여줍니다.",
+      "1분간 끓인 야채와 숙주를 넣어 끓여줍니다.",
+      "후추를 넣어 뿌려줍니다.",
+      "면을 넣어 끓여줍니다.",
+      "국물 맛을 살짝 보고, 짜다면 물을 추가하고, 싱겁다면 소금을 넣어 간을 맞춥니다.",
+      "계란을 톡 까서 뿌려줍니다."
+    ],
+    "tips": [],
+    "curated_at": "2026-11-11T17:37:48+00:00",
+    "curation_model": "qwen2.5:3b"
+  },
+  {
+    "video_id": "F_-E6-uo6Ww-01",
+    "source_video_id": "F_-E6-uo6Ww",
+    "name": "한국어 찹쌀 핫도그",
+    "summary": "간단하게 만드는 찹쌀 핫도그 레시피",
+    "servings": null,
+    "prep_minutes": null,
+    "cook_minutes": null,
+    "confidence": 0.9,
+    "needs_review": false,
+    "source_kind": "automated_curated",
+    "source_url": "https://www.youtube.com/watch?v=F_-E6-uo6Ww&t=0s",
+    "published_at": null,
+    "video_title": "[no oven, simple] Making Korean style hot dogs.",
+    "ingredients": [
+      {
+        "position": 1,
+        "section": "재료 또는 양념",
+        "name": "찹쌀가루",
+        "amount": "반컵",
+        "unit": "큰술",
+        "note": null,
+        "raw_text": "찹쌀가루 반컵 큰술"
+      },
+      {
+        "position": 2,
+        "section": "재료 또는 양념",
+        "name": "소금",
+        "amount": "한 꼬집",
+        "unit": null,
+        "note": null,
+        "raw_text": "소금 한 꼬집"
+      },
+      {
+        "position": 3,
+        "section": "재료 또는 양념",
+        "name": "설탕",
+        "amount": "두 스푼",
+        "unit": null,
+        "note": null,
+        "raw_text": "설탕 두 스푼"
+      },
+      {
+        "position": 4,
+        "section": "재료 또는 양념",
+        "name": "식용유",
+        "amount": "두 스푼",
+        "unit": null,
+        "note": null,
+        "raw_text": "식용유 두 스푼"
+      }
+    ],
+    "steps": [
+      "전자레인지 사용 가능한 그릇을 준비합니다. 마트에서 쉽게 구할 수 있는 찹쌀 가루를 준비합니다.",
+      "반컵 약 100g의 찹쌀 가루를 그릇에 넣습니다. 한 꼬집의 소금을 넣고, 두 스푼의 설탕과 두 스푼의 식용유를 넣습니다.",
+      "착쌀 가루와 똑같은 비율로 뜨거운 물을 반컵 부어 찹쌀 가루를 살짝 익혀줍니다.",
+      "이제 숟가락으로 저어주면서 찹쌀 가루가 풀리게 섞어줍니다. 랩을 씌워주고 전자레인지에서 1분 돌려줍니다.",
+      "다 됐으면 랩을 벗겨서 숟가락으로 찹쌀 반죽을 더 치대줍니다. 질퍽질퍽한 것이 물을 많이 넣은 느낌입니다. 이제 다시 전자레인지에 30초 더 돌려줍니다.",
+      "다 됐으면 랩을 다시 씌워주고 전자레인지에 30초 더 돌려서 반죽을 완전히 익혀줍니다. 반죽이 뜨거우니 잠시 식혀줍니다.",
+      "반죽이 어느 정도 식었으면 얇게 펴주고, 우리가 길에서 보던 핫도그처럼 아까 끼워놓은 소시지에 반죽을 둘러줍니다.",
+      "이리저리 만져서 핫도그처럼 만들어 줍니다. 이 끄트머리 막대기 부분에 반죽을 감싸주면 떨어지지 않습니다. 반죽이 찹쌀떡처럼 쫀득하게 다 익었기 때문에 이 상태로 먹어도 상관 없습니다.",
+      "작은 팬에 기름을 바닥이 가 릴 정도로 부어주고 기름을 뜨뜻하게 데워줍니다. 기름 온도가 적정 온도가 되었을 때 약불로 내려줍니다.",
+      "기름 위에서 굴려주면서 겉면을 튀겨줍니다. 기름 온도가 적정 온도가 되었으면 약불로 내려줍니다. 그리고 핫도그를 굴려가면서 겉 면을 바싹하게 익혀줍니다."
+    ],
+    "tips": [],
+    "curated_at": "2026-11-11T17:17:50+00:00",
+    "curation_model": "qwen2.5:3b"
+  },
+  {
+    "video_id": "_Fv3m3AOrzo-01",
+    "source_video_id": "_Fv3m3AOrzo",
+    "name": "햄치즈 토스트",
+    "summary": "간단하고 쉽게 만드는 햄치즈 토스트",
+    "servings": null,
+    "prep_minutes": null,
+    "cook_minutes": null,
+    "confidence": 0.9,
+    "needs_review": false,
+    "source_kind": "automated_curated",
+    "source_url": "https://www.youtube.com/watch?v=_Fv3m3AOrzo&t=0s",
+    "published_at": null,
+    "video_title": "How to make toast that everyone knows except me.",
+    "ingredients": [
+      {
+        "position": 1,
+        "section": "재료 또는 양념",
+        "name": "식빵",
+        "amount": "1/2",
+        "unit": "큰술",
+        "note": null,
+        "raw_text": "식빵 1/2 큰술"
+      },
+      {
+        "position": 2,
+        "section": "재료 또는 양념",
+        "name": "계란",
+        "amount": "2개",
+        "unit": "개",
+        "note": null,
+        "raw_text": "계란 2개 개"
+      },
+      {
+        "position": 3,
+        "section": "재료 또는 양념",
+        "name": "소금",
+        "amount": null,
+        "unit": null,
+        "note": null,
+        "raw_text": "소금"
+      },
+      {
+        "position": 4,
+        "section": "재료 또는 양념",
+        "name": "설탕",
+        "amount": null,
+        "unit": null,
+        "note": null,
+        "raw_text": "설탕"
+      },
+      {
+        "position": 5,
+        "section": "재료 또는 양념",
+        "name": "버터",
+        "amount": null,
+        "unit": null,
+        "note": null,
+        "raw_text": "버터"
+      }
+    ],
+    "steps": [
+      "식빵을 집 근처 빵집에서 준비해주세요. 계란 두 개를 톡톡 까서 넣어주고 소금 한 꼬집 넣어줍니다.",
+      "설탕을 한 꼬집 정도 살짝 넣어주고 계란을 휘휘 저어줍니다. 팬에 식용유나 버터를 넣어 주고 약불로 맞춰줍니다.",
+      "버터를 녹여주면 꼬숩은 버터 향 에 방구석이 벌써부터 빵집이 됩니다.",
+      "계란물을 넣어주고 식빵 하나를 반으로 짤라서 계란이 익기 전에 바로 넣어줍니다.",
+      "계란물이 빵에 살짝 스며들면 뒤집어 줍니다. 계란 바닥면을 익혀줍니다. 계란이 어느 정도 익었으면 한 번에 뒤집어 줍니다.",
+      "계란이 튀어나와 모양이 이상하다면 걱정 말고 서 드시면 됩니다. 계란을 안쪽으로 접어줍니다.",
+      "슬라이스 치즈를 반 잘라서 한쪽에 올려주고 반대쪽에는 치즈와 궁합이 좋은 햄을 올려줍니다.",
+      "계란이 튀어나와 모양이 이상하다면 걱정 말고 서 드시면 됩니다. 앞뒤로 뒤집어 주면서 은은하게 계란을 익혀줍니다.",
+      "계란이 완전히 익으면 빼주고 위에 설탕을 뿌려 주면 두겹 프렌치토스트가 완성됩니다.",
+      "잘라서 속을 보면 아주 부드럽고 촉촉한 게 보입니다."
+    ],
+    "tips": [],
+    "curated_at": "2026-11-11T17:37:01+00:00",
+    "curation_model": "qwen2.5:3b"
+  },
+  {
+    "video_id": "_Fv3m3AOrzo-02",
+    "source_video_id": "_Fv3m3AOrzo",
+    "name": "딸기잼 토스트",
+    "summary": "간단하고 쉽게 만드는 딸기잼 토스트",
+    "servings": null,
+    "prep_minutes": null,
+    "cook_minutes": null,
+    "confidence": 0.9,
+    "needs_review": false,
+    "source_kind": "automated_curated",
+    "source_url": "https://www.youtube.com/watch?v=_Fv3m3AOrzo&t=0s",
+    "published_at": null,
+    "video_title": "How to make toast that everyone knows except me.",
+    "ingredients": [
+      {
+        "position": 1,
+        "section": "재료 또는 양념",
+        "name": "식빵",
+        "amount": "3장",
+        "unit": "장",
+        "note": null,
+        "raw_text": "식빵 3장 장"
+      },
+      {
+        "position": 2,
+        "section": "재료 또는 양념",
+        "name": "딸기잼",
+        "amount": null,
+        "unit": null,
+        "note": null,
+        "raw_text": "딸기잼"
+      },
+      {
+        "position": 3,
+        "section": "재료 또는 양념",
+        "name": "치즈",
+        "amount": null,
+        "unit": null,
+        "note": null,
+        "raw_text": "치즈"
+      },
+      {
+        "position": 4,
+        "section": "재료 또는 양념",
+        "name": "햄",
+        "amount": null,
+        "unit": null,
+        "note": null,
+        "raw_text": "햄"
+      }
+    ],
+    "steps": [
+      "식빵 3장을 준비해주세요. 모서리를 다 잘라서 한쪽에 딸기잼을 얇게 발라줍니다.",
+      "반대쪽에는 치즈와 햄을 올려줍니다. 두 번째 빵에 딸기잼을 발라서 덮어줍니다.",
+      "반대쪽 면도 잼을 또 바르고 치즈 햄 올려줍니다.",
+      "세 번째 빵에 잼을 발라주고 뒤집어서 덮어줍니다.",
+      "빵이 작아서 햄과 치즈가 이렇게 튀어나와도 괜찮습니다.",
+      "계란 하나를 까주고 소금으로 살짝 간해줍니다. 계란을 잘 풀어주고 빵 위로 계란물을 부어줍니다.",
+      "계란물이 모든 면에 묻혀줍니다. 팬에 기름을 둘러주고 중불로 맞춰줍니다.",
+      "준비해둔 토스트를 올려주고 튀기듯이 익혀줍니다. 다 익으면 반대편도 마저 튀겨줍니다.",
+      "마지막으로 버터를 조금 넣어서 향을 더해줍니다. 빵을 들고 사이드 쪽까지 다 튀겨줍니다.",
+      "완성된 몬테크리스토를 반 갈라보면 겹겹이 쌓인 게 기가 막힙니다."
+    ],
+    "tips": [],
+    "curated_at": "2026-11-11T17:37:01+00:00",
+    "curation_model": "qwen2.5:3b"
+  },
+  {
+    "video_id": "EI7q96Ozf6M-01",
+    "source_video_id": "EI7q96Ozf6M",
+    "name": "콩나물 1000원치만 가지고 오세요",
+    "summary": "1000원에 만든 간단한 콩나물 요리",
+    "servings": null,
+    "prep_minutes": null,
+    "cook_minutes": null,
+    "confidence": 0.9,
+    "needs_review": false,
+    "source_kind": "automated_curated",
+    "source_url": "https://www.youtube.com/watch?v=EI7q96Ozf6M&t=0s",
+    "published_at": null,
+    "video_title": "콩나물 1000원치만 가지고 오세요",
+    "ingredients": [
+      {
+        "position": 1,
+        "section": "재료 또는 양념",
+        "name": "콩나물",
+        "amount": null,
+        "unit": null,
+        "note": null,
+        "raw_text": "콩나물"
+      },
+      {
+        "position": 2,
+        "section": "양념장",
+        "name": "진간장",
+        "amount": "1스푼",
+        "unit": null,
+        "note": null,
+        "raw_text": "진간장 1스푼"
+      },
+      {
+        "position": 3,
+        "section": "양념장",
+        "name": "굴소스",
+        "amount": "1스푼",
+        "unit": null,
+        "note": null,
+        "raw_text": "굴소스 1스푼"
+      },
+      {
+        "position": 4,
+        "section": "양념장",
+        "name": "설탕",
+        "amount": "1스푼",
+        "unit": null,
+        "note": null,
+        "raw_text": "설탕 1스푼"
+      },
+      {
+        "position": 5,
+        "section": "양념장",
+        "name": "다진 마늘",
+        "amount": "1스푼",
+        "unit": null,
+        "note": null,
+        "raw_text": "다진 마늘 1스푼"
+      }
+    ],
+    "steps": [
+      "콩나물과 당면을 각각 3분간 삶아줍니다.",
+      "팬에 식용유 1스푼을 둘러줍니다.",
+      "파, 당근, 양파, 어묵을 순서대로 볶아줍니다.",
+      "미리 삶아 둔 당면, 콩나물, 양념장을 넣고 1분 더 볶아줍니다."
+    ],
+    "tips": [],
+    "curated_at": "2026-11-11T17:38:33+00:00",
+    "curation_model": "qwen2.5:3b"
+  },
+  {
+    "video_id": "A1nqU9JCDYg-01",
+    "source_video_id": "A1nqU9JCDYg",
+    "name": "한국어 콘치즈",
+    "summary": "한국의 콩치즈를 만듭니다.",
+    "servings": null,
+    "prep_minutes": null,
+    "cook_minutes": null,
+    "confidence": 0.9,
+    "needs_review": false,
+    "source_kind": "automated_curated",
+    "source_url": "https://www.youtube.com/watch?v=A1nqU9JCDYg&t=0s",
+    "published_at": null,
+    "video_title": "How to make delicious corn cheese.",
+    "ingredients": [
+      {
+        "position": 1,
+        "section": "재료 또는 양념",
+        "name": "옥수수 콘",
+        "amount": null,
+        "unit": null,
+        "note": null,
+        "raw_text": "옥수수 콘"
+      },
+      {
+        "position": 2,
+        "section": "재료 또는 양념",
+        "name": "버터",
+        "amount": "20g",
+        "unit": "g",
+        "note": null,
+        "raw_text": "버터 20g g"
+      },
+      {
+        "position": 3,
+        "section": "재료 또는 양념",
+        "name": "연유",
+        "amount": "1/2",
+        "unit": "스푼",
+        "note": null,
+        "raw_text": "연유 1/2 스푼"
+      },
+      {
+        "position": 4,
+        "section": "재료 또는 양념",
+        "name": "소금",
+        "amount": null,
+        "unit": null,
+        "note": null,
+        "raw_text": "소금"
+      },
+      {
+        "position": 5,
+        "section": "재료 또는 양념",
+        "name": "슬라이스 치즈",
+        "amount": null,
+        "unit": null,
+        "note": null,
+        "raw_text": "슬라이스 치즈"
+      },
+      {
+        "position": 6,
+        "section": "재료 또는 양념",
+        "name": "파슬리",
+        "amount": null,
+        "unit": null,
+        "note": null,
+        "raw_text": "파슬리"
+      }
+    ],
+    "steps": [
+      "먼저 옥수수 콘 한캔을 골라 준비합니다.",
+      "한캔의 옥수수 콘을 팬에 팍 부어 물기를 털어냅니다.",
+      "팬에 버터 20g을 넣어 중불로 맞춥니다.",
+      "버터를 골고루 녹여 옥수수 콘을 넣어 볶습니다. 연유를 넣어 설탕의 맛을 더합니다.",
+      "연유와 마요네즈를 잘 섞어 옥수수 콘 위에 뿌려줍니다.",
+      "모짜렐라 치즈를 옥수수 콘 위에 뿌려줍니다.",
+      "슬라이스 치즈가 있다면 대략적으로 찢어 올려줍니다. 파슬리를 올려주고, 없으면 생략합니다.",
+      "팬을 약불로 내려주고 뚜껑을 덮어 치즈가 녹을 때까지 기다립니다.",
+      "치즈가 녹으면 뚜껑을 열어줍니다.",
+      "치즈가 녹으면 팬을 꺼내서 옥수수 콘을 만든 콘치즈가 완성됩니다."
+    ],
+    "tips": [],
+    "curated_at": "2026-11-11T17:16:33+00:00",
+    "curation_model": "qwen2.5:3b"
+  },
+  {
+    "video_id": "4a8NsfcSjmQ-01",
+    "source_video_id": "4a8NsfcSjmQ",
+    "name": "일본식 고기감자조림 (니쿠자가)",
+    "summary": "일본식 고기감자조림을 간단하게 만듭니다.",
+    "servings": null,
+    "prep_minutes": null,
+    "cook_minutes": null,
+    "confidence": 0.9,
+    "needs_review": false,
+    "source_kind": "automated_curated",
+    "source_url": "https://www.youtube.com/watch?v=4a8NsfcSjmQ&t=0s",
+    "published_at": null,
+    "video_title": "What happens when you add coke to beef and potatoes?",
+    "ingredients": [
+      {
+        "position": 1,
+        "section": "재료 또는 양념",
+        "name": "감자",
+        "amount": null,
+        "unit": null,
+        "note": null,
+        "raw_text": "감자"
+      },
+      {
+        "position": 2,
+        "section": "재료 또는 양념",
+        "name": "소고기",
+        "amount": "200g",
+        "unit": "g",
+        "note": null,
+        "raw_text": "소고기 200g g"
+      },
+      {
+        "position": 3,
+        "section": "양념",
+        "name": "콜라",
+        "amount": "1컵",
+        "unit": "컵",
+        "note": null,
+        "raw_text": "콜라 1컵 컵"
+      },
+      {
+        "position": 4,
+        "section": "양념",
+        "name": "진간장",
+        "amount": "3스푼",
+        "unit": "스푼",
+        "note": null,
+        "raw_text": "진간장 3스푼 스푼"
+      },
+      {
+        "position": 5,
+        "section": "양념",
+        "name": "올리고당",
+        "amount": "2스푼",
+        "unit": "스푼",
+        "note": null,
+        "raw_text": "올리고당 2스푼 스푼"
+      }
+    ],
+    "steps": [
+      "감자 두 개를 주먹만한 크기로 썰어줍니다.",
+      "감자 껍질을 살살 살짝 간지러주면 눈 깜빡 거리면 껍질이 다 벗겨집니다.",
+      "소고기를 200g로 준비합니다.",
+      "소고기를 뜨뜻하게 데워줍니다.",
+      "콜라 한 컵을 팬에 부어줍니다.",
+      "진간장과 올리고당을 콜라에 넣어 간을 맞춥니다.",
+      "소고기를 콜라에 넣고 약불에서 은은하게 졸여줍니다.",
+      "콜라 수면 위에 있는 감자를 바닥으로 가게 해줍니다.",
+      "소고기가 어느 정도 익었으면 감자를 잘라서 콜라에 넣어줍니다.",
+      "소고기가 완전히 익으면 참기름을 한 방울씩 둘러주고 통깨를 꼈에 뿌려줍니다."
+    ],
+    "tips": [],
+    "curated_at": "2026-11-11T17:33:39+00:00",
+    "curation_model": "qwen2.5:3b"
+  },
+  {
+    "video_id": "9lGpdtLOfJ8-01",
+    "source_video_id": "9lGpdtLOfJ8",
+    "name": "간단한 수육",
+    "summary": "간단하게 만든 수육입니다.",
+    "servings": null,
+    "prep_minutes": null,
+    "cook_minutes": null,
+    "confidence": 0.9,
+    "needs_review": false,
+    "source_kind": "automated_curated",
+    "source_url": "https://www.youtube.com/watch?v=9lGpdtLOfJ8&t=0s",
+    "published_at": null,
+    "video_title": "A simple home-made recipe for boiled pork.",
+    "ingredients": [
+      {
+        "position": 1,
+        "section": "재료 또는 양념",
+        "name": "양파",
+        "amount": "1개",
+        "unit": null,
+        "note": null,
+        "raw_text": "양파 1개"
+      },
+      {
+        "position": 2,
+        "section": "재료 또는 양념",
+        "name": "대파",
+        "amount": null,
+        "unit": null,
+        "note": null,
+        "raw_text": "대파"
+      },
+      {
+        "position": 3,
+        "section": "재료 또는 양념",
+        "name": "삼겹살",
+        "amount": null,
+        "unit": null,
+        "note": null,
+        "raw_text": "삼겹살"
+      },
+      {
+        "position": 4,
+        "section": "재료 또는 양념",
+        "name": "쌍화탕",
+        "amount": null,
+        "unit": null,
+        "note": null,
+        "raw_text": "쌍화탕"
+      }
+    ],
+    "steps": [
+      "양파와 대파를 채썰어 준비합니다.",
+      "삼겹살을 양파 위에 올려줍니다.",
+      "쌍화탕을 잘 흔들어 침전물을 제거합니다.",
+      "양파와 대파, 삼겹살을 전자레인지용 찜기에 넣어줍니다.",
+      "쌍화탕을 양파 위에 올려줍니다.",
+      "쌍화탕을 전자레인지 전용 뚜껑을 덮어줍니다.",
+      "전자레인지에 15분 동안 익혀줍니다.",
+      "익은 삼겹살을 꺼내어 양파 위에 올려줍니다.",
+      "대파를 잘라내어 먹기 쉽게 만듭니다.",
+      "양파와 대파, 삼겹살을 접시에 올려줍니다."
+    ],
+    "tips": [],
+    "curated_at": "2026-11-11T17:14:54+00:00",
+    "curation_model": "qwen2.5:3b"
+  },
+  {
+    "video_id": "wvIxqkmYUEk-01",
+    "source_video_id": "wvIxqkmYUEk",
+    "name": "쫄볶이",
+    "summary": "쫄볶이는 어묵, 떡, 쫄면, 야채를 이용한 간단한 한국 요리입니다.",
+    "servings": null,
+    "prep_minutes": null,
+    "cook_minutes": null,
+    "confidence": 0.9,
+    "needs_review": false,
+    "source_kind": "automated_curated",
+    "source_url": "https://www.youtube.com/watch?v=wvIxqkmYUEk&t=0s",
+    "published_at": null,
+    "video_title": "I couldn't even think of eating it because it was expensive when I was young.",
+    "ingredients": [
+      {
+        "position": 1,
+        "section": "재료 또는 양념",
+        "name": "어묵",
+        "amount": "2장",
+        "unit": null,
+        "note": null,
+        "raw_text": "어묵 2장"
+      },
+      {
+        "position": 2,
+        "section": "재료 또는 양념",
+        "name": "떡",
+        "amount": null,
+        "unit": null,
+        "note": null,
+        "raw_text": "떡"
+      },
+      {
+        "position": 3,
+        "section": "재료 또는 양념",
+        "name": "쫄면",
+        "amount": null,
+        "unit": null,
+        "note": null,
+        "raw_text": "쫄면"
+      },
+      {
+        "position": 4,
+        "section": "재료 또는 양념",
+        "name": "야채",
+        "amount": "선택사항",
+        "unit": null,
+        "note": null,
+        "raw_text": "야채 선택사항"
+      }
+    ],
+    "steps": [
+      "팬이나 냄비에 물 3컵을 부어줍니다.",
+      "고추장 1스푼, 진간장 2스푼, 설탕 2스푼, 고춧가루 1스푼, 소고기 다시다나 또는 치킨스톡 ½스푼을 넣어줍니다.",
+      "어묵을 반 가르고 대략 삼각형 모양으로 썰어줍니다.",
+      "떡을 준비해 줍니다.",
+      "쫄면을 준비해 줍니다.",
+      "양배추를 먹기 좋은 크기로 썰어줍니다.",
+      "대파를 먹기 좋은 크기로 썰어줍니다.",
+      "물이 끓으면 어묵, 떡, 양배추, 대파를 넣고 3분간 푹 끓여줍니다.",
+      "쫄면을 넣고 3분간 푹 끓여줍니다.",
+      "선택사항으로 슬라이스 치즈 2장 올려줍니다."
+    ],
+    "tips": [],
+    "curated_at": "2026-11-11T17:35:57+00:00",
+    "curation_model": "qwen2.5:3b"
+  },
+  {
+    "video_id": "97vXvYUiaHs-01",
+    "source_video_id": "97vXvYUiaHs",
+    "name": "까르보나라",
+    "summary": "간단한 까르보나라를 라면으로 만듭니다.",
+    "servings": null,
+    "prep_minutes": null,
+    "cook_minutes": null,
+    "confidence": 0.9,
+    "needs_review": false,
+    "source_kind": "automated_curated",
+    "source_url": "https://www.youtube.com/watch?v=97vXvYUiaHs&t=0s",
+    "published_at": null,
+    "video_title": "Carbonara made with just two ingredients.",
+    "ingredients": [
+      {
+        "position": 1,
+        "section": "재료 또는 양념",
+        "name": "치즈",
+        "amount": "1장",
+        "unit": null,
+        "note": null,
+        "raw_text": "치즈 1장"
+      },
+      {
+        "position": 2,
+        "section": "재료 또는 양념",
+        "name": "계란",
+        "amount": "1개",
+        "unit": null,
+        "note": null,
+        "raw_text": "계란 1개"
+      }
+    ],
+    "steps": [
+      "라면을 준비합니다. 집에 흔히 있는 매운 라면을 사용하세요. 라면을 끓이기 전에, 치즈를 반으로 갈라 준비합니다.",
+      "계란을 흰자와 노른자로 분리합니다. 껍질을 왔다 갔다 하면 쉽게 분리됩니다.",
+      "흰자는 그대로 두고, 노른자는 계란 그릇에 올려줍니다.",
+      "물을 부어 라면을 끓입니다. 물이 팔팔 끓기 시작하면 면을 넣어줍니다.",
+      "남은 라면 부스러기는 그대로 두고, 라면을 들었다 놨다 하면서 익혀줍니다.",
+      "면이 어느 정도 풀렸으면, 미리 분리 시켜 둔 계란 흰자를 넣어줍니다.",
+      "계란을 푹 끓여줍니다. 면도 꼬들꼬들하게 익혀줍니다. 계란이 익을 때까지 끓여줍니다.",
+      "계란이 익으면 물을 버려주고, 라면과 치즈, 계란 흰자를 그릇에 올려줍니다.",
+      "양념을 잘 섞어줍니다. 그릇을 바꿔주고, 건더기 스프를 가니쉬로 뿌려줍니다.",
+      "남은 라면 부스러기를 가니쉬로 올려줍니다."
+    ],
+    "tips": [],
+    "curated_at": "2026-11-11T17:29:02+00:00",
+    "curation_model": "qwen2.5:3b"
+  },
+  {
+    "video_id": "-lOE4qjCxPg-01",
+    "source_video_id": "-lOE4qjCxPg",
+    "name": "계란 고추장 비빔밥",
+    "summary": "간단한 요리로 초등학생도 쉽게 만드는 계란 고추장 비빔밥",
+    "servings": null,
+    "prep_minutes": null,
+    "cook_minutes": null,
+    "confidence": 0.9,
+    "needs_review": false,
+    "source_kind": "automated_curated",
+    "source_url": "https://www.youtube.com/watch?v=-lOE4qjCxPg&t=0s",
+    "published_at": null,
+    "video_title": "Egg Bibimbap that even elementary school students can make. I Simple meal",
+    "ingredients": [
+      {
+        "position": 1,
+        "section": "재료 또는 양념",
+        "name": "계란",
+        "amount": "3알",
+        "unit": null,
+        "note": null,
+        "raw_text": "계란 3알"
+      },
+      {
+        "position": 2,
+        "section": "재료 또는 양념",
+        "name": "우유",
+        "amount": "1평",
+        "unit": "평",
+        "note": null,
+        "raw_text": "우유 1평 평"
+      },
+      {
+        "position": 3,
+        "section": "재료 또는 양념",
+        "name": "소금",
+        "amount": null,
+        "unit": null,
+        "note": null,
+        "raw_text": "소금"
+      },
+      {
+        "position": 4,
+        "section": "재료 또는 양념",
+        "name": "설탕",
+        "amount": null,
+        "unit": null,
+        "note": null,
+        "raw_text": "설탕"
+      },
+      {
+        "position": 5,
+        "section": "재료 또는 양념",
+        "name": "참기름",
+        "amount": null,
+        "unit": null,
+        "note": null,
+        "raw_text": "참기름"
+      }
+    ],
+    "steps": [
+      "먼저 탐스러운 계란 3알을 톡톡톡 까줍니다. 그라고 우유를 1평 정도 넣어줍니다 그라고 소금 한꼬집 넣어 주고",
+      "그라고 설정도 3부 될수도 넣어줍니다 그라고 모습은 향을 더해주는 참기름 담당으로 물어 줍니다",
+      "그러고 만들어놓은 계란 물을 부어줍니다 그러고 젓가락으로 휘저어 주면서 뭔가 먹을까요 그러면 부드러운 계란 프라이 머리와도 됩니다 그러면 더 이상 계란이 잊지 않게 불을 꺼줍니다",
+      "그러면 토핑으로 올려 주기 위해 반정도는 따로 그릇에 덜어 줍니다 그러면 남은 나머지 계란 애는 4판 뚜껑 넣어줍니다",
+      "그러면 보수 장을 살짝 뜬 한스푼 넣어 줍니다 그러면 김가루 도 표 덕입니다 그러면 모습은 향을 더해주는 참기름 담당으로 물어 줍니다",
+      "그러면 팬에 남은 열애 살짝 볶아 주듯이 계란 주장을 잘 비벼주면 너 거 같습니다 그러면 아래 쓰면 그렇게나 가지고 미리 빼 두었던 몽크 램 베리 크랜베리 올려줍니다",
+      "그러면 있어 보이게 파슬리 거절 다가올 뿌려줍니다 그러면 없습 에스맥 하시면 됩니다",
+      "그러면 [음악] 오늘의 간단하게 2개랑 거지가 빈발 완성되었습니다 그러면 이렇게 바비의 몽글 1 계란과 같이 하니 무 보면",
+      "그러면 고추장 밖에 라는 우리들이 입맛에 2컷 때문에 말을 보장됩니다 그러면 괜한 식감이 푹신하고 몸을 노리는 것이 입안에 듣게 되 게 너무 좋습니다",
+      "그러면 집에서 먹을 지 고민될 때 간단하게 먹겠다 줬습니다 그러면 이렇게 동글동글 하게 하니 겨우 밥을 만들어도 참 이겁니다 그러면 뒷바퀴를 담다 넣어 주먹밥으로 만들어 두었지만 모양을 잘 안 잡히니까"
+    ],
+    "tips": [],
+    "curated_at": "2026-11-11T17:26:16+00:00",
+    "curation_model": "qwen2.5:3b"
+  },
+  {
+    "video_id": "EmVoU_TNFM0-01",
+    "source_video_id": "EmVoU_TNFM0",
+    "name": "순두부 그라탕 라면",
+    "summary": "순두부 그라탕과 매운 라면을 섞어 만든 새로운 요리",
+    "servings": null,
+    "prep_minutes": null,
+    "cook_minutes": null,
+    "confidence": 0.9,
+    "needs_review": false,
+    "source_kind": "automated_curated",
+    "source_url": "https://www.youtube.com/watch?v=EmVoU_TNFM0&t=0s",
+    "published_at": null,
+    "video_title": "If you mix \"ramen\" with \"soft tofu gratin\", it'll give you goosebumps.",
+    "ingredients": [
+      {
+        "position": 1,
+        "section": "재료 또는 양념",
+        "name": "매운 라면",
+        "amount": null,
+        "unit": null,
+        "note": null,
+        "raw_text": "매운 라면"
+      },
+      {
+        "position": 2,
+        "section": "재료 또는 양념",
+        "name": "순두부",
+        "amount": "1/2",
+        "unit": "개",
+        "note": null,
+        "raw_text": "순두부 1/2 개"
+      },
+      {
+        "position": 3,
+        "section": "재료 또는 양념",
+        "name": "토마토 소스",
+        "amount": null,
+        "unit": null,
+        "note": null,
+        "raw_text": "토마토 소스"
+      },
+      {
+        "position": 4,
+        "section": "재료 또는 양념",
+        "name": "양파",
+        "amount": "반개",
+        "unit": null,
+        "note": null,
+        "raw_text": "양파 반개"
+      },
+      {
+        "position": 5,
+        "section": "재료 또는 양념",
+        "name": "치즈",
+        "amount": "모차르트",
+        "unit": null,
+        "note": null,
+        "raw_text": "치즈 모차르트"
+      }
+    ],
+    "steps": [
+      "팬에 물 2컵을 넣고 끓여준다.",
+      "면을 넣고 1분간 풀어준다.",
+      "순두부 ½을 넣고 으깨어준다.",
+      "토마토 소스를 3스푼 넣고 섞어준다.",
+      "양파, 모차르트 치즈를 넣고 뚜껑을 덮어서 녹여준다."
+    ],
+    "tips": [],
+    "curated_at": "2026-11-11T17:40:38+00:00",
+    "curation_model": "qwen2.5:3b"
+  },
+  {
+    "video_id": "1x9YAIoP3pI-01",
+    "source_video_id": "1x9YAIoP3pI",
+    "name": "푸팟퐁커리",
+    "summary": "한국어로 만든 태국식 푸팟퐁커리 레시피",
+    "servings": null,
+    "prep_minutes": null,
+    "cook_minutes": null,
+    "confidence": 0.9,
+    "needs_review": false,
+    "source_kind": "automated_curated",
+    "source_url": "https://www.youtube.com/watch?v=1x9YAIoP3pI&t=0s",
+    "published_at": null,
+    "video_title": "A new way to make Thai food at home.",
+    "ingredients": [
+      {
+        "position": 1,
+        "section": "재료 또는 양념",
+        "name": "크래미",
+        "amount": "1/2",
+        "unit": "큰술",
+        "note": null,
+        "raw_text": "크래미 1/2 큰술"
+      },
+      {
+        "position": 2,
+        "section": "재료 또는 양념",
+        "name": "우유",
+        "amount": "200ml",
+        "unit": "ml",
+        "note": null,
+        "raw_text": "우유 200ml ml"
+      },
+      {
+        "position": 3,
+        "section": "양념",
+        "name": "카레가루",
+        "amount": "1스푼",
+        "unit": "스푼",
+        "note": null,
+        "raw_text": "카레가루 1스푼 스푼"
+      },
+      {
+        "position": 4,
+        "section": "양념",
+        "name": "설탕",
+        "amount": "1스푼",
+        "unit": "스푼",
+        "note": null,
+        "raw_text": "설탕 1스푼 스푼"
+      },
+      {
+        "position": 5,
+        "section": "양념",
+        "name": "멸치액젓",
+        "amount": "1/2스푼",
+        "unit": "스푼",
+        "note": null,
+        "raw_text": "멸치액젓 1/2스푼 스푼"
+      },
+      {
+        "position": 6,
+        "section": "양념",
+        "name": "계란",
+        "amount": "1개",
+        "unit": "개",
+        "note": null,
+        "raw_text": "계란 1개 개"
+      },
+      {
+        "position": 7,
+        "section": "양념",
+        "name": "다진 마늘",
+        "amount": "1스푼",
+        "unit": "스푼",
+        "note": null,
+        "raw_text": "다진 마늘 1스푼 스푼"
+      },
+      {
+        "position": 8,
+        "section": "양념",
+        "name": "청양고추",
+        "amount": null,
+        "unit": null,
+        "note": null,
+        "raw_text": "청양고추"
+      },
+      {
+        "position": 9,
+        "section": "양념",
+        "name": "양파",
+        "amount": null,
+        "unit": null,
+        "note": null,
+        "raw_text": "양파"
+      }
+    ],
+    "steps": [
+      "크래미를 얇게 눌러주고 튀김가루 1스푼을 뿌려 섞어줍니다.",
+      "우유 200ml, 카레가루 1스푼, 설탕 1스푼, 멸치액젓 1/2스푼, 계란 1개를 넣고 잘 섞어줍니다.",
+      "팬에 식용유 4스푼 둘러주고 (1)을 넣어 튀겨줍니다.",
+      "남은 기름에 청양고추, 다진마늘, 양파를 넣고 볶아줍니다.",
+      "약불에서 (2)를 넣고 잘 저어주면서 끓여줍니다.",
+      "카레가루를 조금씩 추가해주면서 간을 맞춰줍니다.",
+      "불을 완전히 끈 뒤, (3)을 넣고 섞어줍니다."
+    ],
+    "tips": [],
+    "curated_at": "2026-11-11T17:44:41+00:00",
+    "curation_model": "qwen2.5:3b"
+  },
+  {
+    "video_id": "i4yyKPRIGc8-01",
+    "source_video_id": "i4yyKPRIGc8",
+    "name": "만두 피자",
+    "summary": "만두를 전자레인지에 돌려서 굽고 계란과 야채, 소스를 이용해 만두 피자를 만듭니다.",
+    "servings": null,
+    "prep_minutes": null,
+    "cook_minutes": null,
+    "confidence": 0.9,
+    "needs_review": false,
+    "source_kind": "automated_curated",
+    "source_url": "https://www.youtube.com/watch?v=i4yyKPRIGc8&t=0s",
+    "published_at": null,
+    "video_title": "A splendid transformation of frozen dumplings!",
+    "ingredients": [
+      {
+        "position": 1,
+        "section": "재료 또는 양념",
+        "name": "냉동 만두",
+        "amount": null,
+        "unit": null,
+        "note": null,
+        "raw_text": "냉동 만두"
+      },
+      {
+        "position": 2,
+        "section": "재료 또는 양념",
+        "name": "계란",
+        "amount": "2알",
+        "unit": null,
+        "note": null,
+        "raw_text": "계란 2알"
+      },
+      {
+        "position": 3,
+        "section": "재료 또는 양념",
+        "name": "야채",
+        "amount": null,
+        "unit": null,
+        "note": null,
+        "raw_text": "야채"
+      },
+      {
+        "position": 4,
+        "section": "재료 또는 양념",
+        "name": "토마토 소스",
+        "amount": "2스푼",
+        "unit": null,
+        "note": null,
+        "raw_text": "토마토 소스 2스푼"
+      },
+      {
+        "position": 5,
+        "section": "재료 또는 양념",
+        "name": "스리라차 소스",
+        "amount": "1스푼",
+        "unit": null,
+        "note": null,
+        "raw_text": "스리라차 소스 1스푼"
+      },
+      {
+        "position": 6,
+        "section": "재료 또는 양념",
+        "name": "치즈",
+        "amount": null,
+        "unit": null,
+        "note": null,
+        "raw_text": "치즈"
+      }
+    ],
+    "steps": [
+      "냉동 만두를 전자레인지에 2분 30초~3분 돌려서 굽고, 잘라냅니다.",
+      "계란 2알을 톡톡 까서 넣고, 계란과 만두를 잘 섞어줍니다.",
+      "팬에 식용유를 살짝 두르고 계란과 만두를 구워줍니다.",
+      "토마토 소스와 스리라차 소스를 펴 발라줍니다.",
+      "냉장고에 남아있는 야채를 토핑으로 올려줍니다.",
+      "모짜렐라 치즈와 노란 슬라이스 치즈를 올려줍니다.",
+      "뚜껑을 덮고 팬 내부의 열기를 이용해 은은하게 찌듯이 익혀줍니다."
+    ],
+    "tips": [],
+    "curated_at": "2026-11-11T17:47:59+00:00",
+    "curation_model": "qwen2.5:3b"
+  },
+  {
+    "video_id": "pV4nYkP4CWU-01",
+    "source_video_id": "pV4nYkP4CWU",
+    "name": "불닭발 볶음면",
+    "summary": "불닭발을 양념장과 함께 볶아 만든 볶음면",
+    "servings": null,
+    "prep_minutes": null,
+    "cook_minutes": null,
+    "confidence": 0.9,
+    "needs_review": false,
+    "source_kind": "automated_curated",
+    "source_url": "https://www.youtube.com/watch?v=pV4nYkP4CWU&t=0s",
+    "published_at": null,
+    "video_title": "불닭볶음면으로 만든 불닭발 볶음면",
+    "ingredients": [
+      {
+        "position": 1,
+        "section": "재료 또는 양념",
+        "name": "삶은 닭발",
+        "amount": null,
+        "unit": null,
+        "note": null,
+        "raw_text": "삶은 닭발"
+      },
+      {
+        "position": 2,
+        "section": "재료 또는 양념",
+        "name": "삶은 면",
+        "amount": null,
+        "unit": null,
+        "note": null,
+        "raw_text": "삶은 면"
+      }
+    ],
+    "steps": [
+      "삶은 닭발과 삶은 면을 준비합니다.",
+      "삶은 닭발과 삶은 면을 볶아줍니다.",
+      "삶은 닭발에 양념장을 넣고 볶아줍니다.",
+      "삶은 닭발과 양념장이 잘 어울리는지 확인합니다.",
+      "양념장이 닭발과 면에 잘 녹아들도록 볶아줍니다."
+    ],
+    "tips": [],
+    "curated_at": "2026-11-11T17:08:32+00:00",
+    "curation_model": "qwen2.5:3b"
+  },
+  {
+    "video_id": "SicgdJzV0ko-01",
+    "source_video_id": "SicgdJzV0ko",
+    "name": "밥솥 볶음밥",
+    "summary": "밥솥을 이용해 간단하게 만든 볶음밥입니다.",
+    "servings": null,
+    "prep_minutes": null,
+    "cook_minutes": null,
+    "confidence": 0.9,
+    "needs_review": false,
+    "source_kind": "automated_curated",
+    "source_url": "https://www.youtube.com/watch?v=SicgdJzV0ko&t=0s",
+    "published_at": null,
+    "video_title": "Only Top 1% knows this rice cooker fried rice recipe.",
+    "ingredients": [
+      {
+        "position": 1,
+        "section": "재료 또는 양념",
+        "name": "돼지고기",
+        "amount": "약 200g",
+        "unit": "g",
+        "note": null,
+        "raw_text": "돼지고기 약 200g g"
+      },
+      {
+        "position": 2,
+        "section": "재료 또는 양념",
+        "name": "감자",
+        "amount": null,
+        "unit": null,
+        "note": null,
+        "raw_text": "감자"
+      },
+      {
+        "position": 3,
+        "section": "재료 또는 양념",
+        "name": "당근",
+        "amount": null,
+        "unit": null,
+        "note": null,
+        "raw_text": "당근"
+      },
+      {
+        "position": 4,
+        "section": "재료 또는 양념",
+        "name": "새송이버섯",
+        "amount": null,
+        "unit": null,
+        "note": null,
+        "raw_text": "새송이버섯"
+      },
+      {
+        "position": 5,
+        "section": "재료 또는 양념",
+        "name": "마늘",
+        "amount": null,
+        "unit": null,
+        "note": null,
+        "raw_text": "마늘"
+      },
+      {
+        "position": 6,
+        "section": "재료 또는 양념",
+        "name": "간장",
+        "amount": null,
+        "unit": null,
+        "note": null,
+        "raw_text": "간장"
+      },
+      {
+        "position": 7,
+        "section": "재료 또는 양념",
+        "name": "굴소스",
+        "amount": null,
+        "unit": null,
+        "note": null,
+        "raw_text": "굴소스"
+      }
+    ],
+    "steps": [
+      "밥솥을 준비합니다. 마트에서 돼지고기를 골라 준비합니다.",
+      "돼지고기를 깍둑 모양으로 썰어 준비합니다.",
+      "감자를 껍질을 벗겨 준비합니다.",
+      "당근과 새송이버섯을 준비합니다. 마늘을 다진 후 준비합니다.",
+      "간장을 두 스푼, 굴소스를 두 스푼 준비합니다.",
+      "밥솥에 돼지고기를 넣고, 감자와 당근, 새송이버섯을 넣습니다.",
+      "마늘과 간장을 넣어 섞어줍니다.",
+      "마늘과 간장이 잘 어물어물하게 되면 굴소스를 넣어줍니다.",
+      "마늘, 간장, 굴소스가 잘 어물어물하게 되면 물을 넣어줍니다.",
+      "밥솥을 켜고 20분 정도 기다립니다. 밥이 완성되면 골고루 섞어줍니다."
+    ],
+    "tips": [],
+    "curated_at": "2026-11-11T17:11:19+00:00",
+    "curation_model": "qwen2.5:3b"
+  },
+  {
+    "video_id": "_r2MMQ_hI3c-01",
+    "source_video_id": "_r2MMQ_hI3c",
+    "name": "두부와 다진 돼지고기 덮밥",
+    "summary": "두부와 다진 돼지고기로 만든 간단한 덮밥입니다.",
+    "servings": null,
+    "prep_minutes": null,
+    "cook_minutes": null,
+    "confidence": 0.9,
+    "needs_review": false,
+    "source_kind": "automated_curated",
+    "source_url": "https://www.youtube.com/watch?v=_r2MMQ_hI3c&t=0s",
+    "published_at": null,
+    "video_title": "A tofu dish that you can eat 2 bowls of rice right away.",
+    "ingredients": [
+      {
+        "position": 1,
+        "section": "두부",
+        "name": "두부",
+        "amount": "300g",
+        "unit": "g",
+        "note": null,
+        "raw_text": "두부 300g g"
+      },
+      {
+        "position": 2,
+        "section": "다진 돼지고기",
+        "name": "다진 돼지고기",
+        "amount": null,
+        "unit": null,
+        "note": null,
+        "raw_text": "다진 돼지고기"
+      }
+    ],
+    "steps": [
+      "두부를 크고 단단한 부침용으로 준비해주세요. 겉에 있는 물기를 키친 타올로 한번 닦아줍니다.",
+      "다진 돼지고기를 준비해주세요. 앞다리살이나 뒷다리살로 제일 저렴한 걸 가지고 오시면 됩니다.",
+      "양념장을 만들어 줍시다. 평소 된장국 끓여 먹을 때 쓰던 된장을 1스푼 넣고, 고추장도 된장과 같은 비율로 1스푼 넣고, 동깨소스 1스푼, 달달하게 설탕 1스푼, 시뻘건 색감을 위해 고춧가루 1스푼, 이제 곧 1스푼의 다진 마늘을 넣고, 종이컵 60ml의 물을 부어 주고 잘 섞어줍니다.",
+      "두부를 팬에 넣고, 양념장을 넣고, 대략적으로 두부가 갈색이 되면 끓여줍니다.",
+      "두부가 잘 구워졌으면 팬을 빼고, 약불로 낮춰두고, 팬 가운데에 다진 돼지고기를 넣고, 대파와 양파를 넣어줍니다.",
+      "다진 돼지고기가 익을 때까지 볶아줍니다.",
+      "다진 돈이 익으면 양념장을 양념장에 넣고, 잘 섞어줍니다.",
+      "양념장이 너무 짭짤하면 물을 조금 부어 촉촉하게 해줍니다.",
+      "양념장이 잘 어울리면 불을 끄고, 그릇에 옮기면 설거지 거리 늘어나는 것을 방지하고, 팬 가운데에 구멍을 내고, 밥을 한공기 올려줍니다.",
+      "밥이 껴서 터지면 꼬/apis 은 향을 내는 통깨를 뿌리거나, 파슬리를 뿌려 마무리 해줍니다."
+    ],
+    "tips": [],
+    "curated_at": "2026-11-11T17:31:52+00:00",
+    "curation_model": "qwen2.5:3b"
+  },
+  {
+    "video_id": "dQ8QQla5ZK4-01",
+    "source_video_id": "dQ8QQla5ZK4",
+    "name": "김치 콩나물국",
+    "summary": "간단하고 풍미 있는 김치 콩나물국을 만듭니다.",
+    "servings": 1,
+    "prep_minutes": null,
+    "cook_minutes": null,
+    "confidence": 0.9,
+    "needs_review": false,
+    "source_kind": "automated_curated",
+    "source_url": "https://www.youtube.com/watch?v=dQ8QQla5ZK4&t=0s",
+    "published_at": null,
+    "video_title": "I used to eat this a lot when I was young.",
+    "ingredients": [
+      {
+        "position": 1,
+        "section": "재료 또는 양념",
+        "name": "콩나물",
+        "amount": "170g",
+        "unit": "g",
+        "note": null,
+        "raw_text": "콩나물 170g g"
+      },
+      {
+        "position": 2,
+        "section": "재료 또는 양념",
+        "name": "김치",
+        "amount": null,
+        "unit": null,
+        "note": null,
+        "raw_text": "김치"
+      },
+      {
+        "position": 3,
+        "section": "재료 또는 양념",
+        "name": "멸치액젓",
+        "amount": null,
+        "unit": null,
+        "note": null,
+        "raw_text": "멸치액젓"
+      },
+      {
+        "position": 4,
+        "section": "재료 또는 양념",
+        "name": "다진마늘",
+        "amount": null,
+        "unit": null,
+        "note": null,
+        "raw_text": "다진마늘"
+      },
+      {
+        "position": 5,
+        "section": "재료 또는 양념",
+        "name": "고춧가루",
+        "amount": null,
+        "unit": null,
+        "note": null,
+        "raw_text": "고춧가루"
+      },
+      {
+        "position": 6,
+        "section": "재료 또는 양념",
+        "name": "소금",
+        "amount": null,
+        "unit": null,
+        "note": null,
+        "raw_text": "소금"
+      }
+    ],
+    "steps": [
+      "냄비에 물 3컵 (약 540ml)을 부어줍니다.",
+      "멸치액젓 2스푼을 물에 넣고 끓입니다.",
+      "물이 끓으면 콩나물 170g과 대파를 넣어줍니다.",
+      "콩나물이 숨이 죽을 때까지 푹 끓여줍니다.",
+      "콩나물이 숨이 죽으면 국물 맛을 보고 소금으로 간을 해줍니다."
+    ],
+    "tips": [],
+    "curated_at": "2026-11-11T17:35:21+00:00",
+    "curation_model": "qwen2.5:3b"
+  },
+  {
+    "video_id": "JFlKAKfg6aM-01",
+    "source_video_id": "JFlKAKfg6aM",
+    "name": "계란과 가루를 이용한 간단 볶음밥",
+    "summary": "간단한 조리 과정을 통해 간단히 만든 계란과 가루를 이용한 볶음밥",
+    "servings": null,
+    "prep_minutes": null,
+    "cook_minutes": null,
+    "confidence": 0.9,
+    "needs_review": false,
+    "source_kind": "automated_curated",
+    "source_url": "https://www.youtube.com/watch?v=JFlKAKfg6aM&t=0s",
+    "published_at": null,
+    "video_title": "Let's make the fried rice with powder.",
+    "ingredients": [
+      {
+        "position": 1,
+        "section": "재료 또는 양념",
+        "name": "밥",
+        "amount": "200g",
+        "unit": "g",
+        "note": null,
+        "raw_text": "밥 200g g"
+      },
+      {
+        "position": 2,
+        "section": "재료 또는 양념",
+        "name": "계란",
+        "amount": null,
+        "unit": null,
+        "note": null,
+        "raw_text": "계란"
+      },
+      {
+        "position": 3,
+        "section": "재료 또는 양념",
+        "name": "카레 가루",
+        "amount": null,
+        "unit": null,
+        "note": null,
+        "raw_text": "카레 가루"
+      }
+    ],
+    "steps": [
+      "밥 한 공기 200g을 볼이나 그릇에 넣어줍니다.",
+      "두 개의 계란을 탁탁 까서 넣어줍니다.",
+      "마트에 흔히 파는 카레 가루를 준비해 1스푼 가득 넣어줍니다.",
+      "계란을 터뜨려 주면서 카레 가루와 골고루 잘 섞어줍니다.",
+      "계란이 팅팅 뿔을 흡수하고 팅팅 뿔을 내도록 잠시 그대로 둡니다.",
+      "팬에 식용유 한 스푼을 둘러주고 파를 반 가르고 송송 썰어줍니다.",
+      "식용유 위에 파를 적셔주고 파기름을 내줍니다.",
+      "파기름이 나왔으면 미리 불려놓은 카레밥 계란물을 넣어줍니다.",
+      "계란이 포슬포슬해지게 한번 볶아줍니다. 계란이 포슬포슬해지면 끝입니다.",
+      "그릇에 빼주고 아주 간단하게 카레 계란 볶음밥 완성입니다."
+    ],
+    "tips": [],
+    "curated_at": "2026-11-11T17:16:27+00:00",
+    "curation_model": "qwen2.5:3b"
+  },
+  {
+    "video_id": "WQeCaDHO7-0-01",
+    "source_video_id": "WQeCaDHO7-0",
+    "name": "간짜장 짜파게티",
+    "summary": "간짜장 비주얼과 냄새를 풍기는 짜파게티로 만든 간단한 요리",
+    "servings": null,
+    "prep_minutes": null,
+    "cook_minutes": null,
+    "confidence": 0.9,
+    "needs_review": false,
+    "source_kind": "automated_curated",
+    "source_url": "https://www.youtube.com/watch?v=WQeCaDHO7-0&t=0s",
+    "published_at": null,
+    "video_title": "Super simple black bean noodles are made by Chapagetti.",
+    "ingredients": [
+      {
+        "position": 1,
+        "section": "재료 또는 양념",
+        "name": "짜장라면",
+        "amount": null,
+        "unit": null,
+        "note": null,
+        "raw_text": "짜장라면"
+      },
+      {
+        "position": 2,
+        "section": "재료 또는 양념",
+        "name": "냉동만두",
+        "amount": null,
+        "unit": null,
+        "note": null,
+        "raw_text": "냉동만두"
+      },
+      {
+        "position": 3,
+        "section": "재료 또는 양념",
+        "name": "양파",
+        "amount": null,
+        "unit": null,
+        "note": null,
+        "raw_text": "양파"
+      }
+    ],
+    "steps": [
+      "짜장라면을 팬에 넣고 팬에 양파를 넣어 볶아줍니다.",
+      "냉동만두를 팬에 넣고 볶아줍니다.",
+      "양파와 만두를 볶은 후, 간짜장 소스와 분말 스프, 면을 넣어 섞어줍니다.",
+      "조미유와 계란 후라이, 고춧가루를 넣어 마무리해줍니다."
+    ],
+    "tips": [],
+    "curated_at": "2026-11-11T17:34:02+00:00",
+    "curation_model": "qwen2.5:3b"
+  },
+  {
+    "video_id": "EMJ4LvcbmXQ-01",
+    "source_video_id": "EMJ4LvcbmXQ",
+    "name": "게살 로제파스타",
+    "summary": "간단하고 비싼 돈 주고 분위기 내러 갈 필요 없이 방구석에서도 로맨틱한 분위기를 만들 수 있는 게살 로제파스타",
+    "servings": null,
+    "prep_minutes": null,
+    "cook_minutes": null,
+    "confidence": 0.9,
+    "needs_review": false,
+    "source_kind": "automated_curated",
+    "source_url": "https://www.youtube.com/watch?v=EMJ4LvcbmXQ&t=0s",
+    "published_at": null,
+    "video_title": "Crab rosé pasta is perfect for eating with your girlfriend",
+    "ingredients": [
+      {
+        "position": 1,
+        "section": "재료 또는 양념",
+        "name": "파스타면",
+        "amount": null,
+        "unit": null,
+        "note": null,
+        "raw_text": "파스타면"
+      },
+      {
+        "position": 2,
+        "section": "재료 또는 양념",
+        "name": "게살",
+        "amount": null,
+        "unit": null,
+        "note": null,
+        "raw_text": "게살"
+      },
+      {
+        "position": 3,
+        "section": "재료 또는 양념",
+        "name": "우유",
+        "amount": "180ml",
+        "unit": "ml",
+        "note": null,
+        "raw_text": "우유 180ml ml"
+      },
+      {
+        "position": 4,
+        "section": "재료 또는 양념",
+        "name": "토마토 소스",
+        "amount": "70g",
+        "unit": "g",
+        "note": null,
+        "raw_text": "토마토 소스 70g g"
+      },
+      {
+        "position": 5,
+        "section": "재료 또는 양념",
+        "name": "고추장",
+        "amount": "1/2스푼",
+        "unit": "스푼",
+        "note": null,
+        "raw_text": "고추장 1/2스푼 스푼"
+      }
+    ],
+    "steps": [
+      "파스타면을 미리 삶아준 뒤 빼줍니다.",
+      "팬에 식용유, 양파 반 개, 다진 마늘 1스푼을 볶아줍니다.",
+      "우유 180ml, 토마토 소스 70g, 고추장 1/2스푼을 넣고 섞어줍니다.",
+      "삶은 파스타면, 게살, 후추를 뿌려주고 섞어줍니다.",
+      "슬라이스 치즈, 면수 등 넣고 농도를 맞춰줍니다."
+    ],
+    "tips": [],
+    "curated_at": "2026-11-11T17:43:35+00:00",
+    "curation_model": "qwen2.5:3b"
   }
 ]
