@@ -276,39 +276,6 @@ def test_curate_batch_prioritizes_untried_videos(tmp_path, monkeypatch) -> None:
     assert state["videos"]["video456"]["status"] == "completed"
 
 
-def test_curate_batch_prioritizes_requested_ingredient_coverage(tmp_path, monkeypatch) -> None:
-    ordinary = _raw_recipe()
-    priority = json.loads(json.dumps(ordinary))
-    priority["video_id"] = "spam456"
-    priority["video_title"] = "스팸 볶음밥"
-    priority["source_url"] = "https://www.youtube.com/watch?v=spam456"
-    raw_path = tmp_path / "recipes.json"
-    curated_path = tmp_path / "curated.json"
-    state_path = tmp_path / "state.json"
-    raw_path.write_text(json.dumps([ordinary, priority], ensure_ascii=False), encoding="utf-8")
-    curated_path.write_text("[]", encoding="utf-8")
-    monkeypatch.setattr(curator, "fetch_video", lambda _: {"duration": 200})
-    monkeypatch.setattr(
-        curator,
-        "fetch_caption_tracks",
-        lambda _: {"ko": "참치 참치 밥 밥 김치 김치 기름을 빼고 볶습니다"},
-    )
-
-    curator.curate_batch(
-        raw_path=raw_path,
-        curated_path=curated_path,
-        state_path=state_path,
-        max_new=1,
-        model="test-model",
-        endpoint="http://unused",
-        generate=lambda _: _model_output(),
-    )
-
-    state = json.loads(state_path.read_text(encoding="utf-8"))
-    assert "video123" not in state["videos"]
-    assert state["videos"]["spam456"]["status"] == "completed"
-
-
 def test_curate_batch_can_target_a_video(tmp_path, monkeypatch) -> None:
     first = _raw_recipe()
     second = json.loads(json.dumps(first))

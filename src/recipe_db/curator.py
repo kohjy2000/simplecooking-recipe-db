@@ -18,7 +18,6 @@ from .youtube import fetch_caption_tracks, fetch_video
 MAX_SOURCE_CHARS = 18_000
 # Give previously exhausted videos one fresh pass after parser and validation fixes.
 MAX_ATTEMPTS = 4
-CURATION_PRIORITY_TERMS = ("스팸", "햄", "감자", "당근", "애호박", "호박")
 PANTRY_EVIDENCE_EXEMPT = {
     "물",
     "소금",
@@ -314,21 +313,6 @@ def _normalize_step_list(value: object) -> list[object]:
             f"{normalized[pair_index]} {normalized[pair_index + 1]}"
         ]
     return normalized
-
-
-def _curation_priority(raw_recipe: dict[str, Any]) -> int:
-    searchable = " ".join(
-        [
-            str(raw_recipe.get("video_title") or ""),
-            str(raw_recipe.get("name") or ""),
-            *[
-                str(ingredient.get("name") or "")
-                for ingredient in raw_recipe.get("ingredients") or []
-                if isinstance(ingredient, dict)
-            ],
-        ]
-    )
-    return 0 if any(term in searchable for term in CURATION_PRIORITY_TERMS) else 1
 
 
 def _expected_recipe_count(title: str) -> int | None:
@@ -630,9 +614,8 @@ def curate_batch(
     ]
     # Broaden public coverage before spending another run retrying earlier failures.
     candidates.sort(
-        key=lambda recipe: (
-            int(video_state.get(str(recipe.get("video_id")), {}).get("attempts", 0)),
-            _curation_priority(recipe),
+        key=lambda recipe: int(
+            video_state.get(str(recipe.get("video_id")), {}).get("attempts", 0)
         )
     )
     if shard_count is not None:
