@@ -109,6 +109,51 @@ def test_rejects_when_title_recipe_count_is_not_met() -> None:
         )
 
 
+def test_repairs_small_model_json_syntax_errors() -> None:
+    payload = _model_output().replace(
+        '"summary": "참치와 밥을 볶는 간단한 요리입니다.",',
+        '"summary": "참치와 밥을 "빠르게" 볶는 요리입니다.",',
+        1,
+    )
+
+    recipes = normalize_model_output(
+        payload,
+        raw_recipe=_raw_recipe(),
+        source_text="참치 1캔 밥 1공기 김치 기름을 빼고 빠르게 볶습니다",
+        model="test-model",
+    )
+
+    assert len(recipes) == 2
+    assert recipes[0]["name"] == "참치 볶음밥"
+
+
+def test_accepts_two_step_simple_recipe() -> None:
+    payload = json.loads(_model_output())
+    payload["recipes"][0]["steps"] = payload["recipes"][0]["steps"][:2]
+
+    recipes = normalize_model_output(
+        json.dumps(payload, ensure_ascii=False),
+        raw_recipe=_raw_recipe(),
+        source_text="참치 1캔 밥 1공기 김치 기름을 빼고 볶습니다",
+        model="test-model",
+    )
+
+    assert len(recipes[0]["steps"]) == 2
+
+
+def test_rejects_more_than_ten_steps() -> None:
+    payload = json.loads(_model_output())
+    payload["recipes"][0]["steps"] = ["참치와 밥을 고루 볶아 줍니다."] * 11
+
+    with pytest.raises(CurationError, match="between 2 and 10 steps"):
+        normalize_model_output(
+            json.dumps(payload, ensure_ascii=False),
+            raw_recipe=_raw_recipe(),
+            source_text="참치 1캔 밥 1공기 김치 기름을 빼고 볶습니다",
+            model="test-model",
+        )
+
+
 def test_curate_batch_persists_public_recipes_and_state(tmp_path, monkeypatch) -> None:
     raw_path = tmp_path / "recipes.json"
     curated_path = tmp_path / "curated.json"
@@ -311,7 +356,7 @@ def test_plan_and_merge_parallel_curation_shards(tmp_path) -> None:
         json.dumps([{"video_id": "done-01", "source_video_id": "done"}]), encoding="utf-8"
     )
     state_path.write_text(
-        json.dumps({"videos": {"exhausted": {"attempts": 3}}}), encoding="utf-8"
+        json.dumps({"videos": {"exhausted": {"attempts": 4}}}), encoding="utf-8"
     )
 
     plan = plan_curation(

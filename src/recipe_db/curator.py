@@ -9,12 +9,15 @@ from datetime import UTC, datetime
 from pathlib import Path
 from typing import Any
 
+from json_repair import loads as repair_json_loads
+
 from .youtube import fetch_caption_tracks, fetch_video
 
 # Keep the prompt small enough for CPU-only GitHub runners while retaining a
 # complete short-form cooking transcript and the beginning of longer videos.
 MAX_SOURCE_CHARS = 18_000
-MAX_ATTEMPTS = 3
+# Give previously exhausted videos one fresh pass after parser and validation fixes.
+MAX_ATTEMPTS = 4
 PANTRY_EVIDENCE_EXEMPT = {
     "물",
     "소금",
@@ -160,7 +163,7 @@ def build_prompt(raw_recipe: dict[str, Any], source_bundle: str) -> str:
 - 재료와 계량은 자료에서 확인되는 것만 쓰세요. 양이 분명하지 않으면 amount와 unit을 null로 두세요.
 - 각 재료의 source_quote에는 그 재료를 확인한 원문 구절을 번역하거나 고치지 말고 그대로 복사하세요.
 - 일반 상식으로 재료, 수량, 온도, 시간을 새로 만들어내지 마세요.
-- 각 레시피는 재료 2개 이상, 조리 단계 3~8개로 작성하세요.
+- 각 레시피는 재료 2개 이상, 조리 단계 2~10개로 작성하세요.
 - 인사, 시식평, 구독 요청, 농담은 조리 단계에서 제외하세요.
 - 여러 요리가 이어지는 영상이면 자막 시각을 이용해 각 요리의 start_seconds를 적으세요.
 - 결과 설명이나 마크다운 없이 JSON 객체 하나만 출력하세요.
@@ -251,14 +254,23 @@ def _parse_model_json(generated: str) -> dict[str, Any]:
     text = generated.strip().removeprefix("```json").removeprefix("```").removesuffix("```")
     try:
         payload = json.loads(text.strip())
-    except json.JSONDecodeError:
+    except json.JSONDecodeError as original_error:
         start, end = text.find("{"), text.rfind("}")
-        if start < 0 or end <= start:
+        if start < 0:
             raise CurationError("Model output did not contain a JSON object") from None
+        candidate = text[start : end + 1] if end > start else text[start:]
         try:
-            payload = json.loads(text[start : end + 1])
-        except json.JSONDecodeError as exc:
-            raise CurationError(f"Model output was not valid JSON: {exc}") from exc
+            payload = json.loads(candidate)
+        except json.JSONDecodeError:
+            # Small local models commonly leave an unescaped quote, a trailing comma,
+            # or an unfinished closing bracket. Repair only the JSON syntax here;
+            # every recovered field still passes the evidence checks below.
+            try:
+                payload = repair_json_loads(candidate)
+            except (ValueError, TypeError, json.JSONDecodeError) as repair_error:
+                raise CurationError(
+                    f"Model output was not valid JSON: {original_error}"
+                ) from repair_error
     if not isinstance(payload, dict):
         raise CurationError("Model output root must be a JSON object")
     return payload
@@ -400,8 +412,8 @@ def normalize_model_output(
         raw_steps = value.get("steps")
         if not isinstance(raw_ingredients, list) or len(raw_ingredients) < 2:
             raise CurationError(f"Recipe {index} has fewer than two ingredients")
-        if not isinstance(raw_steps, list) or not 3 <= len(raw_steps) <= 8:
-            raise CurationError(f"Recipe {index} must have between 3 and 8 steps")
+        if not isinstance(raw_steps, list) or not 2 <= len(raw_steps) <= 10:
+            raise CurationError(f"Recipe {index} must have between 2 and 10 steps")
 
         ingredients: list[dict[str, Any]] = []
         ingredient_names: set[str] = set()
