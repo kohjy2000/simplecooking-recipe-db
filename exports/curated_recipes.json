@@ -22417,5 +22417,250 @@
     "tips": [],
     "curated_at": "2026-11-11T18:26:53+00:00",
     "curation_model": "qwen2.5:3b"
+  },
+  {
+    "video_id": "Em6Vyra0qUc-01",
+    "source_video_id": "Em6Vyra0qUc",
+    "name": "돼지고기와 콩나물 볶음밥",
+    "summary": "돼지고기와 콩나물로 만든 간단한 볶음밥입니다.",
+    "servings": null,
+    "prep_minutes": null,
+    "cook_minutes": null,
+    "confidence": 0.9,
+    "needs_review": false,
+    "source_kind": "automated_curated",
+    "source_url": "https://www.youtube.com/watch?v=Em6Vyra0qUc&t=0s",
+    "published_at": null,
+    "video_title": "이걸 보고 3만원 아꼈습니다.",
+    "ingredients": [
+      {
+        "position": 1,
+        "section": "재료 또는 양념",
+        "name": "돼지고기",
+        "amount": "300g",
+        "unit": "g",
+        "note": null,
+        "raw_text": "돼지고기 300g g"
+      },
+      {
+        "position": 2,
+        "section": "재료 또는 양념",
+        "name": "콩나물",
+        "amount": null,
+        "unit": null,
+        "note": null,
+        "raw_text": "콩나물"
+      }
+    ],
+    "steps": [
+      "돼지고기를 얇게 썰어 준비해주세요.",
+      "대파를 대략 반 가르고 굵직하게 썰어 준비해주세요.",
+      "대파의 흰 부분만 잘게 썰어주세요. 대파와 대파의 흰 부분을 팬에 넣고 볶아주세요.",
+      "돼지고기를 얇게 썰어 팬에 넣고, 대파와 대파의 흰 부분을 둘러주어 볶아주세요.",
+      "대파와 대파의 흰 부분을 먼저 볶아서 숨을 죽이고, 돼지고기를 추가로 볶아주세요.",
+      "대파와 대파의 흰 부분, 돼지고기, 콩나물을 모두 볶아주세요.",
+      "대파와 대파의 흰 부분, 돼지고기, 콩나물을 볶은 후, 고춧가루를 넣고 볶아주세요.",
+      "대파와 대파의 흰 부분, 돼지고기, 콩나물을 볶은 후, 고춧가루를 넣고 볶아주세요.",
+      "대파와 대파의 흰 부분, 돼지고기, 콩나물을 볶은 후, 고춧가루를 넣고 볶아주세요.",
+      "대파와 대파의 흰 부분, 돼지고기, 콩나물을 볶은 후, 고춧가루를 넣고 볶아주세요."
+    ],
+    "tips": [],
+    "curated_at": "2026-11-12T11:52:45+00:00",
+    "curation_model": "qwen2.5:3b"
+  },
+  {
+    "video_id": "0RkFgxsqlV0-01",
+    "source_video_id": "0RkFgxsqlV0",
+    "name": "소시지와 메추리 알 짜장 볶음",
+    "summary": "소시지와 메추리 알을 짜장 볶음으로 만드는 방법",
+    "servings": null,
+    "prep_minutes": null,
+    "cook_minutes": null,
+    "confidence": 0.9,
+    "needs_review": false,
+    "source_kind": "automated_curated",
+    "source_url": "https://www.youtube.com/watch?v=0RkFgxsqlV0&t=0s",
+    "published_at": null,
+    "video_title": "일주일치 반찬이지만 너무 맛있어서 하루도 못 감",
+    "ingredients": [
+      {
+        "position": 1,
+        "section": "재료 또는 양념",
+        "name": "소시지",
+        "amount": null,
+        "unit": null,
+        "note": null,
+        "raw_text": "소시지"
+      },
+      {
+        "position": 2,
+        "section": "재료 또는 양념",
+        "name": "메추리 알",
+        "amount": null,
+        "unit": null,
+        "note": null,
+        "raw_text": "메추리 알"
+      },
+      {
+        "position": 3,
+        "section": "양념",
+        "name": "소세지",
+        "amount": null,
+        "unit": null,
+        "note": null,
+        "raw_text": "소세지"
+      },
+      {
+        "position": 4,
+        "section": "양념",
+        "name": "짜장 가루",
+        "amount": "1/2",
+        "unit": "큰술",
+        "note": null,
+        "raw_text": "짜장 가루 1/2 큰술"
+      },
+      {
+        "position": 5,
+        "section": "양념",
+        "name": "설탕",
+        "amount": "1",
+        "unit": "스푼",
+        "note": null,
+        "raw_text": "설탕 1 스푼"
+      }
+    ],
+    "steps": [
+      "소시지를 비엔나 소세지와 함께 준비해주세요.",
+      "메추리 알을 300g 준비해주세요.",
+      "비엔나 소세지를 1대일 비율로 준비해주세요.",
+      "식용유를 자판에 굉장히 넉넉하게 둘러주세요.",
+      "비엔나 소세지를 비엔나 소시지와 함께 넣어주세요.",
+      "메추리 알을 넣어주세요. 기름에 튀기듯이 메추리 알을 볶아주세요.",
+      "소시지를 볶아주세요. 짜장 가루를 넣어주세요.",
+      "짜장 가루를 기름에 볶아주세요. 물을 반 컵씩 부어주세요.",
+      "물이 뭉치지 않게 골고루 풀어주세요.",
+      "마지막으로 설탕을 골고루 뿌려주세요. 후추와 통깨를 뿌려주세요."
+    ],
+    "tips": [],
+    "curated_at": "2026-11-12T11:53:24+00:00",
+    "curation_model": "qwen2.5:3b"
+  },
+  {
+    "video_id": "MNsVjDwrWLE-01",
+    "source_video_id": "MNsVjDwrWLE",
+    "name": "바비큐 소스와 목살로 만드는 바비큐",
+    "summary": "두 가지 소스를 사용하여 바비큐를 만듭니다.",
+    "servings": 1,
+    "prep_minutes": null,
+    "cook_minutes": null,
+    "confidence": 0.9,
+    "needs_review": false,
+    "source_kind": "automated_curated",
+    "source_url": "https://www.youtube.com/watch?v=MNsVjDwrWLE&t=0s",
+    "published_at": null,
+    "video_title": "너무 맛있어서 진짜 욕 나옵니다.",
+    "ingredients": [
+      {
+        "position": 1,
+        "section": "재료 또는 양념",
+        "name": "돼지갈비",
+        "amount": "1kg",
+        "unit": "kg",
+        "note": null,
+        "raw_text": "돼지갈비 1kg kg"
+      },
+      {
+        "position": 2,
+        "section": "재료 또는 양념",
+        "name": "목살",
+        "amount": "400g",
+        "unit": "g",
+        "note": null,
+        "raw_text": "목살 400g g"
+      }
+    ],
+    "steps": [
+      "먼저 밥에큐 폭립 느낌을 내기 위해 돼지갈비를 준비합니다.",
+      "목살 대신 삼겹살이나 목살을 사용하시면 됩니다.",
+      "돼지갈비를 물에 담가 30분 이상 푹 끓입니다.",
+      "돼지갈비를 빼서 찬물에 헹구어줍니다.",
+      "돼지갈비를 다시 팬에 올려서 살짝 둘러주고 샤워를 마친 후.",
+      "소스를 전체적으로 막 흩뿌려줍니다.",
+      "양념을 태운 뒤, 양념을 살짝 볶아줍니다.",
+      "양념이 탄 후, 양념을 빼줍니다.",
+      "바닥에 남은 소스를 아낌없이 올려줍니다.",
+      "파슬리를 넉넉하게 뿌려줍니다."
+    ],
+    "tips": [],
+    "curated_at": "2026-11-12T12:04:43+00:00",
+    "curation_model": "qwen2.5:3b"
+  },
+  {
+    "video_id": "27QjNjZozek-01",
+    "source_video_id": "27QjNjZozek",
+    "name": "김치크림우동",
+    "summary": "우동을 대신 사용한 김치와 크림을 볶아 만든 김치크림우동",
+    "servings": null,
+    "prep_minutes": null,
+    "cook_minutes": null,
+    "confidence": 0.9,
+    "needs_review": false,
+    "source_kind": "automated_curated",
+    "source_url": "https://www.youtube.com/watch?v=27QjNjZozek&t=0s",
+    "published_at": null,
+    "video_title": "집에 김치가 있다면 당장 꺼내세요!",
+    "ingredients": [
+      {
+        "position": 1,
+        "section": "김치와 크림",
+        "name": "대파",
+        "amount": null,
+        "unit": null,
+        "note": null,
+        "raw_text": "대파"
+      },
+      {
+        "position": 2,
+        "section": "김치",
+        "name": "김치",
+        "amount": null,
+        "unit": null,
+        "note": null,
+        "raw_text": "김치"
+      },
+      {
+        "position": 3,
+        "section": "크림",
+        "name": "크림",
+        "amount": "2컵",
+        "unit": "컵",
+        "note": null,
+        "raw_text": "크림 2컵 컵"
+      },
+      {
+        "position": 4,
+        "section": "우동면",
+        "name": "우동면",
+        "amount": null,
+        "unit": null,
+        "note": null,
+        "raw_text": "우동면"
+      }
+    ],
+    "steps": [
+      "우동면을 준비하고 뜨거운 물을 부어 데쳐 우동면을 사용할 준비를 한다.",
+      "대파를 준비하고 흰 부분과 초록 부분을 분리하여 썰어준다.",
+      "대파를 팬에 넉넉하게 둘러주고 흰 부분만 먼저 올려준다.",
+      "다섯 맨을 받은 김치를 두 세분 넣어준다.",
+      "다시 김치의 신맛과 감칠맛을 잡고, 술탕 한 푼을 넣어 볶아준다.",
+      "고추장 반스푼과 진간장 스푼, 카레가루 반스푼을 넣고 잘 섞어준다.",
+      "생크림을 종이컵 2컵 부어 우동면을 넣어준다.",
+      "생크림이 없으면 우유를 사용하면 된다. 대파의 초록 부분까지 더해주고 잘 섞어준다.",
+      "생크림을 넣은 우동면을 바시고 계은 반수 김계란 후라이를 올려준다.",
+      "통깨를 스리슬쩍 뿌려주면 완성된다."
+    ],
+    "tips": [],
+    "curated_at": "2026-11-12T11:28:12+00:00",
+    "curation_model": "qwen2.5:3b"
   }
 ]
