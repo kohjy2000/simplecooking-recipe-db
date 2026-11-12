@@ -22662,5 +22662,94 @@
     "tips": [],
     "curated_at": "2026-11-12T11:28:12+00:00",
     "curation_model": "qwen2.5:3b"
+  },
+  {
+    "video_id": "_6ndvVC6z8w-01",
+    "source_video_id": "_6ndvVC6z8w",
+    "name": "진땅 양념장과 계란 덮밥",
+    "summary": "진땅 양념장과 계란을 조합한 간단한 계란 요리",
+    "servings": null,
+    "prep_minutes": null,
+    "cook_minutes": null,
+    "confidence": 0.9,
+    "needs_review": false,
+    "source_kind": "automated_curated",
+    "source_url": "https://www.youtube.com/watch?v=_6ndvVC6z8w&t=0s",
+    "published_at": null,
+    "video_title": "구독자들이 원하는 개쉬운 계란 요리",
+    "ingredients": [
+      {
+        "position": 1,
+        "section": "재료 또는 양념",
+        "name": "양파",
+        "amount": "네개",
+        "unit": null,
+        "note": null,
+        "raw_text": "양파 네개"
+      },
+      {
+        "position": 2,
+        "section": "재료 또는 양념",
+        "name": "계란",
+        "amount": "두알",
+        "unit": null,
+        "note": null,
+        "raw_text": "계란 두알"
+      }
+    ],
+    "steps": [
+      "팬에 양파 넉넉하게 썰어 넣고 볶아줍니다",
+      "계란 두알을 팬에 올려줍니다",
+      "진땅 양념장을 양파 위에 흩뿌려줍니다",
+      "계란이 익을 때까지 양념장과 함께 볶아줍니다",
+      "계란이 익으면 양념장과 함께 흰바위로 올려줍니다"
+    ],
+    "tips": [],
+    "curated_at": "2026-11-12T12:37:13+00:00",
+    "curation_model": "qwen2.5:3b"
+  },
+  {
+    "video_id": "4JFW1LT_heM-01",
+    "source_video_id": "4JFW1LT_heM",
+    "name": "야매 아부라소바",
+    "summary": "일본 SNS에서 유행했던 라면 레시피로 만든 야매 아부라소바",
+    "servings": null,
+    "prep_minutes": null,
+    "cook_minutes": null,
+    "confidence": 0.9,
+    "needs_review": false,
+    "source_kind": "automated_curated",
+    "source_url": "https://www.youtube.com/watch?v=4JFW1LT_heM&t=0s",
+    "published_at": null,
+    "video_title": "일본 SNS에서 더 난리났던 라면 레시피",
+    "ingredients": [
+      {
+        "position": 1,
+        "section": "재료 또는 양념",
+        "name": "삼겹살",
+        "amount": "200g",
+        "unit": null,
+        "note": null,
+        "raw_text": "삼겹살 200g"
+      },
+      {
+        "position": 2,
+        "section": "재료 또는 양념",
+        "name": "매운 라면",
+        "amount": null,
+        "unit": null,
+        "note": null,
+        "raw_text": "매운 라면"
+      }
+    ],
+    "steps": [
+      "삼겹살을 맛있게 구워준 뒤, 설탕 1/2스푼과 진간장 1스푼을 둘러 향을 입혀줍니다.",
+      "면과 건더기 스프를 익혀줍니다.",
+      "면에 라면스프 1/2스푼, 진간장 1/2스푼, 설탕 1/2스푼, 참기름 1스푼을 넣고 골고루 섞어줍니다.",
+      "쪽파 혹은 대파, 삼겹살, 수란, 후추 등 입맛에 맞게 올려줍니다."
+    ],
+    "tips": [],
+    "curated_at": "2026-11-12T13:08:32+00:00",
+    "curation_model": "qwen2.5:3b"
   }
 ]
