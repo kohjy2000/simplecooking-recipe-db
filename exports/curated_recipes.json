@@ -24194,5 +24194,84 @@
     "tips": [],
     "curated_at": "2026-11-12T19:13:27+00:00",
     "curation_model": "qwen2.5:3b"
+  },
+  {
+    "video_id": "zv7OPbRjI2k-01",
+    "source_video_id": "zv7OPbRjI2k",
+    "name": "칼국수",
+    "summary": "칼국수를 10분 동안 끓여서 맛있게 만드는 방법",
+    "servings": null,
+    "prep_minutes": null,
+    "cook_minutes": null,
+    "confidence": 0.9,
+    "needs_review": false,
+    "source_kind": "automated_curated",
+    "source_url": "https://www.youtube.com/watch?v=zv7OPbRjI2k&t=0s",
+    "published_at": null,
+    "video_title": "요즘 SNS에서 난리난 라면 먹는 방법",
+    "ingredients": [
+      {
+        "position": 1,
+        "section": "재료 또는 양념",
+        "name": "멸치 칼국수",
+        "amount": "1/2",
+        "unit": "큰술",
+        "note": null,
+        "raw_text": "멸치 칼국수 1/2 큰술"
+      },
+      {
+        "position": 2,
+        "section": "재료 또는 양념",
+        "name": "기자 물",
+        "amount": "800mm",
+        "unit": "mm",
+        "note": null,
+        "raw_text": "기자 물 800mm mm"
+      },
+      {
+        "position": 3,
+        "section": "재료 또는 양념",
+        "name": "건드기 스프",
+        "amount": null,
+        "unit": null,
+        "note": null,
+        "raw_text": "건드기 스프"
+      },
+      {
+        "position": 4,
+        "section": "재료 또는 양념",
+        "name": "꼬춧가루",
+        "amount": "2",
+        "unit": "스푼",
+        "note": null,
+        "raw_text": "꼬춧가루 2 스푼"
+      },
+      {
+        "position": 5,
+        "section": "재료 또는 양념",
+        "name": "다진마늘",
+        "amount": "2",
+        "unit": "스푼",
+        "note": null,
+        "raw_text": "다진마늘 2 스푼"
+      },
+      {
+        "position": 6,
+        "section": "재료 또는 양념",
+        "name": "면",
+        "amount": null,
+        "unit": null,
+        "note": null,
+        "raw_text": "면"
+      }
+    ],
+    "steps": [
+      "먼지 멸치 칼국수 한봉을 준비해주고 기자 물 800mm에 멸치 칼국수의 건드기 스프와 불만 스푼을 다 놓고",
+      "꼬춧가루 두 스푼, 고추장 반스푼, 다진마늘 반 스푼을 그라고 면까지 놓고",
+      "약불 10분간 푹 끓여 줍니다."
+    ],
+    "tips": [],
+    "curated_at": "2026-11-12T20:14:58+00:00",
+    "curation_model": "qwen2.5:3b"
   }
 ]
