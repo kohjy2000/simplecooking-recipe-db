@@ -22751,5 +22751,448 @@
     "tips": [],
     "curated_at": "2026-11-12T13:08:32+00:00",
     "curation_model": "qwen2.5:3b"
+  },
+  {
+    "video_id": "Lun3iIMZLXY-01",
+    "source_video_id": "Lun3iIMZLXY",
+    "name": "참치 순두부 조림",
+    "summary": "간단하고 맛있는 참치 순두부 조림",
+    "servings": null,
+    "prep_minutes": null,
+    "cook_minutes": null,
+    "confidence": 0.9,
+    "needs_review": false,
+    "source_kind": "automated_curated",
+    "source_url": "https://www.youtube.com/watch?v=Lun3iIMZLXY&t=0s",
+    "published_at": null,
+    "video_title": "이거 한숟갈에 밥 한공기씩 먹습니다.",
+    "ingredients": [
+      {
+        "position": 1,
+        "section": "재료 또는 양념",
+        "name": "양파",
+        "amount": "1/2",
+        "unit": "큰술",
+        "note": null,
+        "raw_text": "양파 1/2 큰술"
+      },
+      {
+        "position": 2,
+        "section": "재료 또는 양념",
+        "name": "대파",
+        "amount": "1/2",
+        "unit": "큰술",
+        "note": null,
+        "raw_text": "대파 1/2 큰술"
+      },
+      {
+        "position": 3,
+        "section": "재료 또는 양념",
+        "name": "순두부",
+        "amount": null,
+        "unit": null,
+        "note": null,
+        "raw_text": "순두부"
+      },
+      {
+        "position": 4,
+        "section": "재료 또는 양념",
+        "name": "참치",
+        "amount": null,
+        "unit": null,
+        "note": null,
+        "raw_text": "참치"
+      },
+      {
+        "position": 5,
+        "section": "재료 또는 양념",
+        "name": "장",
+        "amount": "1",
+        "unit": "스푼",
+        "note": null,
+        "raw_text": "장 1 스푼"
+      },
+      {
+        "position": 6,
+        "section": "재료 또는 양념",
+        "name": "굴 소스",
+        "amount": "1",
+        "unit": "스푼",
+        "note": null,
+        "raw_text": "굴 소스 1 스푼"
+      },
+      {
+        "position": 7,
+        "section": "재료 또는 양념",
+        "name": "일찍",
+        "amount": "1",
+        "unit": "스푼",
+        "note": null,
+        "raw_text": "일찍 1 스푼"
+      },
+      {
+        "position": 8,
+        "section": "재료 또는 양념",
+        "name": "꼬춧가루",
+        "amount": "1",
+        "unit": "스푼",
+        "note": null,
+        "raw_text": "꼬춧가루 1 스푼"
+      },
+      {
+        "position": 9,
+        "section": "재료 또는 양념",
+        "name": "다신마늘",
+        "amount": "1",
+        "unit": "스푼",
+        "note": null,
+        "raw_text": "다신마늘 1 스푼"
+      },
+      {
+        "position": 10,
+        "section": "재료 또는 양념",
+        "name": "설탕",
+        "amount": "반",
+        "unit": "큰술",
+        "note": null,
+        "raw_text": "설탕 반 큰술"
+      }
+    ],
+    "steps": [
+      "양파 안 한개를 대략적으로 썰어서 깔아줍니다.",
+      "대파 한 대를 잘게 썰어서 깔아줍니다.",
+      "순두부 한 봉과 참치 하나를 기름과 함께 올려줍니다.",
+      "장 한 스푼, 굴 소스 한 스푼, 일찍 한 스푼, 꼬춧가루 한 스푼, 다신마늘 한 스푼을 넣어 양념장을 만듭니다.",
+      "양념장에 설탕 반세품을 추가해 양념장이 완성됩니다.",
+      "양념장에 물 분의컵을 부어가 골고루 싸줍니다.",
+      "7분만 끓여 조림으로 만들어 주면 끝입니다.",
+      "청양고추와 후추를 듬뿍 뿌려주면 밥에 비비가 묶으면 진짜 맛있는 참치 순두부 조림이 완성됩니다."
+    ],
+    "tips": [],
+    "curated_at": "2026-11-12T13:38:05+00:00",
+    "curation_model": "qwen2.5:3b"
+  },
+  {
+    "video_id": "AFiEjog4oFY-01",
+    "source_video_id": "AFiEjog4oFY",
+    "name": "치즈 웨지 감자",
+    "summary": "간단한 치즈 웨지 감자 레시피입니다.",
+    "servings": null,
+    "prep_minutes": null,
+    "cook_minutes": null,
+    "confidence": 0.9,
+    "needs_review": false,
+    "source_kind": "automated_curated",
+    "source_url": "https://www.youtube.com/watch?v=AFiEjog4oFY&t=0s",
+    "published_at": null,
+    "video_title": "What happens when you pour cheese sauce over potatoes.",
+    "ingredients": [
+      {
+        "position": 1,
+        "section": "재료 또는 양념",
+        "name": "감자",
+        "amount": "3",
+        "unit": "알",
+        "note": null,
+        "raw_text": "감자 3 알"
+      },
+      {
+        "position": 2,
+        "section": "재료 또는 양념",
+        "name": "기름",
+        "amount": "2",
+        "unit": "스푼",
+        "note": null,
+        "raw_text": "기름 2 스푼"
+      },
+      {
+        "position": 3,
+        "section": "재료 또는 양념",
+        "name": "다진 마늘",
+        "amount": "1",
+        "unit": "스푼",
+        "note": null,
+        "raw_text": "다진 마늘 1 스푼"
+      },
+      {
+        "position": 4,
+        "section": "재료 또는 양념",
+        "name": "양파",
+        "amount": null,
+        "unit": null,
+        "note": null,
+        "raw_text": "양파"
+      },
+      {
+        "position": 5,
+        "section": "재료 또는 양념",
+        "name": "버터",
+        "amount": null,
+        "unit": null,
+        "note": null,
+        "raw_text": "버터"
+      },
+      {
+        "position": 6,
+        "section": "재료 또는 양념",
+        "name": "슬라이스 치즈",
+        "amount": "4장",
+        "unit": null,
+        "note": null,
+        "raw_text": "슬라이스 치즈 4장"
+      }
+    ],
+    "steps": [
+      "감자를 먹을 만큼 준비해주세요. 감자를 한 번에 껍질을 까줍니다.",
+      "감자를 반 갈라주고 웨지감자 형태로 감자를 썰어줍니다. 감자를 볼에 담아줍니다. 물을 부어주고 10분 정도 그대로 두어서 전분을 살짝 빼줍니다.",
+      "전분기가 살짝 빠졌다면 치킨 타월 위에 감자를 얹어주고 다른 한 장으로 덮어서 꾹 눌러 줍니다.",
+      "감자를 겉면에 마저 물기를 제거해줍니다. 팬에 기름을 2스푼 넉넉히 둘러주고 중불에서 기름을 뜨뜻하게 데워줍니다.",
+      "기름이 달궈졌으면 겉에 물기가 제거된 웨지 감자를 다 넣어줍니다. 감자를 기름에 튀기듯이 구워줍니다. 감자가 어느 정도 갈색빛이 띈 다면 버터를 조금 넣어주고 웨지 감자에 버터 향을 입혀줍니다.",
+      "버터가 없으면 생략해도 됩니다. 다 됐으면 웨지 감자를 빼주고 잠깐 식혀줍니다. 치즈 소스를 만들어 줍니다. 팬에 기름을 살짝 둘러주고 다진 마늘 한 스푼 넣어줍니다.",
+      "양파 반 개를 기영이 되가는 밑으로 잘게 다져서 한줌 가득 넣어줍니다. 양파와 다진 마늘을 맛있는 향이 나게 한번 볶아줍니다. 기름이 달궈졌으면 웨지 감자를 다 넣어줍니다. 치즈 소스를 만들어 줍니다.",
+      "팬에 기름을 살짝 둘러주고 다진 마늘 한 스푼 넣어줍니다. 양파 반 개를 기영이 되가는 밑으로 잘게 다져서 한줌 가득 넣어줍니다.",
+      "양파와 다진 마늘을 맛있는 향이 나게 한번 볶아줍니다. 기름이 달궈졌으면 우유 반컵을 부어줍니다.",
+      "슬라이스 치즈 4장 넣어주고 약불로 내려주고 우유를 저어 줍니다. 치즈 소스의 농도는 입맛에 맞게 조절하면 됩니다."
+    ],
+    "tips": [],
+    "curated_at": "2026-11-12T14:02:31+00:00",
+    "curation_model": "qwen2.5:3b"
+  },
+  {
+    "video_id": "zFysi-h46Fw-01",
+    "source_video_id": "zFysi-h46Fw",
+    "name": "게살 죽",
+    "summary": "5분 만에 만드는 간단한 게살 죽입니다.",
+    "servings": null,
+    "prep_minutes": null,
+    "cook_minutes": null,
+    "confidence": 0.9,
+    "needs_review": false,
+    "source_kind": "automated_curated",
+    "source_url": "https://www.youtube.com/watch?v=zFysi-h46Fw&t=0s",
+    "published_at": null,
+    "video_title": "Crab meat soup recipe that adults don't even know.",
+    "ingredients": [
+      {
+        "position": 1,
+        "section": "재료 또는 양념",
+        "name": "물",
+        "amount": "2컵",
+        "unit": "컵",
+        "note": null,
+        "raw_text": "물 2컵 컵"
+      },
+      {
+        "position": 2,
+        "section": "재료 또는 양념",
+        "name": "양파",
+        "amount": null,
+        "unit": null,
+        "note": null,
+        "raw_text": "양파"
+      },
+      {
+        "position": 3,
+        "section": "재료 또는 양념",
+        "name": "버섯",
+        "amount": "한줌",
+        "unit": "줌",
+        "note": null,
+        "raw_text": "버섯 한줌 줌"
+      },
+      {
+        "position": 4,
+        "section": "재료 또는 양념",
+        "name": "크래미",
+        "amount": null,
+        "unit": null,
+        "note": null,
+        "raw_text": "크래미"
+      },
+      {
+        "position": 5,
+        "section": "재료 또는 양념",
+        "name": "멸치액젓",
+        "amount": null,
+        "unit": null,
+        "note": null,
+        "raw_text": "멸치액젓"
+      }
+    ],
+    "steps": [
+      "냄비에 물 2컵을 부어줍니다.",
+      "양파를 기영이 대가리 만큼으로 기영이 대가리 만큼으로 썰어줍니다.",
+      "버섯을 잘게 다져서 넣어줍니다.",
+      "크래미를 손으로 대략 손으로 쥐어뜯기로 갈기 갈기 손으로 찢어줍니다.",
+      "멸치액젓을 한 스푼 넣어줍니다.",
+      "이제 물에 넣어주고 보글보글 끓여줍니다.",
+      "보글보글 끓여주면 끝입니다."
+    ],
+    "tips": [],
+    "curated_at": "2026-11-12T14:20:06+00:00",
+    "curation_model": "qwen2.5:3b"
+  },
+  {
+    "video_id": "gp6pZDoQnxM-01",
+    "source_video_id": "gp6pZDoQnxM",
+    "name": "김치와 파스타 조합",
+    "summary": "김치와 파스타를 조합한 새로운 요리법을 소개합니다.",
+    "servings": null,
+    "prep_minutes": null,
+    "cook_minutes": null,
+    "confidence": 0.9,
+    "needs_review": false,
+    "source_kind": "automated_curated",
+    "source_url": "https://www.youtube.com/watch?v=gp6pZDoQnxM&t=0s",
+    "published_at": null,
+    "video_title": "The reason why Kimchi and pasta are combined gives me goosebumps.",
+    "ingredients": [
+      {
+        "position": 1,
+        "section": "재료 또는 양념",
+        "name": "삼겹살",
+        "amount": "약 150g",
+        "unit": "g",
+        "note": null,
+        "raw_text": "삼겹살 약 150g g"
+      },
+      {
+        "position": 2,
+        "section": "재료 또는 양념",
+        "name": "마늘",
+        "amount": "1스푼",
+        "unit": "스푼",
+        "note": null,
+        "raw_text": "마늘 1스푼 스푼"
+      },
+      {
+        "position": 3,
+        "section": "재료 또는 양념",
+        "name": "김치",
+        "amount": "2스푼",
+        "unit": "스푼",
+        "note": null,
+        "raw_text": "김치 2스푼 스푼"
+      },
+      {
+        "position": 4,
+        "section": "재료 또는 양념",
+        "name": "고춧가루",
+        "amount": null,
+        "unit": null,
+        "note": null,
+        "raw_text": "고춧가루"
+      },
+      {
+        "position": 5,
+        "section": "재료 또는 양념",
+        "name": "양파",
+        "amount": "반개",
+        "unit": "개",
+        "note": null,
+        "raw_text": "양파 반개 개"
+      },
+      {
+        "position": 6,
+        "section": "재료 또는 양념",
+        "name": "청양고추",
+        "amount": null,
+        "unit": null,
+        "note": null,
+        "raw_text": "청양고추"
+      }
+    ],
+    "steps": [
+      "먼저 팬에 삼겹살 약 150g을 넣어 섞어줍니다. 삼겹살이 없으신 분은 다른 기름 진 부위도 좋고 뒷다리살을 사용하시는 분은 기름을 살짝 둘러주고 구워줍니다.",
+      "마 베이컨도 좋습니다. 앞뒤로 잘 꺼진 삼겹살을 잘게 잘라줍니다. 삼겹살 위로 한국인의 다진 마늘 한 스푼 가득 올려주고 다진 마늘이 탔다고 생각이 들 정도로 볶아줍니다.",
+      "잘 익은 김치도 2스푼 넣어줍니다. 그러고 김치도 한번 볶아주면 됩니다. 마늘향이 배인 돼지기름에 김치까지 볶아주면 이건 그냥 먹어도 맛있는 김치볶음이 됩니다.",
+      "저는 집에 돼지고기가 없어요 라고 하시는 분은 집에 흔히 있는 일반 식용유에 김치를 볶아 주셔도 됩니다.",
+      "그럼 일찍 없으면 어떡하나요 라고 하시는 분은 먹지 마시면 됩니다. 어느 정도 김치가 잘 볶아졌으면 시뻘건 색감을 위해 고춧가루도 한 스푼 넣어줍니다.",
+      "고춧가루도 빠르게 한번 볶아주면서 풋내도 날려줍니다. 고춧가루는 금방 타버리기 때문에 10초 정도만 볶아주시면 됩니다.",
+      "그러고 물 3컵을 부어주고 양파 반개를 대략 채 썰어서 넣어줍니다. 매콤한 한국인의 맛을 위해 청양고추 하나도 가위로 대략 채 썰어서 넣어 줍니다.",
+      "청양고추가 없다면 생략하셔도 됩니다. 그리고 물이 끓을 때까지 기다려 줍니다. 이제 물이 팔팔 끓기 시작하면 집 근처 마트에서 쉽게 구할 수 있는 파스타 면을 한줌 넣어줍니다.",
+      "그리고 면을 7분 정도 뜨뜻하게 익혀줍니다. 어느 정도 익었으면 토마토 스파게티 소스를 5스푼 넣어주고 한 번 더 뜨뜻하게 익혀줍니다.",
+      "난 좀 촉촉하게 먹고 싶다 하시는 분은 물을 조금 추가해주시면 됩니다. 다 됐으면 그릇에 면 먼저 돌돌 말아서 올려주고 남은 건더기도 다 올려줍니다. 여기 위로 후추도 냥냥하게 뿌려 주고 있어 보이게 파슬리도 골고루 뿌려 줍니다."
+    ],
+    "tips": [],
+    "curated_at": "2026-11-12T14:25:35+00:00",
+    "curation_model": "qwen2.5:3b"
+  },
+  {
+    "video_id": "hPPF0f39Kxc-01",
+    "source_video_id": "hPPF0f39Kxc",
+    "name": "불닭과 미역국 볶음 면",
+    "summary": "매콤한 불닭과 미역국을 볶은 면 요리",
+    "servings": null,
+    "prep_minutes": null,
+    "cook_minutes": null,
+    "confidence": 0.9,
+    "needs_review": false,
+    "source_kind": "automated_curated",
+    "source_url": "https://www.youtube.com/watch?v=hPPF0f39Kxc&t=0s",
+    "published_at": null,
+    "video_title": "불닭에 미역국 부은 놈은 진짜 제정신이냐?",
+    "ingredients": [
+      {
+        "position": 1,
+        "section": "재료 또는 양념",
+        "name": "면",
+        "amount": "1/2",
+        "unit": "큰술",
+        "note": null,
+        "raw_text": "면 1/2 큰술"
+      },
+      {
+        "position": 2,
+        "section": "재료 또는 양념",
+        "name": "소고기 미역국",
+        "amount": null,
+        "unit": null,
+        "note": null,
+        "raw_text": "소고기 미역국"
+      },
+      {
+        "position": 3,
+        "section": "재료 또는 양념",
+        "name": "물",
+        "amount": "1",
+        "unit": "컵",
+        "note": null,
+        "raw_text": "물 1 컵"
+      },
+      {
+        "position": 4,
+        "section": "재료 또는 양념",
+        "name": "불닭 볶음 면",
+        "amount": null,
+        "unit": null,
+        "note": null,
+        "raw_text": "불닭 볶음 면"
+      },
+      {
+        "position": 5,
+        "section": "재료 또는 양념",
+        "name": "치즈",
+        "amount": "모짜렐라",
+        "unit": null,
+        "note": null,
+        "raw_text": "치즈 모짜렐라"
+      }
+    ],
+    "steps": [
+      "먼저 불닭 볶음 면 하나 준비해 줍니다.",
+      "면은 잘게 뽀사 줍니다.",
+      "소고기 미역국 한 봉을 준비해 줍니다.",
+      "소고기 미역국은 가 그대로 다 부어 줍니다.",
+      "불닭 볶음 면과 소고기 미역국을 볶습니다.",
+      "불닭 볶음 면과 소고기 미역국의 스프 두 개와 면을 넣고 물을 추가합니다.",
+      "보글보글 끓기 시작하면 전자레인지에 돌리지 않는 채로 밥 한 공기까지 넣습니다.",
+      "면이 익을 때까지 끓여 줍니다.",
+      "마지막으로 모짜렐라 치즈를 듬뿍 뿌려 주고 치즈만 살짝 녹여 줍니다.",
+      "치즈가 녹으면 불닭과 미역국을 볶은 면이 완성됩니다."
+    ],
+    "tips": [],
+    "curated_at": "2026-11-12T13:41:49+00:00",
+    "curation_model": "qwen2.5:3b"
   }
 ]
