@@ -23821,5 +23821,310 @@
     "tips": [],
     "curated_at": "2026-11-12T15:41:52+00:00",
     "curation_model": "qwen2.5:3b"
+  },
+  {
+    "video_id": "QW_7h71oiw0-01",
+    "source_video_id": "QW_7h71oiw0",
+    "name": "나폴리탄 스파게티",
+    "summary": "간단하고 맛있는 나폴리탄 스파게티 레시피",
+    "servings": 1,
+    "prep_minutes": null,
+    "cook_minutes": null,
+    "confidence": 0.9,
+    "needs_review": false,
+    "source_kind": "automated_curated",
+    "source_url": "https://www.youtube.com/watch?v=QW_7h71oiw0&t=0s",
+    "published_at": null,
+    "video_title": "추운날 집에 파스타 면이 있다면 무조건 꺼내세요",
+    "ingredients": [
+      {
+        "position": 1,
+        "section": "재료 또는 양념",
+        "name": "파스타면",
+        "amount": "1/2",
+        "unit": "큰술",
+        "note": null,
+        "raw_text": "파스타면 1/2 큰술"
+      },
+      {
+        "position": 2,
+        "section": "재료 또는 양념",
+        "name": "소시지",
+        "amount": null,
+        "unit": null,
+        "note": null,
+        "raw_text": "소시지"
+      },
+      {
+        "position": 3,
+        "section": "재료 또는 양념",
+        "name": "양파",
+        "amount": null,
+        "unit": null,
+        "note": null,
+        "raw_text": "양파"
+      },
+      {
+        "position": 4,
+        "section": "재료 또는 양념",
+        "name": "피망",
+        "amount": null,
+        "unit": null,
+        "note": null,
+        "raw_text": "피망"
+      }
+    ],
+    "steps": [
+      "파스타면을 인분 양으로 준비해주세요. 소시지를 굵직하게 준비해주세요.",
+      "양파와 피망을 5mm 두께로 썰어주세요.",
+      "파스타면을 팔팔 끓는 물에 넣고 소금을 넣어 삶아주세요.",
+      "파스타면을 뜨끈하게 삶은 물에 불 익혀주세요.",
+      "팬에 계란을 프라이로 만들어주세요.",
+      "소시지, 양파, 피망을 팬에 볶아주세요.",
+      "파스타면과 계란 프라이를 섞어주세요.",
+      "메일러 케첩과 돈깨스 소스를 넣어 섞어주세요.",
+      "그릇에 파스타면을 올려주세요. 파스타면을 양쪽으로 밀쳐주세요.",
+      "파스타면을 젓가락으로 돌려주세요."
+    ],
+    "tips": [],
+    "curated_at": "2026-11-12T17:35:04+00:00",
+    "curation_model": "qwen2.5:3b"
+  },
+  {
+    "video_id": "avCJ3cbiVaU-01",
+    "source_video_id": "avCJ3cbiVaU",
+    "name": "떡볶이",
+    "summary": "떡볶이 조리법을 설명하는 간단한 레시피",
+    "servings": null,
+    "prep_minutes": null,
+    "cook_minutes": null,
+    "confidence": 0.9,
+    "needs_review": false,
+    "source_kind": "automated_curated",
+    "source_url": "https://www.youtube.com/watch?v=avCJ3cbiVaU&t=0s",
+    "published_at": null,
+    "video_title": "제발 이거 좀 팔아주세요.",
+    "ingredients": [
+      {
+        "position": 1,
+        "section": "재료 또는 양념",
+        "name": "대파",
+        "amount": null,
+        "unit": null,
+        "note": null,
+        "raw_text": "대파"
+      },
+      {
+        "position": 3,
+        "section": "재료 또는 양념",
+        "name": "고춧가루",
+        "amount": "1",
+        "unit": "스푼",
+        "note": null,
+        "raw_text": "고춧가루 1 스푼"
+      },
+      {
+        "position": 5,
+        "section": "재료 또는 양념",
+        "name": "물",
+        "amount": "2",
+        "unit": "컵",
+        "note": null,
+        "raw_text": "물 2 컵"
+      },
+      {
+        "position": 6,
+        "section": "재료 또는 양념",
+        "name": "진간장",
+        "amount": "1",
+        "unit": "스푼",
+        "note": null,
+        "raw_text": "진간장 1 스푼"
+      },
+      {
+        "position": 7,
+        "section": "재료 또는 양념",
+        "name": "설탕",
+        "amount": "2",
+        "unit": "스푼",
+        "note": null,
+        "raw_text": "설탕 2 스푼"
+      },
+      {
+        "position": 8,
+        "section": "재료 또는 양념",
+        "name": "치킨스톡",
+        "amount": "1/2",
+        "unit": "스푼",
+        "note": null,
+        "raw_text": "치킨스톡 1/2 스푼"
+      }
+    ],
+    "steps": [
+      "팬에 식용유를 살짝 둘러주고 대파 한 대를 대충 썰어서 올려줍니다 대파가 흐물흐물해지고 살짝 탓하고 싶을 정도까지 볶아주다가",
+      "대파를 볶아볶아 뻘은 가슴을 놓고 다 볶아주면서 고춧가루를 내줍니다 이때 고춧가루가 금방 탈 수도 있으니 부부부 초 이내로 빠르게 볶아주는게 좋습니다",
+      "이때 고춧가루가 금방 탈 수도 있으니 부부부 초 이내로 빠르게 볶아주는게 좋습니다",
+      "여기에 물을 종이컵 2컵 (약 360ml) 부어주고 진간장 1스푼 설탕 2스푼 치킨스톡 1/2스푼을 넣어줍니다",
+      "이렇게 양념장을 완성합니다 이제 여기에 떡볶이 떡을 준비해서",
+      "쌀떡과 밀떡 둘 다 사용해서 만들었을 때 오늘 요리에선 밀떡이 가장 조화가 좋았습니다",
+      "밀떡을 잘게 썰어준 뒤 올려주고 어묵 한 두어장도 잘게 썰어준 뒤 올려주고",
+      "마지막으로 순두부 한 봉을 반갈라 준 뒤에 다 올려줍니다",
+      "이렇게 순두부도 뜨끈해지고 어묵도 익을 수 있도록 3~4분간 푹 끓여줍니다",
+      "이렇게 순두부에서 수분이 나오기 때문에 완벽한 국물 떡볶이 스타일로 만들어 줄 겁니다"
+    ],
+    "tips": [],
+    "curated_at": "2026-11-12T18:02:15+00:00",
+    "curation_model": "qwen2.5:3b"
+  },
+  {
+    "video_id": "JdcwMzjd7lQ-01",
+    "source_video_id": "JdcwMzjd7lQ",
+    "name": "통목살짬뽕",
+    "summary": "통목살을 맛있게 구워주고 양파, 대파를 볶아 불닭볶음면과 진짬뽕을 넣어 맛있는 통목살짬뽕을 만듭니다.",
+    "servings": null,
+    "prep_minutes": null,
+    "cook_minutes": null,
+    "confidence": 0.9,
+    "needs_review": false,
+    "source_kind": "automated_curated",
+    "source_url": "https://www.youtube.com/watch?v=JdcwMzjd7lQ&t=0s",
+    "published_at": null,
+    "video_title": "진짜 맛있는 거 먹고 싶은 분?",
+    "ingredients": [
+      {
+        "position": 1,
+        "section": "통목살",
+        "name": "통목살",
+        "amount": "500g",
+        "unit": null,
+        "note": null,
+        "raw_text": "통목살 500g"
+      },
+      {
+        "position": 2,
+        "section": "양파",
+        "name": "양파",
+        "amount": null,
+        "unit": null,
+        "note": null,
+        "raw_text": "양파"
+      },
+      {
+        "position": 3,
+        "section": "대파",
+        "name": "대파",
+        "amount": null,
+        "unit": null,
+        "note": null,
+        "raw_text": "대파"
+      }
+    ],
+    "steps": [
+      "통목살을 후라이팬에 살짝 두른 식용유를 바르고 맛있게 구워줍니다.",
+      "통목살이 잘 구워진 후, 통목살을 빼냅니다.",
+      "후라이팬에 돼지기름을 두르고 양파와 대파를 볶아줍니다.",
+      "고춧가루 1스푼을 넣고 볶아줍니다.",
+      "물 3컵반(약 630ml)을 부어주고 건더기스프와 액상스프를 넣어줍니다.",
+      "면을 넣고 맛있게 끓여줍니다.",
+      "부추, 통목살, 조미유, 후추를 뿌려 마무리합니다."
+    ],
+    "tips": [],
+    "curated_at": "2026-11-12T18:06:04+00:00",
+    "curation_model": "qwen2.5:3b"
+  },
+  {
+    "video_id": "BH8K1WY3UYE-01",
+    "source_video_id": "BH8K1WY3UYE",
+    "name": "닭갈비볶음밥",
+    "summary": "간단하고 맛있는 닭갈비볶음밥을 만드는 방법입니다.",
+    "servings": null,
+    "prep_minutes": null,
+    "cook_minutes": null,
+    "confidence": 0.9,
+    "needs_review": false,
+    "source_kind": "automated_curated",
+    "source_url": "https://www.youtube.com/watch?v=BH8K1WY3UYE&t=0s",
+    "published_at": null,
+    "video_title": "If you add 'this' when you make fried rice, it will be 1000 times more delicious.",
+    "ingredients": [
+      {
+        "position": 1,
+        "section": "재료 또는 양념",
+        "name": "닭다리살",
+        "amount": "200g",
+        "unit": "g",
+        "note": null,
+        "raw_text": "닭다리살 200g g"
+      },
+      {
+        "position": 2,
+        "section": "양념 재료",
+        "name": "소금",
+        "amount": null,
+        "unit": null,
+        "note": null,
+        "raw_text": "소금"
+      },
+      {
+        "position": 3,
+        "section": "양념 재료",
+        "name": "양파",
+        "amount": "반개",
+        "unit": "개",
+        "note": null,
+        "raw_text": "양파 반개 개"
+      },
+      {
+        "position": 4,
+        "section": "양념 재료",
+        "name": "양배추",
+        "amount": null,
+        "unit": null,
+        "note": null,
+        "raw_text": "양배추"
+      },
+      {
+        "position": 5,
+        "section": "양념 재료",
+        "name": "고추장",
+        "amount": "1스푼",
+        "unit": "스푼",
+        "note": null,
+        "raw_text": "고추장 1스푼 스푼"
+      },
+      {
+        "position": 6,
+        "section": "양념 재료",
+        "name": "돈가스 소스",
+        "amount": null,
+        "unit": null,
+        "note": null,
+        "raw_text": "돈가스 소스"
+      },
+      {
+        "position": 7,
+        "section": "양념 재료",
+        "name": "설탕",
+        "amount": "1스푼",
+        "unit": "스푼",
+        "note": null,
+        "raw_text": "설탕 1스푼 스푼"
+      }
+    ],
+    "steps": [
+      "닭다리살 정육을 준비해줍니다. 물론 닭가슴살이나 다른 부위도 좋고 오늘은 200g만 있어도 충분합니다.",
+      "닭다리살을 작은 크기가 나오도록 썰어줍니다.",
+      "소금으로 살짝 미끈을 해준 뒤 어느 정도 닭다리살 겉면에 갈색빛이 띈다면 양파 반개를 대충 썰어서 올려줍니다.",
+      "양배추도 비슷한 양이 나오도록 썰어준 뒤 다 올려줍니다.",
+      "고추장을 듬뿍 뜬 1스푼과 돈가스 소스를 뿌려주고 마지막으로 설탕 1스푼을 넣어주면",
+      "센불에서 넣은 양배추가 숨이 죽을 때까지 양념을 섞어주면서 잘 볶아주다가 양파와 양배추가 숨이 죽은게 보이면",
+      "밥 한 공기를 넣고 곡 꾹꾹 눌러주듯이 밥을 볶아주고",
+      "닭다리살에서 빠지면서 김가루와 참기름까지 살짝 둘러준 뒤 한번 잘 섞어주고",
+      "마무리로 통깨도 등등하게 뿌려주면",
+      "닭다리살볶음밥이 완성됩니다 이제 한 숟갈뜨가 한 모으면 이거 정말 맛있습니다"
+    ],
+    "tips": [],
+    "curated_at": "2026-11-12T18:03:36+00:00",
+    "curation_model": "qwen2.5:3b"
   }
 ]
