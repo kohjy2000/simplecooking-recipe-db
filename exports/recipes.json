@@ -148601,5 +148601,177 @@
       "이게 너무 맵다면 물 한 컵 반에 불닭면과 순두부 한 봉 소스까지 다 넣고 그리고 여자친구는 없어도 이건 꼭 있다는 불닭과 궁합 좋은 돈스 소스 두 스푼도 넣고 라면이 익을 때까지 푹 끓여 주시면 됩니다.",
       ">> 이제 떠먹었을 때 맛있는 식감을 도해 줄 스위트콘을 세네스푼 넉넉하게 넣어주고 참고로 저는 스위트콘을 사면 이렇게 반찬통에 덜어 놓고 반찬으로 뜨먹습니다."
     ]
+  },
+  {
+    "video_id": "tXbQMDj6MX8",
+    "name": "젓가락 들 힘도 없을 때 만드는 존맛 날먹 요리",
+    "summary": null,
+    "servings": null,
+    "prep_minutes": null,
+    "cook_minutes": null,
+    "confidence": 0.6,
+    "needs_review": true,
+    "source_kind": "caption",
+    "source_url": "https://www.youtube.com/watch?v=tXbQMDj6MX8",
+    "published_at": null,
+    "video_title": "젓가락 들 힘도 없을 때 만드는 존맛 날먹 요리",
+    "ingredients": [
+      {
+        "position": 1,
+        "section": "자막 추정",
+        "name": "두부",
+        "amount": "한",
+        "unit": null,
+        "note": "자막에서 자동 추정",
+        "raw_text": "두부 한"
+      },
+      {
+        "position": 2,
+        "section": "자막 추정",
+        "name": "콘",
+        "amount": "네",
+        "unit": "스푼",
+        "note": "자막에서 자동 추정",
+        "raw_text": "콘 네 스푼"
+      },
+      {
+        "position": 3,
+        "section": "자막 추정",
+        "name": "라면",
+        "amount": null,
+        "unit": null,
+        "note": "자막에서 자동 추정",
+        "raw_text": "라면"
+      },
+      {
+        "position": 4,
+        "section": "자막 추정",
+        "name": "설탕",
+        "amount": null,
+        "unit": null,
+        "note": "자막에서 자동 추정",
+        "raw_text": "설탕"
+      },
+      {
+        "position": 5,
+        "section": "자막 추정",
+        "name": "치즈",
+        "amount": null,
+        "unit": null,
+        "note": "자막에서 자동 추정",
+        "raw_text": "치즈"
+      },
+      {
+        "position": 6,
+        "section": "자막 추정",
+        "name": "물",
+        "amount": "한",
+        "unit": "컵",
+        "note": "자막에서 자동 추정",
+        "raw_text": "물 한 컵"
+      }
+    ],
+    "steps": []
+  },
+  {
+    "video_id": "UtiYgp7QDgI",
+    "name": "이거 2만원 받고 장사해도 됩니다.",
+    "summary": null,
+    "servings": null,
+    "prep_minutes": null,
+    "cook_minutes": null,
+    "confidence": 0.76,
+    "needs_review": true,
+    "source_kind": "caption",
+    "source_url": "https://www.youtube.com/watch?v=UtiYgp7QDgI",
+    "published_at": null,
+    "video_title": "이거 2만원 받고 장사해도 됩니다.",
+    "ingredients": [
+      {
+        "position": 1,
+        "section": "자막 추정",
+        "name": "고춧가루",
+        "amount": "한",
+        "unit": null,
+        "note": "자막에서 자동 추정",
+        "raw_text": "고춧가루 한"
+      },
+      {
+        "position": 2,
+        "section": "자막 추정",
+        "name": "새우",
+        "amount": "한",
+        "unit": "줌",
+        "note": "자막에서 자동 추정",
+        "raw_text": "새우 한 줌"
+      },
+      {
+        "position": 3,
+        "section": "자막 추정",
+        "name": "양파",
+        "amount": "한",
+        "unit": null,
+        "note": "자막에서 자동 추정",
+        "raw_text": "양파 한"
+      },
+      {
+        "position": 4,
+        "section": "자막 추정",
+        "name": "감자",
+        "amount": null,
+        "unit": null,
+        "note": "자막에서 자동 추정",
+        "raw_text": "감자"
+      },
+      {
+        "position": 5,
+        "section": "자막 추정",
+        "name": "버섯",
+        "amount": "한",
+        "unit": null,
+        "note": "자막에서 자동 추정",
+        "raw_text": "버섯 한"
+      },
+      {
+        "position": 6,
+        "section": "자막 추정",
+        "name": "소금",
+        "amount": "한",
+        "unit": null,
+        "note": "자막에서 자동 추정",
+        "raw_text": "소금 한"
+      },
+      {
+        "position": 7,
+        "section": "자막 추정",
+        "name": "후추",
+        "amount": null,
+        "unit": null,
+        "note": "자막에서 자동 추정",
+        "raw_text": "후추"
+      },
+      {
+        "position": 8,
+        "section": "자막 추정",
+        "name": "치즈",
+        "amount": "한",
+        "unit": null,
+        "note": "자막에서 자동 추정",
+        "raw_text": "치즈 한"
+      },
+      {
+        "position": 9,
+        "section": "자막 추정",
+        "name": "우유",
+        "amount": null,
+        "unit": null,
+        "note": "자막에서 자동 추정",
+        "raw_text": "우유"
+      }
+    ],
+    "steps": [
+      "안녕하십니까 자출이 방문입니다 오늘은 유튜버 민 사장님의 투박 소스에 감자 수제비를 넣는 투박 수제비를 보고 할 몸과 영감을 얻어 자치 버전으로 간단하게 만들어 보도록 하겠습니다 마 명품백 친구 쓰리 아웃백 안 가도 됩니다 그럼 바 우리 [음악] 따뚜",
+      "마지막으로 노란 슬라이스 치즈도 한 잔 올려준 뒤에 한번 녹여주면 끝입니다 휙 다 됐으면 빼주고 후추와 파슬리가 지저분하게 막 흩뿌려 주면 감자 수제비를 넣어가 욕기 느낌이 나는 순바 수제비가 완성됩니다 인자 한 숟갈 등가 한부 보면 와 이거 막 팔아도 되는 급으로 정말 맛있습니다 좀 득한 수제비도 맛있지만요 양송이 버섯이 진짜 대박입니다 [음악]"
+    ]
   }
 ]
