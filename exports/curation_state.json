@@ -8581,8 +8581,8 @@
       "error": "Recipe 1 must have between 2 and 10 steps"
     },
     "jgiBQj5cJXg": {
-      "attempts": 3,
-      "updated_at": "2026-11-15T11:10:16+00:00",
+      "attempts": 4,
+      "updated_at": "2026-11-15T11:13:23+00:00",
       "model": "qwen2.5:3b",
       "status": "failed",
       "error": "Recipe 1 has fewer than two ingredients"
