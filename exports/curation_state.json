@@ -8588,11 +8588,11 @@
       "error": "Recipe 1 has fewer than two ingredients"
     },
     "V3C2Vd5Cp44": {
-      "attempts": 3,
-      "updated_at": "2026-11-16T12:00:09+00:00",
+      "attempts": 4,
+      "updated_at": "2026-11-16T12:03:57+00:00",
       "model": "qwen2.5:3b",
       "status": "failed",
-      "error": "Recipe 1 must have between 2 and 10 steps"
+      "error": "Recipe 1 contains weakly supported ingredients: 깻잎새알, 떡볶이 양념, 케찹, 떡볶이 양념 소스"
     }
   }
 }
