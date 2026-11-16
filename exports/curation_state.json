@@ -8588,8 +8588,8 @@
       "error": "Recipe 1 has fewer than two ingredients"
     },
     "V3C2Vd5Cp44": {
-      "attempts": 2,
-      "updated_at": "2026-11-16T11:50:58+00:00",
+      "attempts": 3,
+      "updated_at": "2026-11-16T12:00:09+00:00",
       "model": "qwen2.5:3b",
       "status": "failed",
       "error": "Recipe 1 must have between 2 and 10 steps"
