@@ -148943,5 +148943,54 @@
       "인제 다시마늘 반 스푼과 고춧가루 한 스푼을 추가해 가 역시 기름에 볶아주다가 미리 삶아 놓은 당면과 진간장 한 스푼, 굴소스 한 스푼, 설탕 한 스푼을 넣고 약불에서 한번 더 볶아줍니다.",
       "마지막으로 정구지 쪼매 후추는 넉넉히 뿌려준 뒤에 참기름 한 방울로 마무리해 뿌리면 쫄깃한 당면 식감이 진짜 좋은 당면 볶기가 완성됩니다."
     ]
+  },
+  {
+    "video_id": "V3C2Vd5Cp44",
+    "name": "초등학생도 쌉가능 개쉬움",
+    "summary": null,
+    "servings": "3인분",
+    "prep_minutes": null,
+    "cook_minutes": null,
+    "confidence": 0.7,
+    "needs_review": true,
+    "source_kind": "caption",
+    "source_url": "https://www.youtube.com/watch?v=V3C2Vd5Cp44",
+    "published_at": null,
+    "video_title": "초등학생도 쌉가능 개쉬움",
+    "ingredients": [
+      {
+        "position": 1,
+        "section": "자막 추정",
+        "name": "소시지",
+        "amount": "한",
+        "unit": null,
+        "note": "자막에서 자동 추정",
+        "raw_text": "소시지 한"
+      },
+      {
+        "position": 2,
+        "section": "자막 추정",
+        "name": "식용유",
+        "amount": null,
+        "unit": null,
+        "note": "자막에서 자동 추정",
+        "raw_text": "식용유"
+      },
+      {
+        "position": 3,
+        "section": "자막 추정",
+        "name": "물",
+        "amount": "한",
+        "unit": null,
+        "note": "자막에서 자동 추정",
+        "raw_text": "물 한"
+      }
+    ],
+    "steps": [
+      "반찬 만들 때 이거 하나만 넣어보이소.",
+      "인자 팬에 식용유 넉넉히 둘러주고 메추리알과 소시지를 다 넣고 기름에 튀기듯이 전체적으로 노릇노릇하게 한번 볶아줍니다.",
+      "인자 물 한 컵과 천 원대로 구매 가능한 이런 떡볶이 양념 소스 3인분 짜리 브랜드 상관없이 아무거나 한 팩만 준비해 가 싹 다 부어줍니다.",
+      "여기에 케찹 두 스푼만 추가해준 뒤에 물이 다 졸았을 때까지 끓여줍니다."
+    ]
   }
 ]
