@@ -148992,5 +148992,51 @@
       "인자 물 한 컵과 천 원대로 구매 가능한 이런 떡볶이 양념 소스 3인분 짜리 브랜드 상관없이 아무거나 한 팩만 준비해 가 싹 다 부어줍니다.",
       "여기에 케찹 두 스푼만 추가해준 뒤에 물이 다 졸았을 때까지 끓여줍니다."
     ]
+  },
+  {
+    "video_id": "u6-IU0VtS4Q",
+    "name": "진짜 배달 시키는 것보다 훨씬 더 맛있습니다.",
+    "summary": null,
+    "servings": null,
+    "prep_minutes": null,
+    "cook_minutes": null,
+    "confidence": 0.46,
+    "needs_review": true,
+    "source_kind": "caption",
+    "source_url": "https://www.youtube.com/watch?v=u6-IU0VtS4Q",
+    "published_at": null,
+    "video_title": "진짜 배달 시키는 것보다 훨씬 더 맛있습니다.",
+    "ingredients": [
+      {
+        "position": 1,
+        "section": "자막 추정",
+        "name": "닭고기",
+        "amount": null,
+        "unit": null,
+        "note": "자막에서 자동 추정",
+        "raw_text": "닭고기"
+      },
+      {
+        "position": 2,
+        "section": "자막 추정",
+        "name": "간장",
+        "amount": "한",
+        "unit": null,
+        "note": "자막에서 자동 추정",
+        "raw_text": "간장 한"
+      },
+      {
+        "position": 3,
+        "section": "자막 추정",
+        "name": "물",
+        "amount": "한",
+        "unit": null,
+        "note": "자막에서 자동 추정",
+        "raw_text": "물 한"
+      }
+    ],
+    "steps": [
+      "여기에 물 한 컵과 1,000원대로 구매 가능한 떡볶이 양념 소스 한만 다 부어주고 진간장 한 스푼만 추가해 주면 이것저것 넣을 필요 없고 오늘 양념장은 끝입니다."
+    ]
   }
 ]
