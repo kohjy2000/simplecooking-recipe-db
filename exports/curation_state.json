@@ -8595,11 +8595,11 @@
       "error": "Recipe 1 contains weakly supported ingredients: 깻잎새알, 떡볶이 양념, 케찹, 떡볶이 양념 소스"
     },
     "u6-IU0VtS4Q": {
-      "attempts": 2,
-      "updated_at": "2026-11-17T12:04:03+00:00",
+      "attempts": 3,
+      "updated_at": "2026-11-17T12:08:35+00:00",
       "model": "qwen2.5:3b",
       "status": "failed",
-      "error": "Recipe 1 contains weakly supported ingredients: 떡볶이 양념"
+      "error": "Recipe 1 contains weakly supported ingredients: 떡볶이 양념 소스, 진간장"
     }
   }
 }
