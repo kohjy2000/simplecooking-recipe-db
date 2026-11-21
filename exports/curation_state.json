@@ -8602,8 +8602,8 @@
       "error": "Recipe 1 contains weakly supported ingredients: 떡볶이 양념"
     },
     "_T4v_K8W208": {
-      "attempts": 2,
-      "updated_at": "2026-11-21T11:20:18+00:00",
+      "attempts": 3,
+      "updated_at": "2026-11-21T11:24:01+00:00",
       "model": "qwen2.5:3b",
       "status": "failed",
       "error": "Recipe 1 contains weakly supported ingredients: 봄동, 진간장, 메르직자, 가지마늘, 소면"
