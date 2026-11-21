@@ -8600,6 +8600,13 @@
       "model": "qwen2.5:3b",
       "status": "failed",
       "error": "Recipe 1 contains weakly supported ingredients: 떡볶이 양념"
+    },
+    "_T4v_K8W208": {
+      "attempts": 1,
+      "updated_at": "2026-11-21T11:16:00+00:00",
+      "model": "qwen2.5:3b",
+      "status": "failed",
+      "error": "Recipe 1 has fewer than two ingredients"
     }
   }
 }
