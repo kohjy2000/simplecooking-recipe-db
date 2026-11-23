@@ -8607,6 +8607,13 @@
       "model": "qwen2.5:3b",
       "status": "failed",
       "error": "Recipe 1 has fewer than two ingredients"
+    },
+    "laeiGJ5YCEQ": {
+      "attempts": 1,
+      "updated_at": "2026-11-23T13:00:00+00:00",
+      "model": "qwen2.5:3b",
+      "status": "failed",
+      "error": "Recipe 1 contains weakly supported ingredients: 메리 체크, 굴 소스, 치킨 속스푼 꼬춧가루"
     }
   }
 }
