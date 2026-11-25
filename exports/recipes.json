@@ -149256,5 +149256,135 @@
       "[웃음] 여기에 진간 한 스푼과 물 소스 한 스푼 10분 은근 꼬춧가루 한 스푼 치킨 스톡 1분 살짝만 넣어 준 뒤에 빠르게 10초만 볶아주고 물초 두 컵을 부어 줍니다.",
       "이제 우동사리도 넣고 완전히 익혀주다가 여기에 김결란 하나도 잘 풀어가 둘러주고 처음에 미리 꾸워서 빼도 닭고기도 올려주고 모자르트 치즈 소리만 뿌려 가지고 뚜껑을 덮든 블로찌든 녹여주기만 하면 추운 날 배 튼든하게 차울 수 있는 닭김치 청골이 완성됩니다."
     ]
+  },
+  {
+    "video_id": "BiDSPIdZ6Ck",
+    "name": "진짜 맛있는데 이제 조만간 먹을 수 없습니다.",
+    "summary": null,
+    "servings": null,
+    "prep_minutes": null,
+    "cook_minutes": null,
+    "confidence": 0.92,
+    "needs_review": true,
+    "source_kind": "caption",
+    "source_url": "https://www.youtube.com/watch?v=BiDSPIdZ6Ck",
+    "published_at": null,
+    "video_title": "진짜 맛있는데 이제 조만간 먹을 수 없습니다.",
+    "ingredients": [
+      {
+        "position": 1,
+        "section": "자막 추정",
+        "name": "양파",
+        "amount": "한",
+        "unit": null,
+        "note": "자막에서 자동 추정",
+        "raw_text": "양파 한"
+      },
+      {
+        "position": 2,
+        "section": "자막 추정",
+        "name": "대파",
+        "amount": "한",
+        "unit": null,
+        "note": "자막에서 자동 추정",
+        "raw_text": "대파 한"
+      },
+      {
+        "position": 3,
+        "section": "자막 추정",
+        "name": "마늘",
+        "amount": "한",
+        "unit": "스푼",
+        "note": "자막에서 자동 추정",
+        "raw_text": "마늘 한 스푼"
+      },
+      {
+        "position": 4,
+        "section": "자막 추정",
+        "name": "고추",
+        "amount": "한",
+        "unit": "스푼",
+        "note": "자막에서 자동 추정",
+        "raw_text": "고추 한 스푼"
+      },
+      {
+        "position": 5,
+        "section": "자막 추정",
+        "name": "파스타",
+        "amount": "한",
+        "unit": null,
+        "note": "자막에서 자동 추정",
+        "raw_text": "파스타 한"
+      },
+      {
+        "position": 6,
+        "section": "자막 추정",
+        "name": "간장",
+        "amount": "한",
+        "unit": "스푼",
+        "note": "자막에서 자동 추정",
+        "raw_text": "간장 한 스푼"
+      },
+      {
+        "position": 7,
+        "section": "자막 추정",
+        "name": "고추장",
+        "amount": "한",
+        "unit": "스푼",
+        "note": "자막에서 자동 추정",
+        "raw_text": "고추장 한 스푼"
+      },
+      {
+        "position": 8,
+        "section": "자막 추정",
+        "name": "굴소스",
+        "amount": "한",
+        "unit": "스푼",
+        "note": "자막에서 자동 추정",
+        "raw_text": "굴소스 한 스푼"
+      },
+      {
+        "position": 9,
+        "section": "자막 추정",
+        "name": "참기름",
+        "amount": "당",
+        "unit": null,
+        "note": "자막에서 자동 추정",
+        "raw_text": "참기름 당"
+      },
+      {
+        "position": 10,
+        "section": "자막 추정",
+        "name": "설탕",
+        "amount": "한",
+        "unit": "스푼",
+        "note": "자막에서 자동 추정",
+        "raw_text": "설탕 한 스푼"
+      },
+      {
+        "position": 11,
+        "section": "자막 추정",
+        "name": "후추",
+        "amount": null,
+        "unit": null,
+        "note": "자막에서 자동 추정",
+        "raw_text": "후추"
+      },
+      {
+        "position": 12,
+        "section": "자막 추정",
+        "name": "물",
+        "amount": "한",
+        "unit": "스푼",
+        "note": "자막에서 자동 추정",
+        "raw_text": "물 한 스푼"
+      }
+    ],
+    "steps": [
+      "먼저 냉동 스파이티면 하나를 냉동 상태 그대로 올리고 양파 반개도 썰어서 올리고 대파 반대도 썰어서 올려줍니다.",
+      "여기에 꼬춧가루 한 스푼, 굴소스 한 스푼, 고추장 크게 한 스푼, 토메이러, 스파게리 소스네 스푼 듬뿍 넣고 깨끗하게 세척한 굴 200g을 올려 줍니다.",
+      "획 이번에는 식용 넉넉히 둘러주고 대파 반대와 양파 반개를 놓고 검뭇한 부분이 볼 때까지 볶아 줍니다.",
+      "인자물이 다 쫄아들고 불이 맛있게 익을 때까지 푹 끓여주다가 전꾸지 한줌 넣고 한번 섞아주고 참기름 백방울과 통깨 맞춰서 뿌려주면 매콤만 굴당면 볶음이 완성됩니다."
+    ]
   }
 ]
